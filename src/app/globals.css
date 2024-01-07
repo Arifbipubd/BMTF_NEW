@@ -7,3 +7,28 @@
 p, h1, h2, h3, h4, h5, h6, span {
     font-family: 'poppins', sans-serif;
 }
+
+.menu {
+    position: fixed;
+    right: 0px;
+    top: 0;
+    -webkit-transform: translateX(105%);
+    transform: translateX(105%);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.open {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.7s ease 300ms;
+    transition: all 0.5s ease 300ms;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+@media screen and (min-width:1280px){
+    .menu{
+        position: relative;
+    }
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Fragment } from "react";
+import { useState, Fragment, useEffect } from "react";
 import Link from "next/link";
 
 import { CgClose, CgMenuRight } from "react-icons/cg";
@@ -17,8 +17,33 @@ import { navItems } from "@src/utils/constants";
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [isChildrenOpen, setIsChildrenOpen] = useState<boolean>(false);
+    const [backgroundColor, setBackgroundColor] =
+        useState<string>("bg-transparent");
+    const [navPosition, setNavPosition] = useState<string>("fixed");
+    const [navTop, setNavTop] = useState<string>("top-2.5");
+    const changeOnScroll = () => {
+        if (window.scrollY > 10) {
+            setBackgroundColor("bg-[#111]");
+            setNavPosition("fixed");
+            setNavTop("top-0");
+        } else {
+            setBackgroundColor("bg-transparent");
+            setNavPosition("absolute");
+            setNavTop("top-2.5");
+        }
+    };
+    useEffect(() => {
+        const eventFired = window.addEventListener("scroll", changeOnScroll);
+        return () => {
+            eventFired;
+        };
+    });
     return (
-        <header className="bg-transparent absolute left-0 top-0 w-full z-30">
+        <header
+            className={`${backgroundColor} ${navPosition} ${navTop} 
+        left-0 w-full z-30 transition-all duration-300 ease-in-out  
+        shadow-[0_6px_32px_0px_rgba(0,0,0,0.03)]`}
+        >
             <div className="border-b-[1px] border-solid border-b-white/10">
                 <div className="container mx-auto">
                     <div className="flex justify-between sm:items-center py-[11px]">
@@ -85,7 +110,7 @@ export default function Navbar() {
                 </div>
             </div>
             <nav className="container mx-auto relative">
-                <div className="block lg:flex justify-between py-1">
+                <div className="block xl:flex justify-between py-1">
                     <div className="flex items-center text-white">
                         <Link href={"/"}>
                             <img
@@ -95,10 +120,10 @@ export default function Navbar() {
                             />
                         </Link>
                     </div>
-                    <div className="block lg:hidden absolute right-5 top-2">
+                    <div className="block xl:hidden absolute right-5 top-2">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
+                            className="flex items-center px-3 py-2 rounded "
                         >
                             <i
                                 className={`text-2xl text-white ${
@@ -107,24 +132,36 @@ export default function Navbar() {
                             >
                                 <CgMenuRight />
                             </i>
-                            <i
-                                className={`text-2xl text-white ${
-                                    isOpen ? "block" : "hidden"
-                                }`}
-                            >
-                                <CgClose />
-                            </i>
                         </button>
                     </div>
                     <div
-                        className={` block lg:flex ${
-                            isOpen ? "block" : "hidden"
+                        className={` block xl:flex z-50  ${
+                            isOpen
+                                ? "block open  w-full xl:w-fit menu h-full bg-black/80 text-center xl:bg-inherit"
+                                : "hidden bg-inherit"
                         }`}
                     >
+                        <div className="flex justify-end py-7 px-3 md:px-7 lg:px-10 xl:hidden">
+                            <button
+                                onClick={() => setIsOpen(!isOpen)}
+                                className="flex items-center px-3 py-2 rounded "
+                            >
+                                <i
+                                    className={`text-2xl text-white ${
+                                        isOpen ? "block" : "hidden"
+                                    }`}
+                                >
+                                    <CgClose />
+                                </i>
+                            </button>
+                        </div>
                         {navItems.map((item) => (
                             <Fragment key={item.id}>
                                 <div
-                                    className="flex items-center relative group mr-[22px] py-2.5 lg:py-[17px] cursor-pointer"
+                                    className={`flex items-center justify-center relative group xl:mr-[22px] py-2.5 lg:py-[17px] 
+                                    cursor-pointer px-10 xl:px-0 after:block after:content-[''] after:absolute after:h-[3px]
+                                     after:bg-secondary after:bottom-2 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition 
+                                     after:duration-300 after:origin-left`}
                                     onClick={() =>
                                         setIsChildrenOpen(
                                             (prev) => (prev = !prev)
@@ -148,7 +185,7 @@ export default function Navbar() {
                                     {item.children &&
                                         item.children.map((children) => (
                                             <div
-                                                className="absolute top-12 w-36 bg-black hidden lg:group-hover:block z-20"
+                                                className="absolute top-12 w-36 bg-inherit hidden lg:group-hover:block z-20"
                                                 key={children.id}
                                             >
                                                 <Link
@@ -162,7 +199,7 @@ export default function Navbar() {
                                 </div>
                             </Fragment>
                         ))}
-                        <div className="h-full">
+                        <div className="flex justify-center xl:block xl:h-full px-4 xl:px-0">
                             <Link href={"/"} className="">
                                 <button className="flex items-center bg-primary border-0 py-3 md:py-4 px-4 md:px-[22px] text-yellow">
                                     <span>

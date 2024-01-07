@@ -4,7 +4,8 @@ const colors = {
 	tertiary: 'var(--color-tertiary)',
 	yellow: 'var(--color-yellow)',
 	cardText: 'var(--color-card-text)',
-	copyright: 'var(--color-copyright)'
+	copyright: 'var(--color-copyright)',
+	headline: 'var(--color-headline)'
 };
 
 module.exports = colors;

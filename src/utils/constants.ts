@@ -36,7 +36,7 @@ export const navItems: Array<NavItem>=[
         children: [
             {
                 id: 1,
-                link: "/",
+                link: "/about",
                 label: "About Us"
             }
         ]
@@ -101,4 +101,12 @@ export const navItems: Array<NavItem>=[
             }
         ]
     }
+];
+
+export const experienceLists = [
+    'Biggest State Owned Production facility.',
+    'Successfully serving 50+ Clients.',
+    'DIgital & Smart Integrated Factory.',
+    'Most dedicated & passionate team.',
+    'No compromise in quality control.'
 ]
