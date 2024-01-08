@@ -27,6 +27,10 @@ p, h1, h2, h3, h4, h5, h6, span {
     transform: translateX(0%);
 }
 
+.clip-path {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 91%, 30% 91%, 25% 100%, 19% 91%, 0 91%);
+}
+
 @media screen and (min-width:1280px){
     .menu{
         position: relative;

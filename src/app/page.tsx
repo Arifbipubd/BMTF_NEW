@@ -7,6 +7,11 @@ import AboutBMTF from "@src/components/Home/AboutBMTF";
 import Experience from "@src/components/Home/Experience";
 import Responsibility from "@src/components/Home/Responsibility";
 import Feedback from "@src/components/Home/Feedback";
+import Certifications from "@src/components/Home/Certifications";
+import Sustainability from "@src/components/Home/Sustainability";
+import Projects from "@src/components/Home/Projects";
+import News from "@src/components/Home/News";
+import Slider from "@src/components/Home/slider";
 
 export default function Home() {
     return (
@@ -23,9 +28,14 @@ export default function Home() {
                 link="/"
             />
             <AboutBMTF />
+            <Slider />
             <Experience />
             <Responsibility />
+            <Certifications/>
+            <Sustainability />
+            <Projects />
             <Feedback />
+            <News />
         </>
     );
 }
