@@ -57,11 +57,16 @@ export default function Responsibility({}: Props) {
                                 alt=""
                                 className="rounded-[10px]"
                             />
-                            <div className="absolute -right-28 top-[50%] -translate-y-1/2 -my-1/2">
+                            <div
+                                className={`absolute -right-28 top-[50%] -translate-y-1/2 -my-1/2 
+                                        bg-primary p-[30px] rounded-full
+                                        border-4 border-white
+                                `}
+                            >
                                 <img
-                                    src="assets/images/home/Group_3.png"
+                                    src="assets/images/home/Vector.svg"
                                     alt=""
-                                    className="w-2/3 lg:w-fit"
+                                    className="w-fit"
                                 />
                             </div>
                         </div>

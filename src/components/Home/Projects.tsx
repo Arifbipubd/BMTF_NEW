@@ -73,23 +73,25 @@ export default function Projects({}: Props) {
                                 for a more.
                             </p>
                         </div>
-                        <div className="">
+                        <div className="relative">
                             <img
                                 src="/assets/images/home/Pattern_shop_02_1.png"
                                 alt=""
-                                className="h-full clip-path"
+                                className="w-full"
                             />
+                            <div className="w-7 h-5 bg-primary clip-path absolute top-0 left-10"/>
                         </div>
                     </div>
                     <div className="bg-secondary flex flex-col justify-between">
-                        <div className="">
+                        <div className="relative">
                             <img
                                 src="/assets/images/home/Furniture_05.png"
                                 alt=""
                                 className="w-full"
                             />
+                            <div className="w-7 h-5 bg-secondary clip-path-2 absolute bottom-0 left-10"/>
                         </div>
-                        <div className="">
+                        <div className="px-[17px] py-[30px]">
                             <h1 className="text-headline font-semibold mb-4 md:mb-5">
                                 Smart Manufacturing Integration
                             </h1>

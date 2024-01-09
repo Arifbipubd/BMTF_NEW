@@ -28,6 +28,30 @@ export const heroSection: Array<HeroSection> = [
     }
 ];
 
+export const sliderSection: Array<SliderSection> = [
+    {
+        id: 1,
+        heading: "pole & pile",
+        description: "The automotive industry is the technological trendsetter among manufacturing industries.",
+        imageUrl: '/assets/images/home/Pole_n_pile_01.png',
+        link: '/'
+    },
+    {
+        id: 2,
+        heading: "Empowering",
+        description: "The automotive industry is the technological trendsetter among manufacturing industries.",
+        imageUrl: '/assets/images/home/Pole_n_pile_02.png',
+        link: '/'
+    },
+    {
+        id: 3,
+        heading: "Empowering Innovation, Precision, and Excellence",
+        description: "The automotive industry is the technological trendsetter among manufacturing industries.",
+        imageUrl: '/assets/images/home/Pole_n_pile_03.png',
+        link: "/"
+    }
+];
+
 export const navItems: Array<NavItem>=[
     {
         id: 1,
