@@ -20,17 +20,25 @@ export default function Navbar() {
     const [backgroundColor, setBackgroundColor] =
         useState<string>("bg-transparent");
     const [navPosition, setNavPosition] = useState<string>("fixed");
+    const [submenuShow, setSubmenuShow] = useState<boolean>(true);
     const [navTop, setNavTop] = useState<string>("top-2.5");
     const changeOnScroll = () => {
         if (window.scrollY > 10) {
             setBackgroundColor("bg-[#111]");
             setNavPosition("fixed");
             setNavTop("top-0");
+            setSubmenuShow(false);
         } else {
             setBackgroundColor("bg-transparent");
             setNavPosition("absolute");
             setNavTop("top-2.5");
+            setSubmenuShow(true);
         }
+    };
+
+    const childrenOpenHandler = () => {
+        console.log("clicked");
+        setIsChildrenOpen(!isChildrenOpen);
     };
     useEffect(() => {
         const eventFired = window.addEventListener("scroll", changeOnScroll);
@@ -40,11 +48,15 @@ export default function Navbar() {
     });
     return (
         <header
-            className={`${backgroundColor} ${navPosition} ${navTop} 
-        left-0 w-full z-30 transition-all duration-300 ease-in-out  
+            className={`${backgroundColor} ${navPosition} ${navTop} ${
+                submenuShow ? "py-0" : "py-3"
+            } left-0 w-full z-20 transition-all duration-300 ease-in-out  
         shadow-[0_6px_32px_0px_rgba(0,0,0,0.03)]`}
         >
-            <div className="border-b-[1px] border-solid border-b-white/10">
+            <div
+                className={` ${submenuShow ? "block" : "hidden"}
+            border-b-[1px] border-solid border-b-white/10 `}
+            >
                 <div className="container mx-auto">
                     <div className="flex justify-between sm:items-center py-[11px]">
                         <div className="block sm:flex items-center">
@@ -110,12 +122,12 @@ export default function Navbar() {
                 </div>
             </div>
             <nav className="container mx-auto relative">
-                <div className="block xl:flex justify-between py-1">
+                <div className="block xl:flex justify-between py-1 relative">
                     <div className="flex items-center text-white">
-                        <Link href={"/"}>
+                        <Link href={"/"} className="">
                             <img
                                 src="/assets/images/header/logo.png"
-                                className="lg:w-full h-12 mr-2"
+                                className="lg:w-full h-12 mr-2 relative"
                                 alt="Logo"
                             />
                         </Link>
@@ -135,7 +147,7 @@ export default function Navbar() {
                         </button>
                     </div>
                     <div
-                        className={` block xl:flex z-50  ${
+                        className={` block xl:flex   ${
                             isOpen
                                 ? "block open  w-full xl:w-fit menu h-full bg-black/80 text-center xl:bg-inherit"
                                 : "hidden bg-inherit"
@@ -160,13 +172,10 @@ export default function Navbar() {
                                 <div
                                     className={`flex items-center justify-center relative group xl:mr-[22px] py-2.5 lg:py-[17px] 
                                     cursor-pointer px-10 xl:px-0 after:block after:content-[''] after:absolute after:h-[3px]
-                                     after:bg-secondary after:bottom-2 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition 
+                                     after:bg-secondary after:bottom-2 xl:after:w-full 
+                                     after:scale-x-0 after:hover:scale-x-100 after:transition 
                                      after:duration-300 after:origin-left`}
-                                    onClick={() =>
-                                        setIsChildrenOpen(
-                                            (prev) => (prev = !prev)
-                                        )
-                                    }
+                                    onClick={childrenOpenHandler}
                                 >
                                     <div className="text-white text-sm font-medium mr-1.5 capitalize">
                                         {item.label}
@@ -182,20 +191,33 @@ export default function Navbar() {
                                             <BsChevronDown />
                                         </i>
                                     </div>
-                                    {item.children &&
-                                        item.children.map((children) => (
-                                            <div
-                                                className="absolute top-12 w-36 bg-inherit hidden lg:group-hover:block z-20"
-                                                key={children.id}
-                                            >
-                                                <Link
-                                                    href={children.link}
-                                                    className="text-sm text-white font-medium"
+                                    <div
+                                        className={`bg-black/90 fixed top-0 left-0 w-full 
+                                        h-0 group-hover:h-[40vh] -z-30 transition-all duration-300 ease-linear 
+                                        hidden lg:block`}
+                                    />
+                                    <div>
+                                        {item.children &&
+                                            item.children.map((children) => (
+                                                <div
+                                                    className={`${
+                                                        isChildrenOpen
+                                                            ? "block xl:hidden relative xl:absolute ml-5 xl:ml-0"
+                                                            : "hidden"
+                                                    }
+                                                xl:absolute xl:top-20 xl:left-0 xl:w-[40vw] 
+                                                bg-inherit lg:group-hover:block z-20`}
+                                                    key={children.id}
                                                 >
-                                                    {children.label}
-                                                </Link>
-                                            </div>
-                                        ))}
+                                                    <Link
+                                                        href={children.link}
+                                                        className="text-lg text-white font-medium relative"
+                                                    >
+                                                        {children.label}
+                                                    </Link>
+                                                </div>
+                                            ))}
+                                    </div>
                                 </div>
                             </Fragment>
                         ))}

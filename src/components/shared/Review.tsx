@@ -35,7 +35,7 @@ export default function Review({
                             </h1>
                         </div>
                         <div className="mb-5 md:mb-8 lg:mb-10">
-                            <p className="text-white text-sm">{description}</p>
+                            <p className="text-white text-sm text-justify">{description}</p>
                         </div>
                         <div>
                             <Link href={link} className="flex items-center text-base capitalize text-secondary font-semibold">

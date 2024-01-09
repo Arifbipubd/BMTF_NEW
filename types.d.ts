@@ -5,6 +5,14 @@ interface HeroSection {
     imageUrl: string;
 }
 
+interface SliderSection {
+    id: number;
+    heading: string;
+    description: string;
+    imageUrl: string;
+    link: string;
+}
+
 interface NavItem {
     id: number;
     link: string;
