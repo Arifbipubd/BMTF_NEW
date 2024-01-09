@@ -52,7 +52,7 @@ export default function Sustainability({}: Props) {
                             We actively participate in green initiatives and use
                             environmentally friendly materials wherever
                             possible. From eco-friendly packaging solutions to
-                            utilizing sustainable materials in our tools'
+                            utilizing sustainable materials in our tools&quot;
                             production, we continually seek ways to reduce our
                             environmental impact.
                         </p>
