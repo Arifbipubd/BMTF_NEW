@@ -10,7 +10,7 @@ export const heroSection: Array<HeroSection> = [
     },
     {
         id: 2,
-        heading: "Empowering Innovation, Precision, and Excellence",
+        heading: "Empowering ",
         description: `BMTF offers a wide range of versatile capabilities, 
         spanning from manufacturing machinery, military equipment, and furniture to 
         healthcare products and services like galvanizing and electronic assembly, all characterized by a commitment to 
@@ -109,4 +109,25 @@ export const experienceLists = [
     'DIgital & Smart Integrated Factory.',
     'Most dedicated & passionate team.',
     'No compromise in quality control.'
+]
+
+export const latestNews: Array<NewsCard> = [
+    {
+        id: 1,
+        imgSrc: '/assets/images/home/BMTF_News_1.png',
+        title: 'BMTF to provide 3 crore blank smart cards to EC',
+        date: "23 Sep 2023"
+    },
+    {
+        id: 2,
+        imgSrc: '/assets/images/home/BMTF_News_2.png',
+        title: 'Chief of Army Staff inaugurates Army Pharma Limited in Gazipur',
+        date: "23 Sep 2023"
+    },
+    {
+        id: 3,
+        imgSrc: '/assets/images/home/BMTF_News_3.png',
+        title: 'Bangladesh Machine Tools Factory Limited wins global ISO certification',
+        date: "23 Sep 2023"
+    }
 ]

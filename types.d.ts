@@ -11,3 +11,10 @@ interface NavItem {
     label: string;
     children: Array<any>;
 }
+
+interface NewsCard {
+    id: number;
+    imgSrc: string;
+    title: string;
+    date: string;
+}

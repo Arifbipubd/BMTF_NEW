@@ -27,7 +27,7 @@ export default function GoalCard({}: Props) {
                             </h3>
                         </div>
                         <div>
-                            <p className="text-sm text-cardText">
+                            <p className="text-sm text-tertiary">
                                 Enhancing in-house production capacity through
                                 innovation, diversification and excellence in
                                 transforming Bangladesh Machine Tools Factory
@@ -50,7 +50,7 @@ export default function GoalCard({}: Props) {
                             </h3>
                         </div>
                         <div>
-                            <p className="text-sm text-cardText">
+                            <p className="text-sm text-tertiary">
                                 BMTF is unwavering in its commitment to align
                                 its core values with the high standards of its
                                 clients. We place a premium on innovation,
@@ -71,15 +71,14 @@ export default function GoalCard({}: Props) {
                         </div>
                         <div className="my-3 md:my-5">
                             <h3 className="text-headline text-lg md:text-xl capitalize">
-                                our Mission
+                                our vission
                             </h3>
                         </div>
                         <div>
-                            <p className="text-sm text-cardText">
-                                Enhancing in-house production capacity through
-                                innovation, diversification and excellence in
-                                transforming Bangladesh Machine Tools Factory
-                                (BMTF) Limited as mother and defense industry.
+                            <p className="text-sm text-tertiary">
+                                Make Bangladesh Machine Tools Factory (BMTF)
+                                Limited a lead commercially viable organization
+                                to contribute in the national economy.
                             </p>
                         </div>
                     </div>

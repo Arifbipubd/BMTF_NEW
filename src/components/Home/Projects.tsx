@@ -1,0 +1,110 @@
+import Link from "next/link";
+import React from "react";
+
+type Props = {};
+
+export default function Projects({}: Props) {
+    return (
+        <div className="py-20 md:py-28 lg:py-[130px] bg-[#EEF3F6]">
+            <div className="container mx-auto">
+                <div className="mb-5 md:mb-6 lg:mb-[30px]">
+                    <h2 className="text-headling text-2xl md:text-[28px] font-bold text-center">
+                        Our latest projects.
+                    </h2>
+                </div>
+                <div className="mb-5 md:mb-6 lg:mb-[30px]">
+                    <p className="text-sm text-tertiary text-justify">
+                        BMTF has embarked on several projects and remains
+                        dedicated to consistently advancing its initiatives.
+                        With a commitment to fostering self-sufficiency and
+                        supporting local industries, BMTF’s projects reflect its
+                        ongoing efforts to contribute to the economic
+                        development of Bangladesh.
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-4 gap-[30px]">
+                    <div className="lg:col-span-2">
+                        <div className="">
+                            <div className="px-[35px] py-[27px] bg-white">
+                                <div className="mb-4 md:mb-5 lg:mb-[22px]">
+                                    <p className="text-sm text-tertiary text-justify">
+                                        These endeavors aim to address the
+                                        evolving needs of various sectors,
+                                        including agriculture, construction, and
+                                        manufacturing, by producing high-quality
+                                        machinery and tools to bolster the
+                                        nation's self-reliance and progress.
+                                        BMTF's dedication to these projects
+                                        underscores its role as a pivotal player
+                                        in advancing industrial and agricultural
+                                        sectors in Bangladesh.
+                                    </p>
+                                </div>
+                                <div>
+                                    <Link href={"/"}>
+                                        <button className="p-[18px] rounded-[3px] bg-yellow">
+                                            <p className="font-extrabold text-white font-nunito">
+                                                View all projects
+                                            </p>
+                                        </button>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="mt-5 md:mt-6 lg:mt-[30px] ">
+                                <img
+                                    src="/assets/images/home/CTD_03.png"
+                                    alt=""
+                                    className="w-full rounded-[10px]"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div className=" bg-primary flex flex-col justify-between">
+                        <div className=" px-[17px] py-[30px] pb-1">
+                            <h1 className="text-white font-semibold mb-4 md:mb-5">
+                                Smart Manufacturing Integration
+                            </h1>
+                            <p className="text-white text-xs text-justify">
+                                Implementing Internet of Things (IoT) technology
+                                into machinery to enable real-time monitoring,
+                                predictive maintenance, and data-driven
+                                decision-making. This project could involve
+                                developing sensors and connectivity solutions
+                                for a more.
+                            </p>
+                        </div>
+                        <div className="">
+                            <img
+                                src="/assets/images/home/Pattern_shop_02_1.png"
+                                alt=""
+                                className="h-full clip-path"
+                            />
+                        </div>
+                    </div>
+                    <div className="bg-secondary flex flex-col justify-between">
+                        <div className="">
+                            <img
+                                src="/assets/images/home/Furniture_05.png"
+                                alt=""
+                                className="w-full"
+                            />
+                        </div>
+                        <div className="">
+                            <h1 className="text-headline font-semibold mb-4 md:mb-5">
+                                Smart Manufacturing Integration
+                            </h1>
+                            <p className="text-headline text-xs text-justify">
+                                Implementing Internet of Things (IoT) technology
+                                into machinery to enable real-time monitoring,
+                                predictive maintenance, and data-driven
+                                decision-making. This project could involve
+                                developing sensors and connectivity solutions
+                                for a more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
