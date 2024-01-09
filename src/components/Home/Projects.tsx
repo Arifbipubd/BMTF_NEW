@@ -33,8 +33,8 @@ export default function Projects({}: Props) {
                                         including agriculture, construction, and
                                         manufacturing, by producing high-quality
                                         machinery and tools to bolster the
-                                        nation's self-reliance and progress.
-                                        BMTF's dedication to these projects
+                                        nation&quot;s self-reliance and progress.
+                                        BMTF&quot;s dedication to these projects
                                         underscores its role as a pivotal player
                                         in advancing industrial and agricultural
                                         sectors in Bangladesh.
