@@ -13,38 +13,43 @@ export default function Herosection({}: Props) {
     };
 
     useEffect(() => {
-        let index = 0;
         const timeInterval = setInterval(() => {
-            goToSlide(index);
-            if (index < 2) {
-                index += 1;
+            if (currentSlide < heroSection.length - 1) {
+                setCurrentSlide(currentSlide + 1);
             } else {
-                index = 0;
+                setCurrentSlide(0);
             }
-        }, 6000);
-    }, []);
+        }, 5000);
+
+        return () => clearInterval(timeInterval);
+    }, [currentSlide]);
     return (
         <Fragment>
             <div className="relative z-0">
                 <div className="container mx-auto grid grid-cols-2 gap-4">
-                    <div className="h-[90vh] overflow-hidden">
+                    <div className="min-h-[90vh] md:min-h-screen overflow-hidden">
                         {heroSection.map((slide, index) => (
                             <div
                                 key={slide.id}
-                                className={`absolute top-0 left-0 w-full -z-20 ${
+                                className={`absolute top-0 left-0 w-full  ${
                                     index === currentSlide
                                         ? "block opacity-100"
                                         : "hidden opacity-0"
                                 } transition-opacity duration-500 ${
                                     index === currentSlide ? "" : ""
-                                } h-[90vh]`}
-                                style={{
-                                    backgroundImage: `url(${slide.imageUrl})`,
-                                    backgroundPosition: "center",
-                                    backgroundSize: "cover",
-                                    backgroundRepeat: "no-repeat",
-                                }}
+                                } h-full`}
                             >
+                                <video
+                                    autoPlay
+                                    loop
+                                    muted
+                                    className="absolute inset-0 object-cover w-screen h-full -z-20"
+                                >
+                                    <source
+                                        src={slide.videoUrl}
+                                        type="video/mp4"
+                                    />
+                                </video>
                                 <div className="bg-[rgba(16,25,48,0.70)] absolute left-0 w-full h-full -z-10" />
                                 <div className="flex justify-center h-full">
                                     <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 place-items-center h-full z-20">
@@ -72,15 +77,15 @@ export default function Herosection({}: Props) {
                             </div>
                         ))}
                     </div>
-                    <div className="flex flex-col h-full justify-center">
-                        <div className="flex justify-end">
+                    <div className="flex flex-col h-full justify-center ">
+                        <div className="flex justify-end z-30">
                             <div className="">
                                 <div>
                                     {heroSection.map((_, index) => (
                                         <div
                                             key={index}
                                             onClick={() => goToSlide(index)}
-                                            className={`w-1 h-8 mb-2 rounded-full cursor-pointer ${
+                                            className={`w-1 h-8 mb-2 rounded-full cursor-pointer z-10 ${
                                                 index === currentSlide
                                                     ? "bg-transparent border border-yellow"
                                                     : "bg-white/30"
