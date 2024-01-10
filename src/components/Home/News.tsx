@@ -7,7 +7,7 @@ export default function News({}: Props) {
     return (
         <div className="bg-[#EEF3F6] py-20 md:py-24 lg:py-28">
             <div className="container mx-auto">
-                <div>
+                <div className="mb-5 md:mb-6 lg:mb-[30px]">
                     <p
                         className={`text-center text-black text-2xl 
                         md:text-3xl lg:text-[32px] font-bold capitalize`}

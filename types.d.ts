@@ -2,7 +2,7 @@ interface HeroSection {
     id: number;
     heading: string;
     description: string;
-    imageUrl: string;
+    videoUrl: string;
 }
 
 interface SliderSection {
