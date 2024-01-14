@@ -209,11 +209,11 @@ export default function Navbar() {
                                         <div
                                             className={`${
                                                 openSubmenuId === item.id
-                                                    ? "block xl:hidden relative xl:absolute ml-6 md:ml-8 xl:ml-0 mt-5 xl:mt-0"
+                                                    ? "block xl:hidden relative xl:absolute ml-6 md:ml-8 xl:ml-0 mt-5 xl:mt-2"
                                                     : "hidden"
                                             }
                                                 xl:absolute xl:top-14 xl:left-0 xl:w-[40vw] bg-inherit 
-                                                xl:group-hover:flex group-hover:flex-col xl:hidden`}
+                                                xl:group-hover:flex group-hover:flex-col xl:hidden xl:mt-2`}
                                         >
                                             {item.children &&
                                                 item.children.map(
