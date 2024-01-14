@@ -7,7 +7,7 @@ type Props = {};
 
 function Footer({}: Props) {
     return (
-        <>
+        <footer>
             <div className="py-20 lg:py-28 bg-[#0A192F] overflow-hidden">
                 <div className="relative container mx-auto">
                     <div className="absolute z-10 -top-20 md:-top-24 left-14 md:left-16 lg:left-20">
@@ -166,7 +166,7 @@ function Footer({}: Props) {
                     reserved.
                 </p>
             </div>
-        </>
+        </footer>
     );
 }
 

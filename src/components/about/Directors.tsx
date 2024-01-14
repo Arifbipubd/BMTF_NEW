@@ -1,0 +1,77 @@
+import React from "react";
+
+type Props = {};
+
+export default function Directors({}: Props) {
+    return (
+        <div className="bg-primary py-16 md:py-20 lg:py-[96px]">
+            <div className="container mx-auto grid grid-cols-1 place-items-center place-content-center">
+                <div>
+                    <div className="mb-28">
+                        <p className="text-[30px] text-white font-semibold text-center">
+                            Board of Directors
+                        </p>
+                    </div>
+                    <div>
+                        <div
+                            className={`relative flex justify-center mb-24 after:content-[''] after:absolute after:top-[100%]
+                            after:left-[50%] after:-translate-x-1/2 after:w-1 after:h-[190px] sm:after:h-[170px] after:bg-white`}
+                        >
+                            <div className="py-[45px] px-[35px] bg-yellow flex flex-col items-center text-center w-fit">
+                                <div className="-mt-20 sm:-mt-28 mb-3">
+                                    <img
+                                        src="/assets/images/about/Ellipse_1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div className="">
+                                    <p className="text-white text-sm">
+                                        Chief of Army Stuff
+                                    </p>
+                                    <p className="text-white text-sm">
+                                        Chairman
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex justify-between gap-16 lg:gap-56 xl:gap-[280px]">
+                        <div className={`py-[45px] h-fit px-[35px] bg-yellow flex 
+                        flex-col items-center text-center relative  justify-center mb-24 
+                        after:content-[''] after:absolute after:left-[100%]
+                        after:top-[50%] after:-translate-y-1/2 after:w-16 lg:after:w-56 
+                         xl:after:w-[280px] after:h-1 after:bg-white 
+                        `}>
+                            <div className="-mt-20 sm:-mt-28 mb-3">
+                                <img
+                                    src="/assets/images/about/Ellipse_2.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div className="">
+                                <p className="text-white text-sm">
+                                    Chief of Army Stuff
+                                </p>
+                                <p className="text-white text-sm">Chairman</p>
+                            </div>
+                        </div>
+                        <div className="py-[45px] px-[35px] bg-yellow flex flex-col items-center text-center h-fit">
+                            <div className="-mt-20 sm:-mt-28 mb-3">
+                                <img
+                                    src="/assets/images/about/Ellipse_3.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div className="">
+                                <p className="text-white text-sm">
+                                    Chief of Army Stuff
+                                </p>
+                                <p className="text-white text-sm">Chairman</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}

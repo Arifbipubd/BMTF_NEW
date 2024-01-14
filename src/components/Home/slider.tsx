@@ -8,11 +8,20 @@ type Props = {};
 
 export default function Slider({}: Props) {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [visibleImages, setVisibleImages] = useState<Array<any>>(sliderSection.slice(0, 3));
 
     const goToSlide = (slideIndex: any) => {
         console.log(slideIndex)
         setCurrentSlide(slideIndex);
     };
+
+    const handleNext = () => {
+        // Shift the array to show the next three images
+        setVisibleImages((prevVisibleImages) => {
+          const nextIndex = (prevVisibleImages[2]?.id + 1) % sliderSection.length;
+          return sliderSection.slice(nextIndex - 2, nextIndex + 1);
+        });
+      };
 
     useEffect(() => {
         const timeInterval = setInterval(() => {

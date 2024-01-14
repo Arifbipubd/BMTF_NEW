@@ -5,50 +5,107 @@ import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 type Props = {
     heading: string;
-    description: string;
+    descriptionOne: string;
+    descriptionTwo: string;
     link: string;
     imageUrl: string;
+    divVisible: boolean;
 };
 
 export default function Review({
+    divVisible = false,
     heading,
-    description,
-    link,
+    descriptionOne,
+    descriptionTwo = "",
+    link = "",
     imageUrl,
 }: Props) {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-7">
-            <div className="md:col-span-4">
+        <div
+            className={`${
+                divVisible ? "lg:grid-cols-7" : "md:grid-cols-7"
+            } grid grid-cols-1 `}
+        >
+            <div className="md:col-span-4 relative overflow-hidden">
                 <div className="h-full">
-                    <img src={imageUrl} alt={imageUrl} className="w-full h-full" />
+                    <img
+                        src={imageUrl}
+                        alt={imageUrl}
+                        className="w-full h-full"
+                    />
+                </div>
+                <div
+                    className={`${divVisible ? "block" : "hidden"}
+                absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2`}
+                >
+                    <div className="border-[10px] border-white/40 flex flex-col justify-center px-[35px] py-12 md:py-28 xl:py-[180px]">
+                        <div className="mb-0.5">
+                            <p className="text-yellow font-semibold">
+                                TRATEGIC FRAMEWORK FOR BMTF
+                            </p>
+                        </div>
+                        <div>
+                            <p className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-[53px]">
+                                NAVIGATING THE &nbsp;
+                                <span className="text-yellow">FUTURE</span>.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="relative md:col-span-3 bg-primary py-10 lg:py-0">
+            <div className="relative md:col-span-3 bg-primary py-10 lg:py-5 xl:py-0">
                 <div className="container mx-auto h-full grid lg:grid-cols-4">
                     <div className="absolute top-4 left-2 md:top-1 md:left-1">
                         <img src="/assets/images/shared/Frame.png" alt="" />
                     </div>
-                    <div className="flex flex-col justify-center h-full mx-[70px] lg:col-span-3">
+                    <div
+                        className={`${
+                            divVisible
+                                ? " mx-12 lg:col-span-4"
+                                : "mx-[70px] lg:col-span-3"
+                        } 
+                    flex flex-col justify-center h-full `}
+                    >
                         <div className="mb-3 lg:mb-5">
                             <h1 className="text-secondary text-2xl md:text-3xl lg:text-[34px] font-semibold ">
                                 {heading}
                             </h1>
                         </div>
-                        <div className="mb-5 md:mb-8 lg:mb-10">
-                            <p className="text-white text-sm text-justify">{description}</p>
-                        </div>
-                        <div>
-                            <Link href={link} className="flex items-center text-base capitalize text-secondary font-semibold">
-                                    <span className="mr-2.5">
-                                        view all
-                                    </span>
+                        {descriptionOne && (
+                            <div
+                                className={`${
+                                    descriptionTwo
+                                        ? "mb-3 md:mb-4 lg:mb-5"
+                                        : "mb-5 md:mb-8 lg:mb-10"
+                                }`}
+                            >
+                                <p className="text-white text-sm text-justify">
+                                    {descriptionOne}
+                                </p>
+                            </div>
+                        )}
+                        {descriptionTwo && (
+                            <div className="mb-5 md:mb-8 lg:mb-10">
+                                <p className="text-white text-sm text-justify">
+                                    {descriptionTwo}
+                                </p>
+                            </div>
+                        )}
+                        {link && (
+                            <div>
+                                <Link
+                                    href={link}
+                                    className="flex items-center text-base capitalize text-secondary font-semibold"
+                                >
+                                    <span className="mr-2.5">view all</span>
                                     <span>
                                         <i className="">
                                             <HiOutlineArrowLongRight />
                                         </i>
                                     </span>
-                            </Link>
-                        </div>
+                                </Link>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
