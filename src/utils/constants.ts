@@ -109,8 +109,8 @@ export const navItems: Array<NavItem> = [
         children: [
             {
                 id: 1,
-                link: "/",
-                label: "About Us",
+                link: "/noc-and-notice",
+                label: "Noc and Notice",
             },
         ],
     },
@@ -133,8 +133,8 @@ export const navItems: Array<NavItem> = [
         children: [
             {
                 id: 1,
-                link: "/",
-                label: "About Us",
+                link: "/contact",
+                label: "Contact Us",
             },
         ],
     },
@@ -157,9 +157,9 @@ export const latestNews: Array<NewsCard> = [
     },
     {
         id: 2,
-        imgSrc: "/assets/images/home/BMTF_News_2.png",
+        imgSrc: "/assets/images/home/BMTF_News_2.jpeg",
         title: "Chief of Army Staff inaugurates Army Pharma Limited in Gazipur",
-        date: "23 Sep 2023",
+        date: "21 Dec 23",
     },
     {
         id: 3,
@@ -418,5 +418,37 @@ export const verticals = [
         imageSrc: '/assets/images/verticals/Pattern_shop.png',
         title: 'Pattern Shop',
         link: 'Pattern-shop',
+    }
+]
+
+export const contactCard = [
+    {
+        id: 1,
+        imageSrc: '/assets/images/contact/building.png',
+        title: 'Corporate Office',
+        address: 'House # 41, Road # 7 , Dhaka Cantonment, Bangladesh',
+        tel: '+880-2-8871150',
+        email: 'bmtfpackagingfactory@gmail.com',
+        iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.08594857317!2d90.37702227607197!3d23.744314289008656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b3f78ee00b%3A0xd9d2ff933cd37a9a!2s41%20Rd%207%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1705332482461!5m2!1sen!2sbd"
+        
+    },
+    {
+        id: 2,
+        imageSrc: '/assets/images/contact/Facctory.png',
+        title: 'Factory',
+        address: 'Joydebpur Gazipur – 1700, Bangladesh',
+        tel: '+880-2-996618072-7',
+        email: 'bmtfpackagingfactory@gmail.com',
+        iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14581.875762841328!2d90.37074636505966!3d23.97921226206099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755db6710a83b69%3A0x7fa80a594efb99e1!2sGazipur%201700!5e0!3m2!1sen!2sbd!4v1705332707097!5m2!1sen!2sbd"
+
+    },
+    {
+        id: 3,
+        imageSrc: '/assets/images/contact/Packaging.png',
+        title: 'Packaging Unit (BMTF-2)',
+        address: 'Kholishajani, Fulbaria, Kaliakoir, Gazipur.',
+        tel: '+880 1769041207',
+        email: 'bmtfpackagingfactory@gmail.com',
+        iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.08594857317!2d90.37702227607197!3d23.744314289008656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b3f78ee00b%3A0xd9d2ff933cd37a9a!2s41%20Rd%207%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1705332482461!5m2!1sen!2sbd"
     }
 ]

@@ -7,7 +7,8 @@ const colors = {
 	copyright: 'var(--color-copyright)',
 	headline: 'var(--color-headline)',
 	textDark: 'var(--color-text-dark)',
-	skyLight: 'var(--color-sky-light)'
+	skyLight: 'var(--color-sky-light)',
+	whiteBg: 'var(--color-white-bg)'
 };
 
 module.exports = colors;

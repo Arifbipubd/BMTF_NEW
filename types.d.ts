@@ -17,7 +17,7 @@ interface NavItem {
     id: number;
     link: string;
     label: string;
-    children: Array<any>;
+    children?: Array<any>;
 }
 
 interface NewsCard {
