@@ -4,7 +4,7 @@
  */
 
 const nextConfig = {
-  basePath: "/",
+  basePath: "",
 };
 
 module.exports = nextConfig;
