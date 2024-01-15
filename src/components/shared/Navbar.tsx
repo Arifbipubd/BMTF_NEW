@@ -190,7 +190,7 @@ export default function Navbar() {
                                         </span>
                                         <div
                                             className={`${
-                                                item.children.length > 0
+                                                item.children && item.children?.length > 0
                                                     ? "block"
                                                     : "hidden"
                                             }`}

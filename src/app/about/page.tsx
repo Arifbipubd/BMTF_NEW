@@ -3,18 +3,17 @@
 import BMTF from "@src/components/about/BMTF";
 import Capabilities from "@src/components/about/Capabilities";
 import Directors from "@src/components/about/Directors";
-import CommonHeroSection from "@src/components/shared/CommonHeroSection";
 import GoalCard from "@src/components/shared/GoalCard";
 import Review from "@src/components/shared/Review";
 import Members from "@src/components/about/Members";
 import Organogram from "@src/components/about/Organogram";
+import AboutHeroSection from "@src/components/about/aboutHeroSection";
 
 export default function Home() {
     return (
         <section>
-            <CommonHeroSection
+            <AboutHeroSection
                 heading="Empowering Innovation, Precision, and Excellence"
-                breadcrumb={[]}
                 imageSrc="/assets/images/about/Electronic_Assembly_04.png"
             />
             <BMTF />
