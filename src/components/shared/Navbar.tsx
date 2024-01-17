@@ -189,7 +189,6 @@ export default function Navbar() {
                                      after:scale-x-0 after:hover:scale-x-100 after:transition 
                                      after:duration-300 after:origin-left`}
                                     onClick={() => childrenOpenHandler(item.id)}
-                                    onMouseEnter={handleMouseOver}
                                 >
                                     <div className="text-white text-lg font-medium capitalize flex items-center">
                                         <span className="mr-1.5">
