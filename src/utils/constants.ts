@@ -53,6 +53,30 @@ export const sliderSection: Array<SliderSection> = [
         imageUrl: "/assets/images/home/Pole_n_pile_03.png",
         link: "/",
     },
+    {
+        id: 4,
+        heading: "Empowering Innovation, Precision, and Excellence",
+        description:
+            "The automotive industry is the technological trendsetter among manufacturing industries.",
+        imageUrl: "/assets/images/home/Pole_n_pile_03.png",
+        link: "/",
+    },
+    {
+        id: 5,
+        heading: "Empowering Innovation, Precision, and Excellence",
+        description:
+            "The automotive industry is the technological trendsetter among manufacturing industries.",
+        imageUrl: "/assets/images/home/Pole_n_pile_03.png",
+        link: "/",
+    },
+    {
+        id: 6,
+        heading: "Empowering",
+        description:
+            "The automotive industry is the technological trendsetter among manufacturing industries.",
+        imageUrl: "/assets/images/home/Pole_n_pile_02.png",
+        link: "/",
+    }
 ];
 
 export const navItems: Array<NavItem> = [
@@ -277,178 +301,178 @@ export const timeline = [
 export const memoryOne = [
     {
         id: 1,
-        imgSrc: '/assets/images/history/Memory_snap/Memory_1.png'
+        imgSrc: "/assets/images/history/Memory_snap/Memory_1.png",
     },
     {
         id: 2,
-        imgSrc: '/assets/images/history/Memory_snap/Memory_2.png'
+        imgSrc: "/assets/images/history/Memory_snap/Memory_2.png",
     },
     {
         id: 3,
-        imgSrc: '/assets/images/history/Memory_snap/Memory_3.png'
-    }
-]
+        imgSrc: "/assets/images/history/Memory_snap/Memory_3.png",
+    },
+];
 
 export const memoryTwo = [
     {
         id: 4,
-        imgSrc: '/assets/images/history/Memory_snap/Memory_4.png'
+        imgSrc: "/assets/images/history/Memory_snap/Memory_4.png",
     },
     {
         id: 5,
-        imgSrc: '/assets/images/history/Memory_snap/Memory_5.png'
-    }
-]
-
+        imgSrc: "/assets/images/history/Memory_snap/Memory_5.png",
+    },
+];
 
 export const memoryThree = [
     {
         id: 6,
-        imgSrc: '/assets/images/history/Memory_snap/Memory_6.png'
+        imgSrc: "/assets/images/history/Memory_snap/Memory_6.png",
     },
     {
         id: 7,
-        imgSrc: '/assets/images/history/Memory_snap/Memory_7.png'
+        imgSrc: "/assets/images/history/Memory_snap/Memory_7.png",
     },
     {
         id: 8,
-        imgSrc: '/assets/images/history/Memory_snap/Memory_8.png'
-    }
-]
+        imgSrc: "/assets/images/history/Memory_snap/Memory_8.png",
+    },
+];
 
 export const verticals = [
     {
         id: 1,
-        imageSrc: '/assets/images/verticals/Footwear_and_leather.png',
-        title: 'Footwear Industry and Leather Industry',
-        link: 'footwear-&-leather',
+        imageSrc: "/assets/images/verticals/Footwear_and_leather.png",
+        title: "Footwear Industry and Leather Industry",
+        link: "footwear-&-leather",
     },
     {
         id: 2,
-        imageSrc: '/assets/images/verticals/Footwear_and_leather_02.png',
-        title: 'Furniture',
-        link: 'Furniture',
+        imageSrc: "/assets/images/verticals/Footwear_and_leather_02.png",
+        title: "Furniture",
+        link: "Furniture",
     },
     {
         id: 3,
-        imageSrc: '/assets/images/verticals/Pool_and_pile.png',
-        title: 'Pole & Pile',
-        link: 'Pole-&-Pile',
+        imageSrc: "/assets/images/verticals/Pool_and_pile.png",
+        title: "Pole & Pile",
+        link: "Pole-&-Pile",
     },
     {
         id: 4,
-        imageSrc: '/assets/images/verticals/Vehicle_assembly.png',
-        title: 'Vehicle Assembly',
-        link: 'vehicle-assembly',
+        imageSrc: "/assets/images/verticals/Vehicle_assembly.png",
+        title: "Vehicle Assembly",
+        link: "vehicle-assembly",
     },
     {
         id: 5,
-        imageSrc: '/assets/images/verticals/Steel_structure.png',
-        title: 'Steel Structure Manufacturing',
-        link: 'Steel-Structure-Manufacturing',
+        imageSrc: "/assets/images/verticals/Steel_structure.png",
+        title: "Steel Structure Manufacturing",
+        link: "Steel-Structure-Manufacturing",
     },
     {
         id: 6,
-        imageSrc: '/assets/images/verticals/Electronic_Assembly_01.png',
-        title: 'Electronic Assembly',
-        link: 'Electronic-Assembly',
+        imageSrc: "/assets/images/verticals/Electronic_Assembly_01.png",
+        title: "Electronic Assembly",
+        link: "Electronic-Assembly",
     },
     {
         id: 7,
-        imageSrc: '/assets/images/verticals/Crafties.png',
-        title: 'BMTF Crafties',
-        link: 'BMTF-Crafties',
+        imageSrc: "/assets/images/verticals/Crafties.png",
+        title: "BMTF Crafties",
+        link: "BMTF-Crafties",
     },
     {
         id: 8,
-        imageSrc: '/assets/images/verticals/CFL.png',
-        title: 'CFL AND LED BULB',
-        link: 'CFL-AND-LED-BULB',
+        imageSrc: "/assets/images/verticals/CFL.png",
+        title: "CFL AND LED BULB",
+        link: "CFL-AND-LED-BULB",
     },
     {
         id: 9,
-        imageSrc: '/assets/images/verticals/Central_toolling.png',
-        title: 'Central Tooling Department',
-        link: 'Central-Tooling-Department',
+        imageSrc: "/assets/images/verticals/Central_toolling.png",
+        title: "Central Tooling Department",
+        link: "Central-Tooling-Department",
     },
     {
         id: 10,
-        imageSrc: '/assets/images/verticals/Forge_shop.png',
-        title: 'Forge Shop',
-        link: 'Forge-shop',
+        imageSrc: "/assets/images/verticals/Forge_shop.png",
+        title: "Forge Shop",
+        link: "Forge-shop",
     },
     {
         id: 11,
-        imageSrc: '/assets/images/verticals/Foundry_shop.png',
-        title: 'Foundry Shop',
-        link: 'Foundry-shop',
+        imageSrc: "/assets/images/verticals/Foundry_shop.png",
+        title: "Foundry Shop",
+        link: "Foundry-shop",
     },
     {
         id: 12,
-        imageSrc: '/assets/images/verticals/Vehicle_assembly.png',
-        title: 'Vehicle Assembly',
-        link: 'vehicle-assembly',
+        imageSrc: "/assets/images/verticals/Vehicle_assembly.png",
+        title: "Vehicle Assembly",
+        link: "vehicle-assembly",
     },
     {
         id: 13,
-        imageSrc: '/assets/images/verticals/Galvanizing.png',
-        title: 'Galvanizing Plant',
-        link: 'Galvanizing-Plant',
+        imageSrc: "/assets/images/verticals/Galvanizing.png",
+        title: "Galvanizing Plant",
+        link: "Galvanizing-Plant",
     },
     {
         id: 15,
-        imageSrc: '/assets/images/verticals/Machine_shop.png',
-        title: 'Machine Shop',
-        link: 'Machine-Shop',
+        imageSrc: "/assets/images/verticals/Machine_shop.png",
+        title: "Machine Shop",
+        link: "Machine-Shop",
     },
     {
         id: 16,
-        imageSrc: '/assets/images/verticals/Army_shop.png',
-        title: 'Army Pharma',
-        link: 'Army-Pharma',
+        imageSrc: "/assets/images/verticals/Army_shop.png",
+        title: "Army Pharma",
+        link: "Army-Pharma",
     },
     {
         id: 17,
-        imageSrc: '/assets/images/verticals/Packaging.png',
-        title: 'Packaging Unit',
-        link: 'Packaging-Unit',
+        imageSrc: "/assets/images/verticals/Packaging.png",
+        title: "Packaging Unit",
+        link: "Packaging-Unit",
     },
     {
         id: 18,
-        imageSrc: '/assets/images/verticals/Pattern_shop.png',
-        title: 'Pattern Shop',
-        link: 'Pattern-shop',
-    }
-]
+        imageSrc: "/assets/images/verticals/Pattern_shop.png",
+        title: "Pattern Shop",
+        link: "Pattern-shop",
+    },
+];
 
 export const contactCard = [
     {
         id: 1,
-        imageSrc: '/assets/images/contact/building.png',
-        title: 'Corporate Office',
-        address: 'House # 41, Road # 7 , Dhaka Cantonment, Bangladesh',
-        tel: '+880-2-8871150',
-        email: 'bmtfpackagingfactory@gmail.com',
-        iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.08594857317!2d90.37702227607197!3d23.744314289008656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b3f78ee00b%3A0xd9d2ff933cd37a9a!2s41%20Rd%207%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1705332482461!5m2!1sen!2sbd"
-        
+        imageSrc: "/assets/images/contact/building.png",
+        title: "Corporate Office",
+        address: "House # 41, Road # 7 , Dhaka Cantonment, Bangladesh",
+        tel: "+880-2-8871150",
+        email: "bmtfpackagingfactory@gmail.com",
+        iframeSrc:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.08594857317!2d90.37702227607197!3d23.744314289008656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b3f78ee00b%3A0xd9d2ff933cd37a9a!2s41%20Rd%207%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1705332482461!5m2!1sen!2sbd",
     },
     {
         id: 2,
-        imageSrc: '/assets/images/contact/Facctory.png',
-        title: 'Factory',
-        address: 'Joydebpur Gazipur – 1700, Bangladesh',
-        tel: '+880-2-996618072-7',
-        email: 'bmtfpackagingfactory@gmail.com',
-        iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14581.875762841328!2d90.37074636505966!3d23.97921226206099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755db6710a83b69%3A0x7fa80a594efb99e1!2sGazipur%201700!5e0!3m2!1sen!2sbd!4v1705332707097!5m2!1sen!2sbd"
-
+        imageSrc: "/assets/images/contact/Facctory.png",
+        title: "Factory",
+        address: "Joydebpur Gazipur – 1700, Bangladesh",
+        tel: "+880-2-996618072-7",
+        email: "bmtfpackagingfactory@gmail.com",
+        iframeSrc:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14581.875762841328!2d90.37074636505966!3d23.97921226206099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755db6710a83b69%3A0x7fa80a594efb99e1!2sGazipur%201700!5e0!3m2!1sen!2sbd!4v1705332707097!5m2!1sen!2sbd",
     },
     {
         id: 3,
-        imageSrc: '/assets/images/contact/Packaging.png',
-        title: 'Packaging Unit (BMTF-2)',
-        address: 'Kholishajani, Fulbaria, Kaliakoir, Gazipur.',
-        tel: '+880 1769041207',
-        email: 'bmtfpackagingfactory@gmail.com',
-        iframeSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.08594857317!2d90.37702227607197!3d23.744314289008656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b3f78ee00b%3A0xd9d2ff933cd37a9a!2s41%20Rd%207%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1705332482461!5m2!1sen!2sbd"
-    }
-]
+        imageSrc: "/assets/images/contact/Packaging.png",
+        title: "Packaging Unit (BMTF-2)",
+        address: "Kholishajani, Fulbaria, Kaliakoir, Gazipur.",
+        tel: "+880 1769041207",
+        email: "bmtfpackagingfactory@gmail.com",
+        iframeSrc:
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.08594857317!2d90.37702227607197!3d23.744314289008656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b3f78ee00b%3A0xd9d2ff933cd37a9a!2s41%20Rd%207%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1705332482461!5m2!1sen!2sbd",
+    },
+];

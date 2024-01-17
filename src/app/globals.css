@@ -47,94 +47,118 @@ span {
     }
 }
 
-.custom-shadow {    
+.custom-shadow {
     box-shadow: 0px 5px 11px 0px rgba(190, 190, 190, 0.25);
 }
 
 .custom-background {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 30.51%, rgba(0, 0, 0, 0.64) 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 30.51%,
+        rgba(0, 0, 0, 0.64) 100%
+    );
 }
-
 
 /***************NOC And Notice****************/
 .nocTitle_holder {
     padding-top: 45px !important;
-  }
-  .nocAndNotice .responsive-table {
+}
+.nocAndNotice .responsive-table {
     margin: 35px 0 !important;
-    background: #F3F9FF;
-  }
-  .nocAndNotice .responsive-table li {
+    background: #f3f9ff;
+}
+.nocAndNotice .responsive-table li {
     border-radius: 3px;
     padding: 25px 30px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #EBF1F6;
-  }
-  .nocAndNotice .responsive-table .table-header {
-    background-color: #0d3d30;
+    border-bottom: 1px solid #ebf1f6;
+}
+.nocAndNotice .responsive-table .table-header {
+    background-color: var(--color-primary);
     color: white;
     font-size: 14px;
     font-weight: 600;
     line-height: 19.2px;
     text-transform: uppercase;
+    border-radius: 10px 10px 0px 0px;
     letter-spacing: 0.03em;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-  }
-  .nocAndNotice .responsive-table .table-row {
-    background-color: #F3F9FF;
-    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
-  }
-  .nocAndNotice .responsive-table .col-1 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.nocAndNotice .responsive-table .table-row {
+    background-color: #f3f9ff;
+}
+.nocAndNotice .responsive-table .col-1 {
     flex-basis: 10%;
-  }
-  .nocAndNotice .responsive-table .col-2 {
+}
+.nocAndNotice .responsive-table .col-2 {
     flex-basis: 40%;
-  }
-  .nocAndNotice .responsive-table .col-3 {
+}
+.nocAndNotice .responsive-table .col-3 {
     flex-basis: 25%;
-  }
-  .nocAndNotice .responsive-table .col-4 {
+}
+.nocAndNotice .responsive-table .col-4 {
     flex-basis: 25%;
-  }
-  .nocAndNotice a {
+}
+.nocAndNotice a {
     text-decoration: none;
     padding: 8px 10px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
     color: white;
-  }
-  .nocAndNotice .view {
-    background: #006a4d;
+}
+.nocAndNotice .view {
+    background: var(--color-primary);
     font-size: 12px;
     font-weight: 600;
-  }
-  .nocAndNotice .download {
-    background: #d3aa14;
+}
+.nocAndNotice .download {
+    background: var(--color-yellow);
     font-size: 12px;
     font-weight: 600;
-  }
-  @media all and (max-width: 910px) {
+}
+@media all and (max-width: 910px) {
     .nocAndNotice .responsive-table .table-header {
-      display: none;
+        display: none;
     }
     .nocAndNotice .responsive-table li {
-      display: block;
+        display: block;
     }
     .nocAndNotice .responsive-table .col {
-      flex-basis: 100%;
+        flex-basis: 100%;
     }
     .nocAndNotice .responsive-table .col {
-      display: flex;
-      padding: 10px 0;
+        display: flex;
+        padding: 10px 0;
     }
     .nocAndNotice .responsive-table .col:before {
-      color: #6c7a89;
-      padding-right: 10px;
-      content: attr(data-label);
-      flex-basis: 50%;
-      text-align: right;
+        color: #6c7a89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
     }
-  }
-  
+}
+
+
+.swiper-thumbs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Style the individual thumb */
+.swiper-thumbs .swiper-slide {
+    border: 4px solid transparent; /* Border for inactive thumbs */
+    transition: border-color 0.3s ease; /* Smooth transition for the border */
+    width: fit-content !important;
+}
+
+/* Style the active thumb with a border */
+.swiper-thumbs .swiper-slide-thumb-active {
+    width: fit-content;
+    border-color: var(
+        --color-secondary
+    ); /* Color of the border for the active thumb */
+}

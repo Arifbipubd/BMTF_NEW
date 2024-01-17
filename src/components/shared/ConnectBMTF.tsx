@@ -22,7 +22,7 @@ export default function ConnectBMTF({}: Props) {
                         </div>
                         <div>
                             <Link href={"/"}>
-                                <button className="p-[18px] bg-primary flex items-center">
+                                <button className="p-[18px] bg-primary flex items-center rounded-[3px]">
                                     <p className="text-white font-semibold">
                                         REQUEST AN ESTIMATE
                                     </p>
