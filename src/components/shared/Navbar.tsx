@@ -50,9 +50,9 @@ export default function Navbar() {
         setIsOpen(!isOpen)
         setOpenSubmenuId(null)
     }
-    const handleMouseOver = (e: any) => {
-        console.log(nav?.current?.offsetHeight)
-    }
+    // const handleMouseOver = (e: any) => {
+    //     console.log(nav?.current?.offsetHeight)
+    // }
 
     useEffect(() => {
         const eventFired = window.addEventListener("scroll", changeOnScroll);
