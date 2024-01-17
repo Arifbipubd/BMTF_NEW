@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import CommonHeroSection from '@src/components/shared/CommonHeroSection'
-import Card from '@src/components/conact/Card'
-import Contact from '@src/components/conact/Contact'
+import Card from '@src/components/contact/Card'
+import Contact from '@src/components/contact/Contact'
 type Props = {}
 
 export default function Page({}: Props) {

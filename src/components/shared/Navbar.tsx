@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Fragment, useEffect } from "react";
+import { useState, Fragment, useEffect, useRef } from "react";
 import Link from "next/link";
 
 import { CgClose, CgMenuRight } from "react-icons/cg";
@@ -15,6 +15,7 @@ import { RiShoppingBag2Line } from "react-icons/ri";
 import { navItems } from "@src/utils/constants";
 
 export default function Navbar() {
+    const nav = useRef(null);
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [openSubmenuId, setOpenSubmenuId] = useState<number | null>(null);
     const [backgroundColor, setBackgroundColor] =
@@ -49,6 +50,10 @@ export default function Navbar() {
         setIsOpen(!isOpen)
         setOpenSubmenuId(null)
     }
+    const handleMouseOver = (e: any) => {
+        console.log(nav?.current?.offsetHeight)
+    }
+
     useEffect(() => {
         const eventFired = window.addEventListener("scroll", changeOnScroll);
         return () => {
@@ -61,6 +66,7 @@ export default function Navbar() {
                 submenuShow ? "py-0" : "py-3"
             } left-0 w-full z-20 transition-all duration-300 ease-in-out  
         shadow-[0_6px_32px_0px_rgba(0,0,0,0.03)]`}
+        ref={nav}
         >
             <div
                 className={` ${submenuShow ? "block" : "hidden"}
@@ -183,6 +189,7 @@ export default function Navbar() {
                                      after:scale-x-0 after:hover:scale-x-100 after:transition 
                                      after:duration-300 after:origin-left`}
                                     onClick={() => childrenOpenHandler(item.id)}
+                                    onMouseEnter={handleMouseOver}
                                 >
                                     <div className="text-white text-lg font-medium capitalize flex items-center">
                                         <span className="mr-1.5">
