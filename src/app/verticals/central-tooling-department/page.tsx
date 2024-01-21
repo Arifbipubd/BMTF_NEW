@@ -9,7 +9,7 @@ import DescriptionSection from "@src/components/shared/DescriptionSection";
 import AimSection from "@src/components/shared/AimSection";
 import ConnectBMTF from "@src/components/shared/ConnectBMTF";
 
-export const centralToolingAim: Array<any> = [
+const centralToolingAim: Array<any> = [
     {
         id: 1,
         heading: "quality assurance",
