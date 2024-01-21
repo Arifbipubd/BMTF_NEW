@@ -28,7 +28,7 @@ export default function AllVerticals({}: Props) {
                                 </h2>
                             </div>
                             <div className="hidden group-hover:block">
-                                <Link href={`/verticals/${item.link}`}>
+                                <Link href={item.link}>
                                     <button className="bg-primary px-[18px] py-[13px] flex items-center rounded">
                                         <p className="text-secondary text-sm font-bold leading-[22px] capitalize">
                                             Read More

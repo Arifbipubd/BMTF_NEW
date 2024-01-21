@@ -4,6 +4,8 @@ import { Fragment, useEffect, useState } from "react";
 import { sliderSection } from "@src/utils/constants";
 import Link from "next/link";
 
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+
 type Props = {};
 
 export default function Slider({}: Props) {
@@ -17,13 +19,39 @@ export default function Slider({}: Props) {
         setCurrentSlide(slideIndex);
     };
 
+    const handlePrev = () => {
+        if (currentSlide < sliderSection.length - 1) {
+            setCurrentSlide(currentSlide - 1);
+            setVisibleImages(
+                sliderSection.slice(currentSlide - 2, currentSlide + 1)
+            );
+        } else if (currentSlide < sliderSection.length) {
+            setCurrentSlide(currentSlide - 1);
+            setVisibleImages(
+                sliderSection.slice(currentSlide - 1, currentSlide + 2)
+            );
+        } else {
+            setCurrentSlide(1);
+            setVisibleImages(sliderSection.slice(0, 3));
+        }
+    };
+
     const handleNext = () => {
         // Shift the array to show the next three images
-        setVisibleImages((prevVisibleImages) => {
-            const nextIndex =
-                (prevVisibleImages[2]?.id + 1) % sliderSection.length;
-            return sliderSection.slice(nextIndex - 2, nextIndex + 1);
-        });
+        if (currentSlide < sliderSection.length - 1) {
+            setCurrentSlide(currentSlide + 1);
+            setVisibleImages(
+                sliderSection.slice(currentSlide - 1, currentSlide + 2)
+            );
+        } else if (currentSlide < sliderSection.length) {
+            setCurrentSlide(currentSlide + 1);
+            setVisibleImages(
+                sliderSection.slice(currentSlide - 2, currentSlide + 1)
+            );
+        } else {
+            setCurrentSlide(1);
+            setVisibleImages(sliderSection.slice(0, 3));
+        }
     };
 
     useEffect(() => {
@@ -33,7 +61,7 @@ export default function Slider({}: Props) {
                 setVisibleImages(
                     sliderSection.slice(currentSlide - 1, currentSlide + 2)
                 );
-            }else if (currentSlide < sliderSection.length) {
+            } else if (currentSlide < sliderSection.length) {
                 setCurrentSlide(currentSlide + 1);
                 setVisibleImages(
                     sliderSection.slice(currentSlide - 2, currentSlide + 1)
@@ -103,20 +131,54 @@ export default function Slider({}: Props) {
                         </div>
                     ))}
                 </div>
-                <div className="absolute -bottom-4 md:-bottom-8 lg:-bottom-16 left-1/2 transform -translate-x-1/2 flex space-x-4 z-10">
-                    {visibleImages.map((item, index) => (
-                        <div
-                            key={item.id}
-                            onClick={() => goToSlide(item.id)}
-                            className={`cursor-pointer ${
-                                item.id === currentSlide
-                                    ? "border-4 border-secondary"
-                                    : "border-4 border-white"
-                            }`}
+                <div className="absolute -bottom-4 sm:-bottom-10 md:-bottom-4 lg:-bottom-10 left-5 right-5 md:right-0 md:left-1/2 transform md:-translate-x-1/2 flex items-center space-x-4 z-10">
+                    <div>
+                        <button
+                            className={`${
+                                currentSlide === 1 ? "bg-white/30" : "bg-yellow"
+                            }
+                                    flex items-center p-2 md:p-2.5 lg:p-[14px] rounded-[3px]
+                                    transition-all duration-150 ease-linear
+                                `}
+                            onClick={handlePrev}
                         >
-                            <img src={item.imageUrl} alt="" />
-                        </div>
+                            <i className="text-white text-lg font-medium">
+                                <FiChevronLeft />
+                            </i>
+                        </button>
+                    </div>
+                    {visibleImages.map((item, index) => (
+                        <Fragment key={item.id}>
+                            <div
+                                onClick={() => goToSlide(item.id)}
+                                className={`cursor-pointer ${
+                                    item.id === currentSlide
+                                        ? "border-4 border-secondary"
+                                        : "border-4 border-white"
+                                        
+                                } h-full`}
+                            >
+                                <img src={item.imageUrl} alt="" className="h-full" />
+                            </div>
+                        </Fragment>
                     ))}
+                    <div>
+                        <button
+                            className={`${
+                                currentSlide === sliderSection.length
+                                    ? "bg-white/30"
+                                    : "bg-yellow"
+                            }
+                                    flex items-center p-2 md:p-2.5 lg:p-[14px] rounded-[3px]
+                                    transition-all duration-150 ease-linear
+                                `}
+                            onClick={handleNext}
+                        >
+                            <i className="text-white text-lg font-medium">
+                                <FiChevronRight />
+                            </i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </Fragment>

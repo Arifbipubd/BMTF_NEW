@@ -141,24 +141,25 @@ span {
     }
 }
 
-
-.swiper-thumbs {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.custom-clip-bg {
+    clip-path: polygon(0 0, 100% 0, 91% 38%, 0 93%);
 }
 
-/* Style the individual thumb */
-.swiper-thumbs .swiper-slide {
-    border: 4px solid transparent; /* Border for inactive thumbs */
-    transition: border-color 0.3s ease; /* Smooth transition for the border */
-    width: fit-content !important;
-}
-
-/* Style the active thumb with a border */
-.swiper-thumbs .swiper-slide-thumb-active {
-    width: fit-content;
-    border-color: var(
-        --color-secondary
-    ); /* Color of the border for the active thumb */
-}
+.navigation ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+.navigation ::-webkit-scrollbar-track {
+    background: var(--color-primary);
+    border-radius: 5px;
+  }
+  
+.navigation ::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.20);
+    border-radius: 14px;
+    border: 3px solid var(--color-primary);
+  }
+  
+.navigation ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-tertiary);
+  }
