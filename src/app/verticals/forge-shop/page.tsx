@@ -13,7 +13,7 @@ import ProcessCard from "@src/components/shared/ProcessCard";
 
 type Props = {};
 
-export default function page({}: Props) {
+export default function Page({}: Props) {
     const pathname = usePathname();
     const [loading, setLoading] = useState<boolean>(true);
     const [pathName, setPathName] = useState<Array<string>>([]);
