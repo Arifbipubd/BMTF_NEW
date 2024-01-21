@@ -1,11 +1,15 @@
 import React from "react";
 import Link from "next/link";
 
-type Props = {};
+type Props = {
+    imageSrc?: string
+};
 
-export default function ConnectBMTF({}: Props) {
+export default function ConnectBMTF({
+    imageSrc="/assets/images/shared/Banner.png"
+}: Props) {
     return (
-        <div className="min-h-[50vh]">
+        <div className="pt-14 md:pt-16 lg:pt-[72px]">
             <div className="bg-white min-h-[20vh] -mb-36">
                 <div className="container mx-auto grid grid-cols-1 md:grid-cols-2">
                     <div
@@ -32,7 +36,7 @@ export default function ConnectBMTF({}: Props) {
                     </div>
                     <div className="relative">
                         <img
-                            src="/assets/images/shared/Banner.png"
+                            src={imageSrc}
                             alt=""
                             className="w-full h-full rounded-bl-[30px] md:rounded-bl-none md:rounded-tr-[30px] rounded-br-[30px]"
                         />
@@ -47,7 +51,7 @@ export default function ConnectBMTF({}: Props) {
                         `}
                         >
                             <img
-                                src="assets/images/home/Vector.svg"
+                                src="/assets/images/home/Vector.svg"
                                 alt=""
                                 className="w-fit"
                             />

@@ -13,9 +13,10 @@ import { BsChevronDown } from "react-icons/bs";
 import { RiShoppingBag2Line } from "react-icons/ri";
 
 import { navItems } from "@src/utils/constants";
+import DropdownItem from "./DropdownItem";
 
 export default function Navbar() {
-    const nav = useRef(null);
+    const navRef = useRef(null);
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [openSubmenuId, setOpenSubmenuId] = useState<number | null>(null);
     const [backgroundColor, setBackgroundColor] =
@@ -23,6 +24,10 @@ export default function Navbar() {
     const [navPosition, setNavPosition] = useState<string>("fixed");
     const [submenuShow, setSubmenuShow] = useState<boolean>(true);
     const [navTop, setNavTop] = useState<string>("top-2.5");
+    const [dropdownHeights, setDropdownHeights] = useState<{
+        [key: number]: number;
+    }>({});
+    const [isNavHoverd, setIsNavHovered] = useState<boolean>(false);
     const changeOnScroll = () => {
         if (window.scrollY > 10) {
             setBackgroundColor("bg-black/80");
@@ -45,14 +50,23 @@ export default function Navbar() {
         }
     };
 
+    const handleMouseEnter = (itemId: number) => {
+        setIsNavHovered(true);
+        // if (navRef.current != null) {
+        //     const newDropdownHeights = { ...dropdownHeights };
 
+        //     // Set the height of the current dropdown
+        //     newDropdownHeights[itemId] = navRef.current.offsetHeight;
+
+        //     console.log(newDropdownHeights)
+        //     // Update the state with the new heights
+        //     setDropdownHeights(newDropdownHeights);
+        // }
+    };
     const handleCloseIcon = () => {
-        setIsOpen(!isOpen)
-        setOpenSubmenuId(null)
-    }
-    // const handleMouseOver = (e: any) => {
-    //     console.log(nav?.current?.offsetHeight)
-    // }
+        setIsOpen(!isOpen);
+        setOpenSubmenuId(null);
+    };
 
     useEffect(() => {
         const eventFired = window.addEventListener("scroll", changeOnScroll);
@@ -66,7 +80,6 @@ export default function Navbar() {
                 submenuShow ? "py-0" : "py-3"
             } left-0 w-full z-20 transition-all duration-300 ease-in-out  
         shadow-[0_6px_32px_0px_rgba(0,0,0,0.03)]`}
-        ref={nav}
         >
             <div
                 className={` ${submenuShow ? "block" : "hidden"}
@@ -159,14 +172,14 @@ export default function Navbar() {
                             </i>
                         </button>
                     </div>
-                    <div
-                        className={` block xl:flex   ${
+                    <ul
+                        className={` block xl:flex xl:items-center xl:gap-[22px]   ${
                             isOpen
                                 ? "block open  w-full xl:w-fit menu h-full bg-black/80 text-center xl:bg-inherit"
                                 : "hidden bg-inherit"
                         }`}
                     >
-                        <div className="flex justify-end py-7 px-3 md:px-7 lg:px-10 xl:hidden">
+                        <li className="flex justify-end py-7 px-3 md:px-7 lg:px-10 xl:hidden">
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
                                 className="flex items-center px-3 py-2 rounded "
@@ -179,10 +192,10 @@ export default function Navbar() {
                                     <CgClose />
                                 </i>
                             </button>
-                        </div>
+                        </li>
                         {navItems.map((item) => (
                             <Fragment key={item.id}>
-                                <div
+                                <li
                                     className={`md:flex md:flex-col xl:flex-row md:items-center justify-center relative group xl:mr-[22px] py-2.5 lg:py-[17px] 
                                     cursor-pointer px-24 md:px-0 after:block after:content-[''] after:absolute after:h-[3px]
                                      after:bg-secondary after:bottom-2 xl:after:w-full 
@@ -196,7 +209,8 @@ export default function Navbar() {
                                         </span>
                                         <div
                                             className={`${
-                                                item.children && item.children?.length > 0
+                                                item.children &&
+                                                item.children?.length > 0
                                                     ? "block"
                                                     : "hidden"
                                             }`}
@@ -207,9 +221,9 @@ export default function Navbar() {
                                         </div>
                                     </div>
                                     <div
-                                        className={`bg-black/90 fixed top-0 left-0 w-full 
-                                        h-0 group-hover:h-[30vh] -z-30 transition-all duration-300 ease-linear 
-                                        hidden xl:block`}
+                                        className={`bg-black/90 fixed top-0 left-0 w-full
+                     h-0 group-hover:h-1/2 -z-10 group-hover:transition-all group-hover:duration-300
+                      group-hover:ease-linear hidden xl:group-hover:block`}
                                     />
                                     <div>
                                         <div
@@ -241,7 +255,7 @@ export default function Navbar() {
                                                 )}
                                         </div>
                                     </div>
-                                </div>
+                                </li>
                             </Fragment>
                         ))}
                         <div className="xl:h-full px-24 md:px-0 md:flex md:items-center md:justify-center xl:block w-full xl:w-fit">
@@ -256,9 +270,63 @@ export default function Navbar() {
                                 </button>
                             </Link>
                         </div>
-                    </div>
+                    </ul>
                 </div>
             </nav>
         </header>
     );
 }
+
+// {navItems.map((item) => (
+//     <Fragment key={item.id}>
+//         <li
+//             className={`group  py-2.5 lg:py-[17px]
+//             cursor-pointer px-24 md:px-0`}
+//             onMouseEnter={() => handleMouseEnter(item.id)}
+//         >
+//             <div
+//                 className={`flex items-center group-hover:relative group-hover:after:content-['']
+//                 grop-hover after:absolute group-hover:after:h-[3px]
+//              group-hover:after:bg-secondary group-hover:after:-bottom-3 xl:group-hover:after:w-full
+//              group-hover:after:scale-x-100 after:hover:scale-x-0 group-hover:after:transition
+//              group-hover:after:duration-300 group-hover:after:origin-left`}
+//             >
+//                 <div className="text-white text-lg font-medium capitalize flex items-center">
+//                     <span className="mr-1.5">
+//                         {item.label}
+//                     </span>
+//                     <div
+//                         className={`${
+//                             item.children &&
+//                             item.children?.length > 0
+//                                 ? "block"
+//                                 : "hidden"
+//                         }`}
+//                     >
+//                         <i className="text-xs text-white">
+//                             <BsChevronDown />
+//                         </i>
+//                     </div>
+//                 </div>
+//             </div>
+//             <div
+//                 className={`bg-black/90 fixed top-0 left-0 w-full
+//                     h-0 group-hover:h-1/2 -z-10 group-hover:transition-all group-hover:duration-300
+//                      group-hover:ease-linear hidden xl:group-hover:block`}
+//             />
+//             <div className="xl:absolute hidden group-hover:block xl:pt-10" >
+//                 <ul className="min-h-[20vh]" ref={navRef}>
+//                     <span className="text-white text-2xl lg:text-3xl xl:text-4xl">
+//                         {item.label}
+//                     </span>
+//                     {item.children &&
+//                         item.children.map(
+//                             (children) => (
+//                                 <DropdownItem dropdownItem={children} key={children.id}/>
+//                             )
+//                         )}
+//                 </ul>
+//             </div>
+//         </li>
+//     </Fragment>
+// ))}

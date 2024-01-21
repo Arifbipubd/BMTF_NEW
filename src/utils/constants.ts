@@ -344,103 +344,97 @@ export const verticals = [
         id: 1,
         imageSrc: "/assets/images/verticals/Footwear_and_leather.png",
         title: "Footwear Industry and Leather Industry",
-        link: "footwear-&-leather",
+        link: "/verticals/footwear-&-leather",
     },
     {
         id: 2,
         imageSrc: "/assets/images/verticals/Footwear_and_leather_02.png",
         title: "Furniture",
-        link: "Furniture",
+        link: "/verticals/furniture",
     },
     {
         id: 3,
         imageSrc: "/assets/images/verticals/Pool_and_pile.png",
         title: "Pole & Pile",
-        link: "Pole-&-Pile",
+        link: "/verticals/pole-&-pile",
     },
     {
         id: 4,
         imageSrc: "/assets/images/verticals/Vehicle_assembly.png",
         title: "Vehicle Assembly",
-        link: "vehicle-assembly",
+        link: "/verticals/vehicle-assembly",
     },
     {
         id: 5,
         imageSrc: "/assets/images/verticals/Steel_structure.png",
         title: "Steel Structure Manufacturing",
-        link: "Steel-Structure-Manufacturing",
+        link: "/verticals/steel-structure-manufacturing",
     },
     {
         id: 6,
         imageSrc: "/assets/images/verticals/Electronic_Assembly_01.png",
         title: "Electronic Assembly",
-        link: "Electronic-Assembly",
+        link: "/verticals/electronic-assembly",
     },
     {
         id: 7,
         imageSrc: "/assets/images/verticals/Crafties.png",
         title: "BMTF Crafties",
-        link: "BMTF-Crafties",
+        link: "/verticals/BMTF-crafties",
     },
     {
         id: 8,
         imageSrc: "/assets/images/verticals/CFL.png",
         title: "CFL AND LED BULB",
-        link: "CFL-AND-LED-BULB",
+        link: "/verticals/cFL-&-LED-bulb",
     },
     {
         id: 9,
         imageSrc: "/assets/images/verticals/Central_toolling.png",
         title: "Central Tooling Department",
-        link: "Central-Tooling-Department",
+        link: "/verticals/central-tooling-department",
     },
     {
         id: 10,
         imageSrc: "/assets/images/verticals/Forge_shop.png",
         title: "Forge Shop",
-        link: "Forge-shop",
+        link: "/verticals/forge-shop",
     },
     {
         id: 11,
         imageSrc: "/assets/images/verticals/Foundry_shop.png",
         title: "Foundry Shop",
-        link: "Foundry-shop",
+        link: "/verticals/foundry-shop",
     },
     {
         id: 12,
-        imageSrc: "/assets/images/verticals/Vehicle_assembly.png",
-        title: "Vehicle Assembly",
-        link: "vehicle-assembly",
+        imageSrc: "/assets/images/verticals/Galvanizing.png",
+        title: "Galvanizing Plant",
+        link: "/verticals/galvanizing-plant",
     },
     {
         id: 13,
-        imageSrc: "/assets/images/verticals/Galvanizing.png",
-        title: "Galvanizing Plant",
-        link: "Galvanizing-Plant",
+        imageSrc: "/assets/images/verticals/Machine_shop.png",
+        title: "Machine Shop",
+        link: "/verticals/machine-shop",
+    },
+    {
+        id: 14,
+        imageSrc: "/assets/images/verticals/Army_shop.png",
+        title: "Army Pharma",
+        link: "/verticals/army-pharma",
     },
     {
         id: 15,
-        imageSrc: "/assets/images/verticals/Machine_shop.png",
-        title: "Machine Shop",
-        link: "Machine-Shop",
+        imageSrc: "/assets/images/verticals/Packaging.png",
+        title: "Packaging Unit",
+        link: "/verticals/packaging-unit",
     },
     {
         id: 16,
-        imageSrc: "/assets/images/verticals/Army_shop.png",
-        title: "Army Pharma",
-        link: "Army-Pharma",
-    },
-    {
-        id: 17,
-        imageSrc: "/assets/images/verticals/Packaging.png",
-        title: "Packaging Unit",
-        link: "Packaging-Unit",
-    },
-    {
-        id: 18,
         imageSrc: "/assets/images/verticals/Pattern_shop.png",
         title: "Pattern Shop",
-        link: "Pattern-shop",
+        link: "/verticals/pattern-shop",
     },
 ];
 
@@ -476,3 +470,91 @@ export const contactCard = [
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.08594857317!2d90.37702227607197!3d23.744314289008656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b3f78ee00b%3A0xd9d2ff933cd37a9a!2s41%20Rd%207%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1705332482461!5m2!1sen!2sbd",
     },
 ];
+
+export const allIndustries = [
+    {
+        id: 1,
+        label: 'Footwear & Leather',
+        link: '/verticals/footwear-&-leather'
+    },
+    {
+        id: 2,
+        label: 'Furniture',
+        link: '/verticals/furniture'
+    },
+    {
+        id: 3,
+        label: 'Pole & Pile',
+        link: '/verticals/pole-&-pile'
+    },
+    {
+        id: 4,
+        label: 'Vehicle Assembly',
+        link: '/verticals/vehicle-assembly'
+    },
+    {
+        id: 5,
+        label: 'Steel Structure Manufacturing',
+        link: '/verticals/steel-structure-manufacturing'
+    },
+    {
+        id: 6,
+        label: 'Electronic Assembly',
+        link: '/verticals/electronic-assembly'
+    },
+    {
+        id: 7,
+        label: 'BMTF Crafties',
+        link: '/verticals/BMTF-crafties'
+    },
+    {
+        id: 8,
+        label: 'CFL & LED Bulb',
+        link: '/verticals/CFL-&-LED-bulb'
+    },
+    {
+        id: 9,
+        label: 'Central Tooling Department',
+        link: '/verticals/central-tooling-department'
+    },
+    {
+        id: 10,
+        label: 'Forge Shop',
+        link: '/verticals/forge-shop'
+    },
+    {
+        id: 11,
+        label: 'Foundry Shop',
+        link: '/verticals/foundry-shop'
+    },
+    {
+        id: 12,
+        label: 'Galvanizing Plant',
+        link: '/verticals/galvanizing-plant'
+    },
+    {
+        id: 13,
+        label: 'Heat And Surface Treatment',
+        link: '/verticals/heat-and-surface-treatment'
+    },
+    {
+        id: 14,
+        label: 'Machine Shop',
+        link: '/verticals/machine-shop'
+    },
+    {
+        id: 15,
+        label: 'Army Pharma',
+        link: '/verticals/army-pharma'
+    },
+    {
+        id: 16,
+        label: 'Packaging Unit',
+        link: '/verticals/packaging-unit'
+    },
+    {
+        id: 17,
+        label: 'Pattern Shop',
+        link: '/verticals/pattern-shop'
+    }
+]
