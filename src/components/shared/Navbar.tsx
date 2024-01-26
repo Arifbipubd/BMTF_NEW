@@ -18,8 +18,9 @@ import { RiShoppingBag2Line } from "react-icons/ri";
 import { navItems } from "@src/utils/constants";
 
 export default function Navbar() {
-    const navRef = useRef(null);
+    const navRef = useRef<HTMLDivElement | null>(null);
     const [isOpen, setIsOpen] = useState<boolean>(false);
+    const [windowWidth, setWindowWidth] = useState<number>(0);
     const [openSubmenuId, setOpenSubmenuId] = useState<number | null>(null);
     const [backgroundColor, setBackgroundColor] =
         useState<string>("bg-transparent");
