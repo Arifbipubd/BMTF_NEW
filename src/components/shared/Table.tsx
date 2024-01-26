@@ -36,7 +36,7 @@ export default function Table({}: Props) {
                                 >
                                     {data.date}
                                 </div>
-                                <div className="col col-1" data-label="File :">
+                                <div className="col col-1 btn" data-label="File :">
                                     <a
                                         href={data.view}
                                         target="_blank"
@@ -46,7 +46,7 @@ export default function Table({}: Props) {
                                     </a>
                                 </div>
                                 <div
-                                    className="col col-1"
+                                    className="col col-1 btn"
                                     data-label="Action :"
                                 >
                                     <a

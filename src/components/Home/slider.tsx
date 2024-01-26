@@ -20,15 +20,18 @@ export default function Slider({}: Props) {
     };
 
     const handlePrev = () => {
-        if (currentSlide < sliderSection.length - 1) {
+        if (currentSlide <= 3) {
             setCurrentSlide(currentSlide - 1);
-            setVisibleImages(
-                sliderSection.slice(currentSlide - 2, currentSlide + 1)
-            );
-        } else if (currentSlide < sliderSection.length) {
+            setVisibleImages(sliderSection.slice(0, 3));
+        } else if (currentSlide < sliderSection.length - 3) {
             setCurrentSlide(currentSlide - 1);
             setVisibleImages(
                 sliderSection.slice(currentSlide - 1, currentSlide + 2)
+            );
+        } else if (currentSlide <= sliderSection.length) {
+            setCurrentSlide(currentSlide - 1);
+            setVisibleImages(
+                sliderSection.slice(currentSlide - 3, currentSlide )
             );
         } else {
             setCurrentSlide(1);
@@ -38,10 +41,15 @@ export default function Slider({}: Props) {
 
     const handleNext = () => {
         // Shift the array to show the next three images
-        if (currentSlide < sliderSection.length - 1) {
+        if (currentSlide < 2) {
             setCurrentSlide(currentSlide + 1);
             setVisibleImages(
                 sliderSection.slice(currentSlide - 1, currentSlide + 2)
+            );
+        } else if (currentSlide < sliderSection.length - 1) {
+            setCurrentSlide(currentSlide + 1);
+            setVisibleImages(
+                sliderSection.slice(currentSlide - 2, currentSlide + 1)
             );
         } else if (currentSlide < sliderSection.length) {
             setCurrentSlide(currentSlide + 1);
@@ -54,26 +62,6 @@ export default function Slider({}: Props) {
         }
     };
 
-    useEffect(() => {
-        const timeInterval = setInterval(() => {
-            if (currentSlide < sliderSection.length - 1) {
-                setCurrentSlide(currentSlide + 1);
-                setVisibleImages(
-                    sliderSection.slice(currentSlide - 1, currentSlide + 2)
-                );
-            } else if (currentSlide < sliderSection.length) {
-                setCurrentSlide(currentSlide + 1);
-                setVisibleImages(
-                    sliderSection.slice(currentSlide - 2, currentSlide + 1)
-                );
-            } else {
-                setCurrentSlide(1);
-                setVisibleImages(sliderSection.slice(0, 3));
-            }
-        }, 5000);
-
-        return () => clearInterval(timeInterval);
-    }, [currentSlide]);
     return (
         <Fragment>
             <div className="relative grid">
@@ -131,7 +119,7 @@ export default function Slider({}: Props) {
                         </div>
                     ))}
                 </div>
-                <div className="absolute -bottom-4 sm:-bottom-10 md:-bottom-4 lg:-bottom-10 left-5 right-5 md:right-0 md:left-1/2 transform md:-translate-x-1/2 flex items-center space-x-4 z-10">
+                <div className="absolute -bottom-4 sm:-bottom-10 md:-bottom-4 lg:-bottom-10 left-5 right-5 md:right-0 md:left-1/2 transform md:-translate-x-1/2 flex items-center justify-center space-x-4 z-10">
                     <div>
                         <button
                             className={`${
@@ -141,6 +129,7 @@ export default function Slider({}: Props) {
                                     transition-all duration-150 ease-linear
                                 `}
                             onClick={handlePrev}
+                            disabled={currentSlide === 1}
                         >
                             <i className="text-white text-lg font-medium">
                                 <FiChevronLeft />
@@ -155,10 +144,14 @@ export default function Slider({}: Props) {
                                     item.id === currentSlide
                                         ? "border-4 border-secondary"
                                         : "border-4 border-white"
-                                        
                                 } h-full`}
                             >
-                                <img src={item.imageUrl} alt="" className="h-full" />
+                                {/* eslint-disable-next-line @next/next/no-img-element*/}
+                                <img
+                                    src={item.imageUrl}
+                                    alt={item.imageUrl}
+                                    className="h-full"
+                                />
                             </div>
                         </Fragment>
                     ))}
@@ -173,6 +166,7 @@ export default function Slider({}: Props) {
                                     transition-all duration-150 ease-linear
                                 `}
                             onClick={handleNext}
+                            disabled={currentSlide === sliderSection.length}
                         >
                             <i className="text-white text-lg font-medium">
                                 <FiChevronRight />

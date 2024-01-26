@@ -41,39 +41,39 @@ export const sliderSection: Array<SliderSection> = [
         id: 2,
         heading: "Empowering",
         description:
-            "The automotive industry is the technological trendsetter among manufacturing industries.",
+            "Magnam turpis luctus, taciti nam quis in delectus vel montes ad omnis, laboriosam magni sem sodales exercitationem proin sociis commodo.",
         imageUrl: "/assets/images/home/Pole_n_pile_02.png",
         link: "/",
     },
     {
         id: 3,
-        heading: "Empowering Innovation, Precision, and Excellence",
+        heading: "Ex molestias magni et enim",
         description:
-            "The automotive industry is the technological trendsetter among manufacturing industries.",
+            "Sollicitudin aspernatur ridiculus curae, condimentum asperiores placeat lacus, ante praesentium.",
         imageUrl: "/assets/images/home/Pole_n_pile_03.png",
         link: "/",
     },
     {
         id: 4,
-        heading: "Empowering Innovation, Precision, and Excellence",
+        heading: "Aliquet voluptates tristique",
         description:
-            "The automotive industry is the technological trendsetter among manufacturing industries.",
+            "Deleniti consectetur magni maiores deleniti quibusdam est quos! Phasellus accusamus eum varius adipisicing similique doloremque? Animi, wisi vivamus asperiores natoque..",
         imageUrl: "/assets/images/home/Pole_n_pile_03.png",
         link: "/",
     },
     {
         id: 5,
-        heading: "Empowering Innovation, Precision, and Excellence",
+        heading: "Innovation, Precision, and Excellence",
         description:
-            "The automotive industry is the technological trendsetter among manufacturing industries.",
+            "Maecenas animi quisque mi excepteur odit class montes dolorum fuga.",
         imageUrl: "/assets/images/home/Pole_n_pile_03.png",
         link: "/",
     },
     {
         id: 6,
-        heading: "Empowering",
+        heading: "Quisque natoque assumenda volutpat purus",
         description:
-            "The automotive industry is the technological trendsetter among manufacturing industries.",
+            "Laoreet risus lobortis expedita a torquent hymenaeos hac? Lorem, sunt.",
         imageUrl: "/assets/images/home/Pole_n_pile_02.png",
         link: "/",
     }
@@ -82,84 +82,210 @@ export const sliderSection: Array<SliderSection> = [
 export const navItems: Array<NavItem> = [
     {
         id: 1,
-        link: "/",
         label: "About",
         children: [
             {
                 id: 1,
-                link: "/about",
                 label: "About Us",
-            },
-            {
-                id: 2,
-                link: "/our-history",
-                label: "Our History",
-            },
-            {
-                id: 3,
-                link: "/about",
-                label: "About Us",
-            },
+                menuItems: [
+                    {
+                        id: 21,
+                        link: "/about",
+                        label: "About Us",
+                    },
+                    {
+                        id: 22,
+                        link: "/our-history",
+                        label: "Our History",
+                    },
+                    {
+                        id: 24,
+                        link: "/our-client",
+                        label: "Our Client",
+                    },
+                ]
+            }
         ],
     },
     {
         id: 2,
-        link: "/",
         label: "Verticals",
         children: [
             {
-                id: 1,
-                link: "/verticals",
-                label: "All Verticals",
+                id: 2,
+                label: 'Varticals',
+                menuItems: [
+                    {
+                        id: 25,
+                        link: "/verticals",
+                        label: "All Verticals",
+                    },
+                ]
             },
+            {
+                id: 3,
+                label: 'All Vericals',
+                menuItems: [
+                    {
+                        id: 1,
+                        label: 'Footwear & Leather',
+                        link: '/verticals/footwear-&-leather'
+                    },
+                    {
+                        id: 2,
+                        label: 'Furniture',
+                        link: '/verticals/furniture'
+                    },
+                    {
+                        id: 3,
+                        label: 'Pole & Pile',
+                        link: '/verticals/pole-&-pile'
+                    },
+                    {
+                        id: 4,
+                        label: 'Vehicle Assembly',
+                        link: '/verticals/vehicle-assembly'
+                    },
+                    {
+                        id: 5,
+                        label: 'Steel Structure Manufacturing',
+                        link: '/verticals/steel-structure-manufacturing'
+                    },
+                    {
+                        id: 6,
+                        label: 'Electronic Assembly',
+                        link: '/verticals/electronic-assembly'
+                    },
+                    {
+                        id: 7,
+                        label: 'BMTF Crafties',
+                        link: '/verticals/BMTF-crafties'
+                    },
+                    {
+                        id: 8,
+                        label: 'CFL & LED Bulb',
+                        link: '/verticals/CFL-&-LED-bulb'
+                    },
+                    {
+                        id: 9,
+                        label: 'Central Tooling Department',
+                        link: '/verticals/central-tooling-department'
+                    },
+                    {
+                        id: 10,
+                        label: 'Forge Shop',
+                        link: '/verticals/forge-shop'
+                    },
+                    {
+                        id: 11,
+                        label: 'Foundry Shop',
+                        link: '/verticals/foundry-shop'
+                    },
+                    {
+                        id: 12,
+                        label: 'Galvanizing Plant',
+                        link: '/verticals/galvanizing-plant'
+                    },
+                    {
+                        id: 13,
+                        label: 'Heat And Surface Treatment',
+                        link: '/verticals/heat-and-surface-treatment'
+                    },
+                    {
+                        id: 14,
+                        label: 'Machine Shop',
+                        link: '/verticals/machine-shop'
+                    },
+                    {
+                        id: 15,
+                        label: 'Army Pharma',
+                        link: '/verticals/army-pharma'
+                    },
+                    {
+                        id: 16,
+                        label: 'Packaging Unit',
+                        link: '/verticals/packaging-unit'
+                    },
+                    {
+                        id: 17,
+                        label: 'Pattern Shop',
+                        link: '/verticals/pattern-shop'
+                    }
+                ]
+            }
         ],
     },
     {
         id: 3,
-        link: "/",
         label: "Accreditations",
         children: [
             {
                 id: 1,
-                link: "/",
-                label: "About Us",
+                label: "Accreditations",
+                menuItems: [
+                    {
+                        id: 1,
+                        label: 'Accreditation',
+                        link: '/accreditations-and-certificate/'
+                    },
+                    {
+                        id: 2,
+                        label: 'Certificates',
+                        link: '/accreditations-and-certificate/#certificate'
+                    },
+                ]
             },
         ],
     },
     {
         id: 4,
-        link: "/",
         label: "Notice board",
         children: [
             {
                 id: 1,
-                link: "/noc-and-notice",
                 label: "Noc and Notice",
+                menuItems: [
+                    {
+                        id: 1,
+                        label: "Noc And Notice",
+                        link: "/noc-and-notice",
+                    }
+                ]
             },
         ],
     },
     {
         id: 5,
-        link: "/",
         label: "gallery",
         children: [
             {
                 id: 1,
-                link: "/",
-                label: "About Us",
+                label: "Gallery",
+                menuItems: [
+                    {
+                        id: 1,
+                        label: "Gallery",
+                        link: "/image-&-video-gallery",
+                    }
+                ]
             },
         ],
     },
     {
         id: 6,
-        link: "/",
         label: "Contact",
         children: [
             {
                 id: 1,
-                link: "/contact",
                 label: "Contact Us",
-            },
+                menuItems: [
+                    {
+                        id: 1,
+                        label: "Contact Us",
+                        link: "/contact",
+                    }
+                ]
+            }
         ],
     },
 ];
@@ -558,3 +684,4 @@ export const allIndustries = [
         link: '/verticals/pattern-shop'
     }
 ]
+
