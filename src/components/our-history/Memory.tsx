@@ -20,6 +20,7 @@ export default function Memory({}: Props) {
                                 key={item.id}
                                 className="group relative z-0 transition-all duration-200 ease-linear"
                             >
+                                {/*eslint-disable-next-line @next/next/no-img-element*/}
                                 <img
                                     className="h-auto max-w-full rounded-lg w-full"
                                     src={item.imgSrc}
@@ -53,6 +54,7 @@ export default function Memory({}: Props) {
                                 key={item.id}
                                 className="group relative z-0 transition-all duration-200 ease-linear"
                             >
+                                {/*eslint-disable-next-line @next/next/no-img-element*/}
                                 <img
                                     className="h-auto max-w-full rounded-lg w-full"
                                     src={item.imgSrc}
@@ -86,6 +88,7 @@ export default function Memory({}: Props) {
                                 key={item.id}
                                 className="group relative z-0 transition-all duration-200 ease-linear"
                             >
+                                {/*eslint-disable-next-line @next/next/no-img-element*/}
                                 <img
                                     className="h-auto max-w-full rounded-lg w-full"
                                     src={item.imgSrc}

@@ -15,6 +15,7 @@ export default function AllVerticals({}: Props) {
                     >
                         <div className="custom-background absolute z-10 bottom-0 h-2/3 left-0 right-0 rounded-b-[10px]" />
                         <div>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
                                 src={item.imageSrc}
                                 alt=""

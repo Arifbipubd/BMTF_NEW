@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "name": "Bangladesh Army",
+      "image": "https://bmtf.com.bd/website/our%20clients/ArmyLogo.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Bangladesh Navy",
+      "image": "https://bmtf.com.bd/website/our%20clients/navy.png"
+    },
+    {
+      "id": 3,
+      "name": "Bangladesh Air Force",
+      "image": "https://bmtf.com.bd/website/our%20clients/air_fource.png"
+    },
+    {
+      "id": 4,
+      "name": "Anser and VDP",
+      "image": "https://bmtf.com.bd/website/our%20clients/ansar.png"
+    },
+    {
+      "id": 5,
+      "name": "Fire Service",
+      "image": "https://bmtf.com.bd/website/our%20clients/fire_service.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Prison",
+      "image": "https://bmtf.com.bd/website/our%20clients/Bangladesh_Jail_Logo.png"
+    },
+    {
+      "id": 7,
+      "name": "Palli Bidyut Samity",
+      "image": "https://bmtf.com.bd/website/our%20clients/BREB.png"
+    },
+    {
+      "id": 8,
+      "name": "Bangladesh Border Gard(BGB)",
+      "image": "https://bmtf.com.bd/website/our%20clients/bd_border_gard.png"
+    },
+    {
+      "id": 9,
+      "name": "Coast Guard",
+      "image": "https://bmtf.com.bd/website/our%20clients/Coast_Guard.png"
+    }
+  ]
+  

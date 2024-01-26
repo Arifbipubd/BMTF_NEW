@@ -34,6 +34,20 @@ span {
     transform: translateX(0%);
 }
 
+.fade-in{
+    opacity: 1;
+    animation: fadein 2s ease-in-out;
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .clip-path {
     clip-path: polygon(0 0, 60% 100%, 100% 0);
 }
@@ -78,18 +92,30 @@ span {
     background-color: var(--color-primary);
     color: white;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 600 !important;
     line-height: 19.2px;
     text-transform: uppercase;
     border-radius: 10px 10px 0px 0px;
     letter-spacing: 0.03em;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
+
+.nocAndNotice .responsive-table .table-header .col-1,
+.nocAndNotice .responsive-table .table-header .col-3,
+.nocAndNotice .responsive-table .table-header .col-4 {
+    font-weight: 600 !important;
+}
+
 .nocAndNotice .responsive-table .table-row {
     background-color: #f3f9ff;
 }
 .nocAndNotice .responsive-table .col-1 {
     flex-basis: 10%;
+   
+}
+.nocAndNotice .responsive-table .btn {
+    display: flex;
+    align-items: center;
 }
 .nocAndNotice .responsive-table .col-2 {
     flex-basis: 40%;
@@ -102,11 +128,12 @@ span {
 }
 .nocAndNotice a {
     text-decoration: none;
-    padding: 8px 10px;
+    padding: 8px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
     color: white;
+    width: fit-content;
 }
 .nocAndNotice .view {
     background: var(--color-primary);
@@ -163,3 +190,717 @@ span {
 .navigation ::-webkit-scrollbar-thumb:hover {
     background-color: var(--color-tertiary);
   }
+
+/******Accreditations***********/
+.accreditationDiv {
+    padding-top: 80px !important;
+    margin-bottom: 30px !important;
+  }
+
+/*------------------------------------------------------------------*/
+/*	Shortcode #8 PROJECT STICKY FULL
+/*------------------------------------------------------------------*/
+.fn_cs_sticky_section {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    overflow: visible;
+    top: 150px;
+  }
+  .fn_cs_sticky_section:after {
+    clear: both;
+    display: table;
+    content: "";
+  }
+  .fn_cs_project_sticky_full {
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+  .fn_cs_project_sticky_full .inner {
+    width: 100%;
+    float: left;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+  }
+  .fn_cs_project_sticky_full .left_part {
+    width: 600px;
+    min-width: 600px;
+    padding: 143px 100px 150px 100px;
+  }
+  .fn_cs_project_sticky_full .right_part {
+    width: 100%;
+    float: left;
+    clear: both;
+    padding: 30px;
+    background-color: #111724;
+  }
+  .fn_cs_project_sticky_full .left_part h3 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: 0px;
+    font-weight: 300;
+    padding-bottom: 14px;
+    position: relative;
+    margin-bottom: 32px;
+    left: -3px;
+  }
+  .fn_cs_project_sticky_full .left_part h3:after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 3px;
+    width: 100px;
+    height: 3px;
+    background-color: #d3aa14;
+  }
+  .fn_cs_project_sticky_full .left_part p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 33px;
+    color: #666;
+  }
+  .fn_cs_project_sticky_full .left_part p span {
+    display: block;
+    margin-bottom: 26px;
+  }
+  .fn_cs_project_sticky_full .left_part p span:last-child {
+    margin-bottom: 0px;
+  }
+  .fn_cs_project_sticky_full .left_part a {
+    display: block;
+    line-height: 1;
+    padding: 20px 28px 17px 28px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-family: "Rubik";
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    background-color: #d3aa14;
+    max-width: fit-content;
+    max-width: max-content;
+    max-width: intrinsic;
+    max-width: -moz-max-content;
+    max-width: -webkit-max-content;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .fn_cs_project_sticky_full .left_part a:hover {
+    background-color: #137629;
+  }
+  .fn_cs_project_sticky_full .right_part ul {
+    margin: 0px;
+    list-style-type: none;
+    float: left;
+    width: 100%;
+  }
+  .fn_cs_project_sticky_full .right_part li {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+  .fn_cs_project_sticky_full .right_part li:last-child {
+    margin-bottom: 0px;
+  }
+  .fn_cs_project_sticky_full .right_part .item {
+    width: 100%;
+    float: left;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+  }
+  .fn_cs_project_sticky_full .right_part .img_holder {
+    width: 55%;
+    min-width: 55%;
+    float: left;
+    position: relative;
+  }
+  .fn_cs_project_sticky_full .right_part .img_holder img {
+    position: relative;
+    z-index: 3;
+    opacity: 0;
+  }
+  .fn_cs_project_sticky_full .right_part .img_holder a {
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .fn_cs_project_sticky_full .right_part .abs_img {
+    position: absolute;
+    z-index: 6 ;
+    top: 0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .fn_cs_project_sticky_full .right_part .title_holder {
+    width: 45%;
+    float: right;
+    background-color: #181e2b;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-left-width: 0px;
+    padding: 62px 70px 31px 70px;
+    display: flex;
+    flex-direction: column;
+  }
+  .fn_cs_project_sticky_full .right_part .title_holder h3 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0px;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 36px;
+  }
+  .fn_cs_project_sticky_full .right_part .title_holder h3 a {
+    color: #eee;
+    text-decoration: none;
+  }
+  .fn_cs_project_sticky_full .right_part .title_holder h3 a:hover {
+    color: #137629;
+  }
+  .fn_cs_project_sticky_full .right_part .title_holder p {
+    margin: 0;
+    padding: 0;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    margin-top: auto;
+  }
+  .fn_cs_project_sticky_full .right_part .title_holder p:after {
+    top: -1px;
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 500ms cubic-bezier(0.04, 0.63, 0, 0.965);
+  }
+  .fn_cs_project_sticky_full .right_part .item:hover p:after {
+    right: 0px;
+  }
+  .fn_cs_project_sticky_full .right_part .title_holder p a {
+    display: block;
+    text-decoration: none;
+    max-width: fit-content;
+    max-width: max-content;
+    max-width: intrinsic;
+    max-width: -moz-max-content;
+    max-width: -webkit-max-content;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 29px;
+    color: #eee;
+    font-size: 18px;
+    letter-spacing: 0px;
+    position: relative;
+    font-family: "Rubik";
+  }
+  .fn_cs_project_sticky_full .right_part .title_holder p a svg,
+  .fn_cs_project_sticky_full .right_part .title_holder p a img {
+    width: 14px;
+    height: 14px;
+    right: 5px;
+    top: 50%;
+    position: absolute;
+    margin-top: -7px;
+    transition: all 0.3s ease;
+  }
+  .fn_cs_project_sticky_full .right_part .title_holder p a:hover svg,
+  .fn_cs_project_sticky_full .right_part .title_holder p a:hover img {
+    right: 0px;
+  }
+  .fn_cs_project_sticky_full .right_part .title_holder .desc {
+    color: #999;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 1500px) {
+    .fn_cs_project_sticky_full .left_part {
+      padding-left: 50px;
+      padding-right: 50px;
+      width: 500px;
+      min-width: 500px;
+      padding-top: 83px;
+      padding-bottom: 90px;
+    }
+    .fn_cs_project_sticky_full .right_part .title_holder {
+      padding: 34px 30px 31px 30px;
+    }
+    .fn_cs_project_sticky_full .right_part .title_holder h3 {
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .fn_cs_project_sticky_full .left_part h3 {
+      font-size: 36px;
+      left: -2px;
+    }
+    .fn_cs_project_sticky_full .left_part h3:after {
+      left: 2px;
+    }
+    .fn_cs_project_sticky_full .inner {
+      flex-direction: column;
+    }
+    .fn_cs_project_sticky_full .left_part {
+      width: 100%;
+      min-width: 100%;
+      padding-top: 45px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 50px;
+    }
+  }
+  @media (max-width: 768px) {
+    .fn_cs_project_sticky_full .right_part .item {
+      flex-direction: column !important;
+    }
+    .fn_cs_project_sticky_full .right_part .title_holder,
+    .fn_cs_project_sticky_full .right_part .img_holder {
+      width: 100%;
+      min-width: 100%;
+    }
+    .fn_cs_project_sticky_full .right_part .title_holder {
+      border-top-width: 0px;
+      border-left-width: 1px;
+    }
+  }
+  @media (max-width: 480px) {
+    .fn_cs_project_sticky_full .right_part {
+      padding: 20px;
+    }
+    .fn_cs_project_sticky_full .right_part li {
+      margin-bottom: 20px;
+    }
+    .fn_cs_project_sticky_full .right_part .title_holder {
+      padding: 24px 20px 21px 20px;
+    }
+  }
+  /*------------------------------------------------------------------*/
+  /*	Shortcode #9 MAIN TITLE
+  /*------------------------------------------------------------------*/
+  .fn_cs_main_title {
+    width: 100%;
+    float: left;
+    clear: both;
+    position: relative;
+  }
+  .fn_cs_main_title .title_holder {
+    width: 100%;
+    float: left;
+    clear: both;
+    position: relative;
+    max-width: 400px;
+  }
+  .fn_cs_main_title .title_holder h3 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: 0px;
+    font-weight: 300;
+    padding-bottom: 23px;
+    position: relative;
+    left: -3px;
+  }
+  .fn_cs_main_title .title_holder h3 span {
+    font-weight: 500;
+  }
+  .fn_cs_main_title .title_holder h3:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 3px;
+    width: 100px;
+    height: 3px;
+    background-color: #d3aa14;
+  }
+  @media (max-width: 1200px) {
+    .fn_cs_main_title .title_holder h3 {
+      font-size: 36px;
+    }
+  }
+
+  *------------------------------------------------------------------*/
+/*	Shortcode #15 PROJECT STICKY
+/*------------------------------------------------------------------*/
+.fn_cs_project_sticky {
+  width: 100%;
+  position: relative;
+  padding-top: 150px;
+}
+.fn_cs_project_sticky::after{
+    clear: both;
+}
+.fn_cs_project_sticky .inner {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.fn_cs_project_sticky .left_part {
+  width: 350px;
+  min-width: 350px;
+}
+.fn_cs_project_sticky .right_part {
+  width: 100%;
+  padding-left: 70px;
+  position: relative;
+}
+.fn_cs_sticky_section {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  overflow: visible;
+  top: 150px;
+}
+.fn_cs_sticky_section:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+.fn_cs_project_sticky .left_part h3 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  font-size: 48px;
+  line-height: 1;
+  color: #041230;
+  position: relative;
+  padding-bottom: 14px;
+  margin-bottom: 33px;
+}
+.fn_cs_project_sticky .left_part h3 span {
+  font-weight: 500;
+}
+.fn_cs_project_sticky .left_part h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100px;
+  height: 2px;
+  background-color: #137629;
+}
+.fn_cs_project_sticky .left_part p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 43px;
+}
+.fn_cs_project_sticky .left_part a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-right: 27px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #041230;
+}
+.fn_cs_project_sticky .left_part a svg,
+.fn_cs_project_sticky .left_part a img {
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  margin-top: -7px;
+  right: 0px;
+  position: absolute;
+}
+.fn_cs_project_sticky .left_part a .arrow_hover svg,
+.fn_cs_project_sticky .left_part a .arrow_hover img {
+  opacity: 0;
+  right: 20px;
+}
+.fn_cs_project_sticky .left_part a:hover .arrow svg {
+  opacity: 0;
+}
+.fn_cs_project_sticky .left_part a:hover .arrow_hover svg {
+  right: 0px;
+  opacity: 1;
+  transition: opacity 0.3s 0s ease, right 0.3s 0s ease;
+}
+.fn_cs_project_sticky .right_part ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  float: left;
+  width: 100%;
+}
+.fn_cs_project_sticky .right_part li {
+  width: 100%;
+  margin: 0px;
+  float: left;
+  clear: both;
+  position: relative;
+  margin-bottom: 40px;
+}
+.fn_cs_project_sticky .right_part li:last-child {
+  margin-bottom: 0px;
+}
+.fn_cs_project_sticky .right_part .item {
+  width: 100%;
+  float: left;
+  clear: both;
+  position: relative;
+  padding-bottom: 15px;
+}
+.fn_cs_project_sticky .right_part .title_holder {
+  width: 100%;
+  float: left;
+  clear: both;
+  position: absolute;
+  z-index: 10;
+  left: 0px;
+  bottom: 15px;
+  padding: 34px 50px 36px 50px;
+}
+.fn_cs_project_sticky .right_part .title_holder h3 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 24px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.fn_cs_project_sticky .right_part .title_holder h3 a {
+  background: #006a4d;
+  color: #eee;
+  padding: 5px 20px 5px 10px;
+  text-decoration: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.fn_cs_project_sticky .right_part .title_holder p {
+  margin: 0px;
+  padding: 0px;
+  line-height: 1;
+}
+.fn_cs_project_sticky .right_part .title_holder p a {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0px;
+  font-size: 14px;
+  line-height: 18px;
+  padding-right: 25px;
+}
+.fn_cs_project_sticky .right_part .img_holder img {
+  position: relative;
+  opacity: 0;
+  z-index: -3;
+  min-width: 100%;
+  min-height: 250px;
+}
+.fn_cs_project_sticky .right_part .img_holder .abs_img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 15px;
+  z-index: 5;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-position: center center;
+}
+.fn_cs_project_sticky .right_part .img_holder a {
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.fn_cs_project_sticky .right_part .img_holder a:before {
+  content: "";
+  background-color: #137629;
+  left: 50px;
+  top: 49px;
+  width: 0px;
+  height: 2px;
+  position: absolute;
+  z-index: 22;
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+}
+.fn_cs_project_sticky .right_part .img_holder a:after {
+  content: "";
+  background-color: #137629;
+  left: 59px;
+  top: 40px;
+  width: 2px;
+  height: 0px;
+  position: absolute;
+  z-index: 22;
+  transition: all 0.3s ease;
+}
+.fn_cs_project_sticky .right_part .title_holder p svg,
+.fn_cs_project_sticky .right_part .title_holder p img {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -7px;
+}
+.fn_cs_project_sticky .right_part .title_holder > a {
+  opacity: 0;
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 33;
+}
+.fn_cs_project_sticky .right_part .item:after {
+  left: 30px;
+  right: 30px;
+  height: 15px;
+  bottom: 0px;
+  background-color: #d3aa14;
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+.fn_cs_project_sticky .right_part .item:hover .img_holder a {
+  background-color: rgba(15, 15, 22, 0.9);
+}
+.fn_cs_project_sticky .right_part .item:hover .img_holder a:after {
+  height: 20px;
+}
+.fn_cs_project_sticky .right_part .item:hover .img_holder a:before {
+  width: 20px;
+}
+.fn_cs_project_sticky .right_part .item:hover .title_holder p a {
+  color: #137629;
+}
+.fn_cs_project_sticky .right_part .item:hover .title_holder > a {
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 1400px) {
+  .fn_cs_project_sticky .right_part .title_holder {
+    padding: 24px 30px 26px 30px;
+  }
+  .fn_cs_project_sticky .right_part .img_holder a:after {
+    top: 30px;
+    left: 39px;
+  }
+  .fn_cs_project_sticky .right_part .img_holder a:before {
+    top: 39px;
+    left: 30px;
+  }
+  .fn_cs_project_sticky .right_part .title_holder h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1200px) {
+  .fn_cs_project_sticky .left_part {
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 70px;
+  }
+  .fn_cs_project_sticky .right_part {
+    width: 100%;
+    min-width: 100%;
+    padding-left: 0px;
+  }
+  .fn_cs_project_sticky .inner {
+    flex-direction: column;
+  }
+  .fn_cs_project_sticky .left_part h3 {
+    font-size: 36px;
+  }
+}
+
+
+/**************Client Page*************/
+.clientDiv {
+    padding:  110px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .clientCard {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(25% - 20px); /* To ensure 4 cards per row with margin included */
+  }
+  
+  .clientCard img {
+    max-width: 100%;
+    height: 150px; /* Set the height you want for all images */
+    width: 150px; /* Set the width you want for all images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+  
+  .clientCard h3 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 999px) {
+    .clientDiv{
+        padding: 80px 0;
+    }
+    .clientCard {
+      width: calc(33.33% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .clientDiv{
+        padding: 60px 0;
+    }
+    .clientCard {
+      width: calc(50% - 20px);
+    }
+  }
+  @media (max-width: 520px) {
+    .clientDiv{
+        padding: 40px 0;
+    }
+    .clientCard {
+      width: calc(100% - 20px);
+    }
+  }
+
+  
