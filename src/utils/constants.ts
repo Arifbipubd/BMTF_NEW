@@ -231,7 +231,7 @@ export const navItems: Array<NavItem> = [
                     {
                         id: 2,
                         label: 'Certificates',
-                        link: '/accreditations-and-certificate/#certificate'
+                        link: '/accreditations-and-certificate#certificate'
                     },
                 ]
             },
