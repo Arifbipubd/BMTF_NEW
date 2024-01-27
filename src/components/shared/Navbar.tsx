@@ -360,7 +360,7 @@ export default function Navbar() {
             {isNavHoverd && (
                 <Fragment>
                     <div
-                        className={`hidden fixed left-0 z-50 w-full h-auto  xl:flex  justify-center px-2 py-16
+                        className={`hidden fixed left-0 z-10 w-full h-auto  xl:flex  justify-center px-2 py-16
                         ${isVisible ? "fade-in" : ""} ${fixedDivPostion}
                         `}
                         ref={navRef}
