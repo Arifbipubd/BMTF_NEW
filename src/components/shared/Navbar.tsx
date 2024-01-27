@@ -9,10 +9,7 @@ import { HiOutlineInbox } from "react-icons/hi";
 import { CiFacebook } from "react-icons/ci";
 import { PiYoutubeLogo } from "react-icons/pi";
 import { PiLinkedinLogo } from "react-icons/pi";
-import {
-    BsChevronDown,
-    BsChevronRight,
-} from "react-icons/bs";
+import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import { RiShoppingBag2Line } from "react-icons/ri";
 
 import { navItems } from "@src/utils/constants";
@@ -25,6 +22,7 @@ export default function Navbar() {
     const [backgroundColor, setBackgroundColor] =
         useState<string>("bg-transparent");
     const [navPosition, setNavPosition] = useState<string>("fixed");
+    const [fixedDivPostion, setFixedDivPosition] = useState<string>('top-20');
     const [submenuShow, setSubmenuShow] = useState<boolean>(true);
     const [navTop, setNavTop] = useState<string>("top-2.5");
     const [children, setChildren] = useState<Array<any> | null>(null);
@@ -33,17 +31,21 @@ export default function Navbar() {
     const [isVisible, setIsVisible] = useState(false);
     const [fixedDivMouseHover, setFixedDivMouseHover] =
         useState<boolean>(false);
+    const [navHoverd, setNavHovered] = useState<boolean>(false);
+    useState<boolean>(false);
     const changeOnScroll = () => {
         if (window.scrollY > 10) {
             setBackgroundColor("bg-black/80");
             setNavPosition("fixed");
             setNavTop("top-0");
             setSubmenuShow(false);
+            setFixedDivPosition("top-14");
         } else {
             setBackgroundColor("bg-transparent");
             setNavPosition("absolute");
             setNavTop("top-2.5");
             setSubmenuShow(true);
+            setFixedDivPosition("top-20");
         }
     };
 
@@ -56,8 +58,10 @@ export default function Navbar() {
     };
 
     const handleMouseEnter = (item: any) => {
-        setChildren(item);
+        setIsVisible(true);
         setIsNavHovered(true);
+        setNavHovered(true);
+        setChildren(item);
     };
 
     const mouseLeaveHandler = () => {
@@ -65,10 +69,13 @@ export default function Navbar() {
         setIsNavHovered(false);
         setDropdownHeight(0);
         setFixedDivMouseHover(false);
+        setIsVisible(false);
     };
 
     const fixedDivMouseEnter = () => {
-        setFixedDivMouseHover(true);
+        if(isNavHoverd){
+            setFixedDivMouseHover(true);
+        }
     };
 
     const handleCloseIcon = () => {
@@ -84,20 +91,42 @@ export default function Navbar() {
         if (navRef.current !== null) {
             setDropdownHeight(navRef.current?.offsetHeight);
         }
-        setIsVisible(true);
-    }, [children, isVisible, isNavHoverd, dropdownHeight, fixedDivMouseHover]);
+    }, [children, isVisible]);
 
     useEffect(() => {
-        const eventFired = window.addEventListener("scroll", changeOnScroll);
+        const eventFired: any = window.addEventListener(
+            "scroll",
+            changeOnScroll
+        );
         return () => {
             eventFired;
         };
     });
-    useEffect(()=> {
-        window.addEventListener('resize', ()=> {
-            console.log(window.innerHeight, window.innerWidth)
-        })
-     }, [])
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            // if (window.innerWidth > 1200) {
+            //     setIsNavHovered(false);
+            //     setOpenSubmenuId(null);
+            // }
+        });
+    }, []);
+
+    useEffect(() => {
+        // if (isNavHoverd) {
+        //     setFixedDivMouseHover(true);
+        // } else {
+        //     setFixedDivMouseHover(false);
+        // }
+
+        if (!navHoverd && !fixedDivMouseHover) {
+            setChildren(null);
+            setIsNavHovered(false);
+            setDropdownHeight(0);
+            setFixedDivMouseHover(false);
+            setIsVisible(false);
+        }
+        console.log(fixedDivMouseHover)
+    }, [navHoverd, fixedDivMouseHover, isNavHoverd]);
     return (
         <header
             className={`${backgroundColor} ${navPosition} ${navTop} ${
@@ -200,9 +229,10 @@ export default function Navbar() {
                     <ul
                         className={` block xl:flex xl:items-center xl:gap-[22px]    ${
                             isOpen
-                                ? "block open  w-full xl:w-fit menu h-screen overflow-y-scroll bg-black/80 text-center xl:bg-inherit"
-                                : "hidden bg-inherit"
+                                ? "block open  w-full xl:w-fit menu h-screen xl:h-fit overflow-y-scroll bg-black/80 text-center xl:bg-inherit"
+                                : "hidden bg-inherit w-fit"
                         }`}
+                        onMouseLeave={() => setNavHovered(false)}
                     >
                         <li className="flex justify-end py-7 px-3 md:px-7 lg:px-10 xl:hidden">
                             <button
@@ -221,8 +251,8 @@ export default function Navbar() {
                         {navItems.map((item) => (
                             <Fragment key={item.id}>
                                 <li
-                                    className={`group  py-2.5 lg:py-[17px]
-                                        cursor-pointer px-12 sm:px-16 md:px-24 xl:px-0`}
+                                    className={`group  py-2.5 text-center
+                                        cursor-pointer px-12 sm:px-16 md:px-24 xl:px-0 h-fit`}
                                     onClick={() => childrenOpenHandler(item.id)}
                                     onMouseEnter={() =>
                                         handleMouseEnter(item.children)
@@ -230,7 +260,7 @@ export default function Navbar() {
                                     onMouseLeave={hoverMouseLeave}
                                 >
                                     <div
-                                        className={`flex items-center group-hover:relative group-hover:after:content-['']
+                                        className={`flex items-center justify-center group-hover:relative group-hover:after:content-['']
                                                 grop-hover after:absolute group-hover:after:h-[3px]
                                             group-hover:after:bg-secondary group-hover:after:-bottom-3 xl:group-hover:after:w-full
                                             group-hover:after:scale-x-100 after:hover:scale-x-0 group-hover:after:transition
@@ -241,9 +271,9 @@ export default function Navbar() {
                                                 openSubmenuId === item.id
                                                     ? "text-secondary"
                                                     : "text-white"
-                                            } text-lg font-medium capitalize flex items-center`}
+                                            } text-lg font-medium capitalize flex items-center h-full`}
                                         >
-                                            <span className="mr-1.5">
+                                            <span className="mr-1.5 h-full">
                                                 {item.label}
                                             </span>
                                             <div
@@ -256,11 +286,11 @@ export default function Navbar() {
                                             >
                                                 {openSubmenuId === item.id ? (
                                                     <i className="text-xs">
-                                                        <BsChevronDown />
+                                                        <BsChevronUp />
                                                     </i>
                                                 ) : (
                                                     <i className="text-xs">
-                                                        <BsChevronRight />
+                                                        <BsChevronDown />
                                                     </i>
                                                 )}
                                             </div>
@@ -271,23 +301,24 @@ export default function Navbar() {
                                             openSubmenuId === item.id
                                                 ? "block xl:hidden"
                                                 : "hidden"
-                                        }  xl:pt-10`}
+                                        } flex justify-center xl:pt-10`}
                                     >
-                                        <ul className="ml-4 md:ml-6">
+                                        <ul className="ml-8">
                                             {item.children?.map((children) => (
                                                 <li
                                                     key={children.id}
-                                                    className="text-white text-start text-xl md:text-2xl my-5 md:my-6"
+                                                    className="text-white  text-xl md:text-2xl my-5 md:my-6 xl:h-full"
                                                 >
                                                     {children.label}
-                                                    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-col-2 gap-5 md:gap-6 text-start mt-3 ml-3">
+                                                    <hr className="w-full h-0.5 border-t border-t-secondary my-2.5" />
+                                                    <ul className=" mt-3">
                                                         {children.menuItems.map(
                                                             (menu: any) => (
                                                                 <li
                                                                     key={
                                                                         menu.id
                                                                     }
-                                                                 className="text-base"
+                                                                    className="text-base my-3 md:my-4"
                                                                 >
                                                                     <Link
                                                                         href={
@@ -311,7 +342,7 @@ export default function Navbar() {
                             </Fragment>
                         ))}
 
-                        <div className="xl:h-full px-24 md:px-0 md:flex md:items-center md:justify-center xl:block w-full xl:w-fit">
+                        <div className="xl:h-full  flex items-center justify-center xl:block w-full xl:w-fit mt-4 xl:mt-0">
                             <Link href={"/"} className="">
                                 <button className="flex items-center bg-primary border-0 py-3 md:py-4 px-4 md:px-[22px] text-yellow">
                                     <span>
@@ -329,14 +360,14 @@ export default function Navbar() {
             {isNavHoverd && (
                 <Fragment>
                     <div
-                        className={`hidden absolute top-24 left-0  w-full -z-10 h-auto  xl:flex  justify-center px-2 py-16
-                        ${isVisible ? "fade-in" : ""}
+                        className={`hidden fixed left-0 z-50 w-full h-auto  xl:flex  justify-center px-2 py-16
+                        ${isVisible ? "fade-in" : ""} ${fixedDivPostion}
                         `}
                         ref={navRef}
                         onMouseEnter={fixedDivMouseEnter}
                         onMouseLeave={mouseLeaveHandler}
                     >
-                        <div className="w-1/2 mx-auto">
+                        <div className="w-1/2 mx-auto h-full">
                             {children &&
                                 children.map((item) => (
                                     <div key={item.id} className="mb-4">
@@ -367,7 +398,7 @@ export default function Navbar() {
             <div
                 className={`fixed top-0 left-0 w-screen -z-20 bg-black/80`}
                 style={{
-                    height: `${dropdownHeight > 0 ? dropdownHeight + 80 : 0}px`,
+                    height: `${dropdownHeight > 0 ? dropdownHeight + 100 : 0}px`,
                     transition: "all 0.5s ease-in-out",
                 }}
             ></div>
@@ -375,60 +406,3 @@ export default function Navbar() {
     );
 }
 
-// {
-//     navItems.map((item) => (
-//         <Fragment key={item.id}>
-//             <li
-//                 className={`md:flex md:flex-col xl:flex-row md:items-center justify-center relative group xl:mr-[22px] py-2.5 lg:py-[17px]
-//             cursor-pointer px-24 md:px-0 after:block after:content-[''] after:absolute after:h-[3px]
-//              after:bg-secondary after:bottom-2 xl:after:w-full
-//              after:scale-x-0 after:hover:scale-x-100 after:transition
-//              after:duration-300 after:origin-left`}
-//                 onClick={() => childrenOpenHandler(item.id)}
-//             >
-//                 <div className="text-white text-lg font-medium capitalize flex items-center">
-//                     <span className="mr-1.5">{item.label}</span>
-//                     <div
-//                         className={`${
-//                             item.children && item.children?.length > 0
-//                                 ? "block"
-//                                 : "hidden"
-//                         }`}
-//                     >
-//                         <i className="text-xs text-white">
-//                             <BsChevronDown />
-//                         </i>
-//                     </div>
-//                 </div>
-//                 <div
-//                     className={`bg-black/90 fixed top-0 left-0 w-full
-//                     h-0 group-hover:h-1/2 -z-10 group-hover:transition-all group-hover:duration-300
-//                     group-hover:ease-linear hidden xl:group-hover:block`}
-//                 />
-//                 <div>
-//                     <div
-//                         className={`${
-//                             openSubmenuId === item.id
-//                                 ? "block xl:hidden relative xl:absolute ml-6 md:ml-8 xl:ml-0 mt-5 xl:mt-2"
-//                                 : "hidden"
-//                         }
-//                         xl:absolute xl:top-14 xl:left-0 xl:w-[40vw] bg-inherit
-//                         xl:group-hover:flex group-hover:flex-col xl:hidden xl:mt-2`}
-//                     >
-//                         {item.children &&
-//                             item.children.map((children) => (
-//                                 <div key={children.id} className="mb-2">
-//                                     <Link
-//                                         href={children.link}
-//                                         className="text-lg text-white font-medium relative"
-//                                     >
-//                                         {children.label}
-//                                     </Link>
-//                                 </div>
-//                             ))}
-//                     </div>
-//                 </div>
-//             </li>
-//         </Fragment>
-//     ));
-// }

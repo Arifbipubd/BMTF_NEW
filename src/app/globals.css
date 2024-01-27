@@ -191,6 +191,13 @@ span {
     background-color: var(--color-tertiary);
   }
 
+
+/* LightBox Background */
+
+.yarl__container{
+  background-color: rgba(0,0,0,0.8) !important;
+}
+
 /******Accreditations***********/
 .accreditationDiv {
     padding-top: 80px !important;
