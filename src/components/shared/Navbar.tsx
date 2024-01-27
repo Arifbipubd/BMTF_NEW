@@ -23,6 +23,7 @@ export default function Navbar() {
         useState<string>("bg-transparent");
     const [navPosition, setNavPosition] = useState<string>("fixed");
     const [fixedDivPostion, setFixedDivPosition] = useState<string>('top-20');
+    const [fixedDivIndex, setFixedDivIndex] = useState<string>('-z-10');
     const [submenuShow, setSubmenuShow] = useState<boolean>(true);
     const [navTop, setNavTop] = useState<string>("top-2.5");
     const [children, setChildren] = useState<Array<any> | null>(null);
@@ -40,12 +41,14 @@ export default function Navbar() {
             setNavTop("top-0");
             setSubmenuShow(false);
             setFixedDivPosition("top-14");
+            setFixedDivIndex('z-10')
         } else {
             setBackgroundColor("bg-transparent");
             setNavPosition("absolute");
             setNavTop("top-2.5");
             setSubmenuShow(true);
             setFixedDivPosition("top-20");
+            setFixedDivIndex('-z-10')
         }
     };
 
@@ -102,21 +105,8 @@ export default function Navbar() {
             eventFired;
         };
     });
-    useEffect(() => {
-        window.addEventListener("resize", () => {
-            // if (window.innerWidth > 1200) {
-            //     setIsNavHovered(false);
-            //     setOpenSubmenuId(null);
-            // }
-        });
-    }, []);
 
     useEffect(() => {
-        // if (isNavHoverd) {
-        //     setFixedDivMouseHover(true);
-        // } else {
-        //     setFixedDivMouseHover(false);
-        // }
 
         if (!navHoverd && !fixedDivMouseHover) {
             setChildren(null);
@@ -360,8 +350,8 @@ export default function Navbar() {
             {isNavHoverd && (
                 <Fragment>
                     <div
-                        className={`hidden fixed left-0 z-10 w-full h-auto  xl:flex  justify-center px-2 py-16
-                        ${isVisible ? "fade-in" : ""} ${fixedDivPostion}
+                        className={`hidden fixed left-0 w-full h-auto  xl:flex  justify-center px-2 py-16
+                        ${isVisible ? "fade-in" : ""} ${fixedDivPostion} ${fixedDivIndex}
                         `}
                         ref={navRef}
                         onMouseEnter={fixedDivMouseEnter}
