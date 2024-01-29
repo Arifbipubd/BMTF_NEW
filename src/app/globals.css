@@ -109,6 +109,14 @@ span {
 .nocAndNotice .responsive-table .table-row {
     background-color: #f3f9ff;
 }
+
+.nocAndNotice .responsive-table .table-row:nth-child(even){
+  background-color: white;
+}
+
+.nocAndNotice .responsive-table .table-row:hover {
+  background-color: #f3f9ff;
+}
 .nocAndNotice .responsive-table .col-1 {
     flex-basis: 10%;
    
@@ -139,6 +147,13 @@ span {
     background: var(--color-primary);
     font-size: 12px;
     font-weight: 600;
+}
+
+.nocAndNotice .file {
+  color: var(--color-primary);
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .nocAndNotice .download {
     background: var(--color-yellow);
