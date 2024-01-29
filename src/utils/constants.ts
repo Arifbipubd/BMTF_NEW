@@ -283,6 +283,11 @@ export const navItems: Array<NavItem> = [
                         id: 1,
                         label: "Contact Us",
                         link: "/contact",
+                    },
+                    {
+                        id: 2,
+                        label: "Career Oppurtunities",
+                        link: "/career",
                     }
                 ]
             }

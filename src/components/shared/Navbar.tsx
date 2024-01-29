@@ -2,6 +2,7 @@
 
 import { useState, Fragment, useEffect, useRef } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { CgClose, CgMenuRight } from "react-icons/cg";
 import { PiPhoneThin } from "react-icons/pi";
@@ -15,6 +16,7 @@ import { RiShoppingBag2Line } from "react-icons/ri";
 import { navItems } from "@src/utils/constants";
 
 export default function Navbar() {
+    const pathName = usePathname();
     const navRef = useRef<HTMLDivElement | null>(null);
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [windowWidth, setWindowWidth] = useState<number>(0);
@@ -22,7 +24,7 @@ export default function Navbar() {
     const [backgroundColor, setBackgroundColor] =
         useState<string>("bg-transparent");
     const [navPosition, setNavPosition] = useState<string>("fixed");
-    const [fixedDivPostion, setFixedDivPosition] = useState<string>('top-20');
+    const [fixedDivPostion, setFixedDivPosition] = useState<string>('top-24');
     const [submenuShow, setSubmenuShow] = useState<boolean>(true);
     const [navTop, setNavTop] = useState<string>("top-2.5");
     const [children, setChildren] = useState<Array<any> | null>(null);
@@ -45,9 +47,11 @@ export default function Navbar() {
             setNavPosition("absolute");
             setNavTop("top-2.5");
             setSubmenuShow(true);
-            setFixedDivPosition("top-20");
+            setFixedDivPosition("top-24");
         }
     };
+
+    console.log(pathName);
 
     const childrenOpenHandler = (itemId: number) => {
         if (openSubmenuId === itemId) {
@@ -102,22 +106,8 @@ export default function Navbar() {
             eventFired;
         };
     });
-    useEffect(() => {
-        window.addEventListener("resize", () => {
-            // if (window.innerWidth > 1200) {
-            //     setIsNavHovered(false);
-            //     setOpenSubmenuId(null);
-            // }
-        });
-    }, []);
 
     useEffect(() => {
-        // if (isNavHoverd) {
-        //     setFixedDivMouseHover(true);
-        // } else {
-        //     setFixedDivMouseHover(false);
-        // }
-
         if (!navHoverd && !fixedDivMouseHover) {
             setChildren(null);
             setIsNavHovered(false);
@@ -125,7 +115,6 @@ export default function Navbar() {
             setFixedDivMouseHover(false);
             setIsVisible(false);
         }
-        console.log(fixedDivMouseHover)
     }, [navHoverd, fixedDivMouseHover, isNavHoverd]);
     return (
         <header
@@ -251,7 +240,7 @@ export default function Navbar() {
                         {navItems.map((item) => (
                             <Fragment key={item.id}>
                                 <li
-                                    className={`group  py-2.5 text-center
+                                    className={`group  py-2.5 xl:py-0 text-center
                                         cursor-pointer px-12 sm:px-16 md:px-24 xl:px-0 h-fit`}
                                     onClick={() => childrenOpenHandler(item.id)}
                                     onMouseEnter={() =>
@@ -303,11 +292,11 @@ export default function Navbar() {
                                                 : "hidden"
                                         } flex justify-center xl:pt-10`}
                                     >
-                                        <ul className="ml-8">
+                                        <ul className=" ">
                                             {item.children?.map((children) => (
                                                 <li
                                                     key={children.id}
-                                                    className="text-white  text-xl md:text-2xl my-5 md:my-6 xl:h-full"
+                                                    className="text-white text-start text-xl ml-28 md:text-2xl my-5 md:my-6 xl:h-full"
                                                 >
                                                     {children.label}
                                                     <hr className="w-full h-0.5 border-t border-t-secondary my-2.5" />
