@@ -1,53 +1,24 @@
-/** @format */
+"use client";
 
 import React from "react";
 
 type Props = {};
 
-function AboutBMTF({}: Props) {
+export default function HeroSection({}: Props) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-7">
-            <div className="bg-primary py-20 md:py-32 lg:py-[154px] md:col-span-3">
-                <div className="container mx-auto flex lg:-mr-[170px] gap-10 justify-end">
-                    <div className="relative">
-                        {/*eslint-disable-next-line @next/next/no-img-element*/}
-                        <img
-                            src="/assets/images/home/Foundry_shop_05.png"
-                            alt=""
-                            className="rounded-[10px]"
-                        />
-                        <div
-                            className={`absolute -right-28 top-[50%] -translate-y-1/2 -my-1/2 
-                                        bg-primary p-[30px] rounded-full
-                                        border-4 border-white z-10
-                                `}
-                        >
-                            {/*eslint-disable-next-line @next/next/no-img-element*/}
-                            <img
-                                src="assets/images/home/Vector.svg"
-                                alt=""
-                                className="w-fit"
-                            />
-                        </div>
-                    </div>
-                    <div className="z-0">
-                        <div className="mb-5">
-                            {/*eslint-disable-next-line @next/next/no-img-element*/}
-                            <img
-                                src="/assets/images/home/CTD_01.png"
-                                alt=""
-                                className="rounded-[10px]"
-                            />
-                        </div>
-                        <div>
-                            {/*eslint-disable-next-line @next/next/no-img-element*/}
-                            <img
-                                src="/assets/images/home/CTD_02.png"
-                                alt=""
-                                className="rounded-[10px]"
-                            />
-                        </div>
-                    </div>
+            <div className="bg-primary py-20 md:py-32 lg:py-[154px] md:col-span-3 relative z-10">
+                <div className="container mx-auto lg:-mr-[100px] xl:-mr-[160px]">
+                    {/*eslint-disable-next-line @next/next/no-img-element*/}
+                    <img
+                        src="/assets/images/about/corporate_social.png"
+                        alt=""
+                        className="rounded-[10px]"
+                    />
+                </div>
+                <div className="absolute top-4 right-2 -z-10">
+                    {/*eslint-disable-next-line @next/next/no-img-element*/}
+                    <img src="/assets/images/shared/Frame.png" alt="" />
                 </div>
             </div>
             <div
@@ -84,5 +55,3 @@ function AboutBMTF({}: Props) {
         </div>
     );
 }
-
-export default AboutBMTF;
