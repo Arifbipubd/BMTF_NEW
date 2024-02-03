@@ -24,7 +24,7 @@ export default function Navbar() {
     const [backgroundColor, setBackgroundColor] =
         useState<string>("bg-transparent");
     const [navPosition, setNavPosition] = useState<string>("fixed");
-    const [fixedDivPostion, setFixedDivPosition] = useState<string>('top-24');
+    const [fixedDivPostion, setFixedDivPosition] = useState<string>('top-28');
     const [submenuShow, setSubmenuShow] = useState<boolean>(true);
     const [navTop, setNavTop] = useState<string>("top-2.5");
     const [children, setChildren] = useState<Array<any> | null>(null);
@@ -41,13 +41,13 @@ export default function Navbar() {
             setNavPosition("fixed");
             setNavTop("top-0");
             setSubmenuShow(false);
-            setFixedDivPosition("top-14");
+            setFixedDivPosition("top-16");
         } else {
             setBackgroundColor("bg-transparent");
             setNavPosition("absolute");
             setNavTop("top-2.5");
             setSubmenuShow(true);
-            setFixedDivPosition("top-24");
+            setFixedDivPosition("top-28");
         }
     };
 

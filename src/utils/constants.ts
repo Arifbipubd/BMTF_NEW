@@ -103,6 +103,11 @@ export const navItems: Array<NavItem> = [
                         link: "/our-client",
                         label: "Our Client",
                     },
+                    {
+                        id: 26,
+                        link: '/corporate-social-responsibility',
+                        label: 'Corporate Social Responsibility'
+                    }
                 ]
             }
         ],
@@ -249,6 +254,11 @@ export const navItems: Array<NavItem> = [
                         id: 1,
                         label: "Noc And Notice",
                         link: "/noc-and-notice",
+                    },
+                    {
+                        id: 2,
+                        link: '/news-and-tenders',
+                        label: 'News and Tenders'
                     }
                 ]
             },

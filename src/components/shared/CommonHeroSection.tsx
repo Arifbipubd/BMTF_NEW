@@ -29,12 +29,12 @@ export default function CommonHeroSection({
                 <div className="bg-[rgba(16,25,48,0.70)] absolute left-0 w-full h-full -z-10" />
                 {breadcrumb.length > 0 && (
                     <>
-                        <div className="contatner mx-auto grid grid-cols-1 place-items-center place-content-center">
+                        <div className="container mx-auto grid grid-cols-1 place-items-center place-content-center">
                             <div className="text-center">
-                                <div className="mb-5 md:mb-6 lg:mb-[30px]">
+                                <div className="mb-5 md:mb-6 lg:mb-[30px] mx-auto">
                                     <p
                                         className={`text-white text-4xl md:text-5xl lg:text-[52px] 
-                                    leading-[56px] font-extrabold capitalize
+                                    lg:leading-[64px] font-extrabold capitalize
                                     `}
                                     >
                                         {heading}
