@@ -24,7 +24,7 @@ export default function Navbar() {
     const [backgroundColor, setBackgroundColor] =
         useState<string>("bg-transparent");
     const [navPosition, setNavPosition] = useState<string>("fixed");
-    const [fixedDivPostion, setFixedDivPosition] = useState<string>('top-28');
+    const [fixedDivPostion, setFixedDivPosition] = useState<string>('top-24');
     const [submenuShow, setSubmenuShow] = useState<boolean>(true);
     const [navTop, setNavTop] = useState<string>("top-2.5");
     const [children, setChildren] = useState<Array<any> | null>(null);
@@ -47,11 +47,10 @@ export default function Navbar() {
             setNavPosition("absolute");
             setNavTop("top-2.5");
             setSubmenuShow(true);
-            setFixedDivPosition("top-28");
+            setFixedDivPosition("top-24");
         }
     };
 
-    console.log(pathName);
 
     const childrenOpenHandler = (itemId: number) => {
         if (openSubmenuId === itemId) {
@@ -62,7 +61,7 @@ export default function Navbar() {
     };
 
     const handleMouseEnter = (item: any) => {
-        setIsVisible(true);
+        // setIsVisible(true);
         setIsNavHovered(true);
         setNavHovered(true);
         setChildren(item);
@@ -88,7 +87,7 @@ export default function Navbar() {
     };
 
     const hoverMouseLeave = () => {
-        setIsVisible(false);
+        setNavHovered(false)
     };
 
     useEffect(() => {
@@ -108,6 +107,9 @@ export default function Navbar() {
     });
 
     useEffect(() => {
+        if(navHoverd){
+            setIsVisible(true);
+        }
         if (!navHoverd && !fixedDivMouseHover) {
             setChildren(null);
             setIsNavHovered(false);
@@ -221,7 +223,7 @@ export default function Navbar() {
                                 ? "block open  w-full xl:w-fit menu h-screen xl:h-fit overflow-y-scroll bg-black/80 text-center xl:bg-inherit"
                                 : "hidden bg-inherit w-fit"
                         }`}
-                        onMouseLeave={() => setNavHovered(false)}
+                        
                     >
                         <li className="flex justify-end py-7 px-3 md:px-7 lg:px-10 xl:hidden">
                             <button
@@ -349,7 +351,7 @@ export default function Navbar() {
             {isNavHoverd && (
                 <Fragment>
                     <div
-                        className={`hidden fixed left-0 z-10 w-full h-auto  xl:flex  justify-center px-2 py-16
+                        className={`hidden fixed left-0 z-10 w-full h-auto  xl:flex  justify-center px-2 py-16 transition-all duration-200 ease-linear
                         ${isVisible ? "fade-in" : ""} ${fixedDivPostion}
                         `}
                         ref={navRef}
@@ -385,7 +387,7 @@ export default function Navbar() {
                 </Fragment>
             )}
             <div
-                className={`fixed top-0 left-0 w-screen -z-20 bg-black/80`}
+                className={`fixed top-0 left-0 w-screen -z-20 bg-black/80 overflow-hidden`}
                 style={{
                     height: `${dropdownHeight > 0 ? dropdownHeight + 100 : 0}px`,
                     transition: "all 0.5s ease-in-out",
