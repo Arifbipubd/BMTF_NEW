@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { imageGallery } from "@src/utils/imageAndVideoGallery";
-import { RiSearchLine } from "react-icons/ri";
+import { FaSearchPlus } from "react-icons/fa";
 
 type Props = {};
 
@@ -49,7 +49,7 @@ export default function ImageGallery({}: Props) {
                              -translate-y-1/2`}
                         >
                             <i className="text-3xl lg:text-[32px] text-secondary ">
-                                <RiSearchLine />
+                                <FaSearchPlus />
                             </i>
                         </div>
                     </div>

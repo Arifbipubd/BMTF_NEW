@@ -18,7 +18,7 @@ export default function ConnectBMTF({
                         `}
                     >
                         <div className="mb-4 md:mb-5 lg:mb-[30px]">
-                            <p className="text-headline font-xl md:text-2xl text-justify">
+                            <p className="text-headline font-xl md:text-2xl">
                                 Connect with BMTF today to explore strategic
                                 collaborations, innovation, and economic
                                 transformation.
@@ -35,6 +35,7 @@ export default function ConnectBMTF({
                         </div>
                     </div>
                     <div className="relative">
+                        {/*eslint-disable-next-line @next/next/no-img-element*/}
                         <img
                             src={imageSrc}
                             alt=""
@@ -50,6 +51,7 @@ export default function ConnectBMTF({
                              z-10
                         `}
                         >
+                            {/*eslint-disable-next-line @next/next/no-img-element*/}
                             <img
                                 src="/assets/images/home/Vector.svg"
                                 alt=""

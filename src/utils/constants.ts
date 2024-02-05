@@ -439,46 +439,7 @@ export const timeline = [
     },
 ];
 
-export const memoryOne = [
-    {
-        id: 1,
-        imgSrc: "/assets/images/history/Memory_snap/Memory_1.png",
-    },
-    {
-        id: 2,
-        imgSrc: "/assets/images/history/Memory_snap/Memory_2.png",
-    },
-    {
-        id: 3,
-        imgSrc: "/assets/images/history/Memory_snap/Memory_3.png",
-    },
-];
 
-export const memoryTwo = [
-    {
-        id: 4,
-        imgSrc: "/assets/images/history/Memory_snap/Memory_4.png",
-    },
-    {
-        id: 5,
-        imgSrc: "/assets/images/history/Memory_snap/Memory_5.png",
-    },
-];
-
-export const memoryThree = [
-    {
-        id: 6,
-        imgSrc: "/assets/images/history/Memory_snap/Memory_6.png",
-    },
-    {
-        id: 7,
-        imgSrc: "/assets/images/history/Memory_snap/Memory_7.png",
-    },
-    {
-        id: 8,
-        imgSrc: "/assets/images/history/Memory_snap/Memory_8.png",
-    },
-];
 
 export const verticals = [
     {
