@@ -1,10 +1,26 @@
-import React from "react";
-import { memoryOne, memoryTwo, memoryThree } from "@src/utils/constants";
-import { RiSearchLine } from "react-icons/ri";
+"use client";
+
+import React, { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import { historyGallery } from "@src/utils/historyGallery";
+import { FaSearchPlus } from "react-icons/fa";
 
 type Props = {};
 
 export default function Memory({}: Props) {
+    const [index, setIndex] = useState<number>(-1);
+
+    const slides = historyGallery.map((photo) => {
+        const width = 1080 * 4;
+        const height = 1000 * 4;
+        return {
+            src: photo,
+            width,
+            height,
+        };
+    });
+
     return (
         <div className="bg-white py-20 md:py-24 lg:py-[109px]">
             <div className="container mx-auto">
@@ -13,111 +29,46 @@ export default function Memory({}: Props) {
                         Memory Snap
                     </p>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    <div className="grid gap-4">
-                        {memoryOne.map((item) => (
+                <div className="columns-1 gap-6 sm:columns-2 sm:gap-[30px]  lg:columns-3 historyImage">
+                    {historyGallery.map((item, index) => (
+                        <div
+                            key={index}
+                            className="group relative z-0 transition-all duration-200 ease-in-out mb-6 sm:mb-[30px] last-of-type:mb-0 cursor-pointer"
+                            onClick={() => setIndex(index)}
+                        >
+                            {/*eslint-disable-next-line @next/next/no-img-element*/}
+                            <img
+                                className="h-auto max-w-full rounded-lg w-full"
+                                src={item}
+                                alt=""
+                            />
                             <div
-                                key={item.id}
-                                className="group relative z-0 transition-all duration-200 ease-linear"
-                            >
-                                {/*eslint-disable-next-line @next/next/no-img-element*/}
-                                <img
-                                    className="h-auto max-w-full rounded-lg w-full"
-                                    src={item.imgSrc}
-                                    alt=""
-                                />
-                                <div
-                                    className={`bg-[rgba(46,46,54,0.60)] rounded-[10px] 
-                             hidden group-hover:block group-hover:absolute group-hover:z-10 
+                                className={`bg-[rgba(46,46,54,0.60)] rounded-[10px]
+                             hidden group-hover:block group-hover:absolute group-hover:z-10
                             group-hover:left-0 group-hover:top-0 group-hover:bottom-0 group-hover:right-0
-                             group-hover:w-full 
+                             group-hover:w-full
                             group-hover:h-full`}
-                                />
-                                <div
-                                    className={` 
-                             hidden group-hover:block group-hover:absolute group-hover:z-20 
-                            group-hover:left-[50%] group-hover:top-[50%] group-hover:-translate-x-1/2 
-                             -translate-y-1/2`}
-                                >
-                                    <a href="#" className="">
-                                        <i className="text-3xl lg:text-[32px] text-secondary ">
-                                            <RiSearchLine />
-                                        </i>
-                                    </a>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="grid gap-4">
-                        {memoryTwo.map((item) => (
+                            />
                             <div
-                                key={item.id}
-                                className="group relative z-0 transition-all duration-200 ease-linear"
+                                className={`
+                             hidden group-hover:block group-hover:absolute group-hover:z-20
+                            group-hover:left-[50%] group-hover:top-[50%] group-hover:-translate-x-1/2
+                             -translate-y-1/2 group-hover:transition-all group-hover:duration-200 group-hover:ease-in-out`}
                             >
-                                {/*eslint-disable-next-line @next/next/no-img-element*/}
-                                <img
-                                    className="h-auto max-w-full rounded-lg w-full"
-                                    src={item.imgSrc}
-                                    alt=""
-                                />
-                                <div
-                                    className={`bg-[rgba(46,46,54,0.60)] rounded-[10px] 
-                                 hidden group-hover:block group-hover:absolute group-hover:z-10 
-                                group-hover:left-0 group-hover:top-0 group-hover:bottom-0 group-hover:right-0
-                                 group-hover:w-full 
-                                group-hover:h-full`}
-                                />
-                                <div
-                                    className={` 
-                                 hidden group-hover:block group-hover:absolute group-hover:z-20 
-                                group-hover:left-[50%] group-hover:top-[50%] group-hover:-translate-x-1/2 
-                                 -translate-y-1/2`}
-                                >
-                                    <a href="#" className="">
-                                        <i className="text-3xl lg:text-[32px] text-secondary ">
-                                            <RiSearchLine />
-                                        </i>
-                                    </a>
-                                </div>
+                                <i className="text-3xl lg:text-[32px] text-secondary ">
+                                    <FaSearchPlus />
+                                </i>
                             </div>
-                        ))}
-                    </div>
-                    <div className="grid grid-cols-2 col-span-2 md:grid-cols-1 md:col-span-1 gap-4">
-                        {memoryThree.map((item) => (
-                            <div
-                                key={item.id}
-                                className="group relative z-0 transition-all duration-200 ease-linear"
-                            >
-                                {/*eslint-disable-next-line @next/next/no-img-element*/}
-                                <img
-                                    className="h-auto max-w-full rounded-lg w-full"
-                                    src={item.imgSrc}
-                                    alt=""
-                                />
-                                <div
-                                    className={`bg-[rgba(46,46,54,0.60)] rounded-[10px] 
-                             hidden group-hover:block group-hover:absolute group-hover:z-10 
-                            group-hover:left-0 group-hover:top-0 group-hover:bottom-0 group-hover:right-0
-                             group-hover:w-full 
-                            group-hover:h-full`}
-                                />
-                                <div
-                                    className={` 
-                             hidden group-hover:block group-hover:absolute group-hover:z-20 
-                            group-hover:left-[50%] group-hover:top-[50%] group-hover:-translate-x-1/2 
-                             -translate-y-1/2`}
-                                >
-                                    <a href="#" className="">
-                                        <i className="text-3xl lg:text-[32px] text-secondary ">
-                                            <RiSearchLine />
-                                        </i>
-                                    </a>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                        </div>
+                    ))}
                 </div>
             </div>
+            <Lightbox
+                index={index}
+                slides={slides}
+                open={index >= 0}
+                close={() => setIndex(-1)}
+            />
         </div>
     );
 }

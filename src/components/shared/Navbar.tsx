@@ -24,7 +24,7 @@ export default function Navbar() {
     const [backgroundColor, setBackgroundColor] =
         useState<string>("bg-transparent");
     const [navPosition, setNavPosition] = useState<string>("fixed");
-    const [fixedDivPostion, setFixedDivPosition] = useState<string>('top-24');
+    const [fixedDivPostion, setFixedDivPosition] = useState<string>("top-24");
     const [submenuShow, setSubmenuShow] = useState<boolean>(true);
     const [navTop, setNavTop] = useState<string>("top-2.5");
     const [children, setChildren] = useState<Array<any> | null>(null);
@@ -41,7 +41,7 @@ export default function Navbar() {
             setNavPosition("fixed");
             setNavTop("top-0");
             setSubmenuShow(false);
-            setFixedDivPosition("top-16");
+            setFixedDivPosition("top-14");
         } else {
             setBackgroundColor("bg-transparent");
             setNavPosition("absolute");
@@ -50,7 +50,6 @@ export default function Navbar() {
             setFixedDivPosition("top-24");
         }
     };
-
 
     const childrenOpenHandler = (itemId: number) => {
         if (openSubmenuId === itemId) {
@@ -76,7 +75,7 @@ export default function Navbar() {
     };
 
     const fixedDivMouseEnter = () => {
-        if(isNavHoverd){
+        if (isNavHoverd) {
             setFixedDivMouseHover(true);
         }
     };
@@ -87,7 +86,7 @@ export default function Navbar() {
     };
 
     const hoverMouseLeave = () => {
-        setNavHovered(false)
+        setNavHovered(false);
     };
 
     useEffect(() => {
@@ -107,7 +106,7 @@ export default function Navbar() {
     });
 
     useEffect(() => {
-        if(navHoverd){
+        if (navHoverd) {
             setIsVisible(true);
         }
         if (!navHoverd && !fixedDivMouseHover) {
@@ -223,7 +222,6 @@ export default function Navbar() {
                                 ? "block open  w-full xl:w-fit menu h-screen xl:h-fit overflow-y-scroll bg-black/80 text-center xl:bg-inherit"
                                 : "hidden bg-inherit w-fit"
                         }`}
-                        
                     >
                         <li className="flex justify-end py-7 px-3 md:px-7 lg:px-10 xl:hidden">
                             <button
@@ -292,16 +290,16 @@ export default function Navbar() {
                                             openSubmenuId === item.id
                                                 ? "block xl:hidden"
                                                 : "hidden"
-                                        } flex justify-center xl:pt-10`}
+                                        } flex justify-end w-fit mx-auto xl:pt-10`}
                                     >
                                         <ul className=" ">
                                             {item.children?.map((children) => (
                                                 <li
                                                     key={children.id}
-                                                    className="text-white text-start text-xl ml-28 md:text-2xl my-5 md:my-6 xl:h-full"
+                                                    className="text-white text-center text-xl md:text-2xl mt-5 mb-3 md:mt-6 md:mb-4 xl:h-full"
                                                 >
                                                     {children.label}
-                                                    <hr className="w-full h-0.5 border-t border-t-secondary my-2.5" />
+                                                    <hr className="w-3/4 h-0.5 border-t border-t-secondary my-2.5 mx-auto" />
                                                     <ul className=" mt-3">
                                                         {children.menuItems.map(
                                                             (menu: any) => (
@@ -389,11 +387,12 @@ export default function Navbar() {
             <div
                 className={`fixed top-0 left-0 w-screen -z-20 bg-black/80 overflow-hidden`}
                 style={{
-                    height: `${dropdownHeight > 0 ? dropdownHeight + 100 : 0}px`,
+                    height: `${
+                        dropdownHeight > 0 ? dropdownHeight + 100 : 0
+                    }px`,
                     transition: "all 0.5s ease-in-out",
                 }}
             ></div>
         </header>
     );
 }
-
