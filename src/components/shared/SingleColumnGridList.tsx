@@ -29,13 +29,13 @@ export default function SingleColumnGridList({
                     textOrder !== null ? textOrder : ""
                 }`}
             >
-                <div className={`py-16 lg:py-[54px] xl:col-span-4 ${textOrder === 'order-2'? 'px-0' : 'px-6 lg:px-8'}`}>
+                <div className={`py-16 lg:py-[54px] xl:col-span-4 ${textOrder === 'order-2'? 'px-0' : 'px-6 lg:px-8 xl:px-20'}`}>
                     <div className="mb-5 md:mb-6 lg:mb-[30px]">
-                        <h2 className="text-headline text-lg sm:text-xl font-semibold">
+                        <h2 className="text-headline text-lg sm:text-xl md:text-2xl lg:text-[32px] font-semibold lg:leading-[150%]">
                             {listHeading}
                         </h2>
                         {description && (
-                            <p className="mb-5 md:mb-6 lg:mb-[30px] text-black text-sm text-justify ">
+                            <p className="mb-5 md:mb-6 lg:mb-[30px] text-black text-justify ">
                                 {description}
                             </p>
                         )}
@@ -49,7 +49,7 @@ export default function SingleColumnGridList({
                                     </i>
                                 </div>
                                 <div>
-                                    <p className="text-tertiary font-sm">
+                                    <p className="text-black text-sm">
                                         {item.label}
                                     </p>
                                 </div>
@@ -63,6 +63,7 @@ export default function SingleColumnGridList({
                     imageOrder !== null ? imageOrder : ""
                 }`}
             >
+                {/*eslint-disable-next-line @next/next/no-img-element*/}
                 <img src={imageSrc} alt="aim" className="w-full h-full" />
             </div>
         </div>

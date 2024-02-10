@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 
@@ -11,6 +11,7 @@ export default function AimSection({ imageSrc, aimItems }: Props) {
     return (
         <div className="bg-headline grid grid-cols-1 lg:grid-cols-2 lg:place-items-center">
             <div className="w-full">
+                {/* eslint-disable-next-line @next/next/no-img-element*/}
                 <img src={imageSrc} alt="aim" className="w-full" />
             </div>
             <div className="container mx-auto grid  md:grid-cols-4">

@@ -40,6 +40,7 @@ export default function Safety({
                     imageOrder ? imageOrder : "order-1 lg:order-2"
                 } `}
             >
+                {/*eslint-disable-next-line @next/next/no-img-element*/}
                 <img
                     src={imageSrc}
                     alt="services"

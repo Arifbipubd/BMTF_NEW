@@ -22,6 +22,7 @@ export default function News({}: Props) {
                             key={item.id}
                         >
                             <div>
+                                {/* eslint-disable-next-line @next/next/no-img-element*/}
                                 <img
                                     src={item.imgSrc}
                                     alt=""

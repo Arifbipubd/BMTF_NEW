@@ -22,9 +22,9 @@ export default function VerticalNavigation({}: Props) {
                             href={item.link}
                             className={`${
                                 pathName === item.link
-                                    ? "text-yellow"
+                                    ? "text-yellow font-semibold"
                                     : "text-white"
-                            } text-sm font-semibold hover:text-yellow`}
+                            } text-sm  hover:text-yellow`}
                         >
                             {item.label}
                         </Link>

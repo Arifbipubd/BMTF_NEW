@@ -38,7 +38,7 @@ export default function Timeline({}: Props) {
                             </div>
                             <div className="relative mb-16 col-span-2">
                                 <div className=" py-3 left-16 -top-12 md:hidden ">
-                                    <h2 className="text-primary text-lg font-semibold capitalize leading-[15px] mb-4">
+                                    <h2 className="text-primary text-lg font-semibold capitalize leading-[150%] mb-4">
                                         {item.dayString}
                                     </h2>
                                     <h2 className="text-headline text-2xl font-bold leading-[25px]">
@@ -47,6 +47,7 @@ export default function Timeline({}: Props) {
                                 </div>
                                 <div className="relative z-10 flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-[30px]">
                                     <div>
+                                        {/* eslint-disable-next-line @next/next/no-img-element*/}
                                         <img
                                             src={item.imageSrc}
                                             alt=""
@@ -54,7 +55,7 @@ export default function Timeline({}: Props) {
                                         />
                                     </div>
                                     <div className="lg:w-1/3">
-                                        <p className="text-black text-sm leading-[21px] text-justify">
+                                        <p className="text-black text-sm leading-[150%] text-justify">
                                             {item.text}
                                         </p>
                                     </div>

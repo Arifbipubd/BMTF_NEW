@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import Layout from "@src/components/Layout/Layout";
 
 import { forgeAim, cardItems } from "@src/utils/verticals/froge-shop";
 
@@ -29,15 +30,16 @@ export default function Page({}: Props) {
     }, [pathname]);
 
     return (
-        <section>
-            <CommonHeroSection
-                heading="Forge Shop"
-                breadcrumb={pathName}
-                imageSrc="/assets/images/shared/Verticals_hero_image.png"
-            />
-            <DescriptionSection
-                youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
-                descriptionOne={`BMTF Forge Shop is a renowned brand in the country's forging industry. 
+        <Layout pageTitle="BMTF | Forge Shop">
+            <section>
+                <CommonHeroSection
+                    heading="Forge Shop"
+                    breadcrumb={pathName}
+                    imageSrc="/assets/images/shared/Verticals_hero_image.png"
+                />
+                <DescriptionSection
+                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    descriptionOne={`BMTF Forge Shop is a renowned brand in the country's forging industry. 
                 Since 1980, the shop has been consistently producing high-quality products for the nation. 
                 We specialize in the manufacturing and marketing of die, cold and open die, rolled ring forged, 
                 and machined components. Our daily production capacity stands at approximately 10 tons. Over 
@@ -46,16 +48,17 @@ export default function Page({}: Props) {
                 and we maintain stringent quality control at every step. We are committed to continuous and 
                 systematic development of our skills, processes, and services, ensuring long-term sustainability 
                 and customer satisfaction. Our production quality has been ISO 9001:2015 certified.`}
-            />
-            <AimSection
-                imageSrc="/assets/images/verticals/central-tooling-aim.png"
-                aimItems={forgeAim}
-            />
-            <ProcessCard
-                heading="Our Manufacturing Process"
-                cardItems={cardItems}
-            />
-            <ConnectBMTF />
-        </section>
+                />
+                <AimSection
+                    imageSrc="/assets/images/verticals/central-tooling-aim.png"
+                    aimItems={forgeAim}
+                />
+                <ProcessCard
+                    heading="Our Manufacturing Process"
+                    cardItems={cardItems}
+                />
+                <ConnectBMTF />
+            </section>
+        </Layout>
     );
 }

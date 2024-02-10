@@ -94,18 +94,18 @@ export default function Slider({}: Props) {
                                                 </p>
                                             </div>
                                             <h1
-                                                className={`text-4xl md:text-5xl lg:text[60px]
-                                         text-white font-bold lg:leading-[56px] capitalize
+                                                className={`text-4xl md:text-5xl lg:text-[60px]
+                                         text-white font-extrabold lg:leading-[56px] capitalize
                                          mb-5 md:mb-7 lg:mb-[34px]`}
                                             >
                                                 {slide.heading}
                                             </h1>
-                                            <p className="text-white text-justify mb-5 md:mb-7 lg:mb-[34px]">
+                                            <p className="text-white text-justify text-lg mb-5 md:mb-7 lg:mb-[34px]">
                                                 {slide.description}
                                             </p>
                                             <div>
                                                 <Link href={slide.link}>
-                                                    <button className="p-[18px] rounded-[3px] bg-yellow">
+                                                    <button className="p-[18px] rounded-[3px] bg-secondary">
                                                         <p className="font-semibold text-black font-nunito">
                                                             View Details
                                                         </p>

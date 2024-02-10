@@ -28,6 +28,7 @@ export default function Review({
         >
             <div className="md:col-span-4 relative overflow-hidden">
                 <div className="h-full">
+                        {/* eslint-disable-next-line @next/next/no-img-element*/}
                     <img
                         src={imageUrl}
                         alt={imageUrl}
@@ -56,6 +57,7 @@ export default function Review({
             <div className="relative md:col-span-3 bg-primary py-10 lg:py-5 xl:py-0">
                 <div className="container mx-auto h-full grid lg:grid-cols-4">
                     <div className="absolute top-4 left-2 md:top-1 md:left-1">
+                        {/* eslint-disable-next-line @next/next/no-img-element*/}
                         <img src="/assets/images/shared/Frame.png" alt="" />
                     </div>
                     <div

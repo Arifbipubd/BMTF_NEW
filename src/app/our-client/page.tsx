@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import CommonHeroSection from "@src/components/shared/CommonHeroSection";
-import Accreditations from "@src/components/accreditations/Accreditations";
 import OurClient from "@src/components/our-client/OurClient";
+import Layout from "@src/components/Layout/Layout";
 type Props = {};
 
 export default function Page({}: Props) {
@@ -18,15 +18,17 @@ export default function Page({}: Props) {
         setPathName(path);
     }, [pathname]);
     return (
-        <section className="">
-            <CommonHeroSection
-                heading="Our Client"
-                breadcrumb={pathName}
-                imageSrc="/assets/images/shared/hero_image.png"
-            />
-            <div>
-                <OurClient />
-            </div>
-        </section>
-  )
+        <Layout pageTitle="Our Client">
+            <section className="">
+                <CommonHeroSection
+                    heading="Our Client"
+                    breadcrumb={pathName}
+                    imageSrc="/assets/images/shared/hero_image.png"
+                />
+                <div>
+                    <OurClient />
+                </div>
+            </section>
+        </Layout>
+    );
 }

@@ -2,8 +2,12 @@
 
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import Layout from "@src/components/Layout/Layout";
 
-import { electronicAim, electricPoints } from "@src/utils/verticals/electronic-assembly";
+import {
+    electronicAim,
+    electricPoints,
+} from "@src/utils/verticals/electronic-assembly";
 
 import CommonHeroSection from "@src/components/shared/CommonHeroSection";
 import DescriptionSection from "@src/components/shared/DescriptionSection";
@@ -29,30 +33,32 @@ export default function Page({}: Props) {
     }, [pathname]);
 
     return (
-        <section>
-            <CommonHeroSection
-                heading="Vehicle Assembly"
-                breadcrumb={pathName}
-                imageSrc="/assets/images/shared/Verticals_hero_image.png"
-            />
-            <DescriptionSection
-                youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
-                descriptionOne={`The BMTF Furniture Factory is renowned for its distinctive style and high-quality 
+        <Layout pageTitle="BMTF | Vehicle Assembly">
+            <section>
+                <CommonHeroSection
+                    heading="Vehicle Assembly"
+                    breadcrumb={pathName}
+                    imageSrc="/assets/images/shared/Verticals_hero_image.png"
+                />
+                <DescriptionSection
+                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    descriptionOne={`The BMTF Furniture Factory is renowned for its distinctive style and high-quality 
                 furniture. Utilizing cutting-edge technology and machinery, we offer an extensive range of furniture 
                 and home decor that mirrors your personal taste and lifestyle. Our team of designers and carpenters 
                 collaborate to cater to our clients' aesthetic preferences. Our furniture is characterized by its 
                 simple yet elegant design, and a commitment to using honest, quality materials. We are dedicated to 
                 crafting beautiful and flawless pieces, ensuring our products are both comfortable and elegant.`}
-            />
-            <AimSection
-                imageSrc="/assets/images/verticals/electronic-assembly/aim.png"
-                aimItems={electronicAim}
-            />
-            <CategoryOfServices
-                imageSrc="/assets/images/verticals/steel_structure/category_of_service.png"
-                items={electricPoints}
-            />
-            <ConnectBMTF />
-        </section>
+                />
+                <AimSection
+                    imageSrc="/assets/images/verticals/electronic-assembly/aim.png"
+                    aimItems={electronicAim}
+                />
+                <CategoryOfServices
+                    imageSrc="/assets/images/verticals/steel_structure/category_of_service.png"
+                    items={electricPoints}
+                />
+                <ConnectBMTF />
+            </section>
+        </Layout>
     );
 }

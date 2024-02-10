@@ -13,6 +13,7 @@ export default function AssemblyProcess({ imageSrc, items }: Props) {
         <div className="bg-skyLight py-16 sm:py-20 md:py-28 lg:py-[125px]">
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-[30px] place-items-center">
                 <div className="">
+                    {/*eslint-disable-next-line @next/next/no-img-element*/}
                     <img src={imageSrc} alt="" className="w-full" />
                 </div>
                 <div className="py-10 lg:py-0">

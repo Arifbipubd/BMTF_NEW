@@ -314,6 +314,7 @@ export default function Navbar() {
                                                                             menu.link
                                                                         }
                                                                         className="text-white"
+                                                                        onClick={handleCloseIcon}
                                                                     >
                                                                         {
                                                                             menu.label
@@ -372,6 +373,7 @@ export default function Navbar() {
                                                             href={menu.link}
                                                             className="text-white"
                                                             key={menu.id}
+                                                            onClick={mouseLeaveHandler}
                                                         >
                                                             {menu.label}
                                                         </Link>

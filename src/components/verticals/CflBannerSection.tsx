@@ -8,7 +8,7 @@ export default function CflBannerSection({}: Props) {
             <div className="bg-primary flex flex-col items-center lg:col-span-2 py-16 md:py-20 lg:py-24">
                 <div className="container mx-auto flex flex-col items-center">
                     <div>
-                        <p className="text-3xl md:text-4xl text-white font-extrabold capitalize mb-2.5">
+                        <p className="text-3xl md:text-4xl text-white font-extrabold italic capitalize mb-2.5">
                             Our Motto
                         </p>
                         <hr className="w-20 md:w-[91px] h-1 border-t-4 border-t-secondary" />

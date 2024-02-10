@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import CommonHeroSection from "@src/components/shared/CommonHeroSection";
 import Accreditations from "@src/components/accreditations/Accreditations";
+import Layout from "@src/components/Layout/Layout";
+
 type Props = {};
 
 export default function Page({}: Props) {
@@ -17,15 +19,17 @@ export default function Page({}: Props) {
         setPathName(path);
     }, [pathname]);
     return (
-        <section className="">
-            <CommonHeroSection
-                heading="Accorditations and Certificates"
-                breadcrumb={pathName}
-                imageSrc="/assets/images/shared/hero_image.png"
-            />
-            <div>
-                <Accreditations />
-            </div>
-        </section>
+        <Layout pageTitle="">
+            <section className="BMTF | Accorditations and Certificates">
+                <CommonHeroSection
+                    heading="Accorditations and Certificates"
+                    breadcrumb={pathName}
+                    imageSrc="/assets/images/shared/hero_image.png"
+                />
+                <div>
+                    <Accreditations />
+                </div>
+            </section>
+        </Layout>
     );
 }

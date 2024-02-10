@@ -33,11 +33,11 @@ export default function Projects({}: Props) {
                                         including agriculture, construction, and
                                         manufacturing, by producing high-quality
                                         machinery and tools to bolster the
-                                        nation&quot;s self-reliance and progress.
-                                        BMTF&quot;s dedication to these projects
-                                        underscores its role as a pivotal player
-                                        in advancing industrial and agricultural
-                                        sectors in Bangladesh.
+                                        nation&quot;s self-reliance and
+                                        progress. BMTF&quot;s dedication to
+                                        these projects underscores its role as a
+                                        pivotal player in advancing industrial
+                                        and agricultural sectors in Bangladesh.
                                     </p>
                                 </div>
                                 <div>
@@ -51,6 +51,7 @@ export default function Projects({}: Props) {
                                 </div>
                             </div>
                             <div className="mt-5 md:mt-6 lg:mt-[30px] ">
+                                {/* eslint-disable-next-line @next/next/no-img-element*/}
                                 <img
                                     src="/assets/images/home/CTD_03.png"
                                     alt=""
@@ -61,10 +62,10 @@ export default function Projects({}: Props) {
                     </div>
                     <div className=" bg-primary flex flex-col justify-between">
                         <div className=" px-[17px] py-[30px] pb-1">
-                            <h1 className="text-white font-semibold mb-4 md:mb-5">
+                            <h1 className="text-white font-semibold mb-4 md:mb-5 leading-[20px]">
                                 Smart Manufacturing Integration
                             </h1>
-                            <p className="text-white text-xs text-justify">
+                            <p className="text-white text-xs text-justify leading-[20px]">
                                 Implementing Internet of Things (IoT) technology
                                 into machinery to enable real-time monitoring,
                                 predictive maintenance, and data-driven
@@ -74,28 +75,30 @@ export default function Projects({}: Props) {
                             </p>
                         </div>
                         <div className="relative">
+                            {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
                                 src="/assets/images/home/Pattern_shop_02_1.png"
                                 alt=""
                                 className="w-full"
                             />
-                            <div className="w-7 h-5 bg-primary clip-path absolute top-0 left-10"/>
+                            <div className="w-7 h-5 bg-primary clip-path absolute top-0 left-10" />
                         </div>
                     </div>
                     <div className="bg-secondary flex flex-col justify-between">
                         <div className="relative">
+                            {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
                                 src="/assets/images/home/Furniture_05.png"
                                 alt=""
                                 className="w-full"
                             />
-                            <div className="w-7 h-5 bg-secondary clip-path-2 absolute bottom-0 left-10"/>
+                            <div className="w-7 h-5 bg-secondary clip-path-2 absolute bottom-0 left-10" />
                         </div>
                         <div className="px-[17px] py-[30px]">
-                            <h1 className="text-headline font-semibold mb-4 md:mb-5">
+                            <h1 className="text-headline font-semibold mb-4 md:mb-5 leading-[20px]">
                                 Smart Manufacturing Integration
                             </h1>
-                            <p className="text-headline text-xs text-justify">
+                            <p className="text-headline text-xs text-justify leading-[20px]">
                                 Implementing Internet of Things (IoT) technology
                                 into machinery to enable real-time monitoring,
                                 predictive maintenance, and data-driven

@@ -61,8 +61,8 @@ export default function Herosection({}: Props) {
                                                     </p>
                                                 </div>
                                                 <h1
-                                                    className={`text-4xl md:text-5xl lg:text[52px]
-                                         text-white font-bold lg:leading-[56px] capitalize 
+                                                    className={`text-4xl md:text-5xl lg:text-[52px]
+                                         text-white font-extrabold lg:leading-[56px] capitalize 
                                          mb-5 md:mb-7 lg:mb-[30px]`}
                                                 >
                                                     {slide.heading}

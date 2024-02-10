@@ -9,6 +9,7 @@ export default function Feedback({}: Props) {
         <div className="bg-headline py-12 md:py-16 lg:py-[70px]">
             <div className="container mx-auto flex flex-col justify-center items-center">
                 <div className="flex justify-center mb-5 md:mb-[30px] w-[141px] h-[141px]">
+                    {/* eslint-disable-next-line @next/next/no-img-element*/}
                     <img
                         src="/assets/images/home/bmtf-md.jpeg"
                         alt=""

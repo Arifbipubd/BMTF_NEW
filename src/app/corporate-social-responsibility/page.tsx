@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import CommonHeroSection from "@src/components/shared/CommonHeroSection";
 import ConnectBMTF from "@src/components/shared/ConnectBMTF";
 import HeroSection from "@src/components/corporate/HeroSection";
+import Layout from "@src/components/Layout/Layout";
+
 type Props = {};
 
 export default function Page({}: Props) {
@@ -18,13 +20,17 @@ export default function Page({}: Props) {
         setPathName(path);
     }, [pathname]);
 
-    return (<section>
-        <CommonHeroSection 
-            heading="Corporate Social Responsibility"
-            breadcrumb={pathName}
-            imageSrc='/assets/images/shared/noc-and-notice.png'
-        />
-        <HeroSection/>
-        <ConnectBMTF />
-    </section>);
+    return (
+        <Layout pageTitle="BMTF | Corporate Social Responsibility">
+            <section>
+                <CommonHeroSection
+                    heading="Corporate Social Responsibility"
+                    breadcrumb={pathName}
+                    imageSrc="/assets/images/shared/noc-and-notice.png"
+                />
+                <HeroSection />
+                <ConnectBMTF />
+            </section>
+        </Layout>
+    );
 }
