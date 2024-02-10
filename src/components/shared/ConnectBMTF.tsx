@@ -2,11 +2,11 @@ import React from "react";
 import Link from "next/link";
 
 type Props = {
-    imageSrc?: string
+    imageSrc?: string;
 };
 
 export default function ConnectBMTF({
-    imageSrc="/assets/images/shared/Banner.png"
+    imageSrc = "/assets/images/shared/Banner.png",
 }: Props) {
     return (
         <div className="pt-14 md:pt-16 lg:pt-[72px]">
@@ -18,7 +18,7 @@ export default function ConnectBMTF({
                         `}
                     >
                         <div className="mb-4 md:mb-5 lg:mb-[30px]">
-                            <p className="text-headline font-xl md:text-2xl">
+                            <p className="text-headline font-xl md:text-2xl leading-[36px]">
                                 Connect with BMTF today to explore strategic
                                 collaborations, innovation, and economic
                                 transformation.

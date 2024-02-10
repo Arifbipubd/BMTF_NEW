@@ -25,9 +25,9 @@ export default function NewsSideNavigation({
                             href={`/news-and-tenders/${item.id}`}
                             className={`${
                                 newsId === item.id
-                                    ? "text-yellow"
+                                    ? "text-yellow font-semibold"
                                     : "text-white"
-                            } text-sm font-semibold hover:text-yellow`}
+                            } text-sm  hover:text-yellow`}
                         >
                             {item.title}
                         </Link>

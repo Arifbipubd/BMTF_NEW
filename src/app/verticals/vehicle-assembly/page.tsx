@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import Layout from "@src/components/Layout/Layout";
+
 import CommonHeroSection from "@src/components/shared/CommonHeroSection";
 import DescriptionSection from "@src/components/shared/DescriptionSection";
 import AssemblyProcess from "@src/components/shared/AssemblyProcess";
@@ -58,22 +60,23 @@ export default function Page({}: Props) {
     }, [pathname]);
 
     return (
-        <section>
-            <CommonHeroSection
-                heading="Vehicle Assembly"
-                breadcrumb={pathName}
-                imageSrc="/assets/images/shared/Verticals_hero_image.png"
-            />
-            <DescriptionSection
-                youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
-                descriptionOne={`In 2001, the Bangladesh Machine Tools Factory (BMTF) established a 
+        <Layout pageTitle="BMTF | Vehicle Assembly">
+            <section>
+                <CommonHeroSection
+                    heading="Vehicle Assembly"
+                    breadcrumb={pathName}
+                    imageSrc="/assets/images/shared/Verticals_hero_image.png"
+                />
+                <DescriptionSection
+                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    descriptionOne={`In 2001, the Bangladesh Machine Tools Factory (BMTF) established a 
                 state-of-the-art Vehicle Assembly Shop, equipped with cutting-edge machinery and tools, 
                 to uphold the highest quality standards in vehicle assembly. This facility boasts high-speed 
                 production lines dedicated to activities such as spot welding, painting, and rigorous vehicle 
                 testing, enabling an annual production capacity of 3,000 motorcycles and 1,500 wagons. Over 
                 the past two decades, we have successfully assembled a diverse range of vehicles including 
                 trucks, pickups, buses, jeeps, and more.`}
-                descriptionTwo={`
+                    descriptionTwo={`
                 Currently, we are actively engaged in international collaborations with top automobile 
                 companies, with a focus on expanding our business beyond borders. Furthermore, we have 
                 undertaken a new venture to assemble advanced armored tanks and combat vehicles. Our 
@@ -82,12 +85,13 @@ export default function Page({}: Props) {
                 robust infrastructure, and our status as a state-owned enterprise, we stand as one of the leading 
                 automobile assembly industries in our nation.
                 `}
-            />
-            <AssemblyProcess
-                imageSrc="/assets/images/verticals/assembly_process.png"
-                items={assemblyProcess}
-            />
-            <ConnectBMTF />
-        </section>
+                />
+                <AssemblyProcess
+                    imageSrc="/assets/images/verticals/assembly_process.png"
+                    items={assemblyProcess}
+                />
+                <ConnectBMTF />
+            </section>
+        </Layout>
     );
 }

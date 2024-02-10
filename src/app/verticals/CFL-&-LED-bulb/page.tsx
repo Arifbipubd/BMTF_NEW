@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import Layout from "@src/components/Layout/Layout";
 
 import { aim, listItems, points } from "@src/utils/verticals/cfl-and-led-bulb";
 
@@ -12,7 +13,6 @@ import ConnectBMTF from "@src/components/shared/ConnectBMTF";
 import CategoryOfServices from "@src/components/shared/CategoryOfServices";
 import VerticalsListItems from "@src/components/shared/VerticalsListItems";
 import CflBannerSection from "@src/components/verticals/CflBannerSection";
-
 
 type Props = {};
 
@@ -32,15 +32,16 @@ export default function Page({}: Props) {
     }, [pathname]);
 
     return (
-        <section>
-            <CommonHeroSection
-                heading="CFL & LED Bulb"
-                breadcrumb={pathName}
-                imageSrc="/assets/images/shared/Verticals_hero_image.png"
-            />
-            <DescriptionSection
-                youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
-                descriptionOne={`The BMTF CFL & LED bulb factory is a leading manufacturer and 
+        <Layout pageTitle="BMTF | CFL & LED Bulb">
+            <section>
+                <CommonHeroSection
+                    heading="CFL & LED Bulb"
+                    breadcrumb={pathName}
+                    imageSrc="/assets/images/shared/Verticals_hero_image.png"
+                />
+                <DescriptionSection
+                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    descriptionOne={`The BMTF CFL & LED bulb factory is a leading manufacturer and 
                 exporter in the country, specializing in an impressive range of innovative, diverse, 
                 user-friendly, and high-quality Light Emitting Diode-LED and Compact Fluorescent Lamps-CFL 
                 tubes and bulbs. Under the guidance of the Honorable Chief of Army Staff and Chairman of 
@@ -53,22 +54,23 @@ export default function Page({}: Props) {
                 Organization for Standardization. Our products have garnered national acclaim for their longevity, 
                 energy efficiency, low maintenance, and remarkable energy-efficient features.
                 `}
-            />
-            <AimSection
-                imageSrc="/assets/images/verticals/machine-shop/machine-shop-aim.png"
-                aimItems={aim}
-            />
-            <CategoryOfServices
-                imageSrc="/assets/images/verticals/cfl-category-image.png"
-                items={points}
-            />
-            <CflBannerSection />
-            <VerticalsListItems
-                imageSrc="/assets/images/verticals/cfl-list-image.png"
-                listHeading="Our Promises Are"
-                listItems={listItems}
-            />
-            <ConnectBMTF />
-        </section>
+                />
+                <AimSection
+                    imageSrc="/assets/images/verticals/machine-shop/machine-shop-aim.png"
+                    aimItems={aim}
+                />
+                <CategoryOfServices
+                    imageSrc="/assets/images/verticals/cfl-category-image.png"
+                    items={points}
+                />
+                <CflBannerSection />
+                <VerticalsListItems
+                    imageSrc="/assets/images/verticals/cfl-list-image.png"
+                    listHeading="Our Promises Are"
+                    listItems={listItems}
+                />
+                <ConnectBMTF />
+            </section>
+        </Layout>
     );
 }

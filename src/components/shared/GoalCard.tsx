@@ -8,6 +8,7 @@ export default function GoalCard({}: Props) {
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] place-content-center">
                 <div className="flex flex-col order-1">
                     <div className="mt-4 md:mt-0 md:mb-[25px] order-2 md:order-1">
+                        {/* eslint-disable-next-line @next/next/no-img-element*/}
                         <img
                             src="/assets/images/mission_vission/Machine_shop_06.png"
                             alt=""
@@ -16,13 +17,14 @@ export default function GoalCard({}: Props) {
                     </div>
                     <div className="px-[35px] py-11 text-center bg-white rounded-[10px] order-1 md:order-2">
                         <div className="flex justify-center">
+                        {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
                                 src="/assets/images/mission_vission/Group_1.png"
                                 alt=""
                             />
                         </div>
                         <div className="my-3 md:my-5">
-                            <h3 className="text-headline text-lg md:text-xl capitalize">
+                            <h3 className="text-headline text-lg md:text-xl capitalize font-semibold">
                                 our Mission
                             </h3>
                         </div>
@@ -39,13 +41,14 @@ export default function GoalCard({}: Props) {
                 <div className="md:order-3 lg:order-2">
                     <div className="px-[35px] py-11 text-center bg-white rounded-[10px] h-full flex flex-col justify-center items-center">
                         <div className="flex justify-center">
+                        {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
                                 src="/assets/images/mission_vission/Group_2.png"
                                 alt=""
                             />
                         </div>
                         <div className="my-3 md:my-5">
-                            <h3 className="text-headline text-lg md:text-xl capitalize">
+                            <h3 className="text-headline text-lg md:text-xl capitalize font-semibold">
                                 our Core Values
                             </h3>
                         </div>
@@ -64,13 +67,14 @@ export default function GoalCard({}: Props) {
                 <div className="flex flex-col md:order-2 lg:order-3">
                     <div className="px-[35px] py-11 text-center bg-white rounded-[10px] order-2 md:order-1">
                         <div className="flex justify-center">
+                        {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
                                 src="/assets/images/mission_vission/Group_1.png"
                                 alt=""
                             />
                         </div>
                         <div className="my-3 md:my-5">
-                            <h3 className="text-headline text-lg md:text-xl capitalize">
+                            <h3 className="text-headline text-lg md:text-xl capitalize font-semibold">
                                 our vission
                             </h3>
                         </div>
@@ -83,6 +87,7 @@ export default function GoalCard({}: Props) {
                         </div>
                     </div>
                     <div className="mb-4 md:mb-0 md:mt-[25px] order-1 md:order-2">
+                        {/* eslint-disable-next-line @next/next/no-img-element*/}
                         <img
                             src="/assets/images/mission_vission/Machine_shop_04.png"
                             alt=""

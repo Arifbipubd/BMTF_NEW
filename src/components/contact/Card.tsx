@@ -16,9 +16,10 @@ export default function Card({}: Props) {
                     <div key={item.id} className="">
                         <div
                             className={`bg-primary px-8 md:px-9 lg:px-[41px] py-9 md:py-10 lg:py-[46px] 
-                            flex flex-col gap-5 md:gap-6 lg:gap-[26px] rounded-t-[10px]  mb-1.5`}
+                            flex flex-col gap-5 md:gap-6 lg:gap-[26px] rounded-t-[10px]  mb-1.5 md:min-h-[400px]`}
                         >
                             <div className="">
+                                {/* eslint-disable-next-line @next/next/no-img-element*/}
                                 <img src={item.imageSrc} alt="" />
                             </div>
                             <div>

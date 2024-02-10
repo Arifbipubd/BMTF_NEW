@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import Layout from "@src/components/Layout/Layout";
 
 import CommonHeroSection from "@src/components/shared/CommonHeroSection";
 import DescriptionSection from "@src/components/shared/DescriptionSection";
@@ -35,15 +36,16 @@ export default function Page({}: Props) {
     }, [pathname]);
 
     return (
-        <section>
-            <CommonHeroSection
-                heading="Pattern Shop"
-                breadcrumb={pathName}
-                imageSrc="/assets/images/shared/Verticals_hero_image.png"
-            />
-            <DescriptionSection
-                youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
-                descriptionOne={`The BMTF Pattern Shop specializes in crafting a diverse range of patterns 
+        <Layout pageTitle="BMTF | Pattern Shop">
+            <section>
+                <CommonHeroSection
+                    heading="Pattern Shop"
+                    breadcrumb={pathName}
+                    imageSrc="/assets/images/shared/Verticals_hero_image.png"
+                />
+                <DescriptionSection
+                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    descriptionOne={`The BMTF Pattern Shop specializes in crafting a diverse range of patterns 
                 to accommodate various molding techniques. Operating in tandem with the Pattern and Foundry 
                 Shop, we prioritize precision and cost-effectiveness for the production of high-quality 
                 castings. Our use of top-tier materials, including high-quality timber, aluminum, and 
@@ -53,12 +55,13 @@ export default function Page({}: Props) {
                 with expert designers and CNC technicians, our Pattern Shop provides invaluable services, 
                 delivering tailor-made patterns to meet our customers' specific needs.
                 `}
-            />
-            <AimSection
-                imageSrc="/assets/images/verticals/machine-shop/machine-shop-aim.png"
-                aimItems={patternAim}
-            />
-            <ConnectBMTF />
-        </section>
+                />
+                <AimSection
+                    imageSrc="/assets/images/verticals/machine-shop/machine-shop-aim.png"
+                    aimItems={patternAim}
+                />
+                <ConnectBMTF />
+            </section>
+        </Layout>
     );
 }

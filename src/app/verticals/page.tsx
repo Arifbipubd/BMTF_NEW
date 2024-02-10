@@ -1,31 +1,34 @@
-'use client'
+"use client";
 
-import React, {useEffect, useState } from 'react'
-import { usePathname } from 'next/navigation'
+import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
-import CommonHeroSection from '@src/components/shared/CommonHeroSection'
-import AllVerticals from '@src/components/verticals/AllVerticals'
+import CommonHeroSection from "@src/components/shared/CommonHeroSection";
+import AllVerticals from "@src/components/verticals/AllVerticals";
+import Layout from "@src/components/Layout/Layout";
 
-type Props = {}
+type Props = {};
 
 export default function Page({}: Props) {
-    const pathname = usePathname()
+    const pathname = usePathname();
 
     const [pathName, setPathName] = useState<Array<string>>([]);
 
-    useEffect(() =>{
+    useEffect(() => {
         let path = pathname.split("/");
-        path[0] ='/';
-        setPathName(path)
-    }, [pathname])
-  return (
-    <section>
-        <CommonHeroSection
-        heading='All verticals'
-        breadcrumb={pathName}
-        imageSrc='/assets/images/verticals/Electronic_Assembly.png'
-        />
-        <AllVerticals />
-    </section>
-  )
+        path[0] = "/";
+        setPathName(path);
+    }, [pathname]);
+    return (
+        <Layout pageTitle="BMTF | All Verticals">
+            <section>
+                <CommonHeroSection
+                    heading="All verticals"
+                    breadcrumb={pathName}
+                    imageSrc="/assets/images/verticals/Electronic_Assembly.png"
+                />
+                <AllVerticals />
+            </section>
+        </Layout>
+    );
 }

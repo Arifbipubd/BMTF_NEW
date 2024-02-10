@@ -12,6 +12,7 @@ export default function Capabilities({}: Props) {
                         gap-8 lg:gap-[30px] h-full place-content-center place-items-center`}>
                     <div className="flex lg:gap-[30px]">
                         <div className="-mt-10">
+                            {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
                                 src="/assets/images/home/Foundry_shop_01.png"
                                 alt=""
@@ -20,6 +21,7 @@ export default function Capabilities({}: Props) {
                         </div>
                         <div className="">
                             <div className="mb-5">
+                                {/* eslint-disable-next-line @next/next/no-img-element*/}
                                 <img
                                     src="/assets/images/home/CTD_01.png"
                                     alt=""
@@ -27,6 +29,7 @@ export default function Capabilities({}: Props) {
                                 />
                             </div>
                             <div>
+                                {/* eslint-disable-next-line @next/next/no-img-element*/}
                                 <img
                                     src="/assets/images/home/CTD_02.png"
                                     alt=""
@@ -51,10 +54,11 @@ export default function Capabilities({}: Props) {
                 <div className={`container mx-auto grid grid-cols-1 lg:grid-cols-2 
                         gap-8 lg:gap-[30px] h-full place-content-center place-items-center`}>
                     <div className="order-2 lg:order-1">
-                            <Listitems items={capabilities} />
+                            <Listitems items={extended} />
                     </div>
                     <div className="flex gap-5 md:gap-6 lg:gap-[30px] order-1 lg:order-2">
                         <div className="w-full">
+                            {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
                                 src="/assets/images/about/Foundry_shop_01.png"
                                 alt=""
@@ -63,6 +67,7 @@ export default function Capabilities({}: Props) {
                         </div>
                         <div className="w-full">
                             <div className="mb-5">
+                                {/* eslint-disable-next-line @next/next/no-img-element*/}
                                 <img
                                     src="/assets/images/about/CTD_02.png"
                                     alt=""
@@ -70,6 +75,7 @@ export default function Capabilities({}: Props) {
                                 />
                             </div>
                             <div>
+                                {/* eslint-disable-next-line @next/next/no-img-element*/}
                                 <img
                                     src="/assets/images/about/Furniture_04.png"
                                     alt=""

@@ -6,6 +6,7 @@ export default function Sustainability({}: Props) {
     return (
         <div className="bg-white grid grid-cols-1 md:grid-cols-2 place-items-center gap-[30px] py-10 lg:py-0">
             <div className="w-full">
+                {/* eslint-disable-next-line @next/next/no-img-element*/}
                 <img
                     src="/assets/images/home/Packaging_02_1.png"
                     alt=""

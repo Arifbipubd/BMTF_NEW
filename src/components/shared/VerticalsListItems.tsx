@@ -23,6 +23,7 @@ export default function VerticalsListItems({
     return (
         <div className="bg-white grid grid-cols-1 lg:grid-cols-2 lg:place-items-center">
             <div className={`w-full h-full ${imageOrder ? imageOrder : ""}`}>
+                {/*eslint-disable-next-line @next/next/no-img-element*/}
                 <img src={imageSrc} alt="aim" className="w-full h-full" />
             </div>
             <div
@@ -53,7 +54,7 @@ export default function VerticalsListItems({
                         ))}
                     </div>
                     {description && (
-                        <p className="mt-5 md:mt-6 lg:mt-[30px] text-black text-justify">
+                        <p className="mt-5 md:mt-6 lg:mt-[30px] text-black text-sm text-justify">
                             {description}
                         </p>
                     )}

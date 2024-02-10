@@ -14,12 +14,14 @@ export default function Experience({}: Props) {
                 <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-8 lg:gap-12">
                     <div className="flex items-end gap-4 relative mb-10 md:mb-0">
                         <div>
+                        {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
                                 src="/assets/images/home/Forge_shop_03.png"
                                 alt=""
                             />
                         </div>
                         <div>
+                        {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
                                 src="/assets/images/home/Foundry_shop_01.png"
                                 alt=""
@@ -43,13 +45,13 @@ export default function Experience({}: Props) {
                     </div>
                     <div>
                         <div className="mb-5 md:mb-[30px]">
-                            <h2 className="text-headline text-2xl md:text-3xl lg:text-[2rem] font-bold">
+                            <h2 className="text-headline text-2xl md:text-3xl lg:text-[2rem] font-extrabold">
                                 State Owned Largest Production Facility of
                                 Bangladesh
                             </h2>
                         </div>
                         <div className="mb-5 md:mb-[30px] lg:mb-9">
-                            <p className="text-sm text-tertiary">
+                            <p className="text-sm text-tertiary leading-[24px]">
                                 At BMTF, we stand as a beacon of excellence in
                                 the machinery and tools industry. Our unwavering
                                 commitment to quality, innovation, and customer
@@ -76,7 +78,7 @@ export default function Experience({}: Props) {
                                         </i>
                                     </div>
                                     <div>
-                                        <p className="text-tertiary text-sm">
+                                        <p className="text-tertiary text-sm leading-[150%]">
                                             {item}
                                         </p>
                                     </div>

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 
@@ -20,9 +20,15 @@ export default function Category({ heading, subHeading, categories }: Props) {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:gap-[30px]">
                     {categories.map((item) => (
-                        <div key={item.id} className="relative bg-primary rounded-[10px] py-7 md:py-8 lg:py-9">
+                        <div
+                            key={item.id}
+                            className={`relative bg-primary rounded-[10px] py-7 md:py-8 lg:py-9 border-[1px] 
+                            border-transparent transition-all duration-300 ease-in-out  
+                            hover:bg-white hover:border-[1px] hover:border-primary`}
+                        >
                             <div className="flex justify-center w-full mb-4 sm:mb-5">
                                 <div className="bg-white p-5 md:p-[22px] rounded-full stroke-[1px] stroke-primary">
+                                    {/*eslint-disable-next-line @next/next/no-img-element*/}
                                     <img
                                         src="/assets/images/shared/brainstrom.png"
                                         alt=""

@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import CommonHeroSection from "@src/components/shared/CommonHeroSection";
 import MainContainer from "@src/components/image-and-video/MainContainer";
+import Layout from "@src/components/Layout/Layout";
+
 type Props = {};
 
 export default function Page({}: Props) {
@@ -17,15 +19,17 @@ export default function Page({}: Props) {
         setPathName(path);
     }, [pathname]);
     return (
-        <section className="">
-            <CommonHeroSection
-                heading="Image & video Gallery"
-                breadcrumb={pathName}
-                imageSrc="/assets/images/shared/hero_image.png"
-            />
-            <div>
-                <MainContainer />
-            </div>
-        </section>
+        <Layout pageTitle="BMTF | Image & video Gallery">
+            <section className="">
+                <CommonHeroSection
+                    heading="Image & video Gallery"
+                    breadcrumb={pathName}
+                    imageSrc="/assets/images/shared/hero_image.png"
+                />
+                <div>
+                    <MainContainer />
+                </div>
+            </section>
+        </Layout>
     );
 }

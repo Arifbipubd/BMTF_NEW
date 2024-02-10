@@ -2,8 +2,13 @@
 
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import Layout from "@src/components/Layout/Layout";
 
-import { foundryAim, cardItems, listItems } from "@src/utils/verticals/foundry-shop";
+import {
+    foundryAim,
+    cardItems,
+    listItems,
+} from "@src/utils/verticals/foundry-shop";
 
 import CommonHeroSection from "@src/components/shared/CommonHeroSection";
 import DescriptionSection from "@src/components/shared/DescriptionSection";
@@ -30,40 +35,42 @@ export default function Page({}: Props) {
     }, [pathname]);
 
     return (
-        <section>
-            <CommonHeroSection
-                heading="Foundry Shop"
-                breadcrumb={pathName}
-                imageSrc="/assets/images/shared/Verticals_hero_image.png"
-            />
-            <DescriptionSection
-                youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
-                descriptionOne={`The Foundry Shop, established in 1967, has been providing clients with a 
+        <Layout pageTitle="BMTF | Foundry Shop">
+            <section>
+                <CommonHeroSection
+                    heading="Foundry Shop"
+                    breadcrumb={pathName}
+                    imageSrc="/assets/images/shared/Verticals_hero_image.png"
+                />
+                <DescriptionSection
+                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    descriptionOne={`The Foundry Shop, established in 1967, has been providing clients with a 
                 diverse range of casting solutions ever since. It stands as one of the most versatile shops 
                 of its kind in Bangladesh, offering a variety of services in conjunction with its sister shops. 
                 We manufacture different products using both Ferrous and Non-Ferrous metals, each with various 
                 chemical compositions.`}
-                descriptionTwo={`
+                    descriptionTwo={`
                 In alignment with BMTF's vision and values, the Foundry Shop is committed to meeting new 
                 challenges to ensure the highest customer satisfaction. Our team of engineers, tooling 
                 specialists, and dedicated manufacturing staff leverage the latest technologies to create 
                 innovative and cost-effective, long-lasting products.
                 `}
-            />
-            <AimSection
-                imageSrc="/assets/images/verticals/foundry-aim.png"
-                aimItems={foundryAim}
-            />
-            <ProcessCard
-                heading="Our Manufacturing Process"
-                cardItems={cardItems}
-            />
-            <VerticalsListItems
-                imageSrc="/assets/images/verticals/foundry-list-image.png"
-                listHeading="Our Promises Are"
-                listItems={listItems}
-            />
-            <ConnectBMTF />
-        </section>
+                />
+                <AimSection
+                    imageSrc="/assets/images/verticals/foundry-aim.png"
+                    aimItems={foundryAim}
+                />
+                <ProcessCard
+                    heading="Our Manufacturing Process"
+                    cardItems={cardItems}
+                />
+                <VerticalsListItems
+                    imageSrc="/assets/images/verticals/foundry-list-image.png"
+                    listHeading="Our Promises Are"
+                    listItems={listItems}
+                />
+                <ConnectBMTF />
+            </section>
+        </Layout>
     );
 }

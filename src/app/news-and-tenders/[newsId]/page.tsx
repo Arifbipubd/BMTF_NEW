@@ -8,6 +8,7 @@ import CommonHeroSection from "@src/components/shared/CommonHeroSection";
 
 import ConnectBMTF from "@src/components/shared/ConnectBMTF";
 import SingleNews from "@src/components/shared/SingleNews";
+import Layout from "@src/components/Layout/Layout";
 
 export default function Page({ params }: { params: { newsId: string } }) {
     const id = parseInt(params.newsId);
@@ -21,14 +22,16 @@ export default function Page({ params }: { params: { newsId: string } }) {
     const newsItem = singleNews[id];
 
     return (
-        <section>
-            <CommonHeroSection
-                heading={newsItem.title}
-                breadcrumb={["/", "news-and-tenders"]}
-                imageSrc="/assets/images/shared/noc-and-notice.png"
-            />
-            <SingleNews news={newsItem} newsId={id}/>
-            <ConnectBMTF />
-        </section>
+        <Layout pageTitle={`BMTF | ${newsItem.title.toUpperCase()}`}>
+            <section>
+                <CommonHeroSection
+                    heading={newsItem.title}
+                    breadcrumb={["/", "news-and-tenders"]}
+                    imageSrc="/assets/images/shared/noc-and-notice.png"
+                />
+                <SingleNews news={newsItem} newsId={id} />
+                <ConnectBMTF />
+            </section>
+        </Layout>
     );
 }
