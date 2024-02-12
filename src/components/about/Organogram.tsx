@@ -11,33 +11,9 @@ export default function Organogram({}: Props) {
                     Organogram
                     </p>
                 </div>
-                {/* <div className="flex flex-col items-center">
-                    <div className="bg-white h-[3px] w-[882px] mb-[220px]" />
-                    <div className="flex gap-[30px]">
-                        {membersOne.map((item) => (
-                            <div className={``} key={item.id}>
-                                <div className="py-6 px-12 bg-white/10 flex flex-col items-center text-center w-fit">
-                                    <div
-                                        className={`-mt-20 mb-3 relative flex justify-center after:content-[''] 
-                                after:absolute after:bottom-[100%] after:left-[50%] after:-translate-x-1/2 
-                                after:w-1 after:h-[190px] sm:after:h-[170px] after:bg-white`}
-                                    >
-                                        <img
-                                            src="/assets/images/about/Avater.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="">
-                                        <p className="text-white text-sm">
-                                            {item.text}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div> */}
+                
                 <div>
+                    {/* eslint-disable-next-line @next/next/no-img-element*/}
                     <img src="/assets/images/about/Organogram.svg" alt="" />
                 </div>
             </div>

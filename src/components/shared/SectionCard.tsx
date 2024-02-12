@@ -14,7 +14,7 @@ export default function SectionCard({ items }: Props) {
                     <div className="flex flex-col gap-5 md:gap-6 lg:gap-[30px]" key={item.id}>
                         <div>
                             {/*eslint-disable-next-line @next/next/no-img-element*/}
-                            <img src={item.imageSrc} alt={item.heading} className="rounded-t-[10px]"/>
+                            <img src={item.imageSrc} alt={item.heading} className="w-full rounded-t-[10px]"/>
                         </div>
                         <div>
                             <h2 className="text-primary text-lg md:text-xl font-semibold">

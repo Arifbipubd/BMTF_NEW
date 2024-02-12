@@ -8,7 +8,7 @@ export default function HeroSection({}: Props) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-7">
             <div className="bg-primary py-20 md:py-32 lg:py-[154px] md:col-span-3 relative z-10">
-                <div className="container mx-auto lg:-mr-[100px] xl:-mr-[160px]">
+                <div className="container mx-auto lg:-mr-[100px] xl:-mr-[160px] 2xl:-mr-56">
                     {/*eslint-disable-next-line @next/next/no-img-element*/}
                     <img
                         src="/assets/images/about/corporate_social.png"
@@ -25,8 +25,8 @@ export default function HeroSection({}: Props) {
                 className={`bg-[url('/assets/images/home/shape30.png')] bg-cover bg-center bg-no-repeat
          flex justify-center items-center h-full md:col-span-4  py-10 lg:py-0 -z-10`}
             >
-                <div>
-                    <div className="container mx-auto lg:px-[136px] xl:px-[196px]">
+                <div className=" md: pr-7 lg:pl-[100px] lg:pr-[100px] xl:pl-[196px] 2xl:pr-[150px]">
+                    <div className="container mx-auto ">
                         <h2 className="text-headline text-2xl md:text-3xl lg:text-[32px] font-bold mb-5 md:mb-[30px]">
                             About <span className="text-yellow">BMTF</span>
                         </h2>

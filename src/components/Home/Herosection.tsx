@@ -52,8 +52,8 @@ export default function Herosection({}: Props) {
                                 </video>
                                 <div className="bg-[rgba(16,25,48,0.70)] absolute left-0 w-full h-full -z-10" />
                                 <div className="flex justify-center h-full">
-                                    <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 place-items-center h-full z-20">
-                                        <div className="w-[80%] lg:w-full">
+                                    <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2 place-items-center h-full z-20">
+                                        <div className="w-[80%] xl:w-full">
                                             <div className="">
                                                 <div className="bg-[rgba(211,170,20,0.20)] px-1.5 lg:px-2.5 py-3 lg:py-[15px] w-fit rounded-[100px] mb-3 lg:mb-4">
                                                     <p className="text-secondary text-sm font-semibold">

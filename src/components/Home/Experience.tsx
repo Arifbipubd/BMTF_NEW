@@ -11,8 +11,8 @@ export default function Experience({}: Props) {
     return (
         <div className="bg-white grid grid-cols-1 place-items-center py-20 md:py-24 lg:py-36 ">
             <div className="container mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-8 lg:gap-12">
-                    <div className="flex items-end gap-4 relative mb-10 md:mb-0">
+                <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 md:gap-12">
+                    <div className="flex items-end gap-4 relative mb-10 lg:mb-0">
                         <div>
                         {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
@@ -28,7 +28,7 @@ export default function Experience({}: Props) {
                             />
                         </div>
                         <div
-                            className={`absolute -bottom-9 md:-bottom-14 left-[50%] -translate-x-1/2 -mx-1/2 
+                            className={`absolute -bottom-9 lg:-bottom-14 left-[50%] -translate-x-1/2 -mx-1/2 
                             bg-primary border-4 border-white px-[34px] py-3 flex items-center`}
                         >
                             <div className="mr-6">

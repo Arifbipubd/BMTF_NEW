@@ -29,7 +29,7 @@ export default function News({}: Props) {
                                     className="w-full rounded-tl-[10px] rounded-tr-[10px]"
                                 />
                             </div>
-                            <div className="px-5 md:px-[27px] py-8 md:py-[38px]">
+                            <div className="px-5 py-7">
                                 <div className="pb-6 border-b-[1px] border-b-[#D9D9D9]">
                                     <p className="text-cardText text-sm font-semibold">
                                         {item.title}

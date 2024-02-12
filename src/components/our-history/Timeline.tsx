@@ -17,7 +17,7 @@ export default function Timeline({}: Props) {
                                 <h2 className="text-primary text-xl font-semibold capitalize leading-[30px] mb-4 lg:mb-[21px] text-end">
                                     {item.dayString}
                                 </h2>
-                                <h2 className="text-headline text-2xl lg:text-3xl xl:text-4xl font-bold leading-[54px] md:text-end">
+                                <h2 className="text-headline text-[22px] lg:text-3xl xl:text-4xl font-bold leading-[54px] md:text-end">
                                     {item.year}
                                 </h2>
                             </div>
@@ -54,7 +54,7 @@ export default function Timeline({}: Props) {
                                             className="h-full w-full"
                                         />
                                     </div>
-                                    <div className="lg:w-1/3">
+                                    <div className="lg:w-1/2">
                                         <p className="text-black text-sm leading-[150%] text-justify">
                                             {item.text}
                                         </p>

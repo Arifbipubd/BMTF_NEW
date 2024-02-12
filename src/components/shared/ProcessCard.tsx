@@ -16,7 +16,7 @@ export default function ProcessCard({ heading, cardItems }: Props) {
                         {heading}
                     </h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-10 lg:gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 md:gap-10 lg:gap-12">
                     {cardItems.map((item) => (
                         <div className="" key={item.id}>
                             <div className={`bg-primary py-16 md:py-20 lg:py-[90px] px-7 md:px-10 rounded-[10px] 
