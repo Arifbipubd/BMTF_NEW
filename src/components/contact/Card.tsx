@@ -11,7 +11,7 @@ type Props = {};
 export default function Card({}: Props) {
     return (
         <div className="bg-white py-20 md:py-24 lg:py-[116px]">
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[30px]">
                 {contactCard.map((item) => (
                     <div key={item.id} className="">
                         <div

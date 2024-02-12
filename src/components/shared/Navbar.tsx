@@ -129,7 +129,7 @@ export default function Navbar() {
             border-b-[1px] border-solid border-b-white/10 `}
             >
                 <div className="container mx-auto">
-                    <div className="flex justify-between sm:items-center py-[11px]">
+                    <div className="flex flex-row justify-between sm:items-center py-[11px]">
                         <div className="block sm:flex items-center">
                             <div className="mr-[25px] mb-3 sm:mb-0 flex items-center">
                                 <div className="mr-[13px]">
@@ -164,7 +164,7 @@ export default function Navbar() {
                                 </a>
                             </div>
                         </div>
-                        <div className="flex">
+                        <div className="flex mb-3 sm:mb-0">
                             <div>
                                 <a href="/">
                                     <i className="text-white text-[22px] hover:text-yellow">
@@ -172,7 +172,7 @@ export default function Navbar() {
                                     </i>
                                 </a>
                             </div>
-                            <div className="mx-[26px]">
+                            <div className="mx-3 sm:mx-[26px]">
                                 <a href="/">
                                     <i className="text-white text-[22px] hover:text-yellow">
                                         <PiYoutubeLogo />
@@ -202,10 +202,10 @@ export default function Navbar() {
                             />
                         </Link>
                     </div>
-                    <div className="block xl:hidden absolute right-5 top-2">
+                    <div className="block xl:hidden absolute right-0 top-2">
                         <button
                             onClick={handleCloseIcon}
-                            className="flex items-center px-3 py-2 rounded "
+                            className="flex items-center py-2 rounded "
                         >
                             <i
                                 className={`text-2xl text-white ${

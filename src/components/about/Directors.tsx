@@ -4,7 +4,7 @@ type Props = {};
 
 export default function Directors({}: Props) {
     return (
-        <div className="bg-primary py-16 md:py-20 lg:py-[96px]">
+        <div id="organogram" className="bg-primary py-16 md:py-20 lg:py-[96px]">
             <div className="container mx-auto grid grid-cols-1 place-items-center place-content-center">
                 <div>
                     <div className="mb-28">
@@ -19,6 +19,7 @@ export default function Directors({}: Props) {
                         >
                             <div className="py-[45px] px-[35px] bg-yellow flex flex-col items-center text-center w-fit">
                                 <div className="-mt-20 sm:-mt-28 mb-3">
+                                    {/* eslint-disable-next-line @next/next/no-img-element*/}
                                     <img
                                         src="/assets/images/about/Ellipse_1.png"
                                         alt=""
@@ -43,6 +44,7 @@ export default function Directors({}: Props) {
                          xl:after:w-[280px] after:h-1 after:bg-white 
                         `}>
                             <div className="-mt-20 sm:-mt-28 mb-3">
+                                {/* eslint-disable-next-line @next/next/no-img-element*/}
                                 <img
                                     src="/assets/images/about/Ellipse_2.png"
                                     alt=""
@@ -57,6 +59,7 @@ export default function Directors({}: Props) {
                         </div>
                         <div className="py-[45px] px-[35px] bg-yellow flex flex-col items-center text-center h-fit">
                             <div className="-mt-20 sm:-mt-28 mb-3">
+                                {/* eslint-disable-next-line @next/next/no-img-element*/}
                                 <img
                                     src="/assets/images/about/Ellipse_3.png"
                                     alt=""

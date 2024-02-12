@@ -14,8 +14,8 @@ export default function AimSection({ imageSrc, aimItems }: Props) {
                 {/* eslint-disable-next-line @next/next/no-img-element*/}
                 <img src={imageSrc} alt="aim" className="w-full" />
             </div>
-            <div className="container mx-auto grid  md:grid-cols-4">
-                <div className="py-16 lg:py-0 md:col-span-3">
+            <div className="container mx-auto grid  lg:grid-cols-5">
+                <div className="py-16 xl:py-0 lg:col-span-4">
                     {aimItems.map((item, _, array) => (
                         <div
                             key={item.id}

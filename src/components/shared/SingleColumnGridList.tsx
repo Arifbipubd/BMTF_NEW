@@ -25,11 +25,17 @@ export default function SingleColumnGridList({
             className={`grid grid-cols-1 lg:grid-cols-2 lg:place-items-center ${backroundColor}`}
         >
             <div
-                className={`container mx-auto grid  xl:grid-cols-5 place-content-center ${
+                className={`container mx-auto  ${
                     textOrder !== null ? textOrder : ""
                 }`}
             >
-                <div className={`py-16 lg:py-[54px] xl:col-span-4 ${textOrder === 'order-2'? 'px-0' : 'px-6 lg:px-8 xl:px-20'}`}>
+                <div
+                    className={`py-16 lg:py-[54px] ${
+                        textOrder === "order-2"
+                            ? "lg:pl-4 lg:pr-6 xl:pl-6 xl:pr-16"
+                            : "lg:pl-14 lg:pr-10 xl:pl-[80px] "
+                    }`}
+                >
                     <div className="mb-5 md:mb-6 lg:mb-[30px]">
                         <h2 className="text-headline text-lg sm:text-xl md:text-2xl lg:text-[32px] font-semibold lg:leading-[150%]">
                             {listHeading}
@@ -59,12 +65,12 @@ export default function SingleColumnGridList({
                 </div>
             </div>
             <div
-                className={`w-full h-full ${
+                className={`w-full h-full flex items-center ${
                     imageOrder !== null ? imageOrder : ""
                 }`}
             >
                 {/*eslint-disable-next-line @next/next/no-img-element*/}
-                <img src={imageSrc} alt="aim" className="w-full h-full" />
+                <img src={imageSrc} alt="aim" className="w-full xl:h-full" />
             </div>
         </div>
     );

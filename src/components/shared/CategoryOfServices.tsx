@@ -17,11 +17,17 @@ export default function CategoryOfServices({
     return (
         <div className="bg-white grid grid-cols-1 lg:grid-cols-2 lg:place-items-center">
             <div
-                className={`container mx-auto grid  md:grid-cols-4  ${
+                className={`container mx-auto   ${
                     textOrder !== null ? textOrder : "order-2 lg:order-1"
                 }`}
             >
-                <div className="py-16 lg:py-20 md:px-4  md:col-span-3 ">
+                <div
+                    className={`py-16 lg:py-20  ${
+                        textOrder === "order-1"
+                            ? "lg:pl-14 lg:pr-10 xl:pl-[80px] "
+                            : "lg:pl-4 lg:pr-6 xl:pl-6 xl:pr-16"
+                    }`}
+                >
                     {items.map((item, _, array) => (
                         <div
                             key={item.id}
@@ -47,7 +53,7 @@ export default function CategoryOfServices({
                 </div>
             </div>
             <div
-                className={`w-full lg:h-full ${
+                className={`w-full flex items-center xl:h-full ${
                     imageOrder !== null ? imageOrder : "order-1 lg:order-2"
                 }`}
             >
@@ -55,7 +61,7 @@ export default function CategoryOfServices({
                 <img
                     src={imageSrc}
                     alt="services"
-                    className="w-full lg:h-full"
+                    className="w-full xl:h-full"
                 />
             </div>
         </div>

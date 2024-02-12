@@ -22,10 +22,10 @@ export default function Projects({}: Props) {
                         development of Bangladesh.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-[30px]">
-                    <div className="lg:col-span-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
+                    <div className="md:col-span-2">
                         <div className="">
-                            <div className="px-[35px] py-[27px] bg-white">
+                            <div className="px-9 py-[27px] bg-white">
                                 <div className="mb-4 md:mb-5 lg:mb-[22px]">
                                     <p className="text-sm text-tertiary text-justify">
                                         These endeavors aim to address the

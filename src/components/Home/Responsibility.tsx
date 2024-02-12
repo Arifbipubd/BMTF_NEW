@@ -60,7 +60,7 @@ export default function Responsibility({}: Props) {
                             />
                             <div
                                 className={`absolute -right-28 top-[50%] -translate-y-1/2 -my-1/2 
-                                        bg-primary p-4 md:p-[30px] rounded-full
+                                        bg-primary p-4 xl:p-[30px] rounded-full
                                         border-4 border-white
                                 `}
                             >

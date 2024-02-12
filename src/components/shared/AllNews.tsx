@@ -11,16 +11,16 @@ export default function AllNews({}: Props) {
     return (
         <div className="bg-white py-10 md:py-16 lg:py-[72px]">
             <div className="container mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-[30px] mb-8 md:mb-12 lg:mb-[51px]">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-[30px] mb-8 md:mb-12 lg:mb-[51px]">
                     <Link href={`/news-and-tenders/${newsAndTender[0].id}`}>
-                        <div>
+                        <div className="bg-skyLight rounded-b-[10px] h-full">
                             {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
                                 src={newsAndTender[0].imageSrc}
                                 alt=""
                                 className="w-full rounded-t-[10px]"
                             />
-                            <div className="bg-skyLight px-[18px] py-9 rounded-b-[10px]">
+                            <div className=" px-[18px] py-9">
                                 <h1 className="text-headline font-medium text-lg mb-4">
                                     {newsAndTender[0].title}
                                 </h1>
@@ -30,13 +30,13 @@ export default function AllNews({}: Props) {
                             </div>
                         </div>
                     </Link>
-                    <div className="flex flex-col h-full gap-5">
-                        <div className="grid grid-cols-2 place-items-center gap-2.5 h-full">
+                    <div className="flex flex-col sm:flex-row lg:flex-col h-full gap-5 sm:gap-[30px] lg:gap-5 ">
+                        <div className="grid lg:grid-cols-2 lg:place-items-center gap-2.5 h-full sm:w-1/2 lg:w-full">
                             {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
                                 src={newsAndTender[1].imageSrc}
                                 alt=""
-                                className="rounded-[10px] h-full"
+                                className="rounded-[10px] w-full"
                             />
                             <div className="">
                                 <Link
@@ -51,12 +51,12 @@ export default function AllNews({}: Props) {
                                 </p>
                             </div>
                         </div>
-                        <div className="grid grid-cols-2 place-items-center gap-2.5 mb-5 h-full">
+                        <div className="grid lg:grid-cols-2 lg:place-items-center gap-2.5 h-full sm:w-1/2 lg:w-full">
                             {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
                                 src={newsAndTender[2].imageSrc}
                                 alt=""
-                                className="rounded-[10px] h-full"
+                                className="rounded-[10px] w-full"
                             />
                             <div className="">
                                 <Link
@@ -73,7 +73,7 @@ export default function AllNews({}: Props) {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-[30px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-[30px]">
                     {newsAndTender.slice(3).map((news) => (
                         <div key={news.id}>
                             {/* eslint-disable-next-line @next/next/no-img-element*/}

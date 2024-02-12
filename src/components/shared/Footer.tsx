@@ -14,8 +14,8 @@ function Footer({}: Props) {
                         {/* eslint-disable-next-line @next/next/no-img-element*/}
                         <img src="/assets/images/footer/Frame.svg" alt="" />
                     </div>
-                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-14 lg:gap-[100px] h-full lg:place-items-center">
-                        <div className="col-span-2 lg:col-span-1">
+                    <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-14 lg:gap-[100px] h-full xl:place-items-center">
+                        <div className="col-span-2">
                             <div className="mb-10 md:mb-14 lg:mb-[62px]">
                                 {/* eslint-disable-next-line @next/next/no-img-element*/}
                                 <img
@@ -32,13 +32,13 @@ function Footer({}: Props) {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-span-2 lg:col-span-1">
+                        <div className="col-span-2">
                             <div className="mb-3 md:mb-5">
                                 <h3 className="text-white font-semibold capitalize leading-[150%]">
                                     business hours
                                 </h3>
                             </div>
-                            <div className="flex lg:justify-between items-center w-full gap-4">
+                            <div className="flex lg:justify-between items-center w-full gap-6">
                                 <div>
                                     <p className="text-white text-sm leading-[150%]">
                                         Sunday-Thursday:
@@ -61,7 +61,7 @@ function Footer({}: Props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="">
+                        <div className="md:col-span-2 xl:col-span-1">
                             <div className="mb-3 md:mb-5">
                                 <h3 className="text-white font-semibold capitalize leading-[150%]">
                                     Helpful Links
@@ -70,7 +70,7 @@ function Footer({}: Props) {
                             <div className="">
                                 <div className="mb-3 md:mb-5">
                                     <Link
-                                        href={"/"}
+                                        href={"/about"}
                                         className=" text-sm text-white capitalize leading-[150%]"
                                     >
                                         about us
@@ -78,7 +78,7 @@ function Footer({}: Props) {
                                 </div>
                                 <div className="mb-3 md:mb-5">
                                     <Link
-                                        href={"/"}
+                                        href={"/about#organogram"}
                                         className=" text-sm text-white capitalize leading-[150%]"
                                     >
                                         Organogram
@@ -86,7 +86,7 @@ function Footer({}: Props) {
                                 </div>
                                 <div className="mb-3 md:mb-5">
                                     <Link
-                                        href={"/"}
+                                        href={"/accreditations-and-certificate"}
                                         className=" text-sm text-white capitalize leading-[150%]"
                                     >
                                         Accreditations
@@ -94,7 +94,7 @@ function Footer({}: Props) {
                                 </div>
                                 <div className="mb-3 md:mb-5">
                                     <Link
-                                        href={"/"}
+                                        href={"/our-history"}
                                         className=" text-sm text-white capitalize leading-[150%]"
                                     >
                                         our history
@@ -102,7 +102,7 @@ function Footer({}: Props) {
                                 </div>
                                 <div>
                                     <Link
-                                        href={"/"}
+                                        href={"/noc-and-notice"}
                                         className=" text-sm text-white capitalize leading-[150%]"
                                     >
                                         NOC & Notices
@@ -110,7 +110,7 @@ function Footer({}: Props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="">
+                        <div className="md:col-span-2 xl:col-span-1">
                             <div className="mb-3 md:mb-5">
                                 <h3 className="text-white font-semibold capitalize leading-[150%]">
                                     Pages
@@ -119,7 +119,7 @@ function Footer({}: Props) {
                             <div className="">
                                 <div className="mb-3 md:mb-5">
                                     <Link
-                                        href={"/"}
+                                        href={"/verticals"}
                                         className=" text-sm text-white capitalize leading-[150%]"
                                     >
                                         Verticals
@@ -127,7 +127,7 @@ function Footer({}: Props) {
                                 </div>
                                 <div className="mb-3 md:mb-5">
                                     <Link
-                                        href={"/"}
+                                        href={"/news-and-tenders"}
                                         className=" text-sm text-white capitalize leading-[150%]"
                                     >
                                         News & Tenders
@@ -135,7 +135,7 @@ function Footer({}: Props) {
                                 </div>
                                 <div className="mb-3 md:mb-5">
                                     <Link
-                                        href={"/"}
+                                        href={"/contact"}
                                         className=" text-sm text-white capitalize leading-[150%]"
                                     >
                                         Contacts
@@ -151,7 +151,7 @@ function Footer({}: Props) {
                                 </div>
                                 <div>
                                     <Link
-                                        href={"/"}
+                                        href={"/career"}
                                         className=" text-sm text-white capitalize leading-[150%]"
                                     >
                                         Career

@@ -8,7 +8,7 @@ function AboutBMTF({}: Props) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-7">
             <div className="bg-primary py-20 md:py-32 lg:py-[154px] md:col-span-3">
-                <div className="container mx-auto flex lg:-mr-[170px] gap-10 justify-end">
+                <div className="container mx-auto flex lg:-mr-24 xl:-mr-[170px] gap-10 justify-end">
                     <div className="relative">
                         {/*eslint-disable-next-line @next/next/no-img-element*/}
                         <img
@@ -18,7 +18,7 @@ function AboutBMTF({}: Props) {
                         />
                         <div
                             className={`absolute -right-28 top-[50%] -translate-y-1/2 -my-1/2 
-                                        bg-primary p-4 md:p-[30px] rounded-full
+                                        bg-primary p-4 xl:p-[30px] rounded-full
                                         border-4 border-white z-10 flex justify-center
                                 `}
                         >
@@ -52,10 +52,10 @@ function AboutBMTF({}: Props) {
             </div>
             <div
                 className={`bg-[url('/assets/images/home/shape30.png')] bg-cover bg-center bg-no-repeat
-         flex justify-center items-center h-full md:col-span-4  py-10 lg:py-0 -z-10`}
+         flex items-center h-full md:col-span-4  py-10 lg:py-0 -z-10`}
             >
-                <div>
-                    <div className="container mx-auto lg:px-[136px] xl:px-[196px]">
+                <div className="pl-12 pr-12 lg:pl-[80px] lg:pr-[56px] xl:pl-[150px]">
+                    <div className="container mx-auto">
                         <h2 className="text-headline text-2xl md:text-3xl lg:text-[32px] font-bold mb-5 md:mb-[30px]">
                             About <span className="text-yellow">BMTF</span>
                         </h2>

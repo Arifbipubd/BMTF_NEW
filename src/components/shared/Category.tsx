@@ -18,7 +18,7 @@ export default function Category({ heading, subHeading, categories }: Props) {
                     </h2>
                     <p className="text-black text-center">{subHeading}</p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:gap-[30px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-6 lg:gap-[30px]">
                     {categories.map((item) => (
                         <div
                             key={item.id}

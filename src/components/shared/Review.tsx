@@ -23,12 +23,12 @@ export default function Review({
     return (
         <div
             className={`${
-                divVisible ? "lg:grid-cols-7" : "md:grid-cols-7"
+                divVisible ? "lg:grid-cols-7" : "lg:grid-cols-7"
             } grid grid-cols-1 `}
         >
-            <div className="md:col-span-4 relative overflow-hidden">
+            <div className="lg:col-span-4 relative overflow-hidden">
                 <div className="h-full">
-                        {/* eslint-disable-next-line @next/next/no-img-element*/}
+                    {/* eslint-disable-next-line @next/next/no-img-element*/}
                     <img
                         src={imageUrl}
                         alt={imageUrl}
@@ -54,17 +54,17 @@ export default function Review({
                     </div>
                 </div>
             </div>
-            <div className="relative md:col-span-3 bg-primary py-10 lg:py-5 xl:py-0">
-                <div className="container mx-auto h-full grid lg:grid-cols-4">
-                    <div className="absolute top-4 left-2 md:top-1 md:left-1">
+            <div className="relative md:col-span-3 bg-primary py-10 lg:py-12 xl:py-0 z-0">
+                <div className="container mx-auto h-full">
+                    <div className="absolute bottom-0 right-2 md:top-1 md:left-1 -z-10">
                         {/* eslint-disable-next-line @next/next/no-img-element*/}
                         <img src="/assets/images/shared/Frame.png" alt="" />
                     </div>
                     <div
                         className={`${
                             divVisible
-                                ? " mx-12 lg:col-span-4"
-                                : "mx-[70px] lg:col-span-3"
+                                ? "  lg:mx-6 xl:col-span-5"
+                                : "lg:mx-10  2xl:mx-[70px] xl:col-span-4"
                         } 
                     flex flex-col justify-center h-full `}
                     >

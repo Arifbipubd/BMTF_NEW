@@ -10,7 +10,7 @@ export default function Capabilities({}: Props) {
             <div className="bg-skyLight py-16 lg:py-24">
                 <div className={`container mx-auto grid grid-cols-1 lg:grid-cols-2 
                         gap-8 lg:gap-[30px] h-full place-content-center place-items-center`}>
-                    <div className="flex lg:gap-[30px]">
+                    <div className="flex gap-[30px]">
                         <div className="-mt-10">
                             {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
