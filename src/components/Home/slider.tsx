@@ -100,7 +100,7 @@ export default function Slider({}: Props) {
                                             >
                                                 {slide.heading}
                                             </h1>
-                                            <p className="text-white text-justify text-lg mb-5 md:mb-7 lg:mb-[34px]">
+                                            <p className="text-white text-lg mb-5 md:mb-7 lg:mb-[34px]">
                                                 {slide.description}
                                             </p>
                                             <div>
