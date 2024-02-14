@@ -59,7 +59,7 @@ function AboutBMTF({}: Props) {
                         <h2 className="text-headline text-2xl md:text-3xl lg:text-[32px] font-bold mb-5 md:mb-[30px]">
                             About <span className="text-yellow">BMTF</span>
                         </h2>
-                        <p className="text-sm 2xl:text-base text-tertiary text-justify mb-3 md:mb-5">
+                        <p className="text-sm 2xl:text-base text-tertiary mb-3 md:mb-5">
                             Bangladesh Machine Tools Factory Limited (BMTF) is a
                             prominent state-owned entity operating under the
                             Bangladesh Army&quot;s supervision. BMTF located in
@@ -69,7 +69,7 @@ function AboutBMTF({}: Props) {
                             Managing Director, boasts a strong leadership that
                             has propelled it to global recognition.
                         </p>
-                        <p className="text-sm 2xl:text-base text-tertiary text-justify">
+                        <p className="text-sm 2xl:text-base text-tertiary">
                             With a blend of military and civilian officers and a
                             dedicated workforce, BMTF is committed to
                             contributing to Bangladesh&quot;s economic

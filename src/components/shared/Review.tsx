@@ -81,14 +81,14 @@ export default function Review({
                                         : "mb-5 md:mb-8 lg:mb-10"
                                 }`}
                             >
-                                <p className="text-white text-sm 2xl:text-base text-justify">
+                                <p className="text-white text-sm 2xl:text-base">
                                     {descriptionOne}
                                 </p>
                             </div>
                         )}
                         {descriptionTwo && (
                             <div className="mb-5 md:mb-8 lg:mb-10">
-                                <p className="text-white text-sm 2xl:text-base text-justify">
+                                <p className="text-white text-sm 2xl:text-base">
                                     {descriptionTwo}
                                 </p>
                             </div>

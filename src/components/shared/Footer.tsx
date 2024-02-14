@@ -143,7 +143,7 @@ function Footer({}: Props) {
                                 </div>
                                 <div className="mb-3 md:mb-5">
                                     <Link
-                                        href={"/"}
+                                        href={"/privacy-policy"}
                                         className=" text-sm 2xl:text-base text-white capitalize leading-[150%]"
                                     >
                                         Privacy & Policy

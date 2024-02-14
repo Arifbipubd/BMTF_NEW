@@ -27,7 +27,7 @@ export default function Projects({}: Props) {
                         <div className="">
                             <div className="px-9 py-[27px] bg-white">
                                 <div className="mb-4 md:mb-5 lg:mb-[22px]">
-                                    <p className="text-sm 2xl:text-base text-tertiary text-justify">
+                                    <p className="text-sm 2xl:text-base text-tertiary ">
                                         These endeavors aim to address the
                                         evolving needs of various sectors,
                                         including agriculture, construction, and
@@ -65,7 +65,7 @@ export default function Projects({}: Props) {
                             <h1 className="text-white 2xl:text-lg font-semibold mb-4 md:mb-5 leading-[20px]">
                                 Smart Manufacturing Integration
                             </h1>
-                            <p className="text-white text-xs 2xl:text-sm text-justify leading-[20px]">
+                            <p className="text-white text-xs 2xl:text-sm  leading-[20px]">
                                 Implementing Internet of Things (IoT) technology
                                 into machinery to enable real-time monitoring,
                                 predictive maintenance, and data-driven
@@ -98,7 +98,7 @@ export default function Projects({}: Props) {
                             <h1 className="text-headline 2xl:text-lg font-semibold mb-4 md:mb-5 leading-[20px]">
                                 Smart Manufacturing Integration
                             </h1>
-                            <p className="text-headline text-xs 2xl:text-sm text-justify leading-[20px]">
+                            <p className="text-headline text-xs 2xl:text-sm leading-[20px]">
                                 Implementing Internet of Things (IoT) technology
                                 into machinery to enable real-time monitoring,
                                 predictive maintenance, and data-driven

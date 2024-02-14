@@ -52,10 +52,12 @@ export default function Navbar() {
     };
 
     const childrenOpenHandler = (itemId: number) => {
-        if (openSubmenuId === itemId) {
-            setOpenSubmenuId(null);
-        } else {
-            setOpenSubmenuId(itemId);
+        if (window.innerWidth < 1280) {
+            if (openSubmenuId === itemId) {
+                setOpenSubmenuId(null);
+            } else {
+                setOpenSubmenuId(itemId);
+            }
         }
     };
 
@@ -95,6 +97,14 @@ export default function Navbar() {
         }
     }, [children, isVisible]);
 
+    useEffect(() => {
+        const resizer = window.addEventListener('resize', () => {
+            if(window.innerWidth > 1270){
+                setIsOpen(false);
+                setOpenSubmenuId(null);
+            }
+        })
+    }, []);
     useEffect(() => {
         const eventFired: any = window.addEventListener(
             "scroll",
@@ -314,7 +324,9 @@ export default function Navbar() {
                                                                             menu.link
                                                                         }
                                                                         className="text-white"
-                                                                        onClick={handleCloseIcon}
+                                                                        onClick={
+                                                                            handleCloseIcon
+                                                                        }
                                                                     >
                                                                         {
                                                                             menu.label
@@ -373,7 +385,9 @@ export default function Navbar() {
                                                             href={menu.link}
                                                             className="text-white"
                                                             key={menu.id}
-                                                            onClick={mouseLeaveHandler}
+                                                            onClick={
+                                                                mouseLeaveHandler
+                                                            }
                                                         >
                                                             {menu.label}
                                                         </Link>
@@ -387,7 +401,7 @@ export default function Navbar() {
                 </Fragment>
             )}
             <div
-                className={`fixed top-0 left-0 w-screen -z-20 bg-black/80 overflow-hidden`}
+                className={`fixed top-0 left-0 w-screen -z-20 bg-black/90 overflow-hidden`}
                 style={{
                     height: `${
                         dropdownHeight > 0 ? dropdownHeight + 100 : 0

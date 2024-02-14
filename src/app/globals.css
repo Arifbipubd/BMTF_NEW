@@ -1534,3 +1534,118 @@
 footer {
   clear: both;
 }
+
+/*------------------------------------------------------------------*/
+/*	05) PAGE TITLE
+/*------------------------------------------------------------------*/
+.industify_fn_pagetitle {
+  width: 100%;
+  float: left;
+  clear: both;
+  position: relative;
+  background: var(--color-white-bg);
+}
+
+.industify_fn_content_archive .industify_fn_pagetitle {
+  margin-bottom: 70px;
+}
+.industify_fn_pagetitle .title_holder {
+  width: 100%;
+  float: left;
+  clear: both;
+  position: relative;
+  padding: 95px 0px 35px 0px;
+}
+.industify_fn_pagetitle .title_holder:after {
+  left: 0px;
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  height: 6px;
+  width: 70px;
+  /* background-color: #eee; */
+}
+.industify_fn_pagetitle .title_holder:before {
+  left: 0px;
+  position: absolute;
+  content: "";
+  bottom: 13px;
+  height: 6px;
+  width: 150px;
+  /* background-color: #eee; */
+  border-radius: 10px;
+}
+.industify_fn_pagetitle h3 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 48px;
+  letter-spacing: 0px;
+  font-weight: 300;
+  line-height: 1;
+  position: relative;
+  left: -1px;
+}
+.singleVerticalBreadcrumb {
+  padding-top: 150px !important;
+}
+.singleVerticalBreadcrumb .privacyTitle {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--color-secondary);
+}
+
+.industify_fn_sidebarpage,
+.industify_fn_sidebarpage .s_inner {
+  width: 100%;
+  float: left;
+  clear: both;
+  background: var(--color-white-bg);
+}
+.desc_holder h3 {
+  margin: 25px 0;
+  padding: 0px;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: var(--color-secondary);
+}
+
+/*------------------------------------------------------------------*/
+/*	19) SERVICE SINGLE
+/*------------------------------------------------------------------*/
+.industify_fn_service_single .desc_holder,
+.industify_fn_service_single .img_holder,
+.industify_fn_service_single {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+.industify_fn_service_single .img_holder {
+  border-radius: 3px;
+  margin-bottom: 60px;
+  min-width: 100%;
+}
+.industify_fn_service_single .img_holder iframe {
+  height: 500px;
+}
+@media (max-width: 768px) {
+  .industify_fn_service_single .img_holder iframe {
+    height: 300px;
+  }
+}
+.industify_fn_service_single .desc_holder p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 18px;
+  text-align: justify;
+}
+.industify_fn_service_single .desc_holder p:last-child {
+  margin-bottom: 0;
+}
+.industify_fn_service_single .desc_holder {
+  margin-bottom: 56px;
+}
