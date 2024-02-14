@@ -69,6 +69,8 @@ export default function Page({}: Props) {
                 <CategoryOfServices
                     imageSrc="/assets/images/verticals/BMTF-crafties/bmtf-category.png"
                     items={craftiesPoints}
+                    textOrder="order-2 lg:order-1"
+                    imageOrder="order-1 lg:order-2"
                 />
                 <VerticalsListItems
                     imageSrc="/assets/images/verticals/BMTF-crafties/listItem.png"
@@ -87,6 +89,8 @@ export default function Page({}: Props) {
                 culture. Our safety program is designed to prevent injuries, promote the safety, security, 
                 and health of our employees and the public at large, and minimize the impact on the environment 
                 in which we operate.`}
+                textOrder="order-2 lg:order-1"
+                imageOrder="order-1 lg:order-2"
                 />
                 <ConnectBMTF />
             </section>

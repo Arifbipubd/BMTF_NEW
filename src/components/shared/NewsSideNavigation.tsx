@@ -14,7 +14,7 @@ export default function NewsSideNavigation({
     return (
         <div className="bg-primary rounded-[10px] navigation">
             <div className="py-4 md:py-5 lg:py-[22px] px-[23px] bg-white/15 mb-2 md:mb-6">
-                <p className="text-white text-sm font-medium">
+                <p className="text-white text-sm 2xl:text-base font-medium">
                     ALL NEWS OF BMTF
                 </p>
             </div>
@@ -27,7 +27,7 @@ export default function NewsSideNavigation({
                                 newsId === item.id
                                     ? "text-yellow font-semibold"
                                     : "text-white"
-                            } text-sm  hover:text-yellow`}
+                            } text-sm 2xl:text-base  hover:text-yellow`}
                         >
                             {item.title}
                         </Link>

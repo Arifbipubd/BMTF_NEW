@@ -51,7 +51,7 @@ export default function Experience({}: Props) {
                             </h2>
                         </div>
                         <div className="mb-5 md:mb-[30px] lg:mb-9">
-                            <p className="text-sm text-tertiary leading-[24px]">
+                            <p className="text-sm 2xl:text-base text-tertiary leading-[24px]">
                                 At BMTF, we stand as a beacon of excellence in
                                 the machinery and tools industry. Our unwavering
                                 commitment to quality, innovation, and customer
@@ -73,12 +73,12 @@ export default function Experience({}: Props) {
                                     className="flex items-center mb-3 md:mb-5"
                                 >
                                     <div className="mr-2.5">
-                                        <i className="text-primary text-lg">
+                                        <i className="text-primary text-lg 2xl:text-xl">
                                             <TfiArrowCircleRight />
                                         </i>
                                     </div>
                                     <div>
-                                        <p className="text-tertiary text-sm leading-[150%]">
+                                        <p className="text-tertiary text-sm 2xl:text-base leading-[150%]">
                                             {item}
                                         </p>
                                     </div>

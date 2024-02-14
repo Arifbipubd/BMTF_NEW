@@ -27,7 +27,7 @@ export default function Certifications({}: Props) {
                     <h2 className="text-headling text-2xl md:text-3xl lg:text-[2.5rem] mb-5 md:mb-6 lg:mb-[30px] md:leading-[46px]">
                         Certifications
                     </h2>
-                    <p className="text-tertiary text-justify text-sm lg:w-3/4 leading-[150%]">
+                    <p className="text-tertiary text-justify text-sm 2xl:text-base lg:w-3/4 leading-[150%]">
                         At BMTF, we stand as a beacon of excellence in the
                         machinery and tools industry. Our unwavering commitment
                         to quality, innovation, and customer satisfaction sets

@@ -58,8 +58,8 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/verticals/heat-and-surface-list-image.png"
                     listHeading="Our Promises Are"
                     listItems={listItems}
-                    imageOrder="order-2"
-                    textOrder="order-1"
+                    imageOrder="order-1 lg:order-2"
+                    textOrder="order-2 lg:order-1"
                     description={`The BMTF H&ST Shop integrates the latest available technologies into our array of 
                 manual and semi-automatic process lines. We prioritize treatments designed for the 21st century. 
                 Our equipment is robust, and, significantly, we place a strong emphasis on the aesthetics of our 

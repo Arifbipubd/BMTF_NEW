@@ -66,6 +66,8 @@ export default function Page({}: Props) {
                 <CategoryOfServices
                     imageSrc="/assets/images/verticals/army-pharma/shared-category-image.png"
                     items={armyPharmaPointsOne}
+                    textOrder="order-2 lg:order-1"
+                    imageOrder="order-1 lg:order-2"
                 />
                 <CategoryOfServices
                     imageSrc="/assets/images/verticals/army-pharma/shared-category-image.png"
@@ -78,6 +80,8 @@ export default function Page({}: Props) {
                     listHeading="Our Aim"
                     backroundColor="bg-skyLight"
                     listItems={listItems}
+                    textOrder="order-2 lg:order-1"
+                    imageOrder="order-1 lg:order-2"
                 />
                 <Category
                     heading="Product Categories"

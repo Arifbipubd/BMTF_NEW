@@ -24,7 +24,7 @@ export default function SingleNews({ news, newsId }: Props) {
                             {news.description.map((item: any, index: any) => (
                                 <p
                                     key={index}
-                                    className="text-whiteBg text-sm text-justify"
+                                    className="text-whiteBg text-sm 2xl:text-base text-justify"
                                 >
                                     {item}
                                 </p>

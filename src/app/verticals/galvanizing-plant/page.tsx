@@ -59,8 +59,8 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/verticals/galvanizing-list-image.png"
                     listHeading="Our Promises Are"
                     listItems={listItems}
-                    imageOrder="order-2"
-                    textOrder="order-1"
+                    imageOrder="order-1 lg:order-2"
+                    textOrder="order-2 lg:order-1"
                 />
                 <ConnectBMTF />
             </section>

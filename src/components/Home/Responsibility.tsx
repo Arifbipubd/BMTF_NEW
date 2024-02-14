@@ -15,13 +15,13 @@ export default function Responsibility({}: Props) {
                             </h2>
                         </div>
                         <div className="mb-5 md:mb-[30px]">
-                            <h4 className="text-white font-medium md:text-lg capitalize">
+                            <h4 className="text-white font-medium md:text-lg 2xl:text-xl capitalize">
                                 Our Commitment is to make Made in Bangladesh a
                                 Global Preferred Choice.
                             </h4>
                         </div>
                         <div className="mb-5 md:mb-[30px]">
-                            <p className="text-sm text-white text-justify">
+                            <p className="text-sm 2xl:text-base text-white text-justify">
                                 Being a state-owned entity we are obliged to
                                 play a central role in society and feel
                                 responsible to keep up this special way of

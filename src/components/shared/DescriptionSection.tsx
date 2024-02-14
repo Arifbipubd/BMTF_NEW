@@ -39,7 +39,7 @@ export default function DescriptionSection({
                 <div className="flex flex-col items-center w-full">
                     <div className="lg:w-3/4">
                         <div className="mb-5 md:mb-6 lg:mb-[30px] ">
-                            <p className="text-tertiary text-sm text-center">
+                            <p className="text-tertiary text-sm 2xl:text-base text-center">
                                 {descriptionOne}
                             </p>
                         </div>
@@ -51,7 +51,7 @@ export default function DescriptionSection({
                                         : ""
                                 }`}
                             >
-                                <p className="text-tertiary text-sm text-center">
+                                <p className="text-tertiary text-sm 2xl:text-base text-center">
                                     {descriptionTwo}
                                 </p>
                             </div>
@@ -64,14 +64,14 @@ export default function DescriptionSection({
                                         : ""
                                 }`}
                             >
-                                <p className="text-tertiary text-sm text-center">
+                                <p className="text-tertiary text-sm 2xl:text-base text-center">
                                     {descriptionThree}
                                 </p>
                             </div>
                         )}
                         {descriptionFour && (
                             <div className={``}>
-                                <p className="text-tertiary text-sm text-center">
+                                <p className="text-tertiary text-sm 2xl:text-base text-center">
                                     {descriptionFour}
                                 </p>
                             </div>

@@ -25,7 +25,7 @@ export default function HeroSection({}: Props) {
                 className={`bg-[url('/assets/images/home/shape30.png')] bg-cover bg-center bg-no-repeat
          flex justify-center items-center h-full md:col-span-4  py-10 lg:py-0 -z-10`}
             >
-                <div className=" md: pr-7 lg:pl-[100px] lg:pr-[100px] xl:pl-[196px] 2xl:pr-[150px]">
+                <div className=" md:pr-7 lg:pl-[100px] lg:pr-[100px] xl:pl-[196px] 2xl:pr-[150px]">
                     <div className="container mx-auto ">
                         <h2 className="text-headline text-2xl md:text-3xl lg:text-[32px] font-bold mb-5 md:mb-[30px]">
                             About <span className="text-yellow">BMTF</span>

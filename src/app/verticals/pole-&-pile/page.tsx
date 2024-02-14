@@ -77,6 +77,8 @@ export default function Page({}: Props) {
                 <CategoryOfServices
                     imageSrc="/assets/images/verticals/pole-and-pile/category_of_service.png"
                     items={polePoints}
+                    textOrder="order-2 lg:order-1"
+                    imageOrder="order-1 lg:order-2"
                 />
                 <ProcessCard
                     heading="Our Manufacturing Process"

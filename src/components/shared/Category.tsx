@@ -36,7 +36,7 @@ export default function Category({ heading, subHeading, categories }: Props) {
                                 </div>
                             </div>
                             <div>
-                                <p className="text-yellow md:text-lg font-semibold text-center">
+                                <p className="text-yellow md:text-lg 2xl:text-xl font-semibold text-center">
                                     {item.label}
                                 </p>
                             </div>

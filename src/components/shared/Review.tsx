@@ -64,7 +64,7 @@ export default function Review({
                         className={`${
                             divVisible
                                 ? "  lg:mx-6 xl:col-span-5"
-                                : "lg:mx-10  2xl:mx-[70px] xl:col-span-4"
+                                : "lg:ml-9 lg:mr-9  2xl:ml-[30px] 2xl:mr-[136px] xl:col-span-4"
                         } 
                     flex flex-col justify-center h-full `}
                     >
@@ -81,14 +81,14 @@ export default function Review({
                                         : "mb-5 md:mb-8 lg:mb-10"
                                 }`}
                             >
-                                <p className="text-white text-sm text-justify">
+                                <p className="text-white text-sm 2xl:text-base text-justify">
                                     {descriptionOne}
                                 </p>
                             </div>
                         )}
                         {descriptionTwo && (
                             <div className="mb-5 md:mb-8 lg:mb-10">
-                                <p className="text-white text-sm text-justify">
+                                <p className="text-white text-sm 2xl:text-base text-justify">
                                     {descriptionTwo}
                                 </p>
                             </div>

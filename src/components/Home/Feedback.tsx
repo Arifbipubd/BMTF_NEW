@@ -17,7 +17,7 @@ export default function Feedback({}: Props) {
                     />
                 </div>
                 <div className="mb-10 md:mb-12 lg:mb-[52px] lg:max-w-[862px]">
-                    <p className="text-white text-sm text-center">
+                    <p className="text-white text-sm 2xl:text-base text-center">
                         Under the banner of Bangladesh Machine Tools Factory
                         Limited (BMTF), we stand at the forefront of innovation
                         and industrial excellence. Spanning across 260 acres in
@@ -31,13 +31,13 @@ export default function Feedback({}: Props) {
                     </p>
                 </div>
                 <div className="mb-3 md:mb-[18px]">
-                    <p className="text-white text-sm text-center">
+                    <p className="text-white text-sm 2xl:text-base text-center">
                         Major General Mohammad Asadullah Minhazul Alam, ndu,
                         psc, PhD
                     </p>
                 </div>
                 <div>
-                    <p className="text-yellow text-sm font-medium">
+                    <p className="text-yellow text-sm 2xl:text-base font-medium">
                         Managing Director, BMTF Ltd
                     </p>
                 </div>

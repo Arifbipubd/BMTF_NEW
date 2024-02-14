@@ -68,6 +68,8 @@ export default function Page({}: Props) {
                 <CategoryOfServices
                     imageSrc="/assets/images/verticals/cfl-category-image.png"
                     items={packagingPoints}
+                    imageOrder="order-1 lg:order-2"
+                    textOrder="order-2 lg:order-1"
                 />
                 <PackagingSectionCard items={sectionCard} />
                 <SingleColumnGridList

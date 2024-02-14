@@ -17,7 +17,7 @@ export default function SectionCard({ items }: Props) {
                             <img src={item.imageSrc} alt={item.heading} className="w-full rounded-t-[10px]"/>
                         </div>
                         <div>
-                            <h2 className="text-primary text-lg md:text-xl font-semibold">
+                            <h2 className="text-primary text-lg md:text-xl 2xl:text-[22px] font-semibold">
                                 {item.heading}
                             </h2>
                         </div>

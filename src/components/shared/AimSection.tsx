@@ -23,10 +23,10 @@ export default function AimSection({ imageSrc, aimItems }: Props) {
                                 array.length > 1 ? "mb-5 md:mb-6" : ""
                             }`}
                         >
-                            <h2 className="text-secondary text-xl md:text-[22px] font-semibold mb-3 md:mb-4">
+                            <h2 className="text-secondary text-xl md:text-[22px] 2xl:text-2xl font-semibold mb-3 md:mb-4">
                                 {item.heading}
                             </h2>
-                            <p className="text-textDark text-sm text-justify">
+                            <p className="text-textDark text-sm 2xl:text-base text-justify">
                                 {item.text}
                             </p>
                         </div>

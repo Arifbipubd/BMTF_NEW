@@ -23,7 +23,7 @@ export default function Card({}: Props) {
                                 <img src={item.imageSrc} alt="" />
                             </div>
                             <div>
-                                <p className="text-secondary text-lg font-semibold leading-[27px]">
+                                <p className="text-secondary text-lg 2xl:text-xl font-semibold leading-[27px]">
                                     {item.title}
                                 </p>
                             </div>
@@ -34,7 +34,7 @@ export default function Card({}: Props) {
                                     </i>
                                 </div>
                                 <div>
-                                    <p className="text-white text-sm leading-[21px]">
+                                    <p className="text-white text-sm 2xl:text-base leading-[21px]">
                                         {item.address}
                                     </p>
                                 </div>
@@ -47,7 +47,7 @@ export default function Card({}: Props) {
                                 </div>
                                 <div>
                                     <a href={`tel:${item.tel}`}>
-                                        <p className="text-white text-sm leading-[21px]">
+                                        <p className="text-white text-sm 2xl:text-base leading-[21px]">
                                             {item.tel}
                                         </p>
                                     </a>
@@ -61,7 +61,7 @@ export default function Card({}: Props) {
                                 </div>
                                 <div>
                                     <a href={`mailto:${item.email}`}>
-                                        <p className="text-white text-sm leading-[21px]">
+                                        <p className="text-white text-sm 2xl:text-base leading-[21px]">
                                             {item.email}
                                         </p>
                                     </a>

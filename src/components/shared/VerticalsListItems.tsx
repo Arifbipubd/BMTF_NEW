@@ -36,13 +36,13 @@ export default function VerticalsListItems({
             >
                 <div
                     className={`py-16 lg:py-[54px]  ${
-                        textOrder === "order-1"
-                            ? "lg:pl-14 lg:pr-10 xl:pl-[80px] "
-                            : "lg:pl-4 lg:pr-6 xl:pl-6 xl:pr-16"
+                        textOrder === "order-2 lg:order-1"
+                            ? "lg:pr-2 lg:pl-10 xl:pl-[101px]"
+                            : "lg:pl-3 lg:pr-6 xl:pl-4 xl:pr-16"
                     }`}
                 >
                     <div className="mb-5 md:mb-6 lg:mb-[30px]">
-                        <h2 className="text-headline text-lg sm:text-xl font-semibold">
+                        <h2 className="text-headline text-lg sm:text-xl 2xl:text-[22px] font-semibold">
                             {listHeading}
                         </h2>
                     </div>
@@ -50,12 +50,12 @@ export default function VerticalsListItems({
                         {listItems.map((item) => (
                             <div key={item.id} className={`flex items-center`}>
                                 <div className="bg-primary p-2 rounded-full mr-2.5">
-                                    <i className="text-yellow text-sm font-medium">
+                                    <i className="text-yellow text-sm 2xl:text-base font-medium">
                                         <FiCheck />
                                     </i>
                                 </div>
                                 <div>
-                                    <p className="text-black font-sm">
+                                    <p className="text-black font-sm 2xl:text-base">
                                         {item.label}
                                     </p>
                                 </div>
@@ -63,7 +63,7 @@ export default function VerticalsListItems({
                         ))}
                     </div>
                     {description && (
-                        <p className="mt-5 md:mt-6 lg:mt-[30px] text-black text-sm text-justify">
+                        <p className="mt-5 md:mt-6 lg:mt-[30px] text-black text-sm 2xl:text-base text-justify">
                             {description}
                         </p>
                     )}
