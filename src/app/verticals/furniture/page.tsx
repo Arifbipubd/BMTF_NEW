@@ -67,6 +67,8 @@ export default function Page({}: Props) {
                 <CategoryOfServices
                     imageSrc="/assets/images/verticals/furniture/category_of_service_1.png"
                     items={points}
+                    textOrder="order-2 lg:order-1"
+                    imageOrder="order-1 lg:order-2"
                 />
                 <SectionCard items={sectionCard} />
                 <VerticalsListItems

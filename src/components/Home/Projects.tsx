@@ -13,7 +13,7 @@ export default function Projects({}: Props) {
                     </h2>
                 </div>
                 <div className="mb-5 md:mb-6 lg:mb-[30px]">
-                    <p className="text-sm text-tertiary text-justify">
+                    <p className="text-sm 2xl:text-base text-tertiary text-justify">
                         BMTF has embarked on several projects and remains
                         dedicated to consistently advancing its initiatives.
                         With a commitment to fostering self-sufficiency and
@@ -27,7 +27,7 @@ export default function Projects({}: Props) {
                         <div className="">
                             <div className="px-9 py-[27px] bg-white">
                                 <div className="mb-4 md:mb-5 lg:mb-[22px]">
-                                    <p className="text-sm text-tertiary text-justify">
+                                    <p className="text-sm 2xl:text-base text-tertiary text-justify">
                                         These endeavors aim to address the
                                         evolving needs of various sectors,
                                         including agriculture, construction, and
@@ -62,10 +62,10 @@ export default function Projects({}: Props) {
                     </div>
                     <div className=" bg-primary flex flex-col justify-between">
                         <div className=" px-[17px] py-[30px] pb-1">
-                            <h1 className="text-white font-semibold mb-4 md:mb-5 leading-[20px]">
+                            <h1 className="text-white 2xl:text-lg font-semibold mb-4 md:mb-5 leading-[20px]">
                                 Smart Manufacturing Integration
                             </h1>
-                            <p className="text-white text-xs text-justify leading-[20px]">
+                            <p className="text-white text-xs 2xl:text-sm text-justify leading-[20px]">
                                 Implementing Internet of Things (IoT) technology
                                 into machinery to enable real-time monitoring,
                                 predictive maintenance, and data-driven
@@ -95,10 +95,10 @@ export default function Projects({}: Props) {
                             <div className="w-7 h-5 bg-secondary clip-path-2 absolute bottom-0 left-10" />
                         </div>
                         <div className="px-[17px] py-[30px]">
-                            <h1 className="text-headline font-semibold mb-4 md:mb-5 leading-[20px]">
+                            <h1 className="text-headline 2xl:text-lg font-semibold mb-4 md:mb-5 leading-[20px]">
                                 Smart Manufacturing Integration
                             </h1>
-                            <p className="text-headline text-xs text-justify leading-[20px]">
+                            <p className="text-headline text-xs 2xl:text-sm text-justify leading-[20px]">
                                 Implementing Internet of Things (IoT) technology
                                 into machinery to enable real-time monitoring,
                                 predictive maintenance, and data-driven

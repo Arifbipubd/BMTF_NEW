@@ -26,10 +26,10 @@ export default function Directors({}: Props) {
                                     />
                                 </div>
                                 <div className="">
-                                    <p className="text-white text-sm">
+                                    <p className="text-white text-sm 2xl:text-base">
                                         Chief of Army Stuff
                                     </p>
-                                    <p className="text-white text-sm">
+                                    <p className="text-white text-sm 2xl:text-base">
                                         Chairman
                                     </p>
                                 </div>
@@ -51,10 +51,10 @@ export default function Directors({}: Props) {
                                 />
                             </div>
                             <div className="">
-                                <p className="text-white text-sm">
+                                <p className="text-white text-sm 2xl:text-base">
                                     Chief of Army Stuff
                                 </p>
-                                <p className="text-white text-sm">Chairman</p>
+                                <p className="text-white text-sm 2xl:text-base">Chairman</p>
                             </div>
                         </div>
                         <div className="py-[45px] px-[35px] bg-yellow flex flex-col items-center text-center h-fit">
@@ -66,10 +66,10 @@ export default function Directors({}: Props) {
                                 />
                             </div>
                             <div className="">
-                                <p className="text-white text-sm">
+                                <p className="text-white text-sm 2xl:text-base">
                                     Chief of Army Stuff
                                 </p>
-                                <p className="text-white text-sm">Chairman</p>
+                                <p className="text-white text-sm 2xl:text-base">Chairman</p>
                             </div>
                         </div>
                     </div>

@@ -70,6 +70,8 @@ export default function Page({}: Props) {
                 <CategoryOfServices
                     imageSrc="/assets/images/verticals/machine-shop/machine-shop-category-image.png"
                     items={machineShopPoints}
+                    textOrder="order-2 lg:order-1"
+                    imageOrder="order-1 lg:order-2"
                 />
                 <SingleColumnGridList
                     imageSrc="/assets/images/verticals/machine-shop/machine-shop-list-image.png"
@@ -81,6 +83,7 @@ export default function Page({}: Props) {
                     description={`The primary goal of this shop is to manufacture and deliver top-notch 
                 products to customers within the shortest possible time, while upholding the esteemed 
                 reputation of BMTF.`}
+    
                 />
                 <ConnectBMTF />
             </section>

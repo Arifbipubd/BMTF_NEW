@@ -84,6 +84,8 @@ export default function Page({}: Props) {
                     of our employees and the public at large, and minimize the impact on the environment in which 
                     we operate.
                 `}
+                textOrder="order-2 lg:order-1"
+                imageOrder="order-1 lg:order-2"
                 />
                 <ConnectBMTF />
             </section>

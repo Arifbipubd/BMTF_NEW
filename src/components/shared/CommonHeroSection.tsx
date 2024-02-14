@@ -18,7 +18,7 @@ export default function CommonHeroSection({
     return (
         <Fragment>
             <div
-                className="relative z-0 min-h-[70vh] md:min-h-[60vh] overflow-hidden w-full grid place-items-center"
+                className="relative z-0 min-h-[60vh] overflow-hidden w-full grid place-items-center"
                 style={{
                     backgroundImage: `url(${imageSrc})`,
                     backgroundRepeat: "no-repeat",
@@ -33,7 +33,7 @@ export default function CommonHeroSection({
                             <div className="text-center">
                                 <div className="mb-5 md:mb-6 lg:mb-[30px] mx-auto">
                                     <p
-                                        className={`text-white text-4xl md:text-5xl lg:text-[52px] 
+                                        className={`text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text[52px]  
                                     lg:leading-[64px] font-extrabold capitalize
                                     `}
                                     >
@@ -53,7 +53,7 @@ export default function CommonHeroSection({
                                                     index === array.length - 1
                                                         ? "text-yellow"
                                                         : "text-white"
-                                                } capitalize
+                                                } capitalize text-sm sm:text-base 
                                                 `}
                                             >
                                                 {item === "/"
@@ -63,13 +63,13 @@ export default function CommonHeroSection({
                                                           .join(" ")}`}
                                             </Link>
                                             <div
-                                                className={`mx-4 md:mx-5 ${
+                                                className={`mx-2 sm:mx-4 md:mx-5 ${
                                                     index === array.length - 1
                                                         ? "hidden"
                                                         : "block"
                                                 }`}
                                             >
-                                                <i className="text-white font-medium">
+                                                <i className="text-white font-medium text-sm sm:text-base">
                                                     <CgChevronRight />
                                                 </i>
                                             </div>

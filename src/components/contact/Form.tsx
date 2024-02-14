@@ -12,7 +12,7 @@ export default function Form({}: Props) {
                 <div className="mb-3 md:mb-[15px]">
                     <label
                         htmlFor="name"
-                        className="text-black font-medium leading-[24px] capitalize "
+                        className="text-black font-medium 2xl:text-xl leading-[24px] capitalize "
                     >
                         Name
                     </label>
@@ -30,7 +30,7 @@ export default function Form({}: Props) {
                 <div className="mb-3 md:mb-[15px]">
                     <label
                         htmlFor="email"
-                        className="text-black font-medium leading-[24px] capitalize"
+                        className="text-black font-medium 2xl:text-xl leading-[24px] capitalize"
                     >
                         Email
                     </label>
@@ -48,7 +48,7 @@ export default function Form({}: Props) {
                 <div className="mb-3 md:mb-[15px]">
                     <label
                         htmlFor="message"
-                        className="text-black font-medium leading-[24px] capitalize"
+                        className="text-black font-medium  leading-[24px] capitalize"
                     >
                         Message
                     </label>
@@ -68,7 +68,7 @@ export default function Form({}: Props) {
                     <button
                         type="submit"
                         className={`bg-primary px-6 py-4 md:px-7 md:py-5 lg:px-[34px] lg:py-[25px] rounded-[10px] 
-                        text-white text-sm capitalize font-semibold leading-[21px]
+                        text-white text-sm 2xl:text-base  capitalize font-semibold leading-[21px]
                         `}
                     >
                         Send Message

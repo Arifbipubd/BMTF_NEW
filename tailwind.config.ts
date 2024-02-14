@@ -14,6 +14,14 @@ const config: Config = {
         extend: {
             colors: { ...colors },
         },
+        screens: {
+            xs: "375px",
+            sm: "540px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1536px"
+        },
         container: {
             center: true,
             padding: {

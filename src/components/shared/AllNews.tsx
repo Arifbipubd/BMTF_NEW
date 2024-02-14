@@ -21,10 +21,10 @@ export default function AllNews({}: Props) {
                                 className="w-full rounded-t-[10px]"
                             />
                             <div className=" px-[18px] py-9">
-                                <h1 className="text-headline font-medium text-lg mb-4">
+                                <h1 className="text-headline font-medium text-lg 2xl:text-xl mb-4">
                                     {newsAndTender[0].title}
                                 </h1>
-                                <p className="text-sm md:w-2/3 text-black/70">
+                                <p className="text-sm 2xl:text-base md:w-2/3 text-black/70">
                                     {newsAndTender[0].description}
                                 </p>
                             </div>
@@ -42,11 +42,11 @@ export default function AllNews({}: Props) {
                                 <Link
                                     href={`news-and-tenders/${newsAndTender[1].id}`}
                                 >
-                                    <h1 className="text-headline font-semibold text-lg mb-4">
+                                    <h1 className="text-headline font-semibold text-lg 2xl:text-xl mb-4">
                                         {newsAndTender[1].title}
                                     </h1>
                                 </Link>
-                                <p className="text-xs  text-headline">
+                                <p className="text-xs 2xl:text-sm  text-headline">
                                     {newsAndTender[1].description}
                                 </p>
                             </div>
@@ -62,11 +62,11 @@ export default function AllNews({}: Props) {
                                 <Link
                                     href={`news-and-tenders/${newsAndTender[2].id}`}
                                 >
-                                    <h1 className="text-headline font-semibold text-lg mb-4">
+                                    <h1 className="text-headline font-semibold text-lg 2xl:text-xl mb-4">
                                         {newsAndTender[2].title}
                                     </h1>
                                 </Link>
-                                <p className="text-xs  text-headline">
+                                <p className="text-xs 2xl:text-sm  text-headline">
                                     {newsAndTender[2].description}
                                 </p>
                             </div>
@@ -84,11 +84,11 @@ export default function AllNews({}: Props) {
                             />
                             <div className="">
                                 <Link href={`news-and-tenders/${news.id}`}>
-                                    <h1 className="text-headline font-semibold text-lg mb-4">
+                                    <h1 className="text-headline font-semibold text-lg 2xl:text-xl mb-4">
                                         {news.title}
                                     </h1>
                                 </Link>
-                                <p className="text-sm  text-headline">
+                                <p className="text-xs 2xl:text-sm  text-headline">
                                     {news.description}
                                 </p>
                             </div>

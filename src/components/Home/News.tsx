@@ -31,12 +31,12 @@ export default function News({}: Props) {
                             </div>
                             <div className="px-5 py-7">
                                 <div className="pb-6 border-b-[1px] border-b-[#D9D9D9]">
-                                    <p className="text-cardText text-sm font-semibold">
+                                    <p className="text-cardText text-sm 2xl:text-base font-semibold">
                                         {item.title}
                                     </p>
                                 </div>
                                 <div className="pt-6">
-                                    <p className="text-black text-sm font-light">
+                                    <p className="text-black text-sm 2xl:text-base font-light">
                                         {item.date}
                                     </p>
                                 </div>

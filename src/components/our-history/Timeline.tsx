@@ -55,7 +55,7 @@ export default function Timeline({}: Props) {
                                         />
                                     </div>
                                     <div className="lg:w-1/2">
-                                        <p className="text-black text-sm leading-[150%] text-justify">
+                                        <p className="text-black text-sm 2xl:text-base leading-[150%] text-justify">
                                             {item.text}
                                         </p>
                                     </div>

@@ -56,6 +56,8 @@ export default function Page({}: Props) {
                 <CategoryOfServices
                     imageSrc="/assets/images/verticals/steel_structure/category_of_service.png"
                     items={electricPoints}
+                    textOrder="order-2 lg:order-1"
+                    imageOrder="order-1 lg:order-2"
                 />
                 <ConnectBMTF />
             </section>

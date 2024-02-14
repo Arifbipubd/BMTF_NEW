@@ -15,14 +15,14 @@ export default function BMTF({}: Props) {
             </div>
             <div
                 className={`bg-headline flex justify-center items-center h-full 
-                    order-1 lg:order-2 md:col-span-4 lg:px-12 py-10 lg:py-16 xl:py-0`}
+                    order-1 lg:order-2 md:col-span-4 py-10 lg:py-16 xl:py-0`}
             >
-                <div className="">
+                <div className="lg:pl-[32px] lg:pr-[56px] xl:pl-[30px] xl:pr-[101px]">
                     <div className="container mx-auto">
                         <h2 className="text-white text-2xl md:text-3xl lg:text-[32px] font-bold mb-5 md:mb-[30px]">
                             About <span className="text-yellow">BMTF</span>
                         </h2>
-                        <p className="text-sm text-textDark text-justify leading-[150%] mb-3 md:mb-5">
+                        <p className="text-sm 2xl:text-base text-textDark text-justify leading-[150%] mb-3 md:mb-5">
                             Bangladesh Machine Tools Factory Limited (BMTF) is a
                             prominent state-owned entity operating under the
                             Bangladesh Army&quot;s supervision. BMTF located in
@@ -32,7 +32,7 @@ export default function BMTF({}: Props) {
                             Managing Director, boasts a strong leadership that
                             has propelled it to global recognition.
                         </p>
-                        <p className="text-sm text-textDark text-justify leading-[150%]">
+                        <p className="text-sm 2xl:text-base text-textDark text-justify leading-[150%]">
                             With a blend of military and civilian officers and a
                             dedicated workforce, BMTF is committed to
                             contributing to Bangladesh&quot;s economic

@@ -129,36 +129,36 @@ export default function Navbar() {
             border-b-[1px] border-solid border-b-white/10 `}
             >
                 <div className="container mx-auto">
-                    <div className="flex flex-row justify-between sm:items-center py-[11px]">
-                        <div className="block sm:flex items-center">
-                            <div className="mr-[25px] mb-3 sm:mb-0 flex items-center">
+                    <div className="flex flex-row  justify-between sm:items-center py-[11px]">
+                        <div className="block md:flex items-center">
+                            <div className="mr-[25px] mb-3 md:mb-0 flex items-center">
                                 <div className="mr-[13px]">
-                                    <i className="text-yellow text-lg ">
+                                    <i className="text-yellow text-lg 2xl:text-xl">
                                         <PiPhoneThin />
                                     </i>
                                 </div>
-                                <div className="text-white text-sm">
+                                <div className="text-white text-sm 2xl:text-base">
                                     <span className="mr-[7px]">Call Us</span>
                                 </div>
                                 <a
                                     href={`tel:+88028871150`}
-                                    className="text-white text-sm"
+                                    className="text-white text-sm 2xl:text-base"
                                 >
                                     <span>+880-2-8871150</span>
                                 </a>
                             </div>
                             <div className="flex items-center">
                                 <div className="mr-[10px]">
-                                    <i className="text-yellow text-lg">
+                                    <i className="text-yellow text-lg 2xl:text-xl">
                                         <HiOutlineInbox />
                                     </i>
                                 </div>
-                                <div className="text-white text-sm">
+                                <div className="text-white text-sm 2xl:text-base">
                                     <span className="mr-2">Email Us</span>
                                 </div>
                                 <a
                                     href={`mailto:mkt@bmtf.com.bd`}
-                                    className=" text-white text-sm"
+                                    className=" text-white text-sm 2xl:text-base"
                                 >
                                     <span>mkt@bmtf.com.bd</span>
                                 </a>
@@ -167,21 +167,21 @@ export default function Navbar() {
                         <div className="flex mb-3 sm:mb-0">
                             <div>
                                 <a href="/">
-                                    <i className="text-white text-[22px] hover:text-yellow">
+                                    <i className="text-white text-[22px] 2xl:text-2xl hover:text-yellow">
                                         <CiFacebook />
                                     </i>
                                 </a>
                             </div>
                             <div className="mx-3 sm:mx-[26px]">
                                 <a href="/">
-                                    <i className="text-white text-[22px] hover:text-yellow">
+                                    <i className="text-white text-[22px] 2xl:text-2xl hover:text-yellow">
                                         <PiYoutubeLogo />
                                     </i>
                                 </a>
                             </div>
                             <div>
                                 <a href="/">
-                                    <i className="text-white text-[22px] hover:text-yellow">
+                                    <i className="text-white text-[22px] 2xl:text-2xl hover:text-yellow">
                                         <PiLinkedinLogo />
                                     </i>
                                 </a>
