@@ -10,14 +10,14 @@ export default function Timeline({}: Props) {
                 <div className="">
                     {timeline.map((item, index, array) => (
                         <div
-                            className="relative flex justify-center gap-6 lg:gap-[32px]"
+                            className="relative flex justify-center gap-4 lg:gap-6 2xl:gap-[32px]"
                             key={item.id}
                         >
                             <div className="hidden  py-3 md:block md:w-[60%] xl:w-[40%] ">
                                 <h2 className="text-primary text-xl font-semibold capitalize leading-[30px] mb-4 lg:mb-[21px] text-end">
                                     {item.dayString}
                                 </h2>
-                                <h2 className="text-headline text-[22px] lg:text-3xl xl:text-4xl font-bold leading-[54px] md:text-end">
+                                <h2 className="text-headline text-lg lg:text-2xl xl:text-3xl 2xl:text-[32px] font-bold leading-[54px] text-end">
                                     {item.year}
                                 </h2>
                             </div>

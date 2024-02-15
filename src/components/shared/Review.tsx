@@ -56,7 +56,7 @@ export default function Review({
             </div>
             <div className="relative md:col-span-3 bg-primary py-10 lg:py-12 xl:py-0 z-0">
                 <div className="container mx-auto h-full">
-                    <div className="absolute bottom-0 right-2 md:top-1 md:left-1 -z-10">
+                    <div className="absolute bottom-0 right-2 lg:top-1 lg:left-1 -z-10">
                         {/* eslint-disable-next-line @next/next/no-img-element*/}
                         <img src="/assets/images/shared/Frame.png" alt="" />
                     </div>
