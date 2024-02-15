@@ -67,7 +67,7 @@ export default function Herosection({}: Props) {
                                                 >
                                                     {slide.heading}
                                                 </h1>
-                                                <p className="text-white text-sm md:text-base 2xl:text-lg">
+                                                <p className="text-white text-sm md:text-base 2xl:text-lg text-justify">
                                                     {slide.description}
                                                 </p>
                                             </div>

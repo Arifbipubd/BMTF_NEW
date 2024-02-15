@@ -8,12 +8,12 @@ export default function News({}: Props) {
         <div className="bg-[#EEF3F6] py-20 md:py-24 lg:py-28">
             <div className="container mx-auto">
                 <div className="mb-5 md:mb-6 lg:mb-[30px]">
-                    <p
-                        className={`text-center text-black text-2xl 
-                        md:text-3xl lg:text-[32px] font-bold capitalize`}
+                    <h2
+                        className={`text-center text-black text-2xl md:text-3xl lg:text-[34px]
+                         font-bold capitalize`}
                     >
                         latest news
-                    </p>
+                    </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
                     {latestNews.map((item) => (

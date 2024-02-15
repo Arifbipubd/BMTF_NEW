@@ -25,9 +25,9 @@ export default function Memory({}: Props) {
         <div className="bg-white py-20 md:py-24 lg:py-[109px]">
             <div className="container mx-auto">
                 <div className="mb-12 md:mb-14 lg:mb-[66px]">
-                    <p className="text-2xl md:text-3xl lg:text-[2rem] text-black font-semibold leading-[48px]">
+                    <h2 className="text-2xl md:text-3xl lg:text-[34px] text-black font-semibold leading-[48px]">
                         Memory Snap
-                    </p>
+                    </h2>
                 </div>
                 <div className="columns-1 gap-6 sm:columns-2 sm:gap-[30px]  lg:columns-3 historyImage">
                     {historyGallery.map((item, index) => (

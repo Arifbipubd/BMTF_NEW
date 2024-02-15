@@ -1538,7 +1538,7 @@ footer {
 /*------------------------------------------------------------------*/
 /*	05) PAGE TITLE
 /*------------------------------------------------------------------*/
-.industify_fn_pagetitle {
+.privacy-policy .industify_fn_pagetitle {
   width: 100%;
   float: left;
   clear: both;
@@ -1546,17 +1546,17 @@ footer {
   background: var(--color-white-bg);
 }
 
-.industify_fn_content_archive .industify_fn_pagetitle {
+.privacy-policy .industify_fn_content_archive .industify_fn_pagetitle {
   margin-bottom: 70px;
 }
-.industify_fn_pagetitle .title_holder {
+.privacy-policy .industify_fn_pagetitle .title_holder {
   width: 100%;
   float: left;
   clear: both;
   position: relative;
   padding: 95px 0px 35px 0px;
 }
-.industify_fn_pagetitle .title_holder:after {
+.privacy-policy .industify_fn_pagetitle .title_holder:after {
   left: 0px;
   position: absolute;
   content: "";
@@ -1565,7 +1565,7 @@ footer {
   width: 70px;
   /* background-color: #eee; */
 }
-.industify_fn_pagetitle .title_holder:before {
+.privacy-policy .industify_fn_pagetitle .title_holder:before {
   left: 0px;
   position: absolute;
   content: "";
@@ -1575,7 +1575,7 @@ footer {
   /* background-color: #eee; */
   border-radius: 10px;
 }
-.industify_fn_pagetitle h3 {
+.privacy-policy .industify_fn_pagetitle h3 {
   margin: 0px;
   padding: 0px;
   font-size: 48px;
@@ -1585,24 +1585,24 @@ footer {
   position: relative;
   left: -1px;
 }
-.singleVerticalBreadcrumb {
+.privacy-policy .singleVerticalBreadcrumb {
   padding-top: 150px !important;
 }
-.singleVerticalBreadcrumb .privacyTitle {
+.privacy-policy .singleVerticalBreadcrumb .privacyTitle {
   text-align: center;
   font-weight: 600;
   margin-bottom: 20px;
   color: var(--color-secondary);
 }
 
-.industify_fn_sidebarpage,
-.industify_fn_sidebarpage .s_inner {
+.privacy-policy .industify_fn_sidebarpage,
+.privacy-policy .industify_fn_sidebarpage .s_inner {
   width: 100%;
   float: left;
   clear: both;
   background: var(--color-white-bg);
 }
-.desc_holder h3 {
+.privacy-policy .desc_holder h3 {
   margin: 25px 0;
   padding: 0px;
   font-size: 24px;
@@ -1614,27 +1614,27 @@ footer {
 /*------------------------------------------------------------------*/
 /*	19) SERVICE SINGLE
 /*------------------------------------------------------------------*/
-.industify_fn_service_single .desc_holder,
-.industify_fn_service_single .img_holder,
-.industify_fn_service_single {
+.privacy-policy .industify_fn_service_single .desc_holder,
+.privacy-policy .industify_fn_service_single .img_holder,
+.privacy-policy .industify_fn_service_single {
   width: 100%;
   float: left;
   clear: both;
 }
-.industify_fn_service_single .img_holder {
+.privacy-policy .industify_fn_service_single .img_holder {
   border-radius: 3px;
   margin-bottom: 60px;
   min-width: 100%;
 }
-.industify_fn_service_single .img_holder iframe {
+.privacy-policy .industify_fn_service_single .img_holder iframe {
   height: 500px;
 }
 @media (max-width: 768px) {
-  .industify_fn_service_single .img_holder iframe {
+  .privacy-policy .industify_fn_service_single .img_holder iframe {
     height: 300px;
   }
 }
-.industify_fn_service_single .desc_holder p {
+.privacy-policy .industify_fn_service_single .desc_holder p {
   margin: 0;
   padding: 0;
   line-height: 1.8;
@@ -1643,9 +1643,9 @@ footer {
   font-size: 18px;
   text-align: justify;
 }
-.industify_fn_service_single .desc_holder p:last-child {
+.privacy-policy .industify_fn_service_single .desc_holder p:last-child {
   margin-bottom: 0;
 }
-.industify_fn_service_single .desc_holder {
+.privacy-policy .industify_fn_service_single .desc_holder {
   margin-bottom: 56px;
 }

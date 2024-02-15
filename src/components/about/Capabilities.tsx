@@ -40,9 +40,9 @@ export default function Capabilities({}: Props) {
                     </div>
                     <div>
                         <div className="mb-7 md:mb-8 lg:mb-10">
-                            <p className="text-headline text-2xl md:text-[30px] font-semibold">
+                            <h2 className="text-headline text-2xl md:text-3xl lg:text-[34px] font-semibold">
                                 Our Capabilities
-                            </p>
+                            </h2>
                         </div>
                         <div>
                             <Listitems items={capabilities} />

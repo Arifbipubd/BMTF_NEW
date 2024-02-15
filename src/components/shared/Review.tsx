@@ -69,9 +69,9 @@ export default function Review({
                     flex flex-col justify-center h-full `}
                     >
                         <div className="mb-3 lg:mb-5">
-                            <h1 className="text-secondary text-2xl md:text-3xl lg:text-[34px] font-semibold ">
+                            <h2 className="text-secondary text-2xl md:text-3xl lg:text-[34px] font-semibold ">
                                 {heading}
-                            </h1>
+                            </h2>
                         </div>
                         {descriptionOne && (
                             <div
@@ -81,14 +81,14 @@ export default function Review({
                                         : "mb-5 md:mb-8 lg:mb-10"
                                 }`}
                             >
-                                <p className="text-white text-sm 2xl:text-base">
+                                <p className="text-white text-sm 2xl:text-base text-justify">
                                     {descriptionOne}
                                 </p>
                             </div>
                         )}
                         {descriptionTwo && (
                             <div className="mb-5 md:mb-8 lg:mb-10">
-                                <p className="text-white text-sm 2xl:text-base">
+                                <p className="text-white text-sm 2xl:text-base text-justify">
                                     {descriptionTwo}
                                 </p>
                             </div>

@@ -10,9 +10,9 @@ export default function Responsibility({}: Props) {
                 <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-6 lg:gap-[30px]">
                     <div>
                         <div className="mb-5 md:mb-7 lg:mb-8">
-                            <h2 className="text-white text-2xl md:text-3xl lg:text-[2.5rem] font-bold">
+                            <h1 className="text-white text-2xl md:text-3xl lg:text-[2.5rem] font-bold">
                                 Corporate Social Responsibility
-                            </h2>
+                            </h1>
                         </div>
                         <div className="mb-5 md:mb-[30px]">
                             <h4 className="text-white font-medium md:text-lg 2xl:text-xl capitalize">

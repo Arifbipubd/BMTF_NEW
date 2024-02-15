@@ -8,9 +8,9 @@ export default function Directors({}: Props) {
             <div className="container mx-auto grid grid-cols-1 place-items-center place-content-center">
                 <div>
                     <div className="mb-28">
-                        <p className="text-[30px] text-white font-semibold text-center">
+                        <h2 className="text-2xl md:text-3xl lg:text-[34px] text-white font-semibold text-center">
                             Board of Directors
-                        </p>
+                        </h2>
                     </div>
                     <div>
                         <div

@@ -23,9 +23,9 @@ export default function AimSection({ imageSrc, aimItems }: Props) {
                                 array.length > 1 ? "mb-5 md:mb-6" : ""
                             }`}
                         >
-                            <h2 className="text-secondary text-xl md:text-[22px] 2xl:text-2xl font-semibold mb-3 md:mb-4">
+                            <h3 className="text-secondary text-xl md:text-[22px] lg:text-2xl 2xl:text-[26px] font-semibold mb-3 md:mb-4 capitalize">
                                 {item.heading}
-                            </h2>
+                            </h3>
                             <p className="text-textDark text-sm 2xl:text-base text-justify">
                                 {item.text}
                             </p>

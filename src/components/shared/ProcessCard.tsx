@@ -12,7 +12,7 @@ export default function ProcessCard({ heading, cardItems }: Props) {
         <div className="bg-white py-16 md:py-20 lg:py-[91px]">
             <div className="container mx-auto">
                 <div className="mb-10 md:mb-[46px] lg:mb-[50px]">
-                    <h2 className="text-headline text-[26px] md:text-[32px] font-semibold text-center mb-5 md:mb-6 lg:mb-[30px]">
+                    <h2 className="text-headline text-2xl md:text-3xl lg:text-[34px] font-semibold text-center mb-5 md:mb-6 lg:mb-[30px]">
                         {heading}
                     </h2>
                 </div>
@@ -32,9 +32,9 @@ export default function ProcessCard({ heading, cardItems }: Props) {
                                     </div>
                                 </div>
                                 <div>
-                                    <h2 className="text-yellow font-semibold text-lg 2xl:text-xl mb-5 md:mb-6 lg:mb-[30px] text-center ">
+                                    <h4 className="text-yellow font-semibold text-lg 2xl:text-xl mb-5 md:mb-6 lg:mb-[30px] text-center ">
                                         {item.heading}
-                                    </h2>
+                                    </h4>
                                     <p className="text-sm 2xl:text-base text-white text-center group-hover:text-yellow">
                                         {item.text}
                                     </p>
