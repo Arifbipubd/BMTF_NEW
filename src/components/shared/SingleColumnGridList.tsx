@@ -37,11 +37,11 @@ export default function SingleColumnGridList({
                     }`}
                 >
                     <div className="mb-5 md:mb-6 lg:mb-[30px]">
-                        <h2 className="text-headline text-lg sm:text-xl md:text-2xl lg:text-[32px] font-semibold lg:leading-[150%]">
+                        <h3 className="text-headline text-xl md:text-[22px] lg:text-2xl 2xl:text-[26px] font-semibold lg:leading-[150%]">
                             {listHeading}
-                        </h2>
+                        </h3>
                         {description && (
-                            <p className="mb-5 md:mb-6 lg:mb-[30px] text-black 2xl:text-lg text-justify ">
+                            <p className="my-5 md:my-6 lg:my-[30px] text-black text-sm 2xl:text-base text-justify ">
                                 {description}
                             </p>
                         )}

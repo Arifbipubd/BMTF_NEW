@@ -6,7 +6,7 @@ type Props = {};
 export default function page({}: Props) {
     return (
         <Layout pageTitle="BMTF | Privacy Policy">
-            <div className="">
+            <div className="privacy-policy">
                 {/* Page Title  */}
                 <div className="industify_fn_pagetitle">
                     <div className="container">

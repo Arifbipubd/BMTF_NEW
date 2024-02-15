@@ -16,7 +16,7 @@ export default function Listitems({ items }: Props) {
                         </i>
                     </div>
                     <div>
-                        <p className="text-tertiary text-sm 2xl:text-base">{item}</p>
+                        <p className="text-tertiary text-sm 2xl:text-base text-justify">{item}</p>
                     </div>
                 </div>
             ))}

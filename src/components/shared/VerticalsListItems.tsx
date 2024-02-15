@@ -42,9 +42,9 @@ export default function VerticalsListItems({
                     }`}
                 >
                     <div className="mb-5 md:mb-6 lg:mb-[30px]">
-                        <h2 className="text-headline text-lg sm:text-xl 2xl:text-[22px] font-semibold">
+                        <h3 className="text-headline text-xl md:text-[22px] lg:text-2xl 2xl:text-[26px] font-semibold">
                             {listHeading}
-                        </h2>
+                        </h3>
                     </div>
                     <div className=" grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
                         {listItems.map((item) => (

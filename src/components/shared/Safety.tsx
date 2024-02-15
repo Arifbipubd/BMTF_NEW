@@ -32,9 +32,9 @@ export default function Safety({
                     }`}
                 >
                     <div className={`flex flex-col gap-6 lg:gap-[30px]`}>
-                        <h2 className="text-headline text-xl md:text-[22px] lg:text-2xl 2xl:text-[26px] font-semibold">
+                        <h3 className="text-headline text-xl md:text-[22px] lg:text-2xl 2xl:text-[26px] font-semibold">
                             {heading}
-                        </h2>
+                        </h3>
                         <p className="text-tertiary text-sm 2xl:text-base text-justify">
                             {text}
                         </p>

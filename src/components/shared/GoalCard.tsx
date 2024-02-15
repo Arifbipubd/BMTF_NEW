@@ -29,7 +29,7 @@ export default function GoalCard({}: Props) {
                             </h3>
                         </div>
                         <div>
-                            <p className="text-sm 2xl:text-base text-tertiary text-start">
+                            <p className="text-sm 2xl:text-base text-tertiary text-justify">
                                 Enhancing in-house production capacity through
                                 innovation, diversification and excellence in
                                 transforming Bangladesh Machine Tools Factory
@@ -53,7 +53,7 @@ export default function GoalCard({}: Props) {
                             </h3>
                         </div>
                         <div>
-                            <p className="text-sm 2xl:text-base text-tertiary text-start">
+                            <p className="text-sm 2xl:text-base text-tertiary text-justify">
                                 BMTF is unwavering in its commitment to align
                                 its core values with the high standards of its
                                 clients. We place a premium on innovation,
@@ -79,7 +79,7 @@ export default function GoalCard({}: Props) {
                             </h3>
                         </div>
                         <div>
-                            <p className="text-sm 2xl:text-base text-tertiary text-start">
+                            <p className="text-sm 2xl:text-base text-tertiary text-justify">
                                 Make Bangladesh Machine Tools Factory (BMTF)
                                 Limited a lead commercially viable organization
                                 to contribute in the national economy.

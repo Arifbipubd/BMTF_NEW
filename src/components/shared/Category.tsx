@@ -13,7 +13,7 @@ export default function Category({ heading, subHeading, categories }: Props) {
         <div className="bg-white py-20 md:py-24 lg:py-[106px]">
             <div className="container mx-auto">
                 <div className="mb-10 md:mb-[46px] lg:mb-[50px]">
-                    <h2 className="text-headline text-[26px] md:text-[32px] font-semibold text-center mb-5 md:mb-6 lg:mb-[30px]">
+                    <h2 className="text-headline text-2xl md:text-3xl lg:text-[34px] font-semibold text-center mb-5 md:mb-6 lg:mb-[30px]">
                         {heading}
                     </h2>
                     <p className="text-black text-center">{subHeading}</p>
@@ -36,9 +36,9 @@ export default function Category({ heading, subHeading, categories }: Props) {
                                 </div>
                             </div>
                             <div>
-                                <p className="text-yellow md:text-lg 2xl:text-xl font-semibold text-center">
+                                <h4 className="text-yellow md:text-lg 2xl:text-xl font-semibold text-center">
                                     {item.label}
-                                </p>
+                                </h4>
                             </div>
                         </div>
                     ))}
