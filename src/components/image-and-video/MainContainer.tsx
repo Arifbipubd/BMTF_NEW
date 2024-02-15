@@ -14,7 +14,7 @@ export default function MainContainer({}: Props) {
         <Fragment>
             <div className="bg-white py-16 md:py-20 lg:py-[92px]">
                 <div className="container mx-auto">
-                    <div className="md:flex md:flex-row justify-center mb-7 md:mb-10">
+                    <div className="flex flex-row justify-center mb-7 md:mb-10">
                         <button
                             className={`${
                                 activeGallery === 1

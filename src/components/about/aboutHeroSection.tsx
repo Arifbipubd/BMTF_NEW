@@ -20,8 +20,8 @@ export default function AboutHeroSection({ heading, imageSrc }: Props) {
                 }}
             >
                 <div className="bg-[rgba(16,25,48,0.70)] absolute left-0 w-full h-full -z-10" />
-                <div className="container mx-auto grid lg:grid-cols-3 xl:grid-cols-2 gap-4 place-content-center place-items-center h-full">
-                    <div className="lg:col-span-2 xl:col-span-1">
+                <div className="container mx-auto h-full flex flex-col justify-center">
+                    <div className="w-[80%] xl:w-[60%]">
                         <div className="bg-[rgba(211,170,20,0.20)] px-1.5 lg:px-2.5 py-3 lg:py-[15px] w-fit rounded-[100px] mb-3 lg:mb-4">
                             <p className="text-secondary  font-semibold capitalize">
                                 About us
