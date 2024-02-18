@@ -17,7 +17,7 @@ export default function Certifications({}: Props) {
                 className={`container mx-auto 
                 grid grid-cols-1 md:grid-cols-2 
                 place-content-center lg:place-content-start place-items-center
-                relative gap-[30px]`}
+                relative gap-6 md:gap-[30px]`}
             >
                 <div className="absolute left-[5%] bottom-[100%]">
                     {/* eslint-disable-next-line @next/next/no-img-element*/}
@@ -34,7 +34,7 @@ export default function Certifications({}: Props) {
                         us apart.
                     </p>
                 </div>
-                <div className="flex gap-[30px]">
+                <div className="flex gap-6 md:gap-[30px]">
                     <div>
                         {/* eslint-disable-next-line @next/next/no-img-element*/}
                         <img src="/assets/images/home/iso1.png" alt="" />

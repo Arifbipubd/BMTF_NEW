@@ -9,8 +9,8 @@ export default function Capabilities({}: Props) {
         <Fragment>
             <div className="bg-skyLight py-16 lg:py-24">
                 <div className={`container mx-auto grid grid-cols-1 lg:grid-cols-2 
-                        gap-8 lg:gap-[30px] h-full place-content-center place-items-center`}>
-                    <div className="flex gap-[30px]">
+                        gap-6 lg:gap-[30px] h-full place-content-center place-items-center`}>
+                    <div className="flex gap-6 lg:gap-[30px]">
                         <div className="-mt-10">
                             {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img
@@ -52,11 +52,11 @@ export default function Capabilities({}: Props) {
             </div>
             <div className="bg-white py-16 lg:py-24">
                 <div className={`container mx-auto grid grid-cols-1 lg:grid-cols-2 
-                        gap-8 lg:gap-[30px] h-full place-content-center place-items-center`}>
+                        gap-6 lg:gap-[30px] h-full place-content-center place-items-center`}>
                     <div className="order-2 lg:order-1">
                             <Listitems items={extended} />
                     </div>
-                    <div className="flex gap-5 md:gap-6 lg:gap-[30px] order-1 lg:order-2">
+                    <div className="flex gap-6 lg:gap-[30px] order-1 lg:order-2">
                         <div className="w-full">
                             {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img

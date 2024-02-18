@@ -11,15 +11,15 @@ export default function ProcessCard({ heading, cardItems }: Props) {
     return (
         <div className="bg-white py-16 md:py-20 lg:py-[91px]">
             <div className="container mx-auto">
-                <div className="mb-10 md:mb-[46px] lg:mb-[50px]">
-                    <h2 className="text-headline text-2xl md:text-3xl lg:text-[34px] font-semibold text-center mb-5 md:mb-6 lg:mb-[30px]">
+                <div className="mb-[50px] lg:mb-[60px]">
+                    <h2 className="text-headline text-2xl md:text-3xl lg:text-[34px] font-semibold text-center">
                         {heading}
                     </h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 md:gap-10 lg:gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-[30px]">
                     {cardItems.map((item) => (
                         <div className="" key={item.id}>
-                            <div className={`bg-primary py-16 md:py-20 lg:py-[90px] px-7 md:px-10 rounded-[10px] 
+                            <div className={`bg-primary py-16 md:py-20 px-8 lg:py-[90px] 2xl:px-[41px] rounded-[10px] 
                             h-full relative group border-[1px] border-transparent hover:bg-white hover:border-[1px] 
                             hover:border-primary transition-all duration-300 ease-in-out`}>
                                 <div className=" absolute left-1/2 -translate-x-1/2 -top-7 flex justify-center w-full">
@@ -31,8 +31,8 @@ export default function ProcessCard({ heading, cardItems }: Props) {
                                         />
                                     </div>
                                 </div>
-                                <div>
-                                    <h4 className="text-yellow font-semibold text-lg 2xl:text-xl mb-5 md:mb-6 lg:mb-[30px] text-center ">
+                                <div className="flex flex-col gap-6 lg:gap-[30px] mt-[13px]">
+                                    <h4 className="text-yellow font-semibold text-lg 2xl:text-xl text-center ">
                                         {item.heading}
                                     </h4>
                                     <p className="text-sm 2xl:text-base text-white text-center group-hover:text-yellow">

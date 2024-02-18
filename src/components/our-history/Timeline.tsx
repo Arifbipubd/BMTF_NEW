@@ -10,7 +10,7 @@ export default function Timeline({}: Props) {
                 <div className="">
                     {timeline.map((item, index, array) => (
                         <div
-                            className="relative flex justify-center gap-4 lg:gap-6 2xl:gap-[32px]"
+                            className="relative flex justify-center gap-6 lg:gap-[30px] 2xl:gap-[32px]"
                             key={item.id}
                         >
                             <div className="hidden  py-3 md:block md:w-[60%] xl:w-[40%] ">
@@ -36,7 +36,7 @@ export default function Timeline({}: Props) {
                                                 `}
                                 ></div>
                             </div>
-                            <div className="relative mb-16 col-span-2">
+                            <div className="relative mb-[30px] col-span-2">
                                 <div className=" py-3 left-16 -top-12 md:hidden ">
                                     <h2 className="text-primary text-lg font-semibold capitalize leading-[150%] mb-4">
                                         {item.dayString}

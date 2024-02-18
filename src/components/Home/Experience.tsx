@@ -44,13 +44,13 @@ export default function Experience({}: Props) {
                         </div>
                     </div>
                     <div>
-                        <div className="mb-5 md:mb-[30px]">
-                            <h2 className="text-headline text-2xl md:text-3xl lg:text-[34px] md:leading-[40px] font-extrabold">
+                        <div className="mb-5 md:mb-[30px] lg:mb-[34px]">
+                            <h2 className="text-headline text-2xl md:text-3xl lg:text-[34px] font-extrabold" style={{lineHeight: '40px'}}>
                                 State Owned Largest Production Facility of
                                 Bangladesh
                             </h2>
                         </div>
-                        <div className="mb-5 md:mb-[30px] lg:mb-9">
+                        <div className="mb-5 md:mb-[30px] lg:mb-8">
                             <p className="text-sm 2xl:text-base text-tertiary leading-[24px] text-justify">
                                 At BMTF, we stand as a beacon of excellence in
                                 the machinery and tools industry. Our unwavering

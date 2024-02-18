@@ -18,17 +18,17 @@ export default function Safety({
     textOrder,
 }: Props) {
     return (
-        <div className="bg-white grid grid-cols-1 lg:grid-cols-2 lg:place-items-center">
+        <div className="bg-white grid grid-cols-1 lg:grid-cols-2 lg:place-items-center gap-6 lg:gap-0">
             <div
-                className={`container mx-auto  ${
+                className={`container mx-auto lg:pl-[30px] ${
                     textOrder ? textOrder : "order-2 lg:order-1"
                 } `}
             >
                 <div
-                    className={`py-16 lg:py-20 ${
+                    className={`pb-6 lg:pb-0 lg:py-20  ${
                         textOrder === "order-2 lg:order-1"
-                            ? "lg:pr-2 lg:pl-10 xl:pl-[101px]"
-                            : "lg:pl-3 lg:pr-6 xl:pl-4 xl:pr-16"
+                            ? "lg:pr-2 lg:pl-10 xl:pl-16 2xl:pl-[95px]"
+                            : "lg:pr-6 xl:pr-16 2xl:pr-[95px]"
                     }`}
                 >
                     <div className={`flex flex-col gap-6 lg:gap-[30px]`}>

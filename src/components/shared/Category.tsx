@@ -13,12 +13,12 @@ export default function Category({ heading, subHeading, categories }: Props) {
         <div className="bg-white py-20 md:py-24 lg:py-[106px]">
             <div className="container mx-auto">
                 <div className="mb-10 md:mb-[46px] lg:mb-[50px]">
-                    <h2 className="text-headline text-2xl md:text-3xl lg:text-[34px] font-semibold text-center mb-5 md:mb-6 lg:mb-[30px]">
+                    <h2 className="text-headline text-2xl md:text-3xl lg:text-[34px] font-semibold text-center mb-6 lg:mb-[30px]">
                         {heading}
                     </h2>
                     <p className="text-black text-center">{subHeading}</p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-6 lg:gap-[30px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-[30px]">
                     {categories.map((item) => (
                         <div
                             key={item.id}

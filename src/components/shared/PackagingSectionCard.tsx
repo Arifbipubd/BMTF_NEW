@@ -9,9 +9,9 @@ type Props = {
 export default function PackagingSectionCard({ items }: Props) {
     return (
         <div className="bg-white py-16 md:py-20 lg:py-[91px]">
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-[30px]">
                 {items.map((item) => (
-                    <div className="flex flex-col gap-5 md:gap-6 lg:gap-[30px]" key={item.id}>
+                    <div className="flex flex-col gap-6 lg:gap-[30px]" key={item.id}>
                         <div>
                             {/*eslint-disable-next-line @next/next/no-img-element*/}
                             <img src={item.imageSrc} alt={item.heading} className="rounded-t-[10px] w-full"/>

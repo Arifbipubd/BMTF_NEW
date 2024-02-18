@@ -5,7 +5,7 @@ type Props = {};
 
 export default function News({}: Props) {
     return (
-        <div className="bg-[#EEF3F6] py-20 md:py-24 lg:py-28">
+        <div className="bg-[#EEF3F6] py-20 md:py-24 lg:py-[110px]">
             <div className="container mx-auto">
                 <div className="mb-5 md:mb-6 lg:mb-[30px]">
                     <h2
@@ -15,7 +15,7 @@ export default function News({}: Props) {
                         latest news
                     </h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-[30px]">
                     {latestNews.map((item) => (
                         <div
                             className="bg-white border-[1px] border-[#D9D9D9] rounded-[10px]"
@@ -31,7 +31,7 @@ export default function News({}: Props) {
                             </div>
                             <div className="px-5 py-7">
                                 <div className="pb-6 border-b-[1px] border-b-[#D9D9D9]">
-                                    <p className="text-cardText text-sm 2xl:text-base font-semibold">
+                                    <p className="text-cardText text-sm 2xl:text-base font-semibold leading-[20px]">
                                         {item.title}
                                     </p>
                                 </div>

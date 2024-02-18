@@ -9,13 +9,13 @@ type Props = {
 
 export default function AimSection({ imageSrc, aimItems }: Props) {
     return (
-        <div className="bg-headline grid grid-cols-1 lg:grid-cols-2 lg:place-items-center">
+        <div className="bg-headline grid grid-cols-1 lg:grid-cols-2 lg:place-items-center gap-6 lg:gap-0">
             <div className="w-full">
                 {/* eslint-disable-next-line @next/next/no-img-element*/}
                 <img src={imageSrc} alt="aim" className="w-full" />
             </div>
-            <div className="container mx-auto grid  lg:grid-cols-5">
-                <div className="py-16 xl:py-0 lg:col-span-4">
+            <div className="container mx-auto grid  lg:grid-cols-5 lg:pl-[30px]">
+                <div className="py-8 xl:py-0 lg:col-span-4">
                     {aimItems.map((item, _, array) => (
                         <div
                             key={item.id}

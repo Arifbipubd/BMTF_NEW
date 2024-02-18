@@ -21,7 +21,7 @@ export default function DescriptionSection({
     return (
         <div className="py-16 md:py-20 lg:py-[87px] relative bg-white z-0">
             <div className="container mx-auto z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-[30px] mb-10 md:mb-16 lg:mb-[77px] ">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-[30px] mb-10 md:mb-16 lg:mb-[77px] ">
                     <div className="lg:col-span-2 order-2 lg:order-1">
                         <iframe
                             className="w-full h-full rounded-[10px]"
