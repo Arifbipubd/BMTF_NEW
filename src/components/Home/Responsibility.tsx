@@ -9,8 +9,8 @@ export default function Responsibility({}: Props) {
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-6 lg:gap-[30px]">
                     <div>
-                        <div className="mb-5 md:mb-7 lg:mb-8">
-                            <h1 className="text-white text-2xl md:text-3xl lg:text-[2.5rem] font-bold">
+                        <div className="mb-5 md:mb-8">
+                            <h1 className="text-white text-2xl md:text-3xl lg:text-[2.5rem] md:leading-[48px] font-bold">
                                 Corporate Social Responsibility
                             </h1>
                         </div>
@@ -50,7 +50,7 @@ export default function Responsibility({}: Props) {
                             </Link>
                         </div>
                     </div>
-                    <div className="flex items-center gap-2 md:gap-4">
+                    <div className="flex items-center gap-4 md:gap-[30px]">
                         <div className="relative -mb-4 md:-mb-24">
                         {/* eslint-disable-next-line @next/next/no-img-element*/}
                             <img

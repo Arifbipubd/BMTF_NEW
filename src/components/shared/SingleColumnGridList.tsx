@@ -22,18 +22,18 @@ export default function SingleColumnGridList({
 }: Props) {
     return (
         <div
-            className={`grid grid-cols-1 lg:grid-cols-2 lg:place-items-center ${backroundColor}`}
+            className={`grid grid-cols-1 lg:grid-cols-2 lg:place-items-center gap-6 lg:gap-0 ${backroundColor}`}
         >
             <div
-                className={`container mx-auto  ${
+                className={`container mx-auto lg:pl-[30px]  ${
                     textOrder !== null ? textOrder : "order-2 lg:order-1"
                 }`}
             >
                 <div
-                    className={`py-16 lg:py-[54px] ${
+                    className={`py-8 lg:py-[54px] ${
                         textOrder === "order-2 lg:order-1"
-                            ? "lg:pr-2.5 lg:pl-10 xl:pr-1.5 xl:pl-[101px]"
-                            : "lg:pl-2.5 xl:pl-1.5 lg:pr-10 xl:pr-[109px]"
+                            ? "lg:pr-2 lg:pl-10 xl:pl-16 2xl:pl-[95px]"
+                            : "lg:pr-6 xl:pr-16 2xl:pr-[95px]"
                     }`}
                 >
                     <div className="mb-5 md:mb-6 lg:mb-[30px]">

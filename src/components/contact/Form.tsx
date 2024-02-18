@@ -21,9 +21,9 @@ export default function Form({}: Props) {
                         name="name"
                         id="name"
                         placeholder="Type Here..."
-                        className={`bg-white border-none  rounded-[10px] mt-4 md:mt-5 text-[#5A5A65]
+                        className={`bg-white border border-transparent outline-none  rounded-[10px] mt-4 md:mt-5 text-[#5A5A65]
                          placeholder:text-[#5A5A65] px-3 md:px-5 py-5 md:py-[25px] w-full 
-                         focus:outline-[0.5px] focus:outline-solid focus:outline-primary 
+                         focus:border-primary  
                         `}
                     />
                 </div>
@@ -39,9 +39,9 @@ export default function Form({}: Props) {
                         name="email"
                         id="email"
                         placeholder="Type Here..."
-                        className={`bg-white border-none rounded-[10px] mt-4 md:mt-5 text-[#5A5A65]
+                        className={`bg-white border border-transparent outline-none rounded-[10px] mt-4 md:mt-5 text-[#5A5A65]
                          placeholder:text-[#5A5A65] px-3 md:px-5 py-5 md:py-[25px] w-full
-                         focus:outline-[0.5px] focus:outline-solid focus:outline-primary 
+                         focus:border-primary 
                         `}
                     />
                 </div>
@@ -58,9 +58,8 @@ export default function Form({}: Props) {
                         placeholder="Type Here..."
                         cols={30}
                         rows={8}
-                        className={`bg-white border-none outline-none rounded-[10px] mt-4 md:mt-5 resize-none text-[#5A5A65]
-                         placeholder:text-[#5A5A65] px-3 md:px-5 py-5 md:py-[25px] w-full
-                         focus:outline-[0.5px] focus:outline-solid focus:outline-primary 
+                        className={`bg-white border border-transparent outline-none rounded-[10px] mt-4 md:mt-5 resize-none text-[#5A5A65]
+                         placeholder:text-[#5A5A65] px-3 md:px-5 py-5 md:py-[25px] w-full focus:border-primary 
                         `}
                     ></textarea>
                 </div>

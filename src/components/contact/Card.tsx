@@ -16,55 +16,57 @@ export default function Card({}: Props) {
                     <div key={item.id} className="">
                         <div
                             className={`bg-primary px-8 md:px-9 lg:px-[41px] py-9 md:py-10 lg:py-[46px] 
-                            flex flex-col gap-5 md:gap-6 lg:gap-[26px] rounded-t-[10px]  mb-1.5 md:min-h-[400px]`}
+                             rounded-t-[10px]  mb-1.5 md:min-h-[400px]`}
                         >
-                            <div className="">
-                                {/* eslint-disable-next-line @next/next/no-img-element*/}
-                                <img src={item.imageSrc} alt="" />
-                            </div>
-                            <div>
-                                <p className="text-secondary text-lg 2xl:text-xl font-semibold leading-[27px]">
-                                    {item.title}
-                                </p>
-                            </div>
-                            <div className="flex items-center gap-2.5">
+                            <div className="flex flex-col gap-5 md:gap-6 lg:gap-[26px] h-full">
                                 <div className="">
-                                    <i className="text-secondary text-base">
-                                        <FaMapPin />
-                                    </i>
+                                    {/* eslint-disable-next-line @next/next/no-img-element*/}
+                                    <img src={item.imageSrc} alt="" />
                                 </div>
                                 <div>
-                                    <p className="text-white text-sm 2xl:text-base leading-[21px]">
-                                        {item.address}
+                                    <p className="text-secondary text-lg 2xl:text-xl font-semibold leading-[27px]">
+                                        {item.title}
                                     </p>
                                 </div>
-                            </div>
-                            <div className="flex items-center gap-2.5">
-                                <div className="">
-                                    <i className="text-secondary text-base">
-                                        <HiPhone />
-                                    </i>
-                                </div>
-                                <div>
-                                    <a href={`tel:${item.tel}`}>
+                                <div className="flex items-center gap-2.5">
+                                    <div className="">
+                                        <i className="text-secondary text-base">
+                                            <FaMapPin />
+                                        </i>
+                                    </div>
+                                    <div>
                                         <p className="text-white text-sm 2xl:text-base leading-[21px]">
-                                            {item.tel}
+                                            {item.address}
                                         </p>
-                                    </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="flex items-center gap-2.5">
-                                <div className="">
-                                    <i className="text-secondary text-base">
-                                        <MdOutlineEmail />
-                                    </i>
+                                <div className="flex items-center gap-2.5">
+                                    <div className="">
+                                        <i className="text-secondary text-base">
+                                            <HiPhone />
+                                        </i>
+                                    </div>
+                                    <div>
+                                        <a href={`tel:${item.tel}`}>
+                                            <p className="text-white text-sm 2xl:text-base leading-[21px]">
+                                                {item.tel}
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div>
-                                    <a href={`mailto:${item.email}`}>
-                                        <p className="text-white text-sm 2xl:text-base leading-[21px]">
-                                            {item.email}
-                                        </p>
-                                    </a>
+                                <div className="flex items-center gap-2.5">
+                                    <div className="">
+                                        <i className="text-secondary text-base">
+                                            <MdOutlineEmail />
+                                        </i>
+                                    </div>
+                                    <div>
+                                        <a href={`mailto:${item.email}`}>
+                                            <p className="text-white text-sm 2xl:text-base leading-[21px]">
+                                                {item.email}
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +77,7 @@ export default function Card({}: Props) {
                                 height={"250"}
                                 style={{
                                     border: 0,
-                                    borderRadius: '0px 0px 6px 6px'
+                                    borderRadius: "0px 0px 6px 6px",
                                 }}
                                 allowFullScreen={false}
                                 loading="lazy"

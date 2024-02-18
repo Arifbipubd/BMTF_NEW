@@ -16,7 +16,7 @@ export default function Feedback({}: Props) {
                         className="rounded-full w-full"
                     />
                 </div>
-                <div className="mb-10 md:mb-12 lg:mb-[52px] lg:max-w-[862px]">
+                <div className="mb-10 md:mb-12 lg:mb-[54px] lg:max-w-[862px]">
                     <p className="text-white text-sm 2xl:text-base text-center">
                         Under the banner of Bangladesh Machine Tools Factory
                         Limited (BMTF), we stand at the forefront of innovation

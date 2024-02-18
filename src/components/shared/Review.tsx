@@ -41,7 +41,7 @@ export default function Review({
                 >
                     <div className="border-[10px] border-white/40 flex flex-col justify-center px-[35px] py-12 md:py-28 xl:py-[180px]">
                         <div className="mb-0.5">
-                            <p className="text-yellow font-semibold">
+                            <p className="text-yellow font-semibold 2xl:text-lg">
                                 TRATEGIC FRAMEWORK FOR BMTF
                             </p>
                         </div>
@@ -63,8 +63,8 @@ export default function Review({
                     <div
                         className={`${
                             divVisible
-                                ? "  lg:mx-6 xl:col-span-5"
-                                : "lg:ml-9 lg:mr-9  2xl:ml-[30px] 2xl:mr-[136px] xl:col-span-4"
+                                ? "  lg:pl-4 lg:pr-[56px] xl:pl-2 xl:pr-[101px]"
+                                : "lg:ml-9 lg:mr-9 xl:mr-24  2xl:ml-[30px] 2xl:mr-[136px] xl:col-span-4"
                         } 
                     flex flex-col justify-center h-full `}
                     >

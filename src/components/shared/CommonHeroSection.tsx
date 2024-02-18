@@ -53,7 +53,7 @@ export default function CommonHeroSection({
                                                     index === array.length - 1
                                                         ? "text-yellow"
                                                         : "text-white"
-                                                } capitalize text-sm sm:text-base 
+                                                } capitalize text-sm sm:text-base 2xl:text-lg 
                                                 `}
                                             >
                                                 {item === "/"
@@ -69,7 +69,7 @@ export default function CommonHeroSection({
                                                         : "block"
                                                 }`}
                                             >
-                                                <i className="text-white font-medium text-sm sm:text-base">
+                                                <i className="text-white font-medium text-sm sm:text-base 2xl:text-lg">
                                                     <CgChevronRight />
                                                 </i>
                                             </div>

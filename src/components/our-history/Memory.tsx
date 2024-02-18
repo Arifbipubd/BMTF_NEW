@@ -29,7 +29,7 @@ export default function Memory({}: Props) {
                         Memory Snap
                     </h2>
                 </div>
-                <div className="columns-1 gap-6 sm:columns-2 sm:gap-[30px]  lg:columns-3 historyImage">
+                <div className="columns-1 gap-6 sm:columns-2 lg:gap-[30px]  lg:columns-3 historyImage">
                     {historyGallery.map((item, index) => (
                         <div
                             key={index}

@@ -61,13 +61,13 @@ export default function Herosection({}: Props) {
                                                     </p>
                                                 </div>
                                                 <h1
-                                                    className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text[52px]
+                                                    className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px]
                                          text-white font-extrabold lg:leading-[56px] capitalize 
-                                         mb-5 md:mb-7 lg:mb-[30px]`}
+                                         mb-6 lg:mb-[30px]`}
                                                 >
                                                     {slide.heading}
                                                 </h1>
-                                                <p className="text-white text-sm md:text-base 2xl:text-lg text-justify">
+                                                <p className="text-white text-sm md:text-base 2xl:text-lg text-justify lg:leading-[24px]">
                                                     {slide.description}
                                                 </p>
                                             </div>

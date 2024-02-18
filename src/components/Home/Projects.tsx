@@ -8,7 +8,7 @@ export default function Projects({}: Props) {
         <div className="py-20 md:py-28 lg:py-[130px] bg-[#EEF3F6]">
             <div className="container mx-auto">
                 <div className="mb-5 md:mb-6 lg:mb-[30px]">
-                    <h2 className="text-headling text-2xl md:text-3xl lg:text-[34px] font-bold text-center">
+                    <h2 className="text-headling text-2xl md:text-3xl lg:text-[34px] font-bold">
                         Our latest projects.
                     </h2>
                 </div>
@@ -22,7 +22,7 @@ export default function Projects({}: Props) {
                         development of Bangladesh.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-[30px]">
                     <div className="md:col-span-2">
                         <div className="">
                             <div className="px-9 py-[27px] bg-white">

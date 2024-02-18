@@ -4,7 +4,7 @@ type Props = {};
 
 export default function Sustainability({}: Props) {
     return (
-        <div className="bg-white grid grid-cols-1 lg:grid-cols-2 place-items-center gap-[30px] lg:gap-0 py-10 xl:py-0">
+        <div className="bg-white grid grid-cols-1 lg:grid-cols-2 place-items-center gap-6 md:gap-[30px] lg:gap-0 py-10 xl:py-0">
             <div className="w-full">
                 {/* eslint-disable-next-line @next/next/no-img-element*/}
                 <img
@@ -13,7 +13,7 @@ export default function Sustainability({}: Props) {
                     className="md:rounded-tr-[30px] w-full"
                 />
             </div>
-            <div className="container mx-auto grid grid-cols-6">
+            <div className="container mx-auto grid grid-cols-6 lg:px-[30px]">
                 <div className="col-span-6 lg:col-span-5">
                     <div className="mb-5 md:mb-6 lg:mb-[30px]">
                         <h1 className="text-headline text-3xl md:text-4xl lg:text-[2.5rem] font-bold">

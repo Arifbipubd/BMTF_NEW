@@ -11,14 +11,14 @@ export default function ConnectBMTF({
     return (
         <div className="pt-14 md:pt-16 lg:pt-[72px]">
             <div className="bg-white min-h-[20vh] -mb-36">
-                <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2">
+                <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2">
                     <div
                         className={`py-14 md:py-16 lg:py-[74px] px-10 md:px-11 lg:px-[46px] z-10 bg-skyLight
-                        rounded-tr-[30px] rounded-tl-[30px] lg:rounded-tr-none lg:rounded-bl-[30px]
+                        rounded-tr-[30px] rounded-tl-[30px] xl:rounded-tr-none xl:rounded-bl-[30px]
                         `}
                     >
                         <div className="mb-4 md:mb-5 lg:mb-[30px]">
-                            <p className="text-headline font-xl md:text-2xl leading-[36px]">
+                            <p className="text-headline font-xl md:text-2xl md:leading-[36px] xl:text-justify">
                                 Connect with BMTF today to explore strategic
                                 collaborations, innovation, and economic
                                 transformation.
@@ -39,12 +39,12 @@ export default function ConnectBMTF({
                         <img
                             src={imageSrc}
                             alt=""
-                            className="w-full h-full rounded-bl-[30px] lg:rounded-bl-none lg:rounded-tr-[30px] rounded-br-[30px]"
+                            className="w-full h-full rounded-bl-[30px] xl:rounded-bl-none xl:rounded-tr-[30px] rounded-br-[30px]"
                         />
                         <div
                             className={`bg-[rgba(46,46,54,0.60)] rounded-[10px] absolute z-10 
                             left-0 top-0 bottom-0 right-0 
-                            rounded-bl-[30px] lg:rounded-bl-none lg:rounded-tr-[30px] rounded-br-[30px]`}
+                            rounded-bl-[30px] xl:rounded-bl-none xl:rounded-tr-[30px] rounded-br-[30px]`}
                         />
                         <div
                             className={`absolute left-[50%] top-[50%] -translate-y-1/2 -translate-x-1/2 -m-auto 
