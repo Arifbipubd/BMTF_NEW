@@ -30,7 +30,7 @@ export default function SingleColumnGridList({
                 }`}
             >
                 <div
-                    className={`py-8 lg:py-[54px] ${
+                    className={`pb-10 lg:pb-0 lg:py-[54px] ${
                         textOrder === "order-2 lg:order-1"
                             ? "lg:pr-2 lg:pl-10 xl:pl-16 2xl:pl-[95px]"
                             : "lg:pr-6 xl:pr-16 2xl:pr-[95px]"

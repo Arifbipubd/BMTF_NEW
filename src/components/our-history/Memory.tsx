@@ -22,9 +22,9 @@ export default function Memory({}: Props) {
     });
 
     return (
-        <div className="bg-white py-20 md:py-24 lg:py-[109px]">
+        <div className="bg-white py-10 md:py-24 lg:py-[109px]">
             <div className="container mx-auto">
-                <div className="mb-12 md:mb-14 lg:mb-[66px]">
+                <div className="mb-8 md:mb-12 lg:mb-[66px]">
                     <h2 className="text-2xl md:text-3xl lg:text-[34px] text-black font-semibold leading-[48px]">
                         Memory Snap
                     </h2>

@@ -10,7 +10,7 @@ type Props = {
 
 export default function Category({ heading, subHeading, categories }: Props) {
     return (
-        <div className="bg-white py-20 md:py-24 lg:py-[106px]">
+        <div className="bg-white py-10 md:py-20 lg:py-[106px]">
             <div className="container mx-auto">
                 <div className="mb-10 md:mb-[46px] lg:mb-[50px]">
                     <h2 className="text-headline text-2xl md:text-3xl lg:text-[34px] font-semibold text-center mb-6 lg:mb-[30px]">

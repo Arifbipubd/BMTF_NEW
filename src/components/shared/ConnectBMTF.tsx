@@ -9,8 +9,8 @@ export default function ConnectBMTF({
     imageSrc = "/assets/images/shared/Banner.png",
 }: Props) {
     return (
-        <div className="pt-14 md:pt-16 lg:pt-[72px]">
-            <div className="bg-white min-h-[20vh] -mb-36">
+        <div className="pt-8 md:pt-12 lg:pt-[72px]">
+            <div className="bg-white min-h-[20vh] -mb-64 md:-mb-80 lg:-mb-96 xl:-mb-40">
                 <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2">
                     <div
                         className={`py-14 md:py-16 lg:py-[74px] px-10 md:px-11 lg:px-[46px] z-10 bg-skyLight
@@ -61,7 +61,7 @@ export default function ConnectBMTF({
                     </div>
                 </div>
             </div>
-            <div className="min-h-[40vh] bg-yellow" />
+            <div className="min-h-[40vh] md:min-h-[50vh] xl:min-h-[40vh] bg-yellow" />
         </div>
     );
 }

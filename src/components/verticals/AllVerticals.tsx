@@ -8,7 +8,7 @@ type Props = {};
 
 export default function AllVerticals({}: Props) {
     return (
-        <div className="py-20 md:py-24 lg:py-[117px]">
+        <div className="md:py-14 lg:py-[80px]">
             {/* Sidebar Page */}
             <div className="industify_fn_sidebarpage">
                 <div className="container">

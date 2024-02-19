@@ -15,7 +15,7 @@ export default function AimSection({ imageSrc, aimItems }: Props) {
                 <img src={imageSrc} alt="aim" className="w-full" />
             </div>
             <div className="container mx-auto grid  lg:grid-cols-5 lg:pl-[30px]">
-                <div className="py-8 xl:py-0 lg:col-span-4">
+                <div className="pb-10 xl:pb-0 xl:py-0 lg:col-span-4">
                     {aimItems.map((item, _, array) => (
                         <div
                             key={item.id}

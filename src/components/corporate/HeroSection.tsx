@@ -7,7 +7,7 @@ type Props = {};
 export default function HeroSection({}: Props) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-7">
-            <div className="bg-primary py-20 md:py-32 lg:py-[154px] md:col-span-3 relative z-10">
+            <div className="bg-primary py-10 sm:py-16 md:py-28 lg:py-[154px] md:col-span-3 relative z-10">
                 <div className="container mx-auto lg:-mr-[100px] xl:-mr-[160px] 2xl:-mr-56">
                     {/*eslint-disable-next-line @next/next/no-img-element*/}
                     <img
@@ -23,7 +23,7 @@ export default function HeroSection({}: Props) {
             </div>
             <div
                 className={`bg-[url('/assets/images/home/shape30.png')] bg-cover bg-center bg-no-repeat
-         flex justify-center items-center h-full md:col-span-4  py-10 lg:py-0 -z-10`}
+         flex justify-center items-center h-full md:col-span-4  py-8 sm:py-10 md:py-14 lg:py-0 -z-10`}
             >
                 <div className="md:pl-1.5 md:pr-7 lg:pl-[90px] lg:pr-[90px] xl:pl-[140px] 2xl:pl-[180px] 2xl:pr-[150px]">
                     <div className="container mx-auto ">

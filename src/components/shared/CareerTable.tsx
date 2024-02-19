@@ -5,7 +5,7 @@ type Props = {};
 
 export default function CareerTable({}: Props) {
     return (
-        <div className="bg-white py-10 md:py-12 lg:py-[58px]">
+        <div className="bg-white md:py-12 lg:py-[58px]">
             <div className="container mx-auto">
                 <div className="nocAndNotice">
                     <ul className="responsive-table">

@@ -344,7 +344,7 @@ export default function Navbar() {
                             </Fragment>
                         ))}
 
-                        <div className="xl:h-full  flex items-center justify-center xl:block w-full xl:w-fit my-4 xl:mt-0">
+                        <div className="xl:h-full  flex items-center justify-center xl:block w-full xl:w-fit my-4 xl:my-0">
                             <Link href={"/"} className="">
                                 <button className="flex items-center bg-primary border-0 py-3 md:py-4 px-4 md:px-[22px] text-yellow">
                                     <span>

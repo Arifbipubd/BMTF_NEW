@@ -5,7 +5,7 @@ type Props = {};
 
 export default function Projects({}: Props) {
     return (
-        <div className="py-20 md:py-28 lg:py-[130px] bg-[#EEF3F6]">
+        <div className="py-10 md:py-20 lg:py-[130px] bg-[#EEF3F6]">
             <div className="container mx-auto">
                 <div className="mb-5 md:mb-6 lg:mb-[30px]">
                     <h2 className="text-headling text-2xl md:text-3xl lg:text-[34px] font-bold">
