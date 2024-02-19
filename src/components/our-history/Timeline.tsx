@@ -5,7 +5,7 @@ type Props = {};
 
 export default function Timeline({}: Props) {
     return (
-        <section className="items-center py-16 bg-skyLight">
+        <section className="items-center py-8 md:py-12 lg:py-16 bg-skyLight">
             <div className="container mx-auto flex items-center justify-center">
                 <div className="">
                     {timeline.map((item, index, array) => (

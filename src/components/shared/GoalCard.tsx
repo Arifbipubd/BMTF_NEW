@@ -60,7 +60,7 @@ export default function GoalCard({}: Props) {
         <div className="bg-[#EEF3F6] py-10 md:py-20 lg:py-24 xl:py-[134px] flex w-full">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
                 <motion.div
-                    className="flex flex-col order-1"
+                    className="flex flex-col"
                     ref={ref}
                     initial="hidden"
                     variants={boxVariant}
@@ -98,7 +98,7 @@ export default function GoalCard({}: Props) {
                     </div>
                 </motion.div>
                 <motion.div
-                    className="md:order-3 lg:order-2"
+                    className=""
                     ref={ref1}
                     initial="hidden"
                     variants={boxVariant2}
@@ -130,7 +130,7 @@ export default function GoalCard({}: Props) {
                     </div>
                 </motion.div>
                 <motion.div
-                    className="flex flex-col md:order-2 lg:order-3"
+                    className="flex flex-col "
                     ref={ref2}
                     initial="hidden"
                     variants={boxVariant3}

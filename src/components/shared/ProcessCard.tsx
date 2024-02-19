@@ -9,14 +9,14 @@ type Props = {
 
 export default function ProcessCard({ heading, cardItems }: Props) {
     return (
-        <div className="bg-white py-16 md:py-20 lg:py-[91px]">
+        <div className="bg-white py-10 md:py-20 lg:py-[91px]">
             <div className="container mx-auto">
                 <div className="mb-[50px] lg:mb-[60px]">
                     <h2 className="text-headline text-2xl md:text-3xl lg:text-[34px] font-semibold text-center">
                         {heading}
                     </h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-[30px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 lg:gap-[30px]">
                     {cardItems.map((item) => (
                         <div className="" key={item.id}>
                             <div className={`bg-primary py-16 md:py-20 px-8 lg:py-[90px] 2xl:px-[41px] rounded-[10px] 

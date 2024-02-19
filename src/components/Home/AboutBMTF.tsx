@@ -7,7 +7,7 @@ type Props = {};
 function AboutBMTF({}: Props) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-7">
-            <div className="bg-primary py-20 md:py-32 lg:py-[154px] md:col-span-3">
+            <div className="bg-primary py-10 md:py-20 lg:py-[154px] md:col-span-3">
                 <div className="container mx-auto flex lg:-mr-24 xl:-mr-[170px] gap-10 justify-end">
                     <div className="relative">
                         {/*eslint-disable-next-line @next/next/no-img-element*/}
@@ -52,7 +52,7 @@ function AboutBMTF({}: Props) {
             </div>
             <div
                 className={`bg-[url('/assets/images/home/shape30.png')] bg-cover bg-center bg-no-repeat
-         flex items-center h-full md:col-span-4  py-10 lg:py-0 -z-10`}
+         flex items-center h-full md:col-span-4  py-8 lg:py-0 -z-10`}
             >
                 <div className="md:pl-12 md:pr-12 lg:pl-[80px] lg:pr-[56px] xl:pl-[150px] xl:pr-[136px]">
                     <div className="container mx-auto">

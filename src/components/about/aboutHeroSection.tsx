@@ -29,7 +29,7 @@ export default function AboutHeroSection({ heading, imageSrc }: Props) {
                         </div>
                         <h1
                             className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px]
-                                         text-white font-extrabold leading-[56px] capitalize 
+                                         text-white font-extrabold leading-[32px] md:leading-[56px] capitalize 
                                          mb-5 md:mb-7 lg:mb-[30px]`}
                         >
                             {heading}

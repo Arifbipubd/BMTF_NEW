@@ -5,7 +5,7 @@ type Props = {};
 
 export default function News({}: Props) {
     return (
-        <div className="bg-[#EEF3F6] py-20 md:py-24 lg:py-[110px]">
+        <div className="bg-[#EEF3F6] py-10 md:py-24 lg:py-[110px]">
             <div className="container mx-auto">
                 <div className="mb-5 md:mb-6 lg:mb-[30px]">
                     <h2

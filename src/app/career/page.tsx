@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import CommonHeroSection from "@src/components/shared/CommonHeroSection";
-import ConnectBMTF from "@src/components/shared/ConnectBMTF";
 import CareerTable from "@src/components/shared/CareerTable";
 
 import Layout from "@src/components/Layout/Layout";
@@ -30,7 +29,6 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/noc-and-notice.png"
                 />
                 <CareerTable />
-                <ConnectBMTF />
             </section>
         </Layout>
     );

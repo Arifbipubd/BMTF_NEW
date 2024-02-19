@@ -9,7 +9,7 @@ type Props = {};
 
 export default function Experience({}: Props) {
     return (
-        <div className="bg-white grid grid-cols-1 place-items-center py-20 md:py-24 lg:py-36 ">
+        <div className="bg-white grid grid-cols-1 place-items-center py-10 sm:py-20 md:py-24 lg:py-36 ">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 md:gap-12">
                     <div className="flex items-end gap-4 relative mb-10 lg:mb-0">
