@@ -4,6 +4,7 @@ import Navbar from "@src/components/shared/Navbar";
 import Footer from "@src/components/shared/Footer";
 import "./theme.css";
 import "./globals.css";
+import Pointer from "@src/components/shared/Pointer";
 
 const inter = Inter({ subsets: ["latin"] });
 
