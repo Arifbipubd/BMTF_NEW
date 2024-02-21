@@ -39,7 +39,7 @@ export default function Navbar() {
         if (window.scrollY > 10) {
             setBackgroundColor("bg-black/80");
             setNavPosition("fixed");
-            setNavTop("top-0");
+            setNavTop("top-1.5");
             setSubmenuShow(false);
             setFixedDivPosition("top-14");
         } else {
@@ -229,7 +229,7 @@ export default function Navbar() {
                     <ul
                         className={` block xl:flex xl:items-center xl:gap-[22px]    ${
                             isOpen
-                                ? "block open  w-full xl:w-fit menu h-screen xl:h-fit overflow-y-scroll bg-black/80 text-center xl:bg-inherit"
+                                ? "block open  w-full xl:w-fit menu h-screen xl:h-fit overflow-y-scroll bg-black/90 text-center xl:bg-inherit"
                                 : "hidden bg-inherit w-fit"
                         }`}
                     >

@@ -18,6 +18,8 @@ import VerticalsListItems from "@src/components/shared/VerticalsListItems";
 import ConnectBMTF from "@src/components/shared/ConnectBMTF";
 import CategoryOfServices from "@src/components/shared/CategoryOfServices";
 import SectionCard from "@src/components/shared/SectionCard";
+import { useScroll } from "framer-motion";
+import Scrollbar from "@src/components/shared/Scrollbar";
 
 type Props = {};
 
@@ -27,6 +29,16 @@ export default function Page({}: Props) {
     const [pathName, setPathName] = useState<Array<string>>([]);
     const [heading, setHeading] = useState<string>("");
 
+    const { scrollYProgress } = useScroll();
+    const [scrollProgress, setScrollProgress] = useState(0);
+
+    useEffect(() => {
+        const unsubscribe = scrollYProgress.on("change", (x) =>
+            setScrollProgress(x)
+        );
+        return () => unsubscribe();
+    }, [scrollYProgress]);
+
     useEffect(() => {
         setLoading(true);
         let path = pathname.split("/");
@@ -35,8 +47,10 @@ export default function Page({}: Props) {
         setPathName(path);
         setLoading(false);
     }, [pathname]);
+
     return (
         <Layout pageTitle="BMTF | Furniture">
+            <Scrollbar progress={scrollProgress} />
             <section>
                 <CommonHeroSection
                     heading="Furniture"

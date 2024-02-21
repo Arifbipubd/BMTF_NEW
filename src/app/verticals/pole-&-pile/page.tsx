@@ -16,6 +16,8 @@ import AimSection from "@src/components/shared/AimSection";
 import CategoryOfServices from "@src/components/shared/CategoryOfServices";
 import ProcessCard from "@src/components/shared/ProcessCard";
 import ConnectBMTF from "@src/components/shared/ConnectBMTF";
+import { useScroll } from "framer-motion";
+import Scrollbar from "@src/components/shared/Scrollbar";
 
 type Props = {};
 
@@ -25,6 +27,16 @@ export default function Page({}: Props) {
     const [pathName, setPathName] = useState<Array<string>>([]);
     const [heading, setHeading] = useState<string>("");
 
+    const { scrollYProgress } = useScroll();
+    const [scrollProgress, setScrollProgress] = useState(0);
+
+    useEffect(() => {
+        const unsubscribe = scrollYProgress.on("change", (x) =>
+            setScrollProgress(x)
+        );
+        return () => unsubscribe();
+    }, [scrollYProgress]);
+
     useEffect(() => {
         setLoading(true);
         let path = pathname.split("/");
@@ -33,8 +45,10 @@ export default function Page({}: Props) {
         setPathName(path);
         setLoading(false);
     }, [pathname]);
+
     return (
         <Layout pageTitle="BMTF | Pole & Pile">
+            <Scrollbar progress={scrollProgress} />
             <section>
                 <CommonHeroSection
                     heading="Pole & Pile"

@@ -8,6 +8,8 @@ import CommonHeroSection from "@src/components/shared/CommonHeroSection";
 import DescriptionSection from "@src/components/shared/DescriptionSection";
 import AssemblyProcess from "@src/components/shared/AssemblyProcess";
 import ConnectBMTF from "@src/components/shared/ConnectBMTF";
+import { useScroll } from "framer-motion";
+import Scrollbar from "@src/components/shared/Scrollbar";
 
 const assemblyProcess: Array<any> = [
     {
@@ -42,6 +44,7 @@ const assemblyProcess: Array<any> = [
     },
 ];
 
+
 type Props = {};
 
 export default function Page({}: Props) {
@@ -49,6 +52,16 @@ export default function Page({}: Props) {
     const [loading, setLoading] = useState<boolean>(true);
     const [pathName, setPathName] = useState<Array<string>>([]);
     const [heading, setHeading] = useState<string>("");
+
+    const { scrollYProgress } = useScroll();
+    const [scrollProgress, setScrollProgress] = useState(0);
+
+    useEffect(() => {
+        const unsubscribe = scrollYProgress.on("change", (x) =>
+            setScrollProgress(x)
+        );
+        return () => unsubscribe();
+    }, [scrollYProgress]);
 
     useEffect(() => {
         setLoading(true);
@@ -61,6 +74,7 @@ export default function Page({}: Props) {
 
     return (
         <Layout pageTitle="BMTF | Vehicle Assembly">
+            <Scrollbar progress={scrollProgress} />
             <section>
                 <CommonHeroSection
                     heading="Vehicle Assembly"

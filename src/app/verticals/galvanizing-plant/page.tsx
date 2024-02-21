@@ -14,6 +14,8 @@ import DescriptionSection from "@src/components/shared/DescriptionSection";
 import AimSection from "@src/components/shared/AimSection";
 import ConnectBMTF from "@src/components/shared/ConnectBMTF";
 import VerticalsListItems from "@src/components/shared/VerticalsListItems";
+import { useScroll } from "framer-motion";
+import Scrollbar from "@src/components/shared/Scrollbar";
 
 type Props = {};
 
@@ -22,6 +24,16 @@ export default function Page({}: Props) {
     const [loading, setLoading] = useState<boolean>(true);
     const [pathName, setPathName] = useState<Array<string>>([]);
     const [heading, setHeading] = useState<string>("");
+
+    const { scrollYProgress } = useScroll();
+    const [scrollProgress, setScrollProgress] = useState(0);
+
+    useEffect(() => {
+        const unsubscribe = scrollYProgress.on("change", (x) =>
+            setScrollProgress(x)
+        );
+        return () => unsubscribe();
+    }, [scrollYProgress]);
 
     useEffect(() => {
         setLoading(true);
@@ -34,6 +46,7 @@ export default function Page({}: Props) {
 
     return (
         <Layout pageTitle="BMTF | Galvanizing Plant">
+            <Scrollbar progress={scrollProgress} />
             <section>
                 <CommonHeroSection
                     heading="Galvanizing Plant"
