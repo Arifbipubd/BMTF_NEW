@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useScroll } from "framer-motion";
 
 import Herosection from "@src/components/Home/Herosection";
@@ -17,10 +17,16 @@ import News from "@src/components/Home/News";
 import Slider from "@src/components/Home/slider";
 import Layout from "@src/components/Layout/Layout";
 import Scrollbar from "@src/components/shared/Scrollbar";
+import Pointer from "@src/components/shared/Pointer";
 
 export default function Home() {
     const { scrollYProgress } = useScroll();
     const [scrollProgress, setScrollProgress] = useState(0);
+    const bodyRef = useRef<HTMLElement | null>(null);
+
+    useEffect(() => {
+        bodyRef.current = document.body;
+      }, []);
 
     useEffect(() => {
         const unsubscribe = scrollYProgress.on('change',(x) =>
@@ -28,10 +34,11 @@ export default function Home() {
         );
         return () => unsubscribe();
     }, [scrollYProgress]);
+
     return (
         <Layout pageTitle="BMTF | HOME">
             <Scrollbar progress={scrollProgress} />
-            <div>
+            <section ref={bodyRef}>
                 <Herosection />
                 <GoalCard />
                 <Review
@@ -54,7 +61,8 @@ export default function Home() {
                 <Projects />
                 <Feedback />
                 <News />
-            </div>
+            </section>
+            {/* <Pointer bodyRef={bodyRef}/> */}
         </Layout>
     );
 }

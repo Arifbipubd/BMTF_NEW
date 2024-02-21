@@ -41,7 +41,7 @@ export default function Navbar() {
             setNavPosition("fixed");
             setNavTop("top-1.5");
             setSubmenuShow(false);
-            setFixedDivPosition("top-14");
+            setFixedDivPosition("top-20");
         } else {
             setBackgroundColor("bg-transparent");
             setNavPosition("absolute");
