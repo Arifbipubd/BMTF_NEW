@@ -1,6 +1,7 @@
 "use client";
 
 import React, { Fragment, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import ImageGallery from "./ImageGallery";
 import VideoGallery from "./VideoGallery";
 import ConnectBMTF from "../shared/ConnectBMTF";
@@ -12,7 +13,7 @@ export default function MainContainer({}: Props) {
 
     return (
         <Fragment>
-            <div className="bg-white py-16 md:py-20 lg:py-[92px]">
+            <div className="bg-white py-16 md:py-20 lg:py-[92px] min-h-[60vh]">
                 <div className="container mx-auto">
                     <div className="flex flex-row justify-center mb-7 md:mb-10">
                         <button
@@ -38,7 +39,29 @@ export default function MainContainer({}: Props) {
                             Video Gallery
                         </button>
                     </div>
-                    {activeGallery === 1 ? <ImageGallery /> : <VideoGallery />}
+                    <AnimatePresence mode="wait">
+                        {activeGallery === 1 ? (
+                            <motion.div
+                                key="image"
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -10 }}
+                                transition={{ duration: 0.2 }}
+                            >
+                                <ImageGallery />
+                            </motion.div>
+                        ) : (
+                            <motion.div
+                                key="video"
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -10 }}
+                                transition={{ duration: 0.2 }}
+                            >
+                                <VideoGallery />
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </div>
             </div>
             <ConnectBMTF />

@@ -281,6 +281,16 @@
     margin-bottom: 30px !important;
 }
 
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: var(--color-primary);
+    transform-origin: 0%;
+  }
+
 /*------------------------------------------------------------------*/
 /*	Shortcode #8 PROJECT STICKY FULL
 /*------------------------------------------------------------------*/

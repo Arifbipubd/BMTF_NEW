@@ -1,11 +1,26 @@
-import React from "react";
+'use client'
+
+import React, {useState, useEffect } from "react";
 import Layout from "@src/components/Layout/Layout";
+import { useScroll } from "framer-motion";
+import Scrollbar from "@src/components/shared/Scrollbar";
 
 type Props = {};
 
-export default function page({}: Props) {
+export default function Page({}: Props) {
+    const { scrollYProgress } = useScroll();
+    const [scrollProgress, setScrollProgress] = useState(0);
+
+    useEffect(() => {
+        const unsubscribe = scrollYProgress.on("change", (x) =>
+            setScrollProgress(x)
+        );
+        return () => unsubscribe();
+    }, [scrollYProgress]);
+
     return (
         <Layout pageTitle="BMTF | Privacy Policy">
+            <Scrollbar progress={scrollProgress} />
             <div className="privacy-policy">
                 {/* Page Title  */}
                 <div className="industify_fn_pagetitle">

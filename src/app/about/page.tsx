@@ -1,4 +1,7 @@
-/** @format */
+"use client";
+
+import { useState, useEffect } from "react";
+import { useScroll } from "framer-motion";
 
 import Layout from "@src/components/Layout/Layout";
 import BMTF from "@src/components/about/BMTF";
@@ -9,10 +12,21 @@ import Review from "@src/components/shared/Review";
 import Members from "@src/components/about/Members";
 import Organogram from "@src/components/about/Organogram";
 import AboutHeroSection from "@src/components/about/aboutHeroSection";
+import Scrollbar from "@src/components/shared/Scrollbar";
 
 export default function Home() {
+    const { scrollYProgress } = useScroll();
+    const [scrollProgress, setScrollProgress] = useState(0);
+
+    useEffect(() => {
+        const unsubscribe = scrollYProgress.on("change", (x) =>
+            setScrollProgress(x)
+        );
+        return () => unsubscribe();
+    }, [scrollYProgress]);
     return (
         <Layout pageTitle="BMTF | About Us">
+            <Scrollbar progress={scrollProgress} />
             <section>
                 <AboutHeroSection
                     heading="Empowering Innovation, Precision, and Excellence"

@@ -20,6 +20,8 @@ import ConnectBMTF from "@src/components/shared/ConnectBMTF";
 import SingleColumnGridList from "@src/components/shared/SingleColumnGridList";
 import Category from "@src/components/shared/Category";
 import Safety from "@src/components/shared/Safety";
+import { useScroll } from "framer-motion";
+import Scrollbar from "@src/components/shared/Scrollbar";
 
 type Props = {};
 
@@ -28,6 +30,16 @@ export default function Page({}: Props) {
     const [loading, setLoading] = useState<boolean>(true);
     const [pathName, setPathName] = useState<Array<string>>([]);
     const [heading, setHeading] = useState<string>("");
+
+    const { scrollYProgress } = useScroll();
+    const [scrollProgress, setScrollProgress] = useState(0);
+
+    useEffect(() => {
+        const unsubscribe = scrollYProgress.on("change", (x) =>
+            setScrollProgress(x)
+        );
+        return () => unsubscribe();
+    }, [scrollYProgress]);
 
     useEffect(() => {
         setLoading(true);
@@ -40,6 +52,7 @@ export default function Page({}: Props) {
 
     return (
         <Layout pageTitle="BMTF | Army Pharma">
+            <Scrollbar progress={scrollProgress} />
             <section>
                 <CommonHeroSection
                     heading="Army Pharma"
