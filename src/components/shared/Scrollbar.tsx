@@ -56,7 +56,7 @@ export default function Scrollbar({ progress }: Props) {
           top: 0,
           left: 0,
           width: "100%",
-          height: "5px",
+          height: "6px",
           backgroundColor: "rgba(0, 0, 0, 0.9)",
           zIndex: 9999,
           display: displayProperty,
@@ -74,7 +74,7 @@ export default function Scrollbar({ progress }: Props) {
       <div className={`${scrollButtonDisplay}`}>
         <button
           type="button"
-          className={`w-14 h-14 flex items-center justify-center rounded-full fixed bottom-5 lg:bottom-10 right-5 lg:right-10 hover:scale-90 transition-all ease-linear duration-200 z-30`}
+          className={`w-14 h-14 flex items-center justify-center rounded-full fixed bottom-5 lg:bottom-10 right-5 lg:right-10 hover:scale-90 transition-all ease-linear duration-200 z-10`}
           onClick={handleScrollToTop}
         >
           <div className="relative">

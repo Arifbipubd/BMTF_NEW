@@ -133,7 +133,6 @@ body {
 /* scroll to top circle */
 .progress-wheel {
   transform: rotate(-90deg);
-  z-index: 99999;
 }
 
 .progress-wheel circle {

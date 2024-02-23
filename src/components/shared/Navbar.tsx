@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, Fragment, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -35,13 +36,24 @@ export default function Navbar() {
         useState<boolean>(false);
     const [navHoverd, setNavHovered] = useState<boolean>(false);
     useState<boolean>(false);
+    const item = {
+        exit: {
+            opacity: 0,
+            height: 0,
+            transition: {
+                ease: "easeInOut",
+                duration: 1.2,
+                delay: 0.5,
+            },
+        },
+    };
     const changeOnScroll = () => {
         if (window.scrollY > 10) {
             setBackgroundColor("bg-black/80");
             setNavPosition("fixed");
-            setNavTop("top-1.5");
+            setNavTop("top-1");
             setSubmenuShow(false);
-            setFixedDivPosition("top-20");
+            setFixedDivPosition("top-14");
         } else {
             setBackgroundColor("bg-transparent");
             setNavPosition("absolute");
@@ -98,12 +110,12 @@ export default function Navbar() {
     }, [children, isVisible]);
 
     useEffect(() => {
-        const resizer = window.addEventListener('resize', () => {
-            if(window.innerWidth > 1270){
+        const resizer = window.addEventListener("resize", () => {
+            if (window.innerWidth > 1270) {
                 setIsOpen(false);
                 setOpenSubmenuId(null);
             }
-        })
+        });
     }, []);
     useEffect(() => {
         const eventFired: any = window.addEventListener(
@@ -212,192 +224,347 @@ export default function Navbar() {
                             />
                         </Link>
                     </div>
-                    <div className="block xl:hidden absolute right-0 top-2">
-                        <button
-                            onClick={handleCloseIcon}
-                            className="flex items-center py-2 rounded "
-                        >
-                            <i
-                                className={`text-2xl text-white ${
-                                    isOpen ? "hidden" : "block"
-                                }`}
-                            >
-                                <CgMenuRight />
-                            </i>
-                        </button>
-                    </div>
-                    <ul
-                        className={` block xl:flex xl:items-center xl:gap-[22px]    ${
-                            isOpen
-                                ? "block open  w-full xl:w-fit menu h-screen xl:h-fit overflow-y-scroll bg-black/90 text-center xl:bg-inherit"
-                                : "hidden bg-inherit w-fit"
-                        }`}
-                    >
-                        <li className="flex justify-end py-7 px-3 md:px-7 lg:px-10 xl:hidden">
+                    <div className="block xl:hidden">
+                        <div className="absolute right-0 top-2">
                             <button
-                                onClick={() => setIsOpen(!isOpen)}
-                                className="flex items-center px-3 py-2 rounded "
+                                onClick={handleCloseIcon}
+                                className="flex items-center py-2 rounded "
                             >
-                                <i
-                                    className={`text-2xl text-white ${
-                                        isOpen ? "block" : "hidden"
-                                    }`}
-                                >
-                                    <CgClose />
+                                <i className={`text-2xl text-white`}>
+                                    <CgMenuRight />
                                 </i>
                             </button>
-                        </li>
-                        {navItems.map((item) => (
-                            <Fragment key={item.id}>
-                                <li
-                                    className={`group  py-2.5 xl:py-0 text-center
-                                        cursor-pointer px-12 sm:px-16 md:px-24 xl:px-0 h-fit`}
-                                    onClick={() => childrenOpenHandler(item.id)}
-                                    onMouseEnter={() =>
-                                        handleMouseEnter(item.children)
-                                    }
-                                    onMouseLeave={hoverMouseLeave}
+                        </div>
+                        <AnimatePresence>
+                            {isOpen && (
+                                <motion.ul
+                                    className={` block xl:flex xl:items-center xl:gap-[22px] z-50 w-screen fixed top-0 left-0 overflow-y-scroll bg-black/90 text-center`}
+                                    variants={item}
+                                    initial={{ height: 0, opacity: 0 }}
+                                    animate={{ height: "100vh", opacity: 1 }}
+                                    transition={{ duration: 0.5 }}
+                                    exit="exit"
                                 >
-                                    <div
-                                        className={`flex items-center justify-center group-hover:relative group-hover:after:content-['']
+                                    <div className="container mx-auto">
+                                        <li className="flex justify-end py-7 mt-11">
+                                            <button
+                                                onClick={() =>
+                                                    setIsOpen(!isOpen)
+                                                }
+                                                className="flex items-center rounded "
+                                            >
+                                                <i
+                                                    className={`text-2xl text-white ${
+                                                        isOpen
+                                                            ? "block"
+                                                            : "hidden"
+                                                    }`}
+                                                >
+                                                    <CgClose />
+                                                </i>
+                                            </button>
+                                        </li>
+                                        {navItems.map((item, index) => (
+                                            <Fragment key={item.id}>
+                                                <motion.li
+                                                    className={`group  py-2.5 xl:py-0 text-center
+                                        cursor-pointer px-12 sm:px-16 md:px-24 h-fit`}
+                                                    onClick={() =>
+                                                        childrenOpenHandler(
+                                                            item.id
+                                                        )
+                                                    }
+                                                    initial={{
+                                                        y: 80,
+                                                        opacity: 0,
+                                                    }}
+                                                    animate={{
+                                                        y: 0,
+                                                        opacity: 1,
+                                                    }}
+                                                    transition={{
+                                                        delay:
+                                                            0.8 - 0.1 * index,
+                                                    }}
+                                                    exit={{
+                                                        opacity: 0,
+                                                        y: 90,
+                                                        transition: {
+                                                            ease: "easeInOut",
+                                                            delay:
+                                                                1 - 0.2 * index,
+                                                        },
+                                                    }}
+                                                >
+                                                    <div
+                                                        className={`flex items-center justify-center group-hover:relative group-hover:after:content-['']
+                                                grop-hover after:absolute group-hover:after:h-[3px]
+                                            group-hover:after:bg-secondary group-hover:after:-bottom-3 
+                                            group-hover:after:scale-x-100 after:hover:scale-x-0 group-hover:after:transition
+                                            group-hover:after:duration-300 group-hover:after:origin-left`}
+                                                    >
+                                                        <div
+                                                            className={`${
+                                                                openSubmenuId ===
+                                                                item.id
+                                                                    ? "text-secondary"
+                                                                    : "text-white"
+                                                            } text-lg font-medium capitalize flex items-center h-full`}
+                                                        >
+                                                            <span className="mr-1.5 h-full">
+                                                                {item.label}
+                                                            </span>
+                                                            <div
+                                                                className={`${
+                                                                    item.children &&
+                                                                    item
+                                                                        .children
+                                                                        ?.length >
+                                                                        0
+                                                                        ? "block"
+                                                                        : "hidden"
+                                                                }`}
+                                                            >
+                                                                {openSubmenuId ===
+                                                                item.id ? (
+                                                                    <i className="text-xs">
+                                                                        <BsChevronUp />
+                                                                    </i>
+                                                                ) : (
+                                                                    <i className="text-xs">
+                                                                        <BsChevronDown />
+                                                                    </i>
+                                                                )}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        className={`${
+                                                            openSubmenuId ===
+                                                            item.id
+                                                                ? "block "
+                                                                : "hidden"
+                                                        } flex justify-end w-fit mx-auto`}
+                                                    >
+                                                        <ul className=" ">
+                                                            {item.children?.map(
+                                                                (children) => (
+                                                                    <li
+                                                                        key={
+                                                                            children.id
+                                                                        }
+                                                                        className="text-white text-center text-xl md:text-2xl mt-5 mb-3 md:mt-6 md:mb-4"
+                                                                    >
+                                                                        {
+                                                                            children.label
+                                                                        }
+                                                                        <hr className="w-3/4 h-0.5 border-t border-t-secondary my-2.5 mx-auto" />
+                                                                        <ul className=" mt-3">
+                                                                            {children.menuItems.map(
+                                                                                (
+                                                                                    menu: any
+                                                                                ) => (
+                                                                                    <li
+                                                                                        key={
+                                                                                            menu.id
+                                                                                        }
+                                                                                        className="text-base my-3 md:my-4"
+                                                                                    >
+                                                                                        <Link
+                                                                                            href={
+                                                                                                menu.link
+                                                                                            }
+                                                                                            className="text-white"
+                                                                                            onClick={
+                                                                                                handleCloseIcon
+                                                                                            }
+                                                                                        >
+                                                                                            {
+                                                                                                menu.label
+                                                                                            }
+                                                                                        </Link>
+                                                                                    </li>
+                                                                                )
+                                                                            )}
+                                                                        </ul>
+                                                                    </li>
+                                                                )
+                                                            )}
+                                                        </ul>
+                                                    </div>
+                                                </motion.li>
+                                            </Fragment>
+                                        ))}
+
+                                        <motion.div
+                                            className="flex items-center justify-center w-full my-4"
+                                            onMouseLeave={hoverMouseLeave}
+                                            initial={{ y: 80, opacity: 0 }}
+                                            animate={{ y: 0, opacity: 1 }}
+                                            exit={{
+                                                opacity: 0,
+                                                y: 90,
+                                                transition: {
+                                                    ease: "easeInOut",
+                                                },
+                                            }}
+                                        >
+                                            <Link href={"/"} className="">
+                                                <button className="flex items-center bg-primary border-0 py-3 md:py-4 px-4 md:px-[22px] text-yellow">
+                                                    <span>
+                                                        <i className="text-yellow text-2xl">
+                                                            <RiShoppingBag2Line />
+                                                        </i>
+                                                    </span>
+                                                    <span>BMTF Shop</span>
+                                                </button>
+                                            </Link>
+                                        </motion.div>
+                                    </div>
+                                </motion.ul>
+                            )}
+                        </AnimatePresence>
+                    </div>
+                    <div className="hidden xl:block">
+                        <ul className={` flex items-center gap-[22px]`}>
+                            {navItems.map((item) => (
+                                <Fragment key={item.id}>
+                                    <li
+                                        className={`group text-center cursor-pointer h-fit`}
+                                        onMouseEnter={() =>
+                                            handleMouseEnter(item.children)
+                                        }
+                                        onMouseLeave={hoverMouseLeave}
+                                    >
+                                        <div
+                                            className={`flex items-center justify-center group-hover:relative group-hover:after:content-['']
                                                 grop-hover after:absolute group-hover:after:h-[3px]
                                             group-hover:after:bg-secondary group-hover:after:-bottom-3 xl:group-hover:after:w-full
                                             group-hover:after:scale-x-100 after:hover:scale-x-0 group-hover:after:transition
                                             group-hover:after:duration-300 group-hover:after:origin-left`}
-                                    >
-                                        <div
-                                            className={`${
-                                                openSubmenuId === item.id
-                                                    ? "text-secondary"
-                                                    : "text-white"
-                                            } text-lg font-medium capitalize flex items-center h-full`}
                                         >
-                                            <span className="mr-1.5 h-full">
-                                                {item.label}
-                                            </span>
                                             <div
                                                 className={`${
-                                                    item.children &&
-                                                    item.children?.length > 0
-                                                        ? "block xl:hidden"
-                                                        : "hidden"
-                                                }`}
+                                                    openSubmenuId === item.id
+                                                        ? "text-secondary"
+                                                        : "text-white"
+                                                } text-lg font-medium capitalize flex items-center h-full`}
                                             >
-                                                {openSubmenuId === item.id ? (
-                                                    <i className="text-xs">
-                                                        <BsChevronUp />
-                                                    </i>
-                                                ) : (
-                                                    <i className="text-xs">
-                                                        <BsChevronDown />
-                                                    </i>
-                                                )}
+                                                <span className="mr-1.5 h-full">
+                                                    {item.label}
+                                                </span>
+                                                <div
+                                                    className={`${
+                                                        item.children &&
+                                                        item.children?.length >
+                                                            0
+                                                            ? "block xl:hidden"
+                                                            : "hidden"
+                                                    }`}
+                                                >
+                                                    {openSubmenuId ===
+                                                    item.id ? (
+                                                        <i className="text-xs">
+                                                            <BsChevronUp />
+                                                        </i>
+                                                    ) : (
+                                                        <i className="text-xs">
+                                                            <BsChevronDown />
+                                                        </i>
+                                                    )}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div
-                                        className={`${
-                                            openSubmenuId === item.id
-                                                ? "block xl:hidden"
-                                                : "hidden"
-                                        } flex justify-end w-fit mx-auto xl:pt-10`}
-                                    >
-                                        <ul className=" ">
-                                            {item.children?.map((children) => (
-                                                <li
-                                                    key={children.id}
-                                                    className="text-white text-center text-xl md:text-2xl mt-5 mb-3 md:mt-6 md:mb-4 xl:h-full"
-                                                >
-                                                    {children.label}
-                                                    <hr className="w-3/4 h-0.5 border-t border-t-secondary my-2.5 mx-auto" />
-                                                    <ul className=" mt-3">
-                                                        {children.menuItems.map(
-                                                            (menu: any) => (
-                                                                <li
-                                                                    key={
-                                                                        menu.id
-                                                                    }
-                                                                    className="text-base my-3 md:my-4"
-                                                                >
-                                                                    <Link
-                                                                        href={
-                                                                            menu.link
-                                                                        }
-                                                                        className="text-white"
-                                                                        onClick={
-                                                                            handleCloseIcon
-                                                                        }
-                                                                    >
-                                                                        {
-                                                                            menu.label
-                                                                        }
-                                                                    </Link>
-                                                                </li>
-                                                            )
-                                                        )}
-                                                    </ul>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </li>
-                            </Fragment>
-                        ))}
+                                    </li>
+                                </Fragment>
+                            ))}
 
-                        <div className="xl:h-full  flex items-center justify-center xl:block w-full xl:w-fit my-4 xl:my-0">
-                            <Link href={"/"} className="">
-                                <button className="flex items-center bg-primary border-0 py-3 md:py-4 px-4 md:px-[22px] text-yellow">
-                                    <span>
-                                        <i className="text-yellow text-2xl">
-                                            <RiShoppingBag2Line />
-                                        </i>
-                                    </span>
-                                    <span>BMTF Shop</span>
-                                </button>
-                            </Link>
-                        </div>
-                    </ul>
+                            <div className="h-full block w-fit ">
+                                <Link href={"/"} className="">
+                                    <button className="flex items-center bg-primary border-0 px-[22px] py-[16px] text-yellow">
+                                        <span>
+                                            <i className="text-yellow text-2xl">
+                                                <RiShoppingBag2Line />
+                                            </i>
+                                        </span>
+                                        <span>BMTF Shop</span>
+                                    </button>
+                                </Link>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             {isNavHoverd && (
                 <Fragment>
-                    <div
-                        className={`hidden fixed left-0 z-10 w-full h-auto  xl:flex  justify-center px-2 py-16 transition-all duration-200 ease-linear
-                        ${isVisible ? "fade-in" : ""} ${fixedDivPostion}
+                    <AnimatePresence>
+                        <motion.div
+                            className={`hidden fixed left-0 z-10 w-full h-auto  xl:flex  justify-center px-2 py-16 transition-all duration-200 ease-linear
+                         ${fixedDivPostion}
                         `}
-                        ref={navRef}
-                        onMouseEnter={fixedDivMouseEnter}
-                        onMouseLeave={mouseLeaveHandler}
-                    >
-                        <div className="w-1/2 mx-auto h-full">
-                            {children &&
-                                children.map((item) => (
-                                    <div key={item.id} className="mb-4">
-                                        <h3 className="text-white leading-[2.8rem] font-semibold text-3xl">
-                                            {item.label}
-                                        </h3>
-                                        <hr className="w-full h-0.5 border-t border-t-secondary my-2.5" />
-                                        <div className="xl:grid xl:grid-cols-3 xl:gap-7">
-                                            {item.menuItems &&
-                                                item.menuItems.map(
-                                                    (menu: any) => (
-                                                        <Link
-                                                            href={menu.link}
-                                                            className="text-white"
-                                                            key={menu.id}
-                                                            onClick={
-                                                                mouseLeaveHandler
-                                                            }
-                                                        >
-                                                            {menu.label}
-                                                        </Link>
-                                                    )
-                                                )}
-                                        </div>
-                                    </div>
-                                ))}
-                        </div>
-                    </div>
+                            ref={navRef}
+                            onMouseEnter={fixedDivMouseEnter}
+                            onMouseLeave={mouseLeaveHandler}
+                            variants={item}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.2 }}
+                            exit={{
+                                opacity: 0,
+                            }}
+                        >
+                            <div className="w-1/2 mx-auto h-full">
+                                {children &&
+                                    children.map((item, index) => (
+                                        <motion.div
+                                            key={item.id}
+                                            className="mb-4"
+                                            initial={{
+                                                y: -60,
+                                                opacity: 0,
+                                            }}
+                                            animate={{
+                                                y: 0,
+                                                opacity: 1,
+                                            }}
+                                            transition={{
+                                                delay: 0.8 - 0.1 * index,
+                                            }}
+                                            exit={{
+                                                opacity: 0,
+                                                y: -60,
+                                                transition: {
+                                                    ease: "easeInOut",
+                                                    delay: 0.8 - 0.2 * index,
+                                                },
+                                            }}
+                                        >
+                                            <h3 className="text-white leading-[2.8rem] font-semibold text-3xl">
+                                                {item.label}
+                                            </h3>
+                                            <hr className="w-full h-0.5 border-t border-t-secondary my-2.5" />
+                                            <div className="xl:grid xl:grid-cols-3 xl:gap-7">
+                                                {item.menuItems &&
+                                                    item.menuItems.map(
+                                                        (menu: any) => (
+                                                            <Link
+                                                                href={menu.link}
+                                                                className="text-white hover:text-secondary w-fit"
+                                                                key={menu.id}
+                                                                onClick={
+                                                                    mouseLeaveHandler
+                                                                }
+                                                            >
+                                                                {menu.label}
+                                                            </Link>
+                                                        )
+                                                    )}
+                                            </div>
+                                        </motion.div>
+                                    ))}
+                            </div>
+                        </motion.div>
+                    </AnimatePresence>
                 </Fragment>
             )}
             <div
