@@ -131,18 +131,14 @@ body {
 }
 
 /* scroll to top circle */
-
 .progress-wheel {
-  position: fixed;
-  top: 20px;
-  left: 20px;
   transform: rotate(-90deg);
   z-index: 99999;
 }
 
 .progress-wheel circle {
   stroke-dashoffset: 0;
-  stroke-width: 30%;
+  stroke-width: 5%;
   fill: none;
 }
 
@@ -152,7 +148,7 @@ body {
 }
 
 .progress-wheel .progress {
-  stroke: var(--color-primary);
+  stroke: var(--color-secondary);
   stroke-dasharray: 0, 1;
 }
 /***************NOC And Notice****************/

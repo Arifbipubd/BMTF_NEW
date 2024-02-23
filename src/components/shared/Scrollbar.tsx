@@ -42,11 +42,12 @@ export default function Scrollbar({ progress }: Props) {
         setScrollButtonDisplay("hidden");
       }
     });
+    console.log(progress);
     return () => {
       eventFired;
       scrollToTop;
     };
-  }, []);
+  }, [progress]);
   return (
     <>
       <div
@@ -55,7 +56,7 @@ export default function Scrollbar({ progress }: Props) {
           top: 0,
           left: 0,
           width: "100%",
-          height: "10px",
+          height: "5px",
           backgroundColor: "rgba(0, 0, 0, 0.9)",
           zIndex: 9999,
           display: displayProperty,
@@ -65,7 +66,7 @@ export default function Scrollbar({ progress }: Props) {
         <motion.div
           style={{
             height: "100%",
-            backgroundColor: "var(--color-primary)",
+            backgroundColor: "var(--color-secondary)",
             width: progress * 100 + "%",
           }}
         />
@@ -73,13 +74,31 @@ export default function Scrollbar({ progress }: Props) {
       <div className={`${scrollButtonDisplay}`}>
         <button
           type="button"
-          className={`w-10 h-10 flex items-center justify-center rounded-full fixed bottom-5 lg:bottom-10 right-5 lg:right-10 
-          bg-secondary hover:scale-90 hover:bg-primary transition-all ease-linear duration-200 z-30`}
+          className={`w-14 h-14 flex items-center justify-center rounded-full fixed bottom-5 lg:bottom-10 right-5 lg:right-10 hover:scale-90 transition-all ease-linear duration-200 z-30`}
           onClick={handleScrollToTop}
         >
-          <i className="text-white text-2xl ">
-            <FiChevronUp />
-          </i>
+          <div className="relative">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 100 100"
+              className="progress-wheel"
+            >
+              <circle
+                cx="50"
+                cy="50"
+                r="30"
+                pathLength="1"
+                className="progress"
+                style={{
+                  strokeDasharray: `${progress}, 1`,
+                }}
+              />
+            </svg>
+            <i className="text-secondary text-2xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <FiChevronUp />
+            </i>
+          </div>
         </button>
       </div>
     </>
