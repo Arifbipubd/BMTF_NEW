@@ -2,13 +2,14 @@
 
 import React from "react";
 import Link from "next/link";
-import Sidebar from "./Sidebar";
+// import Sidebar from "./Sidebar";
 
 type Props = {};
 
 export default function SideNavigation({}: Props) {
+    
     return (
-        <div>
+        <div className={`side-navigation`}>
             {/* Main Sidebar: Right  */}
             <div className="industify_fn_rightsidebar">
                 {/* Service List  */}
@@ -91,7 +92,7 @@ export default function SideNavigation({}: Props) {
                 {/* /Service List  */}
 
                 {/* Get Sidebar  */}
-                <Sidebar />
+                {/* <Sidebar /> */}
                 {/* /Get Sidebar  */}
             </div>
             {/* Main Sidebar: Right  */}

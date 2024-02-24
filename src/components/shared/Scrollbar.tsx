@@ -42,7 +42,6 @@ export default function Scrollbar({ progress }: Props) {
         setScrollButtonDisplay("hidden");
       }
     });
-    console.log(progress);
     return () => {
       eventFired;
       scrollToTop;
