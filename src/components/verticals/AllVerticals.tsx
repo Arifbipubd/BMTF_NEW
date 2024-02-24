@@ -10,7 +10,7 @@ export default function AllVerticals({}: Props) {
     return (
         <div className="md:py-14 lg:py-[80px]">
             {/* Sidebar Page */}
-            <div className="industify_fn_sidebarpage">
+            <div className="industify_fn_sidebarpage" >
                 <div className="container">
                     <div className="s_inner">
                         {/* Main Sidebar: Left */}

@@ -6,7 +6,7 @@ export const heroSection: Array<HeroSection> = [
         spanning from manufacturing machinery, military equipment, and furniture to 
         healthcare products and services like galvanizing and electronic assembly, all characterized by a commitment to 
         innovation and precision.`,
-        videoUrl: "/assets/videos/video_1.mp4",
+        assetUrl: "/assets/videos/video_1.mp4",
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const heroSection: Array<HeroSection> = [
         spanning from manufacturing machinery, military equipment, and furniture to 
         healthcare products and services like galvanizing and electronic assembly, all characterized by a commitment to 
         innovation and precision.`,
-        videoUrl: "/assets/videos/video_2.mp4",
+        assetUrl: "/assets/images/home/Machine_shop_02.png",
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ export const heroSection: Array<HeroSection> = [
         spanning from manufacturing machinery, military equipment, and furniture to 
         healthcare products and services like galvanizing and electronic assembly, all characterized by a commitment to 
         innovation and precision.`,
-        videoUrl: "/assets/videos/video_3.mp4",
+        assetUrl: "/assets/videos/video_3.mp4",
     },
 ];
 

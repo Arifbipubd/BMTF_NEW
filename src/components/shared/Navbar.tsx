@@ -246,7 +246,7 @@ export default function Navbar() {
                                     exit="exit"
                                 >
                                     <div className="container mx-auto">
-                                        <li className="flex justify-end py-7 mt-11">
+                                        <li className="flex justify-end py-7 mt-10 md:mt-6">
                                             <button
                                                 onClick={() =>
                                                     setIsOpen(!isOpen)
@@ -508,7 +508,6 @@ export default function Navbar() {
                             variants={item}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ duration: 0.2 }}
                             exit={{
                                 opacity: 0,
                             }}
@@ -520,7 +519,7 @@ export default function Navbar() {
                                             key={item.id}
                                             className="mb-4"
                                             initial={{
-                                                y: -60,
+                                                y: 60,
                                                 opacity: 0,
                                             }}
                                             animate={{
@@ -528,11 +527,11 @@ export default function Navbar() {
                                                 opacity: 1,
                                             }}
                                             transition={{
-                                                delay: 0.8 - 0.1 * index,
+                                                delay: 0.3 ,
                                             }}
                                             exit={{
                                                 opacity: 0,
-                                                y: -60,
+                                                y: 60,
                                                 transition: {
                                                     ease: "easeInOut",
                                                     delay: 0.8 - 0.2 * index,
