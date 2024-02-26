@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
-
+import React, { Fragment } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 type Props = {
     heading: string;
     subHeading: string;
@@ -19,28 +19,40 @@ export default function Category({ heading, subHeading, categories }: Props) {
                     <p className="text-black text-center">{subHeading}</p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-[30px]">
-                    {categories.map((item) => (
-                        <div
-                            key={item.id}
-                            className={`relative bg-primary rounded-[10px] py-7 md:py-8 lg:py-9 border-[1px] 
+                    {categories.map((item, index) => (
+                        <Fragment key={item.id}>
+                            <AnimatePresence>
+                                <motion.div
+                                    initial={{ opacity: 0, scale: 0.85 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    transition={{
+                                        duration: 0.5,
+                                        delay: 0.5 * (0.1 * index),
+                                    }}
+                                >
+                                    <div
+                                        className={`relative bg-primary rounded-[10px] py-7 md:py-8 lg:py-9 border-[1px] 
                             border-transparent transition-all duration-300 ease-in-out  
                             hover:bg-white hover:border-[1px] hover:border-primary`}
-                        >
-                            <div className="flex justify-center w-full mb-4 sm:mb-5">
-                                <div className="bg-white p-5 md:p-[22px] rounded-full stroke-[1px] stroke-primary">
-                                    {/*eslint-disable-next-line @next/next/no-img-element*/}
-                                    <img
-                                        src="/assets/images/shared/brainstrom.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                            <div>
-                                <h4 className="text-yellow md:text-lg 2xl:text-xl font-semibold text-center">
-                                    {item.label}
-                                </h4>
-                            </div>
-                        </div>
+                                    >
+                                        <div className="flex justify-center w-full mb-4 sm:mb-5">
+                                            <div className="bg-white p-5 md:p-[22px] rounded-full stroke-[1px] stroke-primary">
+                                                {/*eslint-disable-next-line @next/next/no-img-element*/}
+                                                <img
+                                                    src="/assets/images/shared/brainstrom.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h4 className="text-yellow md:text-lg 2xl:text-xl font-semibold text-center">
+                                                {item.label}
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            </AnimatePresence>
+                        </Fragment>
                     ))}
                 </div>
             </div>

@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { historyGallery } from "@src/utils/historyGallery";
 import { FaSearchPlus } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
 
 type Props = {};
 
@@ -31,35 +32,43 @@ export default function Memory({}: Props) {
                 </div>
                 <div className="columns-1 gap-6 sm:columns-2 lg:gap-[30px]  lg:columns-3 historyImage">
                     {historyGallery.map((item, index) => (
-                        <div
-                            key={index}
-                            className="group relative z-0 transition-all duration-200 ease-in-out mb-6 sm:mb-[30px] last-of-type:mb-0 cursor-pointer"
-                            onClick={() => setIndex(index)}
-                        >
-                            {/*eslint-disable-next-line @next/next/no-img-element*/}
-                            <img
-                                className="h-auto max-w-full rounded-lg w-full"
-                                src={item}
-                                alt=""
-                            />
-                            <div
-                                className={`bg-[rgba(46,46,54,0.60)] rounded-[10px]
+                        <Fragment key={index}>
+                            <AnimatePresence>
+                                <motion.div
+                                    className="group relative z-0 transition-all duration-200 ease-in-out mb-6 sm:mb-[30px] last-of-type:mb-0 cursor-pointer"
+                                    onClick={() => setIndex(index)}
+                                    initial={{ opacity: 0, y: 100 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -100 }}
+                                    transition={{ duration: 0.5 }}
+                                >
+                                    {/*eslint-disable-next-line @next/next/no-img-element*/}
+                                    <img
+                                        className="h-auto max-w-full rounded-lg w-full"
+                                        src={item}
+                                        alt=""
+                                    />
+                                    <div
+                                        className={`bg-[rgba(46,46,54,0.60)] rounded-[10px]
                              hidden group-hover:block group-hover:absolute group-hover:z-10
                             group-hover:left-0 group-hover:top-0 group-hover:bottom-0 group-hover:right-0
                              group-hover:w-full
                             group-hover:h-full`}
-                            />
-                            <div
-                                className={`
+                                    />
+                                    <div
+                                        className={`
                              hidden group-hover:block group-hover:absolute group-hover:z-20
                             group-hover:left-[50%] group-hover:top-[50%] group-hover:-translate-x-1/2
                              -translate-y-1/2 group-hover:transition-all group-hover:duration-200 group-hover:ease-in-out`}
-                            >
-                                <i className="text-3xl lg:text-[32px] text-secondary ">
-                                    <FaSearchPlus />
-                                </i>
-                            </div>
-                        </div>
+                                    >
+                                        <i className="text-3xl lg:text-[32px] text-secondary ">
+                                            <FaSearchPlus />
+                                        </i>
+                                    </div>
+                                </motion.div>
+                                u
+                            </AnimatePresence>
+                        </Fragment>
                     ))}
                 </div>
             </div>

@@ -17,7 +17,7 @@ export default function Projects({}: Props) {
                         BMTF has embarked on several projects and remains
                         dedicated to consistently advancing its initiatives.
                         With a commitment to fostering self-sufficiency and
-                        supporting local industries, BMTF’s projects reflect its
+                        supporting local industries, BMTF&apos;s projects reflect its
                         ongoing efforts to contribute to the economic
                         development of Bangladesh.
                     </p>
@@ -33,8 +33,8 @@ export default function Projects({}: Props) {
                                         including agriculture, construction, and
                                         manufacturing, by producing high-quality
                                         machinery and tools to bolster the
-                                        nation&quot;s self-reliance and
-                                        progress. BMTF&quot;s dedication to
+                                        nation&apos;s self-reliance and
+                                        progress. BMTF&apos;s dedication to
                                         these projects underscores its role as a
                                         pivotal player in advancing industrial
                                         and agricultural sectors in Bangladesh.

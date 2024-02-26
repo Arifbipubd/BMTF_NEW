@@ -1,32 +1,73 @@
-/** @format */
+"use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { TfiArrowCircleRight } from "react-icons/tfi";
 
 import { experienceLists } from "@src/utils/constants";
 
+import { useAnimation, motion, AnimatePresence } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const boxVariant = {
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
+    hidden: {
+        opacity: 0,
+        y: -300,
+    },
+};
+const boxVariant2 = {
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5, delay: 0.5 } },
+    hidden: {
+        opacity: 0,
+        y: -300,
+    },
+};
+
 type Props = {};
 
 export default function Experience({}: Props) {
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+    const { ref: ref1, inView: inView1 } = useInView();
+
+    useEffect(() => {
+        if (inView || inView1) {
+            control.start("visible");
+        } else {
+            control.start("hidden");
+        }
+    }, [control, inView, inView1]);
     return (
-        <div className="bg-white grid grid-cols-1 place-items-center py-10 sm:py-20 md:py-24 lg:py-36 ">
+        <div className="bg-white grid grid-cols-1 place-items-center py-10 sm:py-20 md:py-24 lg:py-36 overflow-hidden">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 md:gap-12">
                     <div className="flex items-end gap-4 relative mb-10 lg:mb-0">
-                        <div>
-                        {/* eslint-disable-next-line @next/next/no-img-element*/}
-                            <img
-                                src="/assets/images/home/Forge_shop_03.png"
-                                alt=""
-                            />
-                        </div>
-                        <div>
-                        {/* eslint-disable-next-line @next/next/no-img-element*/}
-                            <img
-                                src="/assets/images/home/Foundry_shop_01.png"
-                                alt=""
-                            />
-                        </div>
+                        <AnimatePresence>
+                            <motion.div
+                                ref={ref}
+                                initial="hidden"
+                                variants={boxVariant}
+                                animate={control}
+                            >
+                                {/* eslint-disable-next-line @next/next/no-img-element*/}
+                                <img
+                                    src="/assets/images/home/Forge_shop_03.png"
+                                    alt=""
+                                />
+                            </motion.div>
+                            <motion.div
+                                ref={ref1}
+                                initial="hidden"
+                                variants={boxVariant2}
+                                animate={control}
+                            >
+                                {/* eslint-disable-next-line @next/next/no-img-element*/}
+                                <img
+                                    src="/assets/images/home/Foundry_shop_01.png"
+                                    alt=""
+                                />
+                            </motion.div>
+                        </AnimatePresence>
                         <div
                             className={`absolute -bottom-9 lg:-bottom-14 left-[50%] -translate-x-1/2 -mx-1/2 
                             bg-primary border-4 border-white px-[34px] py-3 flex items-center`}
@@ -45,7 +86,10 @@ export default function Experience({}: Props) {
                     </div>
                     <div>
                         <div className="mb-5 md:mb-[30px] lg:mb-[34px]">
-                            <h2 className="text-headline text-2xl md:text-3xl lg:text-[34px] font-extrabold" style={{lineHeight: '40px'}}>
+                            <h2
+                                className="text-headline text-2xl md:text-3xl lg:text-[34px] font-extrabold"
+                                style={{ lineHeight: "40px" }}
+                            >
                                 State Owned Largest Production Facility of
                                 Bangladesh
                             </h2>
@@ -59,10 +103,10 @@ export default function Experience({}: Props) {
                                 in precision engineering, cutting-edge
                                 technology, and a highly skilled workforce, we
                                 offer unparalleled products and services. When
-                                you choose BMTF, you&quot;re selecting
+                                you choose BMTF, you&apos;re selecting
                                 reliability, durability, and the promise of a
                                 brighter industrial future. Join us in shaping
-                                tomorrow&quot;s success with the trusted
+                                tomorrow&apos;s success with the trusted
                                 expertise of BMTF by your side.
                             </p>
                         </div>

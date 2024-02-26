@@ -22,11 +22,11 @@ export default function Feedback({}: Props) {
                         Limited (BMTF), we stand at the forefront of innovation
                         and industrial excellence. Spanning across 260 acres in
                         Gazipur, BMTF is more than an industrial conglomerate;
-                        it&quot;s a testament to our commitment to
-                        Bangladesh&quot;s economic ascent. Guided by the
+                        it&apos;s a testament to our commitment to
+                        Bangladesh&apos;s economic ascent. Guided by the
                         visionary leadership of the Chief of Army Staff as the
                         Board Chairman and supported by a skilled team,
-                        we&quot;ve earned global recognition through our
+                        we&apos;ve earned global recognition through our
                         relentless pursuit of excellence.
                     </p>
                 </div>

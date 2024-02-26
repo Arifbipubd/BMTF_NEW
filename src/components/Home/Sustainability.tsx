@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 type Props = {};
 
@@ -6,12 +9,13 @@ export default function Sustainability({}: Props) {
     return (
         <div className="bg-white grid grid-cols-1 lg:grid-cols-2 place-items-center gap-6 md:gap-[30px] lg:gap-0 py-10 xl:py-0">
             <div className="w-full">
-                {/* eslint-disable-next-line @next/next/no-img-element*/}
-                <img
-                    src="/assets/images/home/Packaging_02_1.png"
-                    alt=""
-                    className="md:rounded-tr-[30px] w-full"
-                />
+                <AnimatePresence>
+                    <motion.img
+                        src="/assets/images/home/Packaging_02_1.png"
+                        alt=""
+                        className="md:rounded-tr-[30px] w-full"
+                    />
+                </AnimatePresence>
             </div>
             <div className="container mx-auto grid grid-cols-6 lg:px-[30px]">
                 <div className="col-span-6 lg:col-span-5">
@@ -53,7 +57,7 @@ export default function Sustainability({}: Props) {
                             We actively participate in green initiatives and use
                             environmentally friendly materials wherever
                             possible. From eco-friendly packaging solutions to
-                            utilizing sustainable materials in our tools&quot;
+                            utilizing sustainable materials in our tools&apos;
                             production, we continually seek ways to reduce our
                             environmental impact.
                         </p>

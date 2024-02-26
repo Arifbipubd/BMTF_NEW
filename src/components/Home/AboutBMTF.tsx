@@ -1,53 +1,105 @@
-/** @format */
+"use client";
 
-import React from "react";
+import React, { useEffect } from "react";
+import { useAnimation, motion, AnimatePresence } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const boxVariant = {
+    visible: {
+        x: 0,
+        opacity: 1,
+        transition: { duration: 0.5 },
+    },
+    hidden: {
+        opacity: 0,
+        x: -1000,
+    },
+};
+const boxVariant2 = {
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
+    hidden: {
+        opacity: 0,
+        y: -200,
+    },
+};
+const boxVariant3 = {
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
+    hidden: {
+        opacity: 0,
+        y: 200,
+    },
+};
 
 type Props = {};
 
 function AboutBMTF({}: Props) {
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+    const { ref: ref1, inView: inView1 } = useInView();
+    const { ref: ref2, inView: inView2 } = useInView();
+
+    useEffect(() => {
+        if (inView || inView1 || inView2) {
+            control.start("visible");
+        } else {
+            control.start("hidden");
+        }
+    }, [control, inView, inView1, inView2]);
     return (
-        <div className="grid grid-cols-1 md:grid-cols-7">
+        <div className="grid grid-cols-1 md:grid-cols-7 overflow-hidden">
             <div className="bg-primary py-10 md:py-20 lg:py-[154px] md:col-span-3">
-                <div className="container mx-auto flex lg:-mr-24 xl:-mr-[170px] gap-10 justify-end">
-                    <div className="relative">
-                        {/*eslint-disable-next-line @next/next/no-img-element*/}
-                        <img
-                            src="/assets/images/home/Foundry_shop_05.png"
-                            alt=""
-                            className="rounded-[10px]"
-                        />
-                        <div
-                            className={`absolute -right-28 top-[50%] -translate-y-1/2 -my-1/2 
+                <div className="container mx-auto flex lg:-mr-24 xl:-mr-[170px] gap-10 justify-end ">
+                    <AnimatePresence>
+                        <div className="relative">
+                            {/*eslint-disable-next-line @next/next/no-img-element*/}
+                            <motion.img
+                                src="/assets/images/home/Foundry_shop_05.png"
+                                alt=""
+                                className="rounded-[10px]"
+                                ref={ref}
+                                initial="hidden"
+                                variants={boxVariant}
+                                animate={control}
+                            />
+                            <div
+                                className={`absolute -right-28 top-[50%] -translate-y-1/2 -my-1/2 
                                         bg-primary p-4 xl:p-[30px] rounded-full
                                         border-4 border-white z-10 flex justify-center
                                 `}
-                        >
-                            {/*eslint-disable-next-line @next/next/no-img-element*/}
-                            <img
-                                src="assets/images/home/Vector.svg"
-                                alt=""
-                                className="w-fit"
-                            />
+                            >
+                                {/*eslint-disable-next-line @next/next/no-img-element*/}
+                                <img
+                                    src="assets/images/home/Vector.svg"
+                                    alt=""
+                                    className="w-fit"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div className="z-0">
-                        <div className="mb-5">
-                            {/*eslint-disable-next-line @next/next/no-img-element*/}
-                            <img
-                                src="/assets/images/home/CTD_01.png"
-                                alt=""
-                                className="rounded-[10px]"
-                            />
+                        <div className="realtive z-0">
+                            <div className="mb-5">
+                                <motion.img
+                                    src="/assets/images/home/CTD_01.png"
+                                    alt=""
+                                    className="rounded-[10px]"
+                                    ref={ref1}
+                                    initial="hidden"
+                                    variants={boxVariant2}
+                                    animate={control}
+                                />
+                            </div>
+                            <div>
+                                <motion.img
+                                    src="/assets/images/home/CTD_02.png"
+                                    alt=""
+                                    className="rounded-[10px]"
+                                    ref={ref2}
+                                    initial="hidden"
+                                    variants={boxVariant3}
+                                    animate={control}
+                                />
+                            </div>
                         </div>
-                        <div>
-                            {/*eslint-disable-next-line @next/next/no-img-element*/}
-                            <img
-                                src="/assets/images/home/CTD_02.png"
-                                alt=""
-                                className="rounded-[10px]"
-                            />
-                        </div>
-                    </div>
+                    </AnimatePresence>
                 </div>
             </div>
             <div
@@ -62,7 +114,7 @@ function AboutBMTF({}: Props) {
                         <p className="text-sm 2xl:text-base text-tertiary text-justify mb-3 md:mb-5 leading-[150%]">
                             Bangladesh Machine Tools Factory Limited (BMTF) is a
                             prominent state-owned entity operating under the
-                            Bangladesh Army&quot;s supervision. BMTF located in
+                            Bangladesh Army&apos;s supervision. BMTF located in
                             Gazipur, spans 260 acres and serves as a leading
                             industrial conglomerate. BMTF, led by the Chief of
                             Army Staff as the Board Chairman and a capable
@@ -72,10 +124,10 @@ function AboutBMTF({}: Props) {
                         <p className="text-sm 2xl:text-base text-tertiary text-justify leading-[150%]">
                             With a blend of military and civilian officers and a
                             dedicated workforce, BMTF is committed to
-                            contributing to Bangladesh&quot;s economic
-                            transformation, aligning with the &quot;Delta Plan
-                            2100.&quot; Its consistent revenue generation plays
-                            a pivotal role in shaping the nation&quot;s progress
+                            contributing to Bangladesh&apos;s economic
+                            transformation, aligning with the &apos;Delta Plan
+                            2100.&apos; Its consistent revenue generation plays
+                            a pivotal role in shaping the nation&apos;s progress
                             and development.
                         </p>
                     </div>

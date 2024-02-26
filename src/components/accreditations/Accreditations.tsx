@@ -156,7 +156,7 @@ export default function Accreditations({}: Props) {
                                     Our <span>Certificates</span>
                                 </h3>
                                 <p className="justify_text">
-                                    Step into the world of BMTF&quot;s certification
+                                    Step into the world of BMTF&apos;s certification
                                     section, where our unwavering commitment to
                                     quality and compliance takes center stage.
                                     Explore the recognized industry standards
