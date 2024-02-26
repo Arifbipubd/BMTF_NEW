@@ -219,7 +219,7 @@ export default function AllVerticals({}: Props) {
                                                     Shop is a hub for high-tech
                                                     electronics and projects
                                                     aimed at advancing
-                                                    Bangladesh&quot;s digital
+                                                    Bangladesh&apos;s digital
                                                 </p>
                                             </div>
                                             <div className="read_more">
@@ -358,7 +358,7 @@ export default function AllVerticals({}: Props) {
                                                 <p>
                                                     BMTF Forge Shop is a
                                                     renowned brand in the
-                                                    country&quot;s forging
+                                                    country&apos;s forging
                                                     industry. Since 1980, the
                                                     shop has been consistently
                                                 </p>

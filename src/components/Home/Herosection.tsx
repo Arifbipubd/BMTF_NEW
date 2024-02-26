@@ -6,25 +6,59 @@ import { heroSection } from "@src/utils/constants";
 
 type Props = {};
 
-const variant = {};
+const variants = {
+    enter: (direction: number) => {
+        return {
+            x: direction > 0 ? 1000 : -1000,
+            opacity: 0,
+            scale: 0.5,
+        };
+    },
+    center: {
+        zIndex: 1,
+        x: 0,
+        opacity: 1,
+        scale: 1,
+    },
+    exit: (direction: number) => {
+        return {
+            zIndex: 0,
+            x: direction < 0 ? 1000 : -1000,
+            opacity: 0,
+            scale: 0.5,
+        };
+    },
+};
 
 export default function Herosection({}: Props) {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [[page, direction], setPage] = useState([0, 0]);
 
     const goToSlide = (slideIndex: any) => {
         setCurrentSlide(slideIndex);
+        if(currentSlide > slideIndex){
+            paginate(1)
+          }else{
+            paginate(-1)
+          }
+    };
+
+    const paginate = (newDirection: number) => {
+        setPage([page + newDirection, newDirection]);
     };
 
     useEffect(() => {
         const timeInterval = setInterval(() => {
             if (currentSlide < heroSection.length - 1) {
                 setCurrentSlide(currentSlide + 1);
+                paginate(-1)
             } else {
                 setCurrentSlide(0);
             }
         }, 5000);
 
         return () => clearInterval(timeInterval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [currentSlide]);
     return (
         <Fragment>
@@ -33,16 +67,25 @@ export default function Herosection({}: Props) {
                     <div className="min-h-[90vh] md:min-h-screen overflow-hidden">
                         {heroSection.map((slide, index) => (
                             <Fragment key={slide.id}>
-                                <AnimatePresence>
+                                <AnimatePresence
+                                    custom={direction}
+                                    initial={false}
+                                >
                                     {currentSlide === index && (
                                         <motion.div
                                             className={`absolute top-0 left-0 w-full h-full`}
-                                            initial={{ x: -100, opacity: 0 }}
-                                            animate={{ x: 0, opacity: 1 }}
-                                            exit={{ x: 100, opacity: 0 }}
+                                            custom={direction}
+                                            variants={variants}
+                                            initial="enter"
+                                            animate="center"
+                                            exit="exit"
                                             transition={{
-                                                ease: "easeInOut",
-                                                duration: 1
+                                                x: {
+                                                    type: "spring",
+                                                    stiffness: 300,
+                                                    damping: 30,
+                                                },
+                                                opacity: { duration: 0.2 },
                                             }}
                                         >
                                             {slide.assetUrl.includes(".mp4") ? (
@@ -71,50 +114,44 @@ export default function Herosection({}: Props) {
                                             <div className="flex justify-center h-full">
                                                 <div className="container mx-auto flex flex-col justify-center h-full z-20">
                                                     <div className="w-[80%] xl:w-[60%]">
-                                                        <div className="">
-                                                            <motion.div
-                                                                className="bg-[rgba(211,170,20,0.20)] px-1.5 lg:px-2.5 py-3 lg:py-[15px] w-fit rounded-[100px] mb-3 lg:mb-4"
-                                                                initial={{
-                                                                    scale: 0,
-                                                                    opacity: 0,
-                                                                }}
-                                                                animate={{
-                                                                    scale: 1,
-                                                                    opacity: 1,
-                                                                }}
-                                                                exit={{
-                                                                    scale: 0,
-                                                                    opacity: 0,
-                                                                }}
-                                                                transition={{
-                                                                    ease: "easeInOut",
-                                                                    duration: 0.5,
-                                                                    delay: 1,
-                                                                }}
-                                                            >
+                                                        <motion.div
+                                                            className=""
+                                                            initial={{
+                                                                x: -100,
+                                                                opacity: 0,
+                                                            }}
+                                                            animate={{
+                                                                x: 0,
+                                                                opacity: 1,
+                                                            }}
+                                                            exit={{
+                                                                x: 100,
+                                                                opacity: 0,
+                                                            }}
+                                                            transition={{
+                                                                duration: 0.2,
+                                                                delay: 0.5,
+                                                            }}
+                                                        >
+                                                            <div className="bg-[rgba(211,170,20,0.20)] px-1.5 lg:px-2.5 py-3 lg:py-[15px] w-fit rounded-[100px] mb-3 lg:mb-4">
                                                                 <p className="text-secondary text-sm font-semibold">
                                                                     BMTF Stories
                                                                 </p>
-                                                            </motion.div>
+                                                            </div>
                                                             <motion.h1
                                                                 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px]
                                          text-white font-extrabold lg:leading-[56px] capitalize 
                                          mb-6 lg:mb-[30px]`}
                                                                 initial={{
-                                                                    scale: 0,
+                                                                    x: -100,
                                                                     opacity: 0,
                                                                 }}
                                                                 animate={{
-                                                                    scale: 1,
+                                                                    x: 0,
                                                                     opacity: 1,
                                                                 }}
-                                                                exit={{
-                                                                    scale: 0,
-                                                                    opacity: 0,
-                                                                }}
                                                                 transition={{
-                                                                    ease: "easeInOut",
-                                                                    duration: 0.5,
+                                                                    duration: 0.2,
                                                                     delay: 1,
                                                                 }}
                                                             >
@@ -123,20 +160,15 @@ export default function Herosection({}: Props) {
                                                             <motion.p
                                                                 className="text-white text-sm md:text-base 2xl:text-lg text-justify lg:leading-[24px]"
                                                                 initial={{
-                                                                    scale: 0,
+                                                                    x: -100,
                                                                     opacity: 0,
                                                                 }}
                                                                 animate={{
-                                                                    scale: 1,
+                                                                    x: 0,
                                                                     opacity: 1,
                                                                 }}
-                                                                exit={{
-                                                                    scale: 0,
-                                                                    opacity: 0,
-                                                                }}
                                                                 transition={{
-                                                                    ease: "easeInOut",
-                                                                    duration: 0.5,
+                                                                    duration: 0.2,
                                                                     delay: 1.5,
                                                                 }}
                                                             >
@@ -144,7 +176,7 @@ export default function Herosection({}: Props) {
                                                                     slide.description
                                                                 }
                                                             </motion.p>
-                                                        </div>
+                                                        </motion.div>
                                                     </div>
                                                 </div>
                                             </div>

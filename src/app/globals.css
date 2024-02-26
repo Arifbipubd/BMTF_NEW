@@ -1073,6 +1073,12 @@ body {
     top: 28px;
     overflow: hidden;
   }
+  .industify_fn_rightsidebar{
+    padding-bottom: 0;
+  }
+  .service_list_as_function{
+    margin-bottom: 40px !important;
+  }
 }
 /*------------------------------------------------------------------*/
 /*	07) SERVICE LIST (SERVICE PAGE)
