@@ -62,11 +62,8 @@ export default function GoalCard({}: Props) {
                             className="w-full rounded-[10px] h-full"
                         />
                     </motion.div>
-                    <motion.div
+                    <div
                         className="px-[35px] py-11 text-center bg-white rounded-[10px] order-1 md:order-2"
-                        initial={{ opacity: 0, scale: 0.85 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.5 }}
                     >
                         <div className="flex justify-center">
                             {/* eslint-disable-next-line @next/next/no-img-element*/}
@@ -88,13 +85,10 @@ export default function GoalCard({}: Props) {
                                 (BMTF) Limited as mother and defense industry.
                             </p>
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
-                <motion.div
+                <div
                     className=""
-                    initial={{ opacity: 0, scale: 0.85 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5, delay: 0.5 }}
                 >
                     <div className="px-[35px] py-11 text-center bg-white rounded-[10px] h-full flex flex-col justify-center items-center">
                         <div className="flex justify-center">
@@ -120,13 +114,10 @@ export default function GoalCard({}: Props) {
                             </p>
                         </div>
                     </div>
-                </motion.div>
+                </div>
                 <div className="flex flex-col">
-                    <motion.div
+                    <div
                         className="px-[35px] py-11 text-center bg-white rounded-[10px] order-2 md:order-1"
-                        initial={{ opacity: 0, scale: 0.85 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.5, delay: 1 }}
                     >
                         <div className="flex justify-center">
                             {/* eslint-disable-next-line @next/next/no-img-element*/}
@@ -147,7 +138,7 @@ export default function GoalCard({}: Props) {
                                 to contribute in the national economy.
                             </p>
                         </div>
-                    </motion.div>
+                    </div>
                     <motion.div
                         className="mb-4 md:mb-0 md:mt-[25px] order-1 md:order-2 h-full"
                         initial={{ y: 300, opacity: 0 }}
