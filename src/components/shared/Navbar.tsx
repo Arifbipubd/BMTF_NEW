@@ -25,9 +25,9 @@ export default function Navbar() {
     const [backgroundColor, setBackgroundColor] =
         useState<string>("bg-transparent");
     const [navPosition, setNavPosition] = useState<string>("fixed");
-    const [fixedDivPostion, setFixedDivPosition] = useState<string>("top-24");
+    const [fixedDivPostion, setFixedDivPosition] = useState<string>("top-[5.6rem]");
     const [submenuShow, setSubmenuShow] = useState<boolean>(true);
-    const [navTop, setNavTop] = useState<string>("top-2.5");
+    const [navTop, setNavTop] = useState<string>("top-0");
     const [children, setChildren] = useState<Array<any> | null>(null);
     const [dropdownHeight, setDropdownHeight] = useState<number>(0);
     const [isNavHoverd, setIsNavHovered] = useState<boolean>(false);
@@ -57,9 +57,9 @@ export default function Navbar() {
         } else {
             setBackgroundColor("bg-transparent");
             setNavPosition("absolute");
-            setNavTop("top-2.5");
+            setNavTop("top-0");
             setSubmenuShow(true);
-            setFixedDivPosition("top-24");
+            setFixedDivPosition("top-[5.6rem]");
         }
     };
 
@@ -143,7 +143,7 @@ export default function Navbar() {
         <header
             className={`${backgroundColor} ${navPosition} ${navTop} ${
                 submenuShow ? "py-0" : "py-3"
-            } left-0 w-full z-20 transition-all duration-300 ease-in-out  
+            } left-0 w-full z-20 transition-all duration-500 ease-in-out  
         shadow-[0_6px_32px_0px_rgba(0,0,0,0.03)]`}
         >
             <div

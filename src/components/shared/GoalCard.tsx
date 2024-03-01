@@ -143,7 +143,7 @@ export default function GoalCard({}: Props) {
                         className="mb-4 md:mb-0 md:mt-[25px] order-1 md:order-2 h-full"
                         initial={{ y: 300, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.5 , delay: 1 }}
+                        transition={{ duration: 0.5 , delay: 0.5 }}
                     >
                         {/* eslint-disable-next-line @next/next/no-img-element*/}
                         <img

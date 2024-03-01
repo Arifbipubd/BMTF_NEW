@@ -61,7 +61,7 @@ export default function Slider({}: Props) {
         } else if (currentSlide < sliderSection.length - 3) {
             setCurrentSlide(currentSlide - 1);
             setVisibleImages(
-                sliderSection.slice(currentSlide - 1, currentSlide + 2)
+                sliderSection.slice(currentSlide - 2, currentSlide + 1)
             );
         } else if (currentSlide <= sliderSection.length) {
             setCurrentSlide(currentSlide - 1);
@@ -261,13 +261,13 @@ export default function Slider({}: Props) {
                                     item.id === currentSlide
                                         ? "border-4 border-secondary"
                                         : "border-4 border-white"
-                                } h-full`}
+                                } max-h-[141px] overflow-hidden`}
                             >
                                 {/* eslint-disable-next-line @next/next/no-img-element*/}
                                 <img
                                     src={item.imageUrl}
                                     alt={item.imageUrl}
-                                    className="h-full"
+                                    className="h-full object-cover"
                                 />
                             </div>
                         </Fragment>

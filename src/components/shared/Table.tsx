@@ -1,9 +1,11 @@
 import React from "react";
-import NocData from "@src/utils/NocAndNotice.json";
 
-type Props = {};
+type Props = {
+    nocAndNotice: Array<any>
+};
 
-export default function Table({}: Props) {
+export default function Table({nocAndNotice}: Props) {
+    console.log(nocAndNotice)
     return (
         <div className="bg-white  md:py-12 lg:py-[58px]">
             <div className="container mx-auto">
@@ -16,7 +18,7 @@ export default function Table({}: Props) {
                             <div className="col col-1">File</div>
                             <div className="col col-1">Action</div>
                         </li>
-                        {NocData.map((data) => (
+                        {nocAndNotice.map((data) => (
                             <li className="table-row" key={data.id}>
                                 <div
                                     className="col col-3 text-whiteBg"
@@ -38,7 +40,7 @@ export default function Table({}: Props) {
                                 </div>
                                 <div className="col col-1 btn" data-label="File :">
                                     <a
-                                        href={data.view}
+                                        href={`${process.env.BASE_URL}${data.file}`}
                                         target="_blank"
                                         className="view"
                                     >
@@ -50,7 +52,7 @@ export default function Table({}: Props) {
                                     data-label="Action :"
                                 >
                                     <a
-                                        href={data.action}
+                                        href={`${process.env.BASE_URL}${data.file}`}
                                         download
                                         className="download"
                                     >

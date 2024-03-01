@@ -9,7 +9,7 @@ export default function ClientCard({ data }: Props) {
         <div className="clientCard">
             <div className="flex justify-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={data.image} alt={data.name} />
+                <img src={`${process.env.BASE_URL}${data.logo}`} alt={data.name} className="object-cover" />
             </div>
             <h3>{data.name}</h3>
         </div>

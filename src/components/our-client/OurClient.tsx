@@ -1,17 +1,18 @@
 import React from "react";
 
 import ClientCard from "./ClientCard";
-import clientData from "@src/utils/clientData.json";
 
-type Props = {};
+type Props = {
+    clients: Array<any>
+};
 
-export default function OurClient({}: Props) {
+export default function OurClient({clients}: Props) {
     return (
         <section>
             {/* client card start */}
             <div className="container">
                 <div className="clientDiv">
-                    {clientData.map((client) => (
+                    {clients.map((client) => (
                         <ClientCard key={client.id} data={client} />
                     ))}
                 </div>
