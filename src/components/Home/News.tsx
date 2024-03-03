@@ -25,7 +25,7 @@ export default function News({}: Props) {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-[30px]'>
           {latestNews.map((item, index) => (
             <Fragment key={item.id}>
-              <Link href={"/news-and-tenders/1"}>
+              <Link href={item.url}>
                 <AnimatePresence>
                   <motion.div
                     className='bg-white border-[1px] border-[#D9D9D9] rounded-[10px]'

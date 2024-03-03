@@ -551,12 +551,14 @@ export const latestNews: Array<NewsCard> = [
     imgSrc: "/assets/images/home/BMTF_News_1.png",
     title: "BMTF to provide 3 crore blank smart cards to EC",
     date: "23 Sep 2023",
+    url: "/news-and-tenders/1",
   },
   {
     id: 2,
     imgSrc: "/assets/images/home/BMTF_News_2.jpeg",
     title: "Chief of Army Staff inaugurates Army Pharma Limited in Gazipur",
     date: "21 Dec 23",
+    url: "/news-and-tenders/2",
   },
   {
     id: 3,
@@ -564,6 +566,7 @@ export const latestNews: Array<NewsCard> = [
     title:
       "Bangladesh Machine Tools Factory Limited wins global ISO certification",
     date: "23 Sep 2023",
+    url: "/news-and-tenders/3",
   },
 ];
 
