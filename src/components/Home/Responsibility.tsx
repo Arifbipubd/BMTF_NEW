@@ -69,7 +69,7 @@ export default function Responsibility({}: Props) {
               </p>
             </div>
             <div>
-              <Link href={"/"}>
+              <Link href={"/corporate-social-responsibility"}>
                 <button className='p-[18px] rounded-[3px] bg-yellow'>
                   <p className='font-extrabold text-white font-nunito'>
                     Our Responsibility

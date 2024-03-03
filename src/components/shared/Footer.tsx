@@ -16,7 +16,7 @@ function Footer({}: Props) {
             {/* eslint-disable-next-line @next/next/no-img-element*/}
             <img src='/assets/images/footer/Frame.svg' alt='' />
           </div>
-          <div className='grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-14 lg:gap-[100px] h-full xl:place-items-center'>
+          <div className='grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-14 lg:gap-[70px] h-full xl:place-items-center'>
             <div className='col-span-2'>
               <div className='mb-10 md:mb-14 lg:mb-[62px]'>
                 {/* eslint-disable-next-line @next/next/no-img-element*/}
