@@ -1,3 +1,5 @@
+/** @format */
+
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
@@ -49,17 +51,17 @@ export default function Home() {
   const slideItems = useMemo(() => <Herosection slides={slides} />, [slides]);
 
   return (
-    <Layout pageTitle="BMTF | HOME">
+    <Layout pageTitle='BMTF | HOME'>
       <Scrollbar progress={scrollProgress} />
       <section>
         {loading ? (
-          <div className="min-h-[100vh] flex items-center justify-center bg-primary">
+          <div className='min-h-[100vh] flex items-center justify-center bg-primary'>
             <div>
               {/*eslint-disable-next-line @next/next/no-img-element*/}
               <img
-                src="/assets/images/home/Vector.svg"
-                alt=""
-                className="animate-spin w-full h-full"
+                src='/assets/images/home/Vector.svg'
+                alt=''
+                className='animate-spin w-full h-full'
               />
             </div>
           </div>
@@ -67,7 +69,7 @@ export default function Home() {
           <div>{slideItems}</div>
         )}
         <GoalCard />
-        <Review
+        {/* <Review
           heading="Our Timelines"
           descriptionOne={`Founded over 150 years ago, the history of Tata group embodies, in many ways, 
                 the history of entrepreneurship, philanthropy and compassionate capitalism in India, 
@@ -77,7 +79,7 @@ export default function Home() {
           divVisible={false}
           imageUrl="/assets/images/shared/Packaging_01.png"
           link="/"
-        />
+        /> */}
         <AboutBMTF />
         <Slider />
         <Experience />

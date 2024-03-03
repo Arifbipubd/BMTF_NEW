@@ -313,7 +313,7 @@ body {
 .fslightbox-container {
   background: rgba(0, 0, 0, 0.8) !important;
 }
-.fslightbox-toolbar{
+.fslightbox-toolbar {
   background: transparent !important;
 }
 /******Accreditations***********/
@@ -1075,16 +1075,16 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px){
-  .side-navigation{
+@media screen and (min-width: 1200px) {
+  .side-navigation {
     position: sticky;
     top: 28px;
     overflow: hidden;
   }
-  .industify_fn_rightsidebar{
+  .industify_fn_rightsidebar {
     padding-bottom: 0;
   }
-  .service_list_as_function{
+  .service_list_as_function {
     margin-bottom: 40px !important;
   }
 }
@@ -1777,4 +1777,8 @@ footer {
 }
 .privacy-policy .industify_fn_service_single .desc_holder {
   margin-bottom: 56px;
+}
+
+.text-justify {
+  text-align: justify;
 }

@@ -1,4 +1,6 @@
-'use client'
+/** @format */
+
+"use client";
 
 import { useRef } from "react";
 import { motion } from "framer-motion";
@@ -11,13 +13,13 @@ export default function Pointer({ bodyRef }: any) {
   return (
     <motion.div
       ref={ref}
-      className="box"
+      className='box'
       animate={{ x, y }}
       transition={{
         type: "spring",
         damping: 3,
         stiffness: 50,
-        restDelta: 0.001
+        restDelta: 0.001,
       }}
     />
   );
