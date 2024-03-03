@@ -53,7 +53,7 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    youtubeUrl="https://www.youtube.com/embed/2dBaoLQC-wE?si=KLoBgLgPtnbQhKPL"
                     descriptionOne={`The BMTF CFL & LED bulb factory is a leading manufacturer and 
                 exporter in the country, specializing in an impressive range of innovative, diverse, 
                 user-friendly, and high-quality Light Emitting Diode-LED and Compact Fluorescent Lamps-CFL 

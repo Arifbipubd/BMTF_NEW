@@ -60,7 +60,7 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    youtubeUrl="https://www.youtube.com/embed/EhcvlgngjJY?si=ie-NbzXW6-AeWUCK"
                     descriptionOne={`Army Pharma Ltd., a state-owned pharmaceutical company, commenced operations 
                 in June 2019 under Bangladesh Machine Tools Factory Limited, overseen by the Bangladesh Army. 
                 The organization, led by the Chief of Army Staff as Chairman, has three production units focusing 

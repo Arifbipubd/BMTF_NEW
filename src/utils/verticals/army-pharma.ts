@@ -2,14 +2,18 @@ export const armyAim: Array<any> = [
     {
         id: 1,
         heading: "mission",
-        text: `The aim of the Galvanizing Shop is to enhance the factory's reputation by providing 
-        modern galvanizing work using quality raw materials.`,
+        text: [{
+            id: 11,
+            innerText: `We prioritize current good manufacturing practice (cGMP) by employing skilled professionals, utilizing quality materials, and employing world-class equipment. Our commitment extends to maintaining rigorous documentation, process validation, and ongoing training, ensuring the consistent delivery of high-quality pharmaceutical products.`
+        }],
     },
     {
         id: 2,
         heading: "Vission",
-        text: `The aim of the Galvanizing Shop is to enhance the factory's reputation by providing 
-        modern galvanizing work using quality raw materials.`,
+        text: [{
+            id: 12,
+            innerText: `Manufacture and promotion of quality healthcare products for the mankind.`
+        }],
     },
 ];
 

@@ -56,13 +56,13 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
-                    descriptionOne={`The Pole and Pile Factory is a prominent division of the state-owned BMTF, 
-                one of the largest manufacturing entities. In April 2016, the Chief of Army Staff, who also 
-                serves as the Chairman of the BMTF Board of Directors, approved the establishment of this factory. 
-                On February 14, 2017, the BMTF Pole Factory commenced operations with a 
-                mission to support the government's 'Vision 2041' by providing quality lighting 
-                solutions for every home.`}
+                    youtubeUrl="https://www.youtube.com/embed/buIr3Ft7iLo?si=qMN50x5-NbdXAaN-"
+                    descriptionOne={`The Pole and Pile Factory is a prominent division of the state-owned BMTF, one of the largest manufacturing entities. 
+                    In April 2016, the Chief of Army Staff, who also serves as the Chairman of the BMTF Board of Directors,
+                     approved the establishment of this factory. On February 14, 2017, the BMTF Pole Factory commenced operations 
+                     with a mission to support the government's 'Vision 2041' by providing quality lighting solutions for every home.
+
+                    `}
                     descriptionTwo={`
                 Since its inception, the factory has been producing a wide range of durable Concrete Electric
                  Poles. It has the capacity to manufacture over 1,400 poles daily, thanks to the 

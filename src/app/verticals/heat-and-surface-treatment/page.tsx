@@ -51,7 +51,7 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    youtubeUrl="https://www.youtube.com/embed/6bGN5Y0pk-M?si=08BuWQN-oMKPitHD"
                     descriptionOne={`Since 1980, the BMTF Heat and Surface Treatment Plant has been offering 
                 a comprehensive range of thermal processing services. We have a strong track record of 
                 producing high-quality products and have earned an ISO Certificate in recognition of our 

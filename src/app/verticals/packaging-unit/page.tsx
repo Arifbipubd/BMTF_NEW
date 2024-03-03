@@ -58,7 +58,7 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    youtubeUrl="https://www.youtube.com/embed/yrDpckexiHU?si=zlUm8E_b6DXKnsJn"
                     descriptionOne={`BMTF Packaging Unit (BMTF-2) stands as a distinguished entity in the 
                 manufacturing and export of square bottom brown paper bags. Our commitment revolves around 
                 providing clients with a comprehensive range, including versatile white Kraft paper bags, 

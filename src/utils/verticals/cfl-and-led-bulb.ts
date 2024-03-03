@@ -2,9 +2,11 @@ export const aim: Array<any> = [
     {
         id: 1,
         heading: "Our Aim",
-        text: `Ensuring reliable, energy-saving, innovative, diversified, smart, 
+        text: [{
+            id: 11,
+            innerText:`Ensuring reliable, energy-saving, innovative, diversified, smart, 
       and best-quality CFL and LED products with the highest customer satisfaction 
-      in the local and global market.`,
+      in the local and global market.`}],
     },
 ];
 

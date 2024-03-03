@@ -51,7 +51,7 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    youtubeUrl="https://www.youtube.com/embed/6bGN5Y0pk-M?si=08BuWQN-oMKPitHD"
                     descriptionOne={`BMTF Forge Shop is a renowned brand in the country's forging industry. 
                 Since 1980, the shop has been consistently producing high-quality products for the nation. 
                 We specialize in the manufacturing and marketing of die, cold and open die, rolled ring forged, 

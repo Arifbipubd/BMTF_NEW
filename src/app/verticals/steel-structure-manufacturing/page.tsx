@@ -57,7 +57,7 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    youtubeUrl="https://www.youtube.com/embed/4sA2LruNW9s?si=coK8g75bWABvurwq"
                     descriptionOne={`The Steel Structure Manufacturing Shop at BMTF has transformed from a 
                 vision in the year 2000 to a reality that is shaping the future infrastructural development 
                 of the country. We specialize in industrial construction projects involving the creation 

@@ -2,9 +2,12 @@ export const poleAim: Array<any> = [
     {
         id: 1,
         heading: "Our Aim",
-        text: `Ensuring reliable, energy-saving, innovative, diversified, smart, 
-      and best-quality CFL and LED products with the highest customer satisfaction 
-      in the local and global market.`,
+        text: [{
+            id: 11,
+            innerText: `The aim of the factory is to enhance efficiency by upgrading technology and adhering to the entity's spirit of integrity and innovation.`
+
+
+        }],
     },
 ];
 
@@ -36,26 +39,23 @@ export const cardItems: Array<any> = [
     {
         id: 4,
         heading: "Steam Curing",
-        text: `Reinforcement circumferential spiral wire coil is placed on the lower steel mold. All 
-        accessories and prestressed strand are inserted longitudinally through the tension plate, 
-        spiral wire coils, and anchor plate. Retaining rings at regular intervals are inserted to 
-        ensure correct concrete cover, and the cage is positioned in the lower half of the steel molds.`,
+        text: `After the spinning process is completed, the concrete pole is placed in the curing chamber for steam curing. 
+        Steam curing is carried out at controlled temperature and for a specific time period.`,
     },
     {
         id: 5,
         heading: "De-molding",
-        text: `Poles made in steel molds are specially manufactured from high-quality concrete mix designed 
-        to achieve the concrete strength of C55/67 and durability. The high-strength concrete is poured into 
-        the lower half of the mold. Then, the upper half of the mold is bolted on to the lower half. 
-        The prestressed strand is tensioned. The mold is then shifted to the spinning machine.`,
+        text: `Then the concrete pole is shifted to the de-molding work station. The pole is carefully de-molded and shifted to the finishing 
+        work station for further finishing, final inspection, and testing`,
     },
     {
         id: 6,
         heading: "Finishing, Inspection, and Testing",
-        text: `Once the mold is placed on the spinning machine, it is rotated for a specific designed time. 
-        The pole derives its extra strength properties from the unique centrifugal manufacturing process, 
-        which gives uniform densely compacted concrete along the whole length of the pole. The final stage of 
-        the spinning cycle also removes excess water.`,
+        text: `Finishing of poles is carried out by cutting the exposed strand, applying concrete 
+        capping at the bottom, and applying Nitocote. Physical and dimensional checks are conducted. 
+        All concrete poles are delivered to the customers with a product test certificate and delivery note.`
+
+
     },
 ];
 

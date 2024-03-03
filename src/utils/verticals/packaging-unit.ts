@@ -2,15 +2,11 @@ export const packagingAim: Array<any> = [
     {
         id: 1,
         heading: "Our Aim",
-        text: `The aim of the Galvanizing Shop is to enhance the factory's reputation by providing 
-        modern galvanizing work using quality raw materials.`,
-    },
-    {
-        id: 2,
-        heading: "Our Values",
-        text: `The aim of the Galvanizing Shop is to enhance the factory's reputation by providing 
-        modern galvanizing work using quality raw materials.`,
-    },
+        text: [{
+            id: 11,
+            innerText: `Our aim is to achieve maximum client satisfaction and surpass their expectations with motivated and contented staff, generating sustainable results. Our business objective is to grow as a commercially viable production house and contribute significantly to the socio-economic development of the country.`
+        }]
+    }
 ];
 
 export const packagingPoints: Array<any> = [
