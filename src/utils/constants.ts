@@ -488,60 +488,42 @@ export const timeline = [
     dayString: "27th july in",
     year: "2000",
     imageSrc: "/assets/images/history/timeline/Timeline_1.png",
-    text: `On July 27, 2000 Honorable Prime Minister Sheikh Hasina handed 
-        over The BMTF industry to Bangladesh Army to increase the efficiency. 
-        The whole operating system of BMTF is officially going under Bangladesh Army 
-        and it has been a remarkable journey since then.`,
+    text: `On July 27, 2000 Honorable Prime Minister Sheikh Hasina handed over The BMTF industry to Bangladesh Army to increase the efficiency. The whole operating system of BMTF is officially going under Bangladesh Army and it has been a remarkable journey since then.`,
   },
   {
     id: 2,
     dayString: "6th july in",
     year: "1994-2000",
     imageSrc: "/assets/images/history/timeline/Timeline_2.png",
-    text: `On July 27, 2000 Honorable Prime Minister Sheikh Hasina handed over The 
-        BMTF industry to Bangladesh Army to increase the efficiency. The whole operating 
-        system of BMTF is officially going under Bangladesh Army and it has been a remarkable 
-        journey since then.`,
+    text: `The factory was closed during this tenure.`,
   },
   {
     id: 3,
     dayString: "6th july in",
-    year: "1994-2000",
+    year: "1979",
     imageSrc: "/assets/images/history/timeline/Timeline_3.png",
-    text: `On July 27, 2000 Honorable Prime Minister Sheikh Hasina handed over The 
-        BMTF industry to Bangladesh Army to increase the efficiency. The whole operating 
-        system of BMTF is officially going under Bangladesh Army and it has been a remarkable 
-        journey since then.`,
+    text: `Following the independence of Bangladesh, a remarkable journey started on February 11, 1979, with the official inauguration of the Bangladesh Machine Tools Factory (BMTF). This marked a crucial step in the nation's post-independence industrial development.`,
   },
   {
     id: 4,
     dayString: "6th july in",
-    year: "1994-2000",
-    imageSrc: "/assets/images/history/timeline/Timeline_4.png",
-    text: `On July 27, 2000 Honorable Prime Minister Sheikh Hasina handed over The 
-        BMTF industry to Bangladesh Army to increase the efficiency. The whole operating 
-        system of BMTF is officially going under Bangladesh Army and it has been a remarkable 
-        journey since then.`,
+    year: "1972",
+    imageSrc: "/assets/images/history/timeline/1972.png",
+    text: `The operational reins of the Bangladesh Machine Tools Factory (BMTF) were handed over to the Bangladesh Steel & Engineering Corporation. This strategic decision aimed to optimize efficiency and enhance the factory's performance under the specialized management of a renowned entity.`,
   },
   {
     id: 5,
     dayString: "6th july in",
-    year: "1994-2000",
-    imageSrc: "/assets/images/history/timeline/Timeline_5.png",
-    text: `On July 27, 2000 Honorable Prime Minister Sheikh Hasina handed over The 
-        BMTF industry to Bangladesh Army to increase the efficiency. The whole operating 
-        system of BMTF is officially going under Bangladesh Army and it has been a remarkable 
-        journey since then.`,
+    year: "1967",
+    imageSrc: "/assets/images/history/timeline/Timeline_4.png",
+    text: `The Bangladesh Machine Tools Factory (BMTF) officially launched its operation. Concurrently, construction efforts were underway, establishing the physical groundwork for BMTF's role as a significant player in Bangladesh's industrial development.`,
   },
   {
     id: 6,
     dayString: "6th july in",
-    year: "1994-2000",
-    imageSrc: "/assets/images/history/timeline/Timeline_6.png",
-    text: `On July 27, 2000 Honorable Prime Minister Sheikh Hasina handed over The 
-        BMTF industry to Bangladesh Army to increase the efficiency. The whole operating 
-        system of BMTF is officially going under Bangladesh Army and it has been a remarkable 
-        journey since then.`,
+    year: "1963",
+    imageSrc: "/assets/images/history/timeline/Timeline_5.png",
+    text: `The Bangladesh Machine Tools Factory (BMTF) aimed to be a central force in East Pakistan's industrial growth, focusing on supporting small enterprises in minor engineering products. Over time, it transformed into one of Bangladesh's major commercial enterprises, playing a crucial role in shaping the nation's industrial landscape since its inception.`,
   },
 ];
 
@@ -676,7 +658,7 @@ export const contactCard = [
     title: "Corporate Office",
     address: "House # 41, Road # 7 , Dhaka Cantonment, Bangladesh",
     tel: "+880-2-8871150",
-    email: "bmtfpackagingfactory@gmail.com",
+    email: "mkt@bmtf.com.bd",
     iframeSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.08594857317!2d90.37702227607197!3d23.744314289008656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b3f78ee00b%3A0xd9d2ff933cd37a9a!2s41%20Rd%207%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1705332482461!5m2!1sen!2sbd",
   },
@@ -686,7 +668,7 @@ export const contactCard = [
     title: "Factory",
     address: "Joydebpur Gazipur – 1700, Bangladesh",
     tel: "+880-2-996618072-7",
-    email: "bmtfpackagingfactory@gmail.com",
+    email: "mkt@bmtf.com.bd",
     iframeSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14581.875762841328!2d90.37074636505966!3d23.97921226206099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755db6710a83b69%3A0x7fa80a594efb99e1!2sGazipur%201700!5e0!3m2!1sen!2sbd!4v1705332707097!5m2!1sen!2sbd",
   },

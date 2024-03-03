@@ -61,19 +61,18 @@ export default function Projects({}: Props) {
           <div className=' bg-primary flex flex-col justify-between'>
             <div className=' px-[17px] py-[30px] pb-1'>
               <h1 className='text-white 2xl:text-lg font-semibold mb-4 md:mb-5 leading-[20px]'>
-                Smart Manufacturing Integration
+                DNCC LED Lights Supply & Installation
               </h1>
               <p className='text-white text-xs 2xl:text-sm  leading-[20px] text-justify'>
-                Implementing Internet of Things (IoT) technology into machinery
-                to enable real-time monitoring, predictive maintenance, and
-                data-driven decision-making. This project could involve
-                developing sensors and connectivity solutions for a more.
+                The Dhaka North City Corporation (DNCC) will complete installing
+                46,410 LED lights in the city streets by 2021 under the LED
+                Light Supply and Installation in DNCC Streets project.
               </p>
             </div>
             <div className='relative'>
               {/* eslint-disable-next-line @next/next/no-img-element*/}
               <img
-                src='/assets/images/home/Pattern_shop_02_1.png'
+                src='/assets/images/home/DNCC-LED.jpg'
                 alt=''
                 className='w-full'
               />
@@ -84,7 +83,7 @@ export default function Projects({}: Props) {
             <div className='relative'>
               {/* eslint-disable-next-line @next/next/no-img-element*/}
               <img
-                src='/assets/images/home/Furniture_05.png'
+                src='/assets/images/home/jhilmil-card.png'
                 alt=''
                 className='w-full'
               />
@@ -92,13 +91,12 @@ export default function Projects({}: Props) {
             </div>
             <div className='px-[17px] py-[30px]'>
               <h1 className='text-headline 2xl:text-lg font-semibold mb-4 md:mb-5 leading-[20px]'>
-                Smart Manufacturing Integration
+                Jhilmil Residential Park Project
               </h1>
               <p className='text-headline text-xs 2xl:text-sm leading-[20px] text-justify'>
-                Implementing Internet of Things (IoT) technology into machinery
-                to enable real-time monitoring, predictive maintenance, and
-                data-driven decision-making. This project could involve
-                developing sensors and connectivity solutions for a more.
+                SVC Jhilmil Residential BD Limited and Bangladesh Machine Tools
+                Factory Limited (BMTF) have collaborated for the Jhilmil
+                Residential Park Project Technology Transfer.
               </p>
             </div>
           </div>

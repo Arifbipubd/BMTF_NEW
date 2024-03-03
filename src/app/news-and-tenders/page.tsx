@@ -1,3 +1,5 @@
+/** @format */
+
 "use client";
 
 import React, { useState, useEffect, useMemo } from "react";
@@ -53,22 +55,22 @@ export default function Page({}: Props) {
   const News = useMemo(() => <AllNews newsAndTender={data} />, [data]);
 
   return (
-    <Layout pageTitle="BMTF | News and Tenders">
+    <Layout pageTitle='BMTF | News and Tenders'>
       <Scrollbar progress={scrollProgress} />
       <section>
         <CommonHeroSection
-          heading="News and Tenders"
+          heading='News and Tenders'
           breadcrumb={pathName}
-          imageSrc="/assets/images/shared/noc-and-notice.png"
+          imageSrc='/assets/images/shared/noc-and-notice.png'
         />
         {loading ? (
-          <div className="min-h-[60vh] flex items-center justify-center">
+          <div className='min-h-[60vh] flex items-center justify-center'>
             <div>
               {/*eslint-disable-next-line @next/next/no-img-element*/}
               <img
-                src="/assets/images/home/Vector.svg"
-                alt=""
-                className="animate-spin w-full h-full"
+                src='/assets/images/home/Vector.svg'
+                alt=''
+                className='animate-spin w-full h-full'
               />
             </div>
           </div>
