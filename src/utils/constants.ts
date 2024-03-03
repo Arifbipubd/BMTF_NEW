@@ -1,82 +1,116 @@
-export const heroSection: Array<HeroSection> = [
-    {
-        id: 1,
-        heading: "Empowering Innovation, Precision, and Excellence",
-        description: `BMTF offers a wide range of versatile capabilities, 
-        spanning from manufacturing machinery, military equipment, and furniture to 
-        healthcare products and services like galvanizing and electronic assembly, all characterized by a commitment to 
-        innovation and precision.`,
-        assetUrl: "/assets/videos/video_1.mp4",
-    },
-    {
-        id: 2,
-        heading: "Empowering ",
-        description: `BMTF offers a wide range of versatile capabilities, 
-        spanning from manufacturing machinery, military equipment, and furniture to 
-        healthcare products and services like galvanizing and electronic assembly, all characterized by a commitment to 
-        innovation and precision.`,
-        assetUrl: "/assets/images/home/Machine_shop_02.png",
-    },
-    {
-        id: 3,
-        heading: "Empowering Innovation, Precision, and Excellence",
-        description: `BMTF offers a wide range of versatile capabilities, 
-        spanning from manufacturing machinery, military equipment, and furniture to 
-        healthcare products and services like galvanizing and electronic assembly, all characterized by a commitment to 
-        innovation and precision.`,
-        assetUrl: "/assets/videos/video_3.mp4",
-    },
-];
-
 export const sliderSection: Array<SliderSection> = [
     {
         id: 1,
-        heading: "pole & pile",
-        description:
-            "The automotive industry is the technological trendsetter among manufacturing industries.",
-        imageUrl: "/assets/images/home/Pole_n_pile_01.png",
-        link: "/",
+        imageUrl: "/assets/images/verticals/Footwear_and_leather.png",
+        heading: "Footwear Industry and Leather Industry",
+        description: "Massa voluptate quisquam corporis varius luctus faucibus adipiscing? Lacus pretium ipsum sagittis nulla vitae proin. Deserunt expedita", 
+        link: "/verticals/footwear-&-leather",
     },
     {
         id: 2,
-        heading: "Empowering",
-        description:
-            "Magnam turpis luctus, taciti nam quis in delectus vel montes ad omnis, laboriosam magni sem sodales exercitationem proin sociis commodo.",
-        imageUrl: "/assets/images/home/Pole_n_pile_02.png",
-        link: "/",
+        imageUrl: "/assets/images/verticals/Footwear_and_leather_02.png",
+        heading: "Furniture",
+        description: 'arcu ligula molestiae velit, veritatis! Similique laudantium consequat odio? Senectus fusce! Porttitor aliquam.',
+        link: "/verticals/furniture",
     },
     {
         id: 3,
-        heading: "Ex molestias magni et enim",
-        description:
-            "Sollicitudin aspernatur ridiculus curae, condimentum asperiores placeat lacus, ante praesentium.",
-        imageUrl: "/assets/images/home/Pole_n_pile_03.png",
-        link: "/",
+        imageUrl: "/assets/images/verticals/Pool_and_pile.png",
+        heading: "Pole & Pile",
+        description: 'Porta eiusmod torquent. Sapien, quas, aperiam hymenaeos ea tempore exercitation quisque eum, inventore sapien',
+        link: "/verticals/pole-&-pile",
     },
     {
         id: 4,
-        heading: "Aliquet voluptates tristique",
-        description:
-            "Deleniti consectetur magni maiores deleniti quibusdam est quos! Phasellus accusamus eum varius adipisicing similique doloremque? Animi, wisi vivamus asperiores natoque..",
-        imageUrl: "/assets/images/home/Pole_n_pile_03.png",
-        link: "/",
+        imageUrl: "/assets/images/verticals/Vehicle_assembly.png",
+        heading: "Vehicle Assembly",
+        description: '',
+        link: "/verticals/vehicle-assembly",
     },
     {
         id: 5,
-        heading: "Innovation, Precision, and Excellence",
-        description:
-            "Maecenas animi quisque mi excepteur odit class montes dolorum fuga.",
-        imageUrl: "/assets/images/home/Pole_n_pile_03.png",
-        link: "/",
+        imageUrl: "/assets/images/verticals/Steel_structure.png",
+        heading: "Steel Structure Manufacturing",
+        description: 'Doloremque nullam, dignissim vivamus maxime maecenas aptent itaque mollis laudantium habitant aliquip',
+        link: "/verticals/steel-structure-manufacturing",
     },
     {
         id: 6,
-        heading: "Quisque natoque assumenda volutpat purus",
-        description:
-            "Laoreet risus lobortis expedita a torquent hymenaeos hac? Lorem, sunt.",
-        imageUrl: "/assets/images/home/Pole_n_pile_02.png",
-        link: "/",
-    }
+        imageUrl: "/assets/images/verticals/Electronic_Assembly_01.png",
+        heading: "Electronic Assembly",
+        description: 'Proident eiusmod etiam at id nisl quasi facilisi vulputate voluptates, nibh hymenaeos, inceptos nisi possimus quas sapiente',
+        link: "/verticals/electronic-assembly",
+    },
+    {
+        id: 7,
+        imageUrl: "/assets/images/verticals/Crafties.png",
+        heading: "BMTF Crafties",
+        description: 'ultrices mattis enim, justo, quae leo vestibulum minima dapibus possimus',
+        link: "/verticals/BMTF-crafties",
+    },
+    {
+        id: 8,
+        imageUrl: "/assets/images/verticals/CFL.png",
+        heading: "CFL AND LED BULB",
+        description: 'ligula aliquid ad, sociis adipisicing esse atque vulputate urna, quasi tincidunt blanditiis litora felis et. Nunc gravida exercitationem. Provident.',
+        link: "/verticals/cFL-&-LED-bulb",
+    },
+    {
+        id: 9,
+        imageUrl: "/assets/images/verticals/Central_toolling.png",
+        heading: "Central Tooling Department",
+        description: 'Molestie magnam incididunt, sed hymenaeos. Blandit elementum torquent ligula porttitor repellendus',
+        link: "/verticals/central-tooling-department",
+    },
+    {
+        id: 10,
+        imageUrl: "/assets/images/verticals/Forge_shop.png",
+        heading: "Forge Shop",
+        description: 'Quia, recusandae. Optio ultricies, ullamco perferendis? Suscipit luctus culpa sequi per sapien',
+        link: "/verticals/forge-shop",
+    },
+    {
+        id: 11,
+        imageUrl: "/assets/images/verticals/Foundry_shop.png",
+        heading: "Foundry Shop",
+        description: '',
+        link: "/verticals/foundry-shop",
+    },
+    {
+        id: 12,
+        imageUrl: "/assets/images/verticals/Galvanizing.png",
+        heading: "Galvanizing Plant",
+        description: 'Sagittis adipisicing tempor ab, blandit illum do nam, fames quo arcu tellus! Iusto pede',
+        link: "/verticals/galvanizing-plant",
+    },
+    {
+        id: 13,
+        imageUrl: "/assets/images/verticals/Machine_shop.png",
+        heading: "Machine Shop",
+        description: 'Provident mollis nisl facilisi luctus, iaculis quia consequat nesciunt quas rutrum, curabitur',
+        link: "/verticals/machine-shop",
+    },
+    {
+        id: 14,
+        imageUrl: "/assets/images/verticals/Army_shop.png",
+        heading: "Army Pharma",
+        description: 'rutrum quisquam nonummy perspiciatis, litora doloribus pretium malesuada',
+        link: "/verticals/army-pharma",
+    },
+    {
+        id: 15,
+        imageUrl: "/assets/images/verticals/Packaging.png",
+        heading: "Packaging Unit",
+        description: "sit laboris lectus, odio aptent similique explicabo libero necessitatibus",
+        link: "/verticals/packaging-unit",
+    },
+    {
+        id: 16,
+        imageUrl: "/assets/images/verticals/Pattern_shop.png",
+        heading: "Pattern Shop",
+        description: "Montes reiciendis voluptate vestibulum, sunt, tempora tortor rerum pellentesque maiores sapien voluptates tristique elit iure totam mi turpis",
+        link: "/verticals/pattern-shop",
+    },
 ];
 
 export const navItems: Array<NavItem> = [
@@ -305,52 +339,87 @@ export const navItems: Array<NavItem> = [
     },
 ];
 
-export const experienceLists = [
-    "Biggest State Owned Production facility.",
-    "Successfully serving 50+ Clients.",
-    "DIgital & Smart Integrated Factory.",
-    "Most dedicated & passionate team.",
-    "No compromise in quality control.",
-];
-
-export const latestNews: Array<NewsCard> = [
+export const experienceLists: Array<any> = [
     {
-        id: 1,
-        imgSrc: "/assets/images/home/BMTF_News_1.png",
-        title: "BMTF to provide 3 crore blank smart cards to EC",
-        date: "23 Sep 2023",
+        id: 111,
+        experience: "Biggest State Owned Production facility."
     },
     {
-        id: 2,
-        imgSrc: "/assets/images/home/BMTF_News_2.jpeg",
-        title: "Chief of Army Staff inaugurates Army Pharma Limited in Gazipur",
-        date: "21 Dec 23",
+        id: 112,
+        experience: "Successfully serving 50+ Clients."
     },
     {
-        id: 3,
-        imgSrc: "/assets/images/home/BMTF_News_3.png",
-        title: "Bangladesh Machine Tools Factory Limited wins global ISO certification",
-        date: "23 Sep 2023",
+        id: 113,
+        experience: "Digital & Smart Integrated Factory."
     },
+    {
+        id: 114,
+        experience: "Most dedicated & passionate team."
+    },
+    {
+        id: 115,
+        experience:"No compromise in quality control."
+    }
 ];
 
-export const capabilities: Array<string> = [
-    "Production and assembly of diverse machinery, components, tools & spares, vehicle bodies, and defense equipment.",
-    "Fabrication of heavy steel structures, trusses, architecturally exposed infrastructures, electric transmission towers, bailey bridges, sandwich panels, C & Z purlins, and roof sheets.",
-    "Crafting top-tier wooden and metal furniture known for its quality and craftsmanship.",
-    "Offering galvanization, heat treatment, and surface treatment services for various structural and general steel products.",
-    "Crafting metallic & nonmetallic crafts, decorative items such as military ranks, badges, sports items like medals, crests, trophies, and gift items like lapel pins, key rings, and souvenirs.",
-    "Providing supply, construction, and trading services for projects and commercial ventures feasible for BMTF, contributing to various sectors.",
+
+
+export const capabilities: Array<any> = [
+    {
+        id: 221,
+        capability: "Production and assembly of diverse machinery, components, tools & spares, vehicle bodies, and defense equipment.",
+    },
+    {
+        id: 222,
+        capability: "Fabrication of heavy steel structures, trusses, architecturally exposed infrastructures, electric transmission towers, bailey bridges, sandwich panels, C & Z purlins, and roof sheets.",
+    },
+    {
+        id: 223,
+        capability: "Crafting top-tier wooden and metal furniture known for its quality and craftsmanship.",
+    },
+    {
+        id: 224,
+        capability: "Offering galvanization, heat treatment, and surface treatment services for various structural and general steel products.",
+    },
+    {
+        id: 225,
+        capability: "Crafting metallic & nonmetallic crafts, decorative items such as military ranks, badges, sports items like medals, crests, trophies, and gift items like lapel pins, key rings, and souvenirs.",
+    },
+    {
+        id: 226,
+        capability: "Providing supply, construction, and trading services for projects and commercial ventures feasible for BMTF, contributing to various sectors.",
+    }
 ];
 
-export const extended: Array<string> = [
-    "Manufacturing of foundry and forging items, including electrical line hardware, and various other products.",
-    "Crafting high-quality, long-lasting concrete products like poles, piles, and railway sleepers, ensuring durability and low maintenance.",
-    "Assembly of both military and commercial vehicles, showcasing our adeptness in automotive manufacturing.",
-    "Producing a diverse range of footwear including military, para-military, formal, casual, and sports varieties, along with fine leather products.",
-    "Manufacturing and assembling electronic products, gadgets, CFL & LED, and solar street lighting solutions with a focus on quality.",
-    "Developing and manufacturing healthcare and hygiene products to ensure well-being and cleanliness.",
-    "Producing eco-friendly, export-oriented food-grade paper bags and packages, aligning with sustainable practices.",
+export const extended: Array<any> = [
+    {
+        id: 331,
+        capability: "Manufacturing of foundry and forging items, including electrical line hardware, and various other products.",
+    },
+    {
+        id: 332,
+        capability: "Crafting high-quality, long-lasting concrete products like poles, piles, and railway sleepers, ensuring durability and low maintenance.",
+    },
+    {
+        id: 333,
+        capability: "Assembly of both military and commercial vehicles, showcasing our adeptness in automotive manufacturing.",
+    },
+    {
+        id: 334,
+        capability: "Producing a diverse range of footwear including military, para-military, formal, casual, and sports varieties, along with fine leather products.",
+    },
+    {
+        id: 335,
+        capability: "Manufacturing and assembling electronic products, gadgets, CFL & LED, and solar street lighting solutions with a focus on quality.",
+    },
+    {
+        id: 336,
+        capability: "Developing and manufacturing healthcare and hygiene products to ensure well-being and cleanliness.",
+    },
+    {
+        id: 337,
+        capability: "Producing eco-friendly, export-oriented food-grade paper bags and packages, aligning with sustainable practices.",
+    }
 ];
 
 export const membersOne = [
@@ -439,6 +508,26 @@ export const timeline = [
     },
 ];
 
+export const latestNews: Array<NewsCard> = [
+    {
+        id: 1,
+        imgSrc: "/assets/images/home/BMTF_News_1.png",
+        title: "BMTF to provide 3 crore blank smart cards to EC",
+        date: "23 Sep 2023",
+    },
+    {
+        id: 2,
+        imgSrc: "/assets/images/home/BMTF_News_2.jpeg",
+        title: "Chief of Army Staff inaugurates Army Pharma Limited in Gazipur",
+        date: "21 Dec 23",
+    },
+    {
+        id: 3,
+        imgSrc: "/assets/images/home/BMTF_News_3.png",
+        title: "Bangladesh Machine Tools Factory Limited wins global ISO certification",
+        date: "23 Sep 2023",
+    },
+];
 
 
 export const verticals = [

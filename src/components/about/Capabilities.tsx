@@ -141,7 +141,7 @@ export default function Capabilities({}: Props) {
                             </div>
                             <motion.div
                                 className="w-full"
-                                initial={{ opacity: 0, x: 200 }}
+                                initial={{ opacity: 0, x: 100 }}
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{
                                     duration: 0.5,

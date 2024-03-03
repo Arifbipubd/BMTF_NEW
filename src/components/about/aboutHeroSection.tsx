@@ -11,7 +11,7 @@ export default function AboutHeroSection({ heading, imageSrc }: Props) {
     return (
         <Fragment>
             <div
-                className="relative z-0 min-h-[60vh] overflow-hidden w-full grid place-items-center"
+                className="relative z-0 min-h-[80vh] lg:min-h-[70vh] overflow-hidden w-full grid place-items-center"
                 style={{
                     backgroundImage: `url(${imageSrc})`,
                     backgroundRepeat: "no-repeat",
