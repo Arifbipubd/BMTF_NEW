@@ -56,18 +56,13 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    youtubeUrl="https://www.youtube.com/embed/L3Klto1zKDw?si=DdCuFCOqAlQun2bT"
                     descriptionOne={`The Machine Shop stands as the principal manufacturing unit within Bangladesh 
                 Machine Tools Factory (BMTF) Limited, under the direct supervision of the Bangladesh Army. It 
                 serves as the primary hub for industrial tools and spare parts production in Bangladesh. Since 
                 the inception of BMTF, we have remained committed to expanding and refining our expertise in 
                 machining.`}
-                    descriptionTwo={`The Machine Shop stands as the principal manufacturing unit within Bangladesh 
-                Machine Tools Factory (BMTF) Limited, under the direct supervision of the Bangladesh Army. It 
-                serves as the primary hub for industrial tools and spare parts production in Bangladesh. Since 
-                the inception of BMTF, we have remained committed to expanding and refining our expertise in 
-                machining.
-                `}
+                    descriptionTwo={`Within the Machine Shop, we produce a diverse range of products, including load bodies for heavy vehicles, mobile workshops, electrical line hardware, various types of gears, and spare parts. These items are crafted through a variety of machining processes such as cutting, bending, drilling, milling, turning, and cold forging. The shop boasts an expansive area of 216,000 square feet, housing a total of 228 machines.`}
                     descriptionThree={`Our most prized assets are our skilled and diligent staff, upon whom our 
                 clients rely day in and day out. We maintain a dedicated team of professionals who labor 
                 tirelessly to cultivate a positive work environment, placing strong emphasis on teamwork, 
@@ -80,19 +75,19 @@ export default function Page({}: Props) {
                     aimItems={machineShopAim}
                 />
 
-                <CategoryOfServices
+                {/* <CategoryOfServices
                     imageSrc="/assets/images/verticals/machine-shop/machine-shop-category-image.png"
                     items={machineShopPoints}
                     textOrder="order-2 lg:order-1"
                     imageOrder="order-1 lg:order-2"
-                />
+                /> */}
                 <SingleColumnGridList
                     imageSrc="/assets/images/verticals/machine-shop/machine-shop-list-image.png"
                     listHeading="Our Aim"
                     backroundColor="bg-skyLight"
                     listItems={listItems}
-                    imageOrder="order-1"
-                    textOrder="order-2"
+                    imageOrder="order-1 lg:order-2"
+                    textOrder="order-2 lg:order-1"
                     description={`The primary goal of this shop is to manufacture and deliver top-notch 
                 products to customers within the shortest possible time, while upholding the esteemed 
                 reputation of BMTF.`}

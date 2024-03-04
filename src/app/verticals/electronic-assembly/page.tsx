@@ -45,22 +45,17 @@ export default function Page({}: Props) {
     }, [pathname]);
 
     return (
-        <Layout pageTitle="BMTF | Vehicle Assembly">
+        <Layout pageTitle="BMTF | Electronic Assembly">
             <Scrollbar progress={scrollProgress} />
             <section>
                 <CommonHeroSection
-                    heading="Vehicle Assembly"
+                    heading="Electronic Assembly"
                     breadcrumb={pathName}
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
-                    descriptionOne={`The BMTF Furniture Factory is renowned for its distinctive style and high-quality 
-                furniture. Utilizing cutting-edge technology and machinery, we offer an extensive range of furniture 
-                and home decor that mirrors your personal taste and lifestyle. Our team of designers and carpenters 
-                collaborate to cater to our clients' aesthetic preferences. Our furniture is characterized by its 
-                simple yet elegant design, and a commitment to using honest, quality materials. We are dedicated to 
-                crafting beautiful and flawless pieces, ensuring our products are both comfortable and elegant.`}
+                    youtubeUrl="https://www.youtube.com/embed/yXkKfTnGpmI?si=-jzN0--wq56TEtZs"
+                    descriptionOne={`The BMTF Electronic Assembly Shop is a hub for high-tech electronics and projects aimed at advancing Bangladesh's digital landscape. It plays a pivotal role in numerous government projects focused on automating both public and private organizations within the country. The team possesses expertise in assembling various electronic devices, including laptops, notebooks, and tablets. Furthermore, they are engaged in specialized projects such as the manufacturing of Electronic Voting Machines (EVMs), National ID Smart Cards, Vehicle Number Plates, and Digital Driver's Licenses vital initiatives for the nation. They are at the forefront of incorporating modern technology and innovating to further develop and expand their operations`}
                 />
                 <AimSection
                     imageSrc="/assets/images/verticals/electronic-assembly/aim.png"

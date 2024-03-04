@@ -2,9 +2,9 @@ export const electronicAim: Array<any> = [
     {
         id: 1,
         heading: "Our Aim",
-        text: `Ensuring reliable, energy-saving, innovative, diversified, smart, 
-      and best-quality CFL and LED products with the highest customer satisfaction 
-      in the local and global market.`,
+        text: [{
+            id: 11,
+            innerText:`The aim of this shop is to assemble or produce the latest technological products of national interest and contribute to the digitalization of Bangladesh. They work today for a better tomorrow.`}],
     },
 ];
 

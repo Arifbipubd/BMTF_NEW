@@ -2,42 +2,45 @@ export const aim: Array<any> = [
     {
         id: 1,
         heading: "Our Aim",
-        text: `Ensuring reliable, energy-saving, innovative, diversified, smart, 
-      and best-quality CFL and LED products with the highest customer satisfaction 
-      in the local and global market.`,
+        text: [{
+          id: 11,
+          innerText:`Our aim is to achieve maximum client satisfaction and surpass their expectations with 
+        motivated and contented staff, generating sustainable results. Our business objective is to grow as 
+        a commercially viable production house and contribute significantly to the socio-economic development 
+        of the country.`}],
     },
 ];
 export const categoryItems: Array<any> = [
   {
     id: 1,
-    label: 'PET bottle'
+    label: 'Military Boots'
   },
   {
     id: 2,
-    label: 'HDPE bottle'
+    label: 'Sports Shoes'
   },
   {
     id: 3,
-    label: 'Closer cap'
+    label: 'Dress Shoes'
   },
   {
     id: 4,
-    label: 'Measuring spoon'
+    label: 'Routine Shoes'
   },
   {
     id: 5,
-    label: 'Measuring cup'
+    label: 'Sandals'
   },
   {
     id: 6,
-    label: 'Dispensing pump'
+    label: "Ladies' and Men’s Shoes"
   },
 ]
 
 export const listItems: Array<any> = [
     {
         id: 1,
-        label: 'State-Of-The-Art Technology'
+        label: 'High standard of products'
     },
     {
         id: 2,
@@ -45,39 +48,36 @@ export const listItems: Array<any> = [
     },
     {
         id: 3,
-        label: 'Integrated Couplers Services'
+        label: 'Proper quality raw materials'
     },
     {
         id: 4,
-        label: 'Integrated Wire Mesh Services'
+        label: 'Reasonable prices'
     },
     {
         id: 5,
-        label: 'ISO Certified Production System'
+        label: 'Timely delivery'
     },
     {
         id: 6,
-        label: 'Just-In-Time Production & Delivery'
+        label: 'Standard compliance'
     },
 ]
 
 export const cardItems: Array<any> = [
     {
         id: 1,
-        heading: 'Cupola Blast Furnace Machine',
-        text: `Capable of melting a wide range of materials, reducing production costs. It efficiently 
-        removes slag from the iron and operates at high melting temperatures to produce liquid metal.`
+        heading: 'Rubber Outsole Pressing',
+        text: `Our shoe molds consist of two parts — the insole and outsole. First, the outsole is prepped with color for a logo as well as a background color. The middle plate is closed with the colors added, and then raw rubber is placed into the mold.`
     },
     {
         id: 2,
-        heading: 'Sand Mixer Machine',
-        text: `Our diversified molding machines can provide standard models and tailor-made foundry equipment 
-        according to the client’s requirements.`
+        heading: 'Rubber Insole Pressing',
+        text: `During the insole pressing process, we add raw rubber to shape the forefront and place the mold back into the heat to form the insole.`
     },
     {
         id: 3,
-        heading: 'Molding Machine',
-        text: `Our high-tech sand mixer machine is suitable for various high-quality foundry applications, 
-        offering excellent followability, breathability, compatibility, and minimal water content.`
+        heading: 'Fusing',
+        text: `The insole and outsole are later efficiently fused to form a finished rubber sole, prioritizing comfort for the feet.`
     }
 ]

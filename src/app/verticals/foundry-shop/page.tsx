@@ -56,7 +56,7 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    youtubeUrl="https://www.youtube.com/embed/6gAQhiQGRwA?si=yPinW2-ZmLPDDaDs"
                     descriptionOne={`The Foundry Shop, established in 1967, has been providing clients with a 
                 diverse range of casting solutions ever since. It stands as one of the most versatile shops 
                 of its kind in Bangladesh, offering a variety of services in conjunction with its sister shops. 

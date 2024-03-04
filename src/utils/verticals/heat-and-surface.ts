@@ -2,8 +2,10 @@ export const heatAim: Array<any> = [
     {
         id: 1,
         heading: "Our Aim",
-        text: `The aim of the Galvanizing Shop is to enhance the factory's reputation by providing 
-        modern galvanizing work using quality raw materials.`,
+        text: [{
+            id: 11,
+            innerText: `The aim of the plant is to enhance the quality with advanced solutions that maximize the effectiveness of the products and meet customer requirements.`
+        }],
     },
 ];
 

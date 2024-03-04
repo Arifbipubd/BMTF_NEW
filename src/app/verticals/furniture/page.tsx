@@ -58,14 +58,13 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
-                    descriptionOne={`The BMTF Furniture Factory is renowned for its distinctive style and 
-                high-quality furniture. Utilizing cutting-edge technology and machinery, we offer an 
-                extensive range of furniture and home decor that mirrors your personal taste and lifestyle. 
-                Our team of designers and carpenters collaborate to cater to our clients' aesthetic preferences. 
-                Our furniture is characterized by its simple yet elegant design, and a commitment to using honest, 
-                quality materials. We are dedicated to crafting beautiful and flawless pieces, ensuring our products 
-                are both comfortable and elegant.`}
+                    youtubeUrl="https://www.youtube.com/embed/Sf1SDoOmfwc?si=mI9BGkbNBmKV-8aG"
+                    descriptionOne={`The BMTF Furniture Factory is renowned for its distinctive style and high-quality 
+                    furniture. Utilizing cutting-edge technology and machinery, we offer an extensive range of furniture
+                     and home decor that mirrors your personal taste and lifestyle. Our team of designers and carpenters 
+                     collaborate to cater to our clients' aesthetic preferences. Our furniture is characterized by its
+                      simple yet elegant design, and a commitment to using honest, quality materials. We are dedicated 
+                      to crafting beautiful and flawless pieces, ensuring our products are both comfortable and elegant.`}
                     descriptionTwo={`
                 As the newest flagship of Bangladesh Machine Tools Factory Limited, the BMTF Furniture Factory 
                 commenced operations in September 2018 with a 90,000 square foot area. It now operates in a 150,000 

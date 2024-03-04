@@ -2,9 +2,12 @@ export const foundryAim: Array<any> = [
     {
         id: 1,
         heading: "Our Aim",
-        text: `The aim of the Foundry Shop is to produce castings with cost-effective, 
-        time-efficient, waste-reducing solutions that help minimize a foundry's bottom 
-        line and reduce negative impact on the environment.`,
+        text: [{
+            id: 11,
+            innerText: `The aim of the Foundry Shop is to produce castings with cost-effective, 
+            time-efficient, waste-reducing solutions that help minimize a foundry's bottom 
+            line and reduce negative impact on the environment.`
+        }],
     },
 ];
 export const cardItems: Array<any> = [

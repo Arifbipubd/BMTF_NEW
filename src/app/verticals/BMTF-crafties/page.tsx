@@ -59,32 +59,21 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
-                    descriptionOne={`The BMTF Furniture Factory is renowned for its distinctive style and 
-                high-quality furniture. Utilizing cutting-edge technology and machinery, we offer an 
-                extensive range of furniture and home decor that mirrors your personal taste and lifestyle. 
-                Our team of designers and carpenters collaborate to cater to our clients' aesthetic preferences. 
-                Our furniture is characterized by its simple yet elegant design, and a commitment to using honest, 
-                quality materials. We are dedicated to crafting beautiful and flawless pieces, ensuring our 
-                products are both comfortable and elegant.`}
-                    descriptionTwo={`As the newest flagship of Bangladesh Machine Tools Factory Limited, the BMTF 
-                Furniture Factory commenced operations in September 2018 with a 90,000 square foot area. 
-                It now operates in a 150,000 square foot space, establishing itself as a leader in furniture 
-                manufacturing in the country. We source and prepare wood from our own sawmill, guaranteeing 
-                it is properly seasoned and treated under the supervision of specialists.
-                `}
+                    youtubeUrl="https://www.youtube.com/embed/rrgGX_Hdf7o?si=tf2tO53s2xE0IVdb"
+                    descriptionOne={`BMTF Crafties began in 2020 with a commitment to create special designs for military, paramilitary, and various government and non-government groups. We specialize in crafting custom designs for items such as uniform badges, medals, trophies, emblems, souvenirs, and more. We take pride in producing and delivering these products with the utmost quality and adhering to international-level security standards. Additionally, we design promotional items, special emblems, and award jewelry. Our primary goal is to offer unique and top-notch designs for our valued customers.`}
+                    
                 />
                 <AimSection
                     imageSrc="/assets/images/verticals/BMTF-crafties/aim.png"
                     aimItems={bmtfAim}
                 />
 
-                <CategoryOfServices
+                {/* <CategoryOfServices
                     imageSrc="/assets/images/verticals/BMTF-crafties/bmtf-category.png"
                     items={craftiesPoints}
                     textOrder="order-2 lg:order-1"
                     imageOrder="order-1 lg:order-2"
-                />
+                /> */}
                 <VerticalsListItems
                     imageSrc="/assets/images/verticals/BMTF-crafties/listItem.png"
                     listHeading="We Ensure"

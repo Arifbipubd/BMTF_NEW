@@ -54,7 +54,7 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    youtubeUrl="https://www.youtube.com/embed/u0KskWFBjkk?si=5Rj29z5s7QXsmxai"
                     descriptionOne={`The BMTF Galvanizing Shop is committed to strengthening and enhancing the 
                 durability of steel. Established in 2018, it holds special certification for its work. The shop 
                 boasts a spacious area of approximately 12,000 square feet and is staffed by highly skilled workers. 

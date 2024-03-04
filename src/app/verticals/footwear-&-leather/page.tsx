@@ -57,7 +57,7 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    youtubeUrl="https://www.youtube.com/embed/FGOEmtRJOjU?si=znZJ2RSTjQQzk6im"
                     descriptionOne={`The BMTF Footwear & Leather Factory stands as one of the largest military 
                 shoe manufacturing shops in Bangladesh. They introduced their brand 'Signature' 
                 in 2007 and have been proudly serving many prestigious customers ever since. The factory is 

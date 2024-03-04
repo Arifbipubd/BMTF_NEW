@@ -15,8 +15,10 @@ const patternAim: Array<any> = [
     {
         id: 1,
         heading: "Our Aim",
-        text: `The aim of the Galvanizing Shop is to enhance the factory's reputation 
-        by providing modern galvanizing work using quality raw materials.`,
+        text: [{
+            id: 11,
+            innerText: `Aim of Pattern Shop is to manufacture engineering-oriented eco-friendly products for various industrial sectors involving casting, machining and fabrication.`
+        }]
     },
 ];
 
@@ -58,7 +60,7 @@ export default function Page({}: Props) {
                     imageSrc="/assets/images/shared/Verticals_hero_image.png"
                 />
                 <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/lotbMoeqOOo?si=cxvRpwKkBQ69sSUD"
+                    youtubeUrl="https://www.youtube.com/embed/6gAQhiQGRwA?si=yPinW2-ZmLPDDaDs"
                     descriptionOne={`The BMTF Pattern Shop specializes in crafting a diverse range of patterns 
                 to accommodate various molding techniques. Operating in tandem with the Pattern and Foundry 
                 Shop, we prioritize precision and cost-effectiveness for the production of high-quality 
