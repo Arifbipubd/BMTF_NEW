@@ -73,7 +73,7 @@ export default function Page({}: Props) {
                 `}
                 />
                 <AimSection
-                    imageSrc="/assets/images/verticals/machine-shop/machine-shop-aim.png"
+                    imageSrc="/assets/images/verticals/Pattern_shop.png"
                     aimItems={patternAim}
                 />
                 <ConnectBMTF />

@@ -77,6 +77,8 @@ export default function Page({}: Props) {
                 <VerticalsListItems
                     imageSrc="/assets/images/verticals/BMTF-crafties/listItem.png"
                     listHeading="We Ensure"
+                    imageOrder="order-1 lg:order-2"
+                    textOrder="order-2 lg:order-1"
                     listItems={listItems}
                 />
                 <Category

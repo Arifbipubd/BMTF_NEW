@@ -71,7 +71,7 @@ export default function Page({}: Props) {
                 turning centers, and machining centers, all capable of producing top-quality products.`}
                 />
                 <AimSection
-                    imageSrc="/assets/images/verticals/machine-shop/machine-shop-aim.png"
+                    imageSrc="/assets/images/allVerticals/Machine-shop.jpg"
                     aimItems={machineShopAim}
                 />
 
@@ -82,7 +82,7 @@ export default function Page({}: Props) {
                     imageOrder="order-1 lg:order-2"
                 /> */}
                 <SingleColumnGridList
-                    imageSrc="/assets/images/verticals/machine-shop/machine-shop-list-image.png"
+                    imageSrc="/assets/images/verticals/Machine_shop.png"
                     listHeading="Our Aim"
                     backroundColor="bg-skyLight"
                     listItems={listItems}

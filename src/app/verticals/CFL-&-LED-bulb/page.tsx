@@ -73,7 +73,7 @@ export default function Page({}: Props) {
                     aimItems={aim}
                 />
                 <CategoryOfServices
-                    imageSrc="/assets/images/verticals/cfl-category-image.png"
+                    imageSrc="/assets/images/verticals/CFL.png"
                     items={points}
                     textOrder="order-2 lg:order-1"
                     imageOrder="order-1 lg:order-2"

@@ -77,13 +77,13 @@ export default function Page({}: Props) {
                 />
 
                 <CategoryOfServices
-                    imageSrc="/assets/images/verticals/army-pharma/shared-category-image.png"
+                    imageSrc="/assets/images/allVerticals/Pharma.png"
                     items={armyPharmaPointsOne}
                     textOrder="order-2 lg:order-1"
                     imageOrder="order-1 lg:order-2"
                 />
                 <CategoryOfServices
-                    imageSrc="/assets/images/verticals/army-pharma/shared-category-image.png"
+                    imageSrc="/assets/images/verticals/Army_shop.png"
                     items={armyPharmaPointsTwo}
                     imageOrder="order-1"
                     textOrder="order-2"

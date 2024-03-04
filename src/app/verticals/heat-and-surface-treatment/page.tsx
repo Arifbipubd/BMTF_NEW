@@ -68,7 +68,7 @@ export default function Page({}: Props) {
                     aimItems={heatAim}
                 />
                 <VerticalsListItems
-                    imageSrc="/assets/images/verticals/heat-and-surface-list-image.png"
+                    imageSrc="/assets/images/verticals/Heat_and_surface.png"
                     listHeading="Our Promises Are"
                     listItems={listItems}
                     imageOrder="order-1 lg:order-2"

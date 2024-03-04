@@ -62,7 +62,7 @@ export default function Page({}: Props) {
                     aimItems={electronicAim}
                 />
                 <CategoryOfServices
-                    imageSrc="/assets/images/verticals/steel_structure/category_of_service.png"
+                    imageSrc="/assets/images/verticals/Electronic_Assembly_01.png"
                     items={electricPoints}
                     textOrder="order-2 lg:order-1"
                     imageOrder="order-1 lg:order-2"
