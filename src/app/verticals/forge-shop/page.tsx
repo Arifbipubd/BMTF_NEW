@@ -63,7 +63,7 @@ export default function Page({}: Props) {
                 and customer satisfaction. Our production quality has been ISO 9001:2015 certified.`}
                 />
                 <AimSection
-                    imageSrc="/assets/images/verticals/central-tooling-aim.png"
+                    imageSrc="/assets/images/verticals/Forge_shop.png"
                     aimItems={forgeAim}
                 />
                 <ProcessCard

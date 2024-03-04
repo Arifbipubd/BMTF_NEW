@@ -99,6 +99,14 @@ export const sliderSection: Array<SliderSection> = [
   },
   {
     id: 13,
+    imageUrl: "/assets/images/verticals/Heat_and_surface.png",
+    heading: "Heat and Surface Treatment",
+    description:
+      "BMTF Heat and Surface Treatment Plant has been offering a comprehensive range of thermal processing services.",
+    link: "/verticals/pattern-shop",
+  },
+  {
+    id: 14,
     imageUrl: "/assets/images/verticals/Machine_shop.png",
     heading: "Machine Shop",
     description:
@@ -106,7 +114,7 @@ export const sliderSection: Array<SliderSection> = [
     link: "/verticals/machine-shop",
   },
   {
-    id: 14,
+    id: 15,
     imageUrl: "/assets/images/verticals/Army_shop.png",
     heading: "Army Pharma",
     description:
@@ -114,7 +122,7 @@ export const sliderSection: Array<SliderSection> = [
     link: "/verticals/army-pharma",
   },
   {
-    id: 15,
+    id: 16,
     imageUrl: "/assets/images/verticals/Packaging.png",
     heading: "Packaging Unit",
     description:
@@ -122,21 +130,13 @@ export const sliderSection: Array<SliderSection> = [
     link: "/verticals/packaging-unit",
   },
   {
-    id: 16,
+    id: 17,
     imageUrl: "/assets/images/verticals/Pattern_shop.png",
     heading: "Pattern Shop",
     description:
       "The BMTF Pattern Shop specializes in crafting a diverse range of patterns to accommodate various molding techniques.",
     link: "/verticals/pattern-shop",
-  },
-  {
-    id: 17,
-    imageUrl: "/assets/images/verticals/Heat_and_surface.png",
-    heading: "Heat and Surface Treatment",
-    description:
-      "BMTF Heat and Surface Treatment Plant has been offering a comprehensive range of thermal processing services.",
-    link: "/verticals/pattern-shop",
-  },
+  }
 ];
 
 export const navItems: Array<NavItem> = [

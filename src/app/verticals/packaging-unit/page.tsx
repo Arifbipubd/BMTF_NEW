@@ -74,7 +74,7 @@ export default function Page({}: Props) {
                 working tirelessly to contribute to the creation of a greener future.`}
                 />
                 <AimSection
-                    imageSrc="/assets/images/verticals/machine-shop/machine-shop-aim.png"
+                    imageSrc="/assets/images/allVerticals/Packaging.jpg"
                     aimItems={packagingAim}
                 />
 
