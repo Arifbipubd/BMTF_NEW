@@ -1,3 +1,5 @@
+/** @format */
+
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -54,16 +56,16 @@ export default function Page({}: Props) {
   }, [pathname]);
 
   return (
-    <Layout pageTitle="BMTF | Central Tooling Department">
+    <Layout pageTitle='BMTF | Central Tooling Department'>
       <Scrollbar progress={scrollProgress} />
       <section>
         <CommonHeroSection
-          heading="Central Tooling Department"
+          heading='Central Tooling Department'
           breadcrumb={pathName}
-          imageSrc="/assets/images/shared/Verticals_hero_image.png"
+          imageSrc='/assets/images/shared/hero_image.png'
         />
         <DescriptionSection
-          youtubeUrl="https://www.youtube.com/embed/WiKM8ZKZspw?si=LYzseGfudJ68mFg0"
+          youtubeUrl='https://www.youtube.com/embed/WiKM8ZKZspw?si=LYzseGfudJ68mFg0'
           descriptionOne={`The Central Tooling Department (CTD) is a vital component of the Machine 
                 Shop at BMTF. This department is equipped with a range of specialized tools, including three 
                 high-precision Jig Boring Machines, seven Lathe Machines, three Milling Machines, five 
@@ -72,10 +74,16 @@ export default function Page({}: Props) {
                 components with a very precise tolerance of 0.001 millimeters.`}
         />
         <AimSection
-          imageSrc="/assets/images/verticals/central-tooling-aim.png"
+          imageSrc='/assets/images/verticals/central-tooling-aim.png'
           aimItems={centralToolingAim}
         />
-        <ConnectBMTF />
+        <ConnectBMTF
+          imageSrc='/assets/images/allVerticals/CTD.jpg'
+          contactFirst='Deputy General Manager, Machine Shop'
+          contactSecond='Bangladesh Machine Tools Factory Ltd, Gazipur'
+          phone='+880 1769-041085'
+          email='bmtfmachineshop@gmail.com'
+        />
       </section>
     </Layout>
   );

@@ -1,3 +1,5 @@
+/** @format */
+
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -19,42 +21,42 @@ import Scrollbar from "@src/components/shared/Scrollbar";
 type Props = {};
 
 export default function Page({}: Props) {
-    const pathname = usePathname();
-    const [loading, setLoading] = useState<boolean>(true);
-    const [pathName, setPathName] = useState<Array<string>>([]);
-    const [heading, setHeading] = useState<string>("");
+  const pathname = usePathname();
+  const [loading, setLoading] = useState<boolean>(true);
+  const [pathName, setPathName] = useState<Array<string>>([]);
+  const [heading, setHeading] = useState<string>("");
 
-    const { scrollYProgress } = useScroll();
-    const [scrollProgress, setScrollProgress] = useState(0);
+  const { scrollYProgress } = useScroll();
+  const [scrollProgress, setScrollProgress] = useState(0);
 
-    useEffect(() => {
-        const unsubscribe = scrollYProgress.on("change", (x) =>
-            setScrollProgress(x)
-        );
-        return () => unsubscribe();
-    }, [scrollYProgress]);
+  useEffect(() => {
+    const unsubscribe = scrollYProgress.on("change", (x) =>
+      setScrollProgress(x)
+    );
+    return () => unsubscribe();
+  }, [scrollYProgress]);
 
-    useEffect(() => {
-        setLoading(true);
-        let path = pathname.split("/");
-        path[0] = "/";
-        setHeading(path[-1]);
-        setPathName(path);
-        setLoading(false);
-    }, [pathname]);
+  useEffect(() => {
+    setLoading(true);
+    let path = pathname.split("/");
+    path[0] = "/";
+    setHeading(path[-1]);
+    setPathName(path);
+    setLoading(false);
+  }, [pathname]);
 
-    return (
-        <Layout pageTitle="BMTF | CFL & LED Bulb">
-            <Scrollbar progress={scrollProgress} />
-            <section>
-                <CommonHeroSection
-                    heading="CFL & LED Bulb"
-                    breadcrumb={pathName}
-                    imageSrc="/assets/images/shared/Verticals_hero_image.png"
-                />
-                <DescriptionSection
-                    youtubeUrl="https://www.youtube.com/embed/2dBaoLQC-wE?si=KLoBgLgPtnbQhKPL"
-                    descriptionOne={`The BMTF CFL & LED bulb factory is a leading manufacturer and 
+  return (
+    <Layout pageTitle='BMTF | CFL & LED Bulb'>
+      <Scrollbar progress={scrollProgress} />
+      <section>
+        <CommonHeroSection
+          heading='CFL & LED Bulb'
+          breadcrumb={pathName}
+          imageSrc='/assets/images/shared/hero_image.png'
+        />
+        <DescriptionSection
+          youtubeUrl='https://www.youtube.com/embed/2dBaoLQC-wE?si=KLoBgLgPtnbQhKPL'
+          descriptionOne={`The BMTF CFL & LED bulb factory is a leading manufacturer and 
                 exporter in the country, specializing in an impressive range of innovative, diverse, 
                 user-friendly, and high-quality Light Emitting Diode-LED and Compact Fluorescent Lamps-CFL 
                 tubes and bulbs. Under the guidance of the Honorable Chief of Army Staff and Chairman of 
@@ -67,25 +69,31 @@ export default function Page({}: Props) {
                 Organization for Standardization. Our products have garnered national acclaim for their longevity, 
                 energy efficiency, low maintenance, and remarkable energy-efficient features.
                 `}
-                />
-                <AimSection
-                    imageSrc="/assets/images/verticals/machine-shop/machine-shop-aim.png"
-                    aimItems={aim}
-                />
-                <CategoryOfServices
-                    imageSrc="/assets/images/verticals/CFL.png"
-                    items={points}
-                    textOrder="order-2 lg:order-1"
-                    imageOrder="order-1 lg:order-2"
-                />
-                <CflBannerSection />
-                <VerticalsListItems
-                    imageSrc="/assets/images/verticals/cfl-list-image.png"
-                    listHeading="Our Promises Are"
-                    listItems={listItems}
-                />
-                <ConnectBMTF />
-            </section>
-        </Layout>
-    );
+        />
+        <AimSection
+          imageSrc='/assets/images/verticals/machine-shop/machine-shop-aim.png'
+          aimItems={aim}
+        />
+        <CategoryOfServices
+          imageSrc='/assets/images/verticals/CFL.png'
+          items={points}
+          textOrder='order-2 lg:order-1'
+          imageOrder='order-1 lg:order-2'
+        />
+        <CflBannerSection />
+        <VerticalsListItems
+          imageSrc='/assets/images/verticals/cfl-list-image.png'
+          listHeading='Our Promises Are'
+          listItems={listItems}
+        />
+        <ConnectBMTF
+          imageSrc='/assets/images/allVerticals/CFL-and-LED.jpg'
+          contactFirst='Asst Manager, CFL and LED Bulb Factory'
+          contactSecond='Bangladesh Machine Tools Factory Ltd, Gazipur'
+          phone='+880 1769-041184'
+          email='bmtf.bd.cfl.led@gmail.com'
+        />
+      </section>
+    </Layout>
+  );
 }

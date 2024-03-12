@@ -1,3 +1,5 @@
+/** @format */
+
 "use client";
 
 import React, { useState, useEffect, useMemo } from "react";
@@ -51,22 +53,22 @@ export default function Page({}: Props) {
   }, []);
   const table = useMemo(() => <CareerTable careers={careers} />, [careers]);
   return (
-    <Layout pageTitle="BMTF | Career Oppurtunities">
+    <Layout pageTitle='BMTF | Career Oppurtunities'>
       <Scrollbar progress={scrollProgress} />
       <section>
         <CommonHeroSection
-          heading="Career Oppurtunities"
+          heading='Career Oppurtunities'
           breadcrumb={pathName}
-          imageSrc="/assets/images/shared/noc-and-notice.png"
+          imageSrc='/assets/images/history/history_hero_image.png'
         />
         {loading ? (
-          <div className="min-h-[60vh] flex items-center justify-center">
+          <div className='min-h-[60vh] flex items-center justify-center'>
             <div>
               {/*eslint-disable-next-line @next/next/no-img-element*/}
               <img
-                src="/assets/images/home/Vector.svg"
-                alt=""
-                className="animate-spin w-full h-full"
+                src='/assets/images/home/Vector.svg'
+                alt=''
+                className='animate-spin w-full h-full'
               />
             </div>
           </div>

@@ -5,10 +5,18 @@ import Link from "next/link";
 
 type Props = {
   imageSrc?: string;
+  contactFirst?: string;
+  contactSecond?: string;
+  phone?: string;
+  email?: string;
 };
 
 export default function ConnectBMTF({
   imageSrc = "/assets/images/shared/Banner.png",
+  contactFirst,
+  contactSecond,
+  phone,
+  email,
 }: Props) {
   return (
     <div className='pt-8 md:pt-12 lg:pt-[72px]'>
@@ -20,9 +28,27 @@ export default function ConnectBMTF({
                         `}
           >
             <div className='mb-4 md:mb-5 lg:mb-[30px]'>
-              <p className='text-headline font-xl md:text-2xl md:leading-[36px] xl:text-justify'>
-                Connect with BMTF today to explore strategic collaborations,
-                innovation, and economic transformation.
+              <p className='text-headline font-xl md:text-lg md:leading-[36px] xl:text-justify'>
+                {contactFirst}
+              </p>
+              <p className='text-headline font-xl md:text-lg md:leading-[36px] xl:text-justify'>
+                {contactSecond}
+              </p>
+              <p>
+                <a
+                  href={`tel:${phone}`}
+                  className='text-headline font-xl md:text-lg md:leading-[36px] xl:text-justify'
+                >
+                  Mobile: {phone}
+                </a>
+              </p>
+              <p>
+                <a
+                  href={`mailto:${email}`}
+                  className='text-headline font-xl md:text-lg md:leading-[36px] xl:text-justify'
+                >
+                  Email: {email}
+                </a>
               </p>
             </div>
             <div>
@@ -38,7 +64,7 @@ export default function ConnectBMTF({
             <img
               src={imageSrc}
               alt=''
-              className='w-full h-full rounded-bl-[30px] xl:rounded-bl-none xl:rounded-tr-[30px] rounded-br-[30px]'
+              className='w-full max-h-96 object-cover rounded-bl-[30px] xl:rounded-bl-none xl:rounded-tr-[30px] rounded-br-[30px]'
             />
             <div
               className={`bg-[rgba(46,46,54,0.60)] rounded-[10px] absolute z-10 
