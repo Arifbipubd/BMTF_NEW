@@ -23,7 +23,7 @@ export default function ConnectBMTF({
       <div className='bg-white min-h-[20vh] -mb-64 md:-mb-80 lg:-mb-96 xl:-mb-40'>
         <div className='container mx-auto grid grid-cols-1 xl:grid-cols-2'>
           <div
-            className={`py-14 md:py-16 lg:py-[74px] px-10 md:px-11 lg:px-[46px] z-10 bg-skyLight
+            className={` py-2 flex place-items-center px-10 md:px-11 lg:px-[46px] z-10 bg-skyLight
                         rounded-tr-[30px] rounded-tl-[30px] xl:rounded-tr-none xl:rounded-bl-[30px]
                         `}
           >
@@ -51,13 +51,13 @@ export default function ConnectBMTF({
                 </a>
               </p>
             </div>
-            <div>
+            {/* <div>
               <Link href={"/contact"}>
                 <button className='p-[18px] bg-primary flex items-center rounded-[3px]'>
                   <p className='text-white font-semibold'>Contact Us</p>
                 </button>
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className='relative'>
             {/*eslint-disable-next-line @next/next/no-img-element*/}
