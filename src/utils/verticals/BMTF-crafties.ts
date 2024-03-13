@@ -1,3 +1,5 @@
+/** @format */
+
 export const bmtfAim: Array<any> = [
   {
     id: 1,
@@ -71,25 +73,36 @@ export const categoryItems: Array<any> = [
   {
     id: 1,
     label: "Uniform Ranks",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/BMTF-crafties/Uniform_ranks.png",
   },
   {
     id: 2,
     label: "Metal and Embroidered Badges",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/BMTF-crafties/badge.png",
   },
   {
     id: 3,
     label: "Insignia",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/BMTF-crafties/insignia.png",
   },
   {
     id: 4,
     label: "Flags",
+    categoryImg: "/assets/images/single-verticals-Icons/BMTF-crafties/Flag.png",
   },
   {
     id: 5,
     label: "Epaulettes/Badges",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/BMTF-crafties/Eppaulattes.png",
   },
   {
     id: 6,
     label: "Medals",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/BMTF-crafties/medal.png",
   },
 ];

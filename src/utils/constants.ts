@@ -136,7 +136,7 @@ export const sliderSection: Array<SliderSection> = [
     description:
       "The BMTF Pattern Shop specializes in crafting a diverse range of patterns to accommodate various molding techniques.",
     link: "/verticals/pattern-shop",
-  }
+  },
 ];
 
 export const navItems: Array<NavItem> = [
@@ -178,7 +178,7 @@ export const navItems: Array<NavItem> = [
     children: [
       {
         id: 2,
-        label: "Varticals",
+        label: "Verticals",
         menuItems: [
           {
             id: 25,

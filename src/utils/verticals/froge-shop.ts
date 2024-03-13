@@ -1,3 +1,5 @@
+/** @format */
+
 export const forgeAim: Array<any> = [
   {
     id: 1,
@@ -21,7 +23,7 @@ export const cardItems: Array<any> = [
   {
     id: 2,
     heading: "Press Machine",
-    text: `Our heavy press machine is capable of performing trimming, bending, punching, piercing, and forming with great precision to meet our customer’s demands.`
+    text: `Our heavy press machine is capable of performing trimming, bending, punching, piercing, and forming with great precision to meet our customer’s demands.`,
   },
   {
     id: 3,

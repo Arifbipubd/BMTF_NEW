@@ -73,7 +73,7 @@ export default function Page({}: Props) {
           cardItems={cardItems}
         />
         <ConnectBMTF
-          imageSrc='/assets/images/allVerticals/Forge-shop.png'
+          imageSrc='/assets/images/allVerticals/Forge-shop.jpg'
           contactFirst='Deputy General Manager, Forge Shop'
           contactSecond='Bangladesh Machine Tools Factory Ltd, Gazipur'
           phone='+880 1769-041093'
