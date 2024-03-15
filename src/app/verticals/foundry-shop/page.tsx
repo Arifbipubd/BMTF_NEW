@@ -85,7 +85,7 @@ export default function Page({}: Props) {
           listItems={listItems}
         />
         <ConnectBMTF
-          imageSrc='/assets/images/allVerticals/Foundary-shop.png'
+          imageSrc='/assets/images/allVerticals/Foundry-shop.png'
           contactFirst='Foreman, Foundry Shop'
           contactSecond='Bangladesh Machine Tools Factory Ltd, Gazipur'
           phone='+880 1769-041096'

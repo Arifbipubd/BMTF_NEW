@@ -77,7 +77,7 @@ export default function Page({}: Props) {
         ) : (
           <div>{<div>{News}</div>}</div>
         )}
-        <ConnectBMTF />
+        {/* <ConnectBMTF /> */}
       </section>
     </Layout>
   );
