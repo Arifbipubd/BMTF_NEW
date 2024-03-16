@@ -56,11 +56,11 @@ export default function Page({}: Props) {
   }, [pathname]);
 
   return (
-    <Layout pageTitle='BMTF | Central Tooling Department'>
+    <Layout pageTitle='BMTF | Central Tooling Department (CTD Shop)'>
       <Scrollbar progress={scrollProgress} />
       <section>
         <CommonHeroSection
-          heading='Central Tooling Department'
+          heading='Central Tooling Department (CTD Shop)'
           breadcrumb={pathName}
           imageSrc='/assets/images/shared/hero_image.png'
         />

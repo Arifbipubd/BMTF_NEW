@@ -50,11 +50,11 @@ export default function Page({}: Props) {
   }, [pathname]);
 
   return (
-    <Layout pageTitle='BMTF | Footwear & Leather'>
+    <Layout pageTitle='BMTF | Footwear & Leather Factory'>
       <Scrollbar progress={scrollProgress} />
       <section>
         <CommonHeroSection
-          heading='Footwear & Leather'
+          heading='Footwear & Leather Factory'
           breadcrumb={pathName}
           imageSrc='/assets/images/shared/hero_image.png'
         />
@@ -80,7 +80,7 @@ export default function Page({}: Props) {
         />
         <Category
           heading='Product Categories'
-          subHeading={`We can serve you by offering the following Primary Packaging Stock Keeping Unit (SKU):`}
+          subHeading={`We can serve you by offering the following product categories`}
           categories={categoryItems}
         />
         <VerticalsListItems

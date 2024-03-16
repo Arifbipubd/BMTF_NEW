@@ -36,9 +36,9 @@ export const categoryItems: Array<any> = [
   },
   {
     id: 4,
-    label: "Routine Shoes",
+    label: "Accessories",
     categoryImg:
-      "/assets/images/single-verticals-Icons/Footwear-and-leather/Footwear & Leather/Routine-shoes.png",
+      "/assets/images/single-verticals-Icons/Footwear-and-leather/Footwear & Leather/Accessories.png",
   },
   {
     id: 5,

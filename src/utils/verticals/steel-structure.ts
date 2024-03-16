@@ -1,3 +1,5 @@
+/** @format */
+
 export const structureAim: Array<any> = [
   {
     id: 1,
@@ -97,10 +99,62 @@ export const structreListItems: Array<any> = [
   },
   {
     id: 15,
-    label: `Site Erections of Steel Structures`
+    label: `Site Erections of Steel Structures`,
   },
   {
     id: 16,
-    label: `Sandwich Panel`
-  }
+    label: `Sandwich Panel`,
+  },
+];
+
+export const categoryItems: Array<any> = [
+  {
+    id: 1,
+    label: "Detailing / Designing of Steel Structures",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Steel Structure Manufacturing Shop/Designing-of-Steel-Structures.png",
+  },
+  {
+    id: 2,
+    label: "Fabrication of Warehouses and Shades",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Steel Structure Manufacturing Shop/Warehouses-and-Shades.png",
+  },
+  {
+    id: 3,
+    label: "Fabrication of Bailey / Foot-over / Hump / Culvert Bridge etc.",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Steel Structure Manufacturing Shop/Culvert-Bridge.png",
+  },
+  {
+    id: 4,
+    label:
+      "Fabrication and Erection of Steel Infrastructure of any Manufacturing Plants",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Steel Structure Manufacturing Shop/Fabrication-and-Erection-of-Steel-Infrastructure-of-any-Manufacturing-Plants.png",
+  },
+  {
+    id: 5,
+    label: "Heavy Structural Girders for Bridges and Towers",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Steel Structure Manufacturing Shop/Heavy-Structural-Girders-for-Bridges-and-Towers.png",
+  },
+  {
+    id: 6,
+    label: "Formwork",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Steel Structure Manufacturing Shop/Formwork.png",
+  },
+  {
+    id: 7,
+    label: "Site Erections of Steel Structures",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Steel Structure Manufacturing Shop/Site-Erections-of-Steel-Structures.png",
+  },
+  {
+    id: 8,
+    label: "Sandwich Panel",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Steel Structure Manufacturing Shop/Sandwich-Panel.png",
+  },
 ];

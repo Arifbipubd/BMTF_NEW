@@ -47,11 +47,11 @@ export default function Page({}: Props) {
   }, [pathname]);
 
   return (
-    <Layout pageTitle='BMTF | Electronic Assembly'>
+    <Layout pageTitle='BMTF | Electronic Assembly Shop'>
       <Scrollbar progress={scrollProgress} />
       <section>
         <CommonHeroSection
-          heading='Electronic Assembly'
+          heading='Electronic Assembly Shop'
           breadcrumb={pathName}
           imageSrc='/assets/images/shared/hero_image.png'
         />

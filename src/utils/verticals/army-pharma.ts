@@ -136,50 +136,26 @@ export const listItems: Array<any> = [
 export const categoryItems: Array<any> = [
   {
     id: 1,
-    label: "PET bottle",
+    label: "Health & Hygiene ",
     categoryImg:
-      "/assets/images/single-verticals-Icons/Army-pharma/pet_BOTTLE.png",
+      "/assets/images/single-verticals-Icons/Army-pharma/Health&Hygiene.png",
   },
   {
     id: 2,
-    label: "HDPE bottle",
-    categoryImg: "",
+    label: "Packaging Factory",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Army-pharma/Packaging-Factory.png",
   },
   {
     id: 3,
-    label: "Closer cap",
-    categoryImg: "",
+    label: "Beauty Products",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Army-pharma/Beauty-Products.png",
   },
   {
     id: 4,
-    label: "Measuring spoon",
+    label: "Animal Health Care Products",
     categoryImg:
-      "/assets/images/single-verticals-Icons/Army-pharma/MEASURING_SPOON.png",
-  },
-  {
-    id: 5,
-    label: "Measuring cup",
-    categoryImg:
-      "/assets/images/single-verticals-Icons/Army-pharma/measuring-cup.png",
-  },
-  {
-    id: 6,
-    label: "Dispensing pump",
-    categoryImg: "",
-  },
-  {
-    id: 7,
-    label: "Preform",
-    categoryImg: "",
-  },
-  {
-    id: 8,
-    label: "Toe cap support for foot ware",
-    categoryImg: "",
-  },
-  {
-    id: 9,
-    label: "Stopper used in the furniture",
-    categoryImg: "",
+      "/assets/images/single-verticals-Icons/Army-pharma/Animal-Health-Care-Products.png",
   },
 ];

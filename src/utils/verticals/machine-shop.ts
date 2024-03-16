@@ -1,3 +1,5 @@
+/** @format */
+
 export const machineShopAim: Array<any> = [
   {
     id: 1,
@@ -5,7 +7,7 @@ export const machineShopAim: Array<any> = [
     text: [
       {
         id: 11,
-        innerText: `The primary goal of this shop is to manufacture and deliver top-notch products to customers within the shortest possible time, while upholding the esteemed reputation of BMTF.`
+        innerText: `The primary goal of this shop is to manufacture and deliver top-notch products to customers within the shortest possible time, while upholding the esteemed reputation of BMTF.`,
       },
     ],
   },
@@ -32,27 +34,27 @@ export const machineShopPoints: Array<any> = [
 export const categoryItems: Array<any> = [
   {
     id: 1,
-    label: "PET bottle",
+    label: "Manufacturing Various Machineries",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/machine shop/Manufacturing-various-machineries.png",
   },
   {
     id: 2,
-    label: "HDPE bottle",
+    label: "Making Line Hardware",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/machine shop/Making-line-hardware.png",
   },
   {
     id: 3,
-    label: "Closer cap",
+    label: "Load Body Manufacturing of Vehicles",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/machine shop/Load-body-manufacturing-of-vehicles.png",
   },
   {
     id: 4,
-    label: "Measuring spoon",
-  },
-  {
-    id: 5,
-    label: "Measuring cup",
-  },
-  {
-    id: 6,
-    label: "Dispensing pump",
+    label: "Making Wide Range of Tools and Spare Parts",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/machine shop/Making-wide-range-of-tools-and-spare-parts.png",
   },
 ];
 

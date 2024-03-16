@@ -10,6 +10,7 @@ import {
   structureAim,
   structurPoints,
   structreListItems,
+  categoryItems,
 } from "@src/utils/verticals/steel-structure";
 
 import CommonHeroSection from "@src/components/shared/CommonHeroSection";
@@ -21,6 +22,7 @@ import Safety from "@src/components/shared/Safety";
 import ConnectBMTF from "@src/components/shared/ConnectBMTF";
 import { useScroll } from "framer-motion";
 import Scrollbar from "@src/components/shared/Scrollbar";
+import Category from "@src/components/shared/Category";
 
 type Props = {};
 
@@ -50,11 +52,11 @@ export default function Page({}: Props) {
   }, [pathname]);
 
   return (
-    <Layout pageTitle='BMTF | Steel Structure Manufacturing'>
+    <Layout pageTitle='BMTF | Steel Structure Manufacturing Shop'>
       <Scrollbar progress={scrollProgress} />
       <section>
         <CommonHeroSection
-          heading='Steel Structure Manufacturing'
+          heading='Steel Structure Manufacturing Shop'
           breadcrumb={pathName}
           imageSrc='/assets/images/shared/hero_image.png'
         />
@@ -101,6 +103,11 @@ export default function Page({}: Props) {
                 `}
           textOrder='order-2 lg:order-1'
           imageOrder='order-1 lg:order-2'
+        />
+        <Category
+          heading='Product Categories'
+          subHeading={`We can serve you by offering the following product categories`}
+          categories={categoryItems}
         />
         <ConnectBMTF
           imageSrc='/assets/images/allVerticals/Steel-structure.jpg'

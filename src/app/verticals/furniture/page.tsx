@@ -8,6 +8,7 @@ import Layout from "@src/components/Layout/Layout";
 
 import {
   furnitureAim,
+  categoryItems,
   points,
   furnitureListItems,
   sectionCard,
@@ -22,6 +23,7 @@ import CategoryOfServices from "@src/components/shared/CategoryOfServices";
 import SectionCard from "@src/components/shared/SectionCard";
 import { useScroll } from "framer-motion";
 import Scrollbar from "@src/components/shared/Scrollbar";
+import Category from "@src/components/shared/Category";
 
 type Props = {};
 
@@ -51,11 +53,11 @@ export default function Page({}: Props) {
   }, [pathname]);
 
   return (
-    <Layout pageTitle='BMTF | Furniture'>
+    <Layout pageTitle='BMTF | Furniture Factory'>
       <Scrollbar progress={scrollProgress} />
       <section>
         <CommonHeroSection
-          heading='Furniture'
+          heading='Furniture Factory'
           breadcrumb={pathName}
           imageSrc='/assets/images/shared/hero_image.png'
         />
@@ -84,6 +86,11 @@ export default function Page({}: Props) {
           items={points}
           textOrder='order-2 lg:order-1'
           imageOrder='order-1 lg:order-2'
+        />
+        <Category
+          heading='Product Categories'
+          subHeading={`We can serve you by offering the following product categories`}
+          categories={categoryItems}
         />
         <SectionCard items={sectionCard} />
         <VerticalsListItems

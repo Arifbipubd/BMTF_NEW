@@ -687,47 +687,47 @@ export const contactCard = [
 export const allIndustries = [
   {
     id: 1,
-    label: "Footwear & Leather",
+    label: "Footwear & Leather Factory",
     link: "/verticals/footwear-&-leather",
   },
   {
     id: 2,
-    label: "Furniture",
+    label: "Furniture Factory",
     link: "/verticals/furniture",
   },
   {
     id: 3,
-    label: "Pole & Pile",
+    label: "Pole & Pile Factory",
     link: "/verticals/pole-&-pile",
   },
   {
     id: 4,
-    label: "Vehicle Assembly",
+    label: "Vehicle Assembly Shop",
     link: "/verticals/vehicle-assembly",
   },
   {
     id: 5,
-    label: "Steel Structure Manufacturing",
+    label: "Steel Structure Manufacturing Shop",
     link: "/verticals/steel-structure-manufacturing",
   },
   {
     id: 6,
-    label: "Electronic Assembly",
+    label: "Electronic Assembly Shop",
     link: "/verticals/electronic-assembly",
   },
   {
     id: 7,
-    label: "BMTF Crafties",
+    label: "BMTF Crafties Factory",
     link: "/verticals/BMTF-crafties",
   },
   {
     id: 8,
-    label: "CFL & LED Bulb",
+    label: "CFL & LED Bulb Factory",
     link: "/verticals/CFL-&-LED-bulb",
   },
   {
     id: 9,
-    label: "Central Tooling Department",
+    label: "Central Tooling Department (CTD Shop)",
     link: "/verticals/central-tooling-department",
   },
   {
@@ -747,7 +747,7 @@ export const allIndustries = [
   },
   {
     id: 13,
-    label: "Heat And Surface Treatment",
+    label: "Heat And Surface Treatment Shop",
     link: "/verticals/heat-and-surface-treatment",
   },
   {
@@ -762,7 +762,7 @@ export const allIndustries = [
   },
   {
     id: 16,
-    label: "Packaging Unit",
+    label: "Packaging Unit (BMTF-2)",
     link: "/verticals/packaging-unit",
   },
   {

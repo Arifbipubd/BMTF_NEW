@@ -8,6 +8,7 @@ import Layout from "@src/components/Layout/Layout";
 
 import {
   poleAim,
+  categoryItems,
   polePoints,
   cardItems,
 } from "@src/utils/verticals/pole-and-pile";
@@ -20,6 +21,7 @@ import ProcessCard from "@src/components/shared/ProcessCard";
 import ConnectBMTF from "@src/components/shared/ConnectBMTF";
 import { useScroll } from "framer-motion";
 import Scrollbar from "@src/components/shared/Scrollbar";
+import Category from "@src/components/shared/Category";
 
 type Props = {};
 
@@ -49,11 +51,11 @@ export default function Page({}: Props) {
   }, [pathname]);
 
   return (
-    <Layout pageTitle='BMTF | Pole & Pile'>
+    <Layout pageTitle='BMTF | Pole & Pile Factory'>
       <Scrollbar progress={scrollProgress} />
       <section>
         <CommonHeroSection
-          heading='Pole & Pile'
+          heading='Pole & Pile Factory'
           breadcrumb={pathName}
           imageSrc='/assets/images/shared/hero_image.png'
         />
@@ -95,6 +97,11 @@ export default function Page({}: Props) {
           items={polePoints}
           textOrder='order-2 lg:order-1'
           imageOrder='order-1 lg:order-2'
+        />
+        <Category
+          heading='Product Categories'
+          subHeading={`We can serve you by offering the following product categories`}
+          categories={categoryItems}
         />
         <ProcessCard
           heading='Our Manufacturing Process'

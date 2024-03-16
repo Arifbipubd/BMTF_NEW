@@ -100,7 +100,7 @@ export default function Page({}: Props) {
         />
         <Category
           heading='Product Categories'
-          subHeading={`We can serve you by offering the following Primary Packaging Stock Keeping Unit (SKU):`}
+          subHeading={`We can serve you by offering the following product categories`}
           categories={categoryItems}
         />
         <Safety

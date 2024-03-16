@@ -46,11 +46,11 @@ export default function Page({}: Props) {
   }, [pathname]);
 
   return (
-    <Layout pageTitle='BMTF | CFL & LED Bulb'>
+    <Layout pageTitle='BMTF | CFL & LED Bulb Factory'>
       <Scrollbar progress={scrollProgress} />
       <section>
         <CommonHeroSection
-          heading='CFL & LED Bulb'
+          heading='CFL & LED Bulb Factory'
           breadcrumb={pathName}
           imageSrc='/assets/images/shared/hero_image.png'
         />

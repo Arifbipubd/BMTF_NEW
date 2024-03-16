@@ -33,7 +33,7 @@ export default function Category({ heading, subHeading, categories }: Props) {
                   }}
                 >
                   <div
-                    className={`relative bg-primary rounded-[10px] py-7 md:py-8 lg:py-9 border-[1px] 
+                    className={`relative bg-primary rounded-[10px] py-7 px-2 md:py-8 lg:py-9 border-[1px] 
                             border-transparent transition-all duration-300 ease-in-out  
                             hover:bg-white hover:border-[1px] hover:border-primary`}
                   >

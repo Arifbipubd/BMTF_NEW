@@ -9,6 +9,7 @@ import Layout from "@src/components/Layout/Layout";
 import {
   machineShopAim,
   machineShopPoints,
+  categoryItems,
   listItems,
 } from "@src/utils/verticals/machine-shop";
 
@@ -20,6 +21,7 @@ import ConnectBMTF from "@src/components/shared/ConnectBMTF";
 import SingleColumnGridList from "@src/components/shared/SingleColumnGridList";
 import { useScroll } from "framer-motion";
 import Scrollbar from "@src/components/shared/Scrollbar";
+import Category from "@src/components/shared/Category";
 
 type Props = {};
 
@@ -93,6 +95,11 @@ export default function Page({}: Props) {
           description={`The primary goal of this shop is to manufacture and deliver top-notch 
                 products to customers within the shortest possible time, while upholding the esteemed 
                 reputation of BMTF.`}
+        />
+        <Category
+          heading='Product Categories'
+          subHeading={`We can serve you by offering the following product categories`}
+          categories={categoryItems}
         />
         <ConnectBMTF
           imageSrc='/assets/images/allVerticals/Machine-shop.jpg'

@@ -44,11 +44,11 @@ export default function Page({}: Props) {
   }, [pathname]);
 
   return (
-    <Layout pageTitle='BMTF | Heat And Surface Treatment'>
+    <Layout pageTitle='BMTF | Heat And Surface Treatment Shop'>
       <Scrollbar progress={scrollProgress} />
       <section>
         <CommonHeroSection
-          heading='Heat And Surface Treatment'
+          heading='Heat And Surface Treatment Shop'
           breadcrumb={pathName}
           imageSrc='/assets/images/shared/hero_image.png'
         />

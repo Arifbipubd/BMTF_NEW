@@ -12,6 +12,7 @@ import AssemblyProcess from "@src/components/shared/AssemblyProcess";
 import ConnectBMTF from "@src/components/shared/ConnectBMTF";
 import { useScroll } from "framer-motion";
 import Scrollbar from "@src/components/shared/Scrollbar";
+import Category from "@src/components/shared/Category";
 
 const assemblyProcess: Array<any> = [
   {
@@ -46,6 +47,51 @@ const assemblyProcess: Array<any> = [
   },
 ];
 
+const categoryItems: Array<any> = [
+  {
+    id: 1,
+    label: "Truck",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Vehicle Assembly shop/truck.png",
+  },
+  {
+    id: 2,
+    label: "Pickup",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Vehicle Assembly shop/pickup.png",
+  },
+  {
+    id: 3,
+    label: "Jeep",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Vehicle Assembly shop/jeep.png",
+  },
+  {
+    id: 4,
+    label: "Fuel Trailer",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Vehicle Assembly shop/fuel-trailer.png",
+  },
+  {
+    id: 5,
+    label: "Ambulance",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Vehicle Assembly shop/emergency-ambulance.png",
+  },
+  {
+    id: 6,
+    label: "Lorry",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Vehicle Assembly shop/lorry.png",
+  },
+  {
+    id: 1,
+    label: "Agriculture",
+    categoryImg:
+      "/assets/images/single-verticals-Icons/Vehicle Assembly shop/agricultaral.png",
+  },
+];
+
 type Props = {};
 
 export default function Page({}: Props) {
@@ -74,11 +120,11 @@ export default function Page({}: Props) {
   }, [pathname]);
 
   return (
-    <Layout pageTitle='BMTF | Vehicle Assembly'>
+    <Layout pageTitle='BMTF | Vehicle Assembly Shop'>
       <Scrollbar progress={scrollProgress} />
       <section>
         <CommonHeroSection
-          heading='Vehicle Assembly'
+          heading='Vehicle Assembly Shop'
           breadcrumb={pathName}
           imageSrc='/assets/images/shared/hero_image.png'
         />
@@ -105,6 +151,13 @@ export default function Page({}: Props) {
           imageSrc='/assets/images/verticals/assembly_process.png'
           items={assemblyProcess}
         />
+
+        <Category
+          heading='Product Categories'
+          subHeading={`We can serve you by offering the following product categories`}
+          categories={categoryItems}
+        />
+
         <ConnectBMTF
           imageSrc='/assets/images/allVerticals/vehicle-assembly.jpg'
           contactFirst='Deputy General Manager, Vehicle Assembly Shop'
