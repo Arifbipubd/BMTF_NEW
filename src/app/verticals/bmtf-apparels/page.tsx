@@ -6,10 +6,7 @@ import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Layout from "@src/components/Layout/Layout";
 
-import {
-  bmtfApparelsAim,
-  listItems,
-} from "@src/utils/verticals/bmtf-apparels";
+import { bmtfApparelsAim, listItems } from "@src/utils/verticals/bmtf-apparels";
 
 import CommonHeroSection from "@src/components/shared/CommonHeroSection";
 import DescriptionSection from "@src/components/shared/DescriptionSection";
@@ -62,21 +59,22 @@ export default function Page({}: Props) {
           Their goal is to offer skillfully made garments at fair prices, using materials they can be proud of. 
           They're committed to constantly adding new products and becoming more eco-friendly, all while keeping 
           their customers thrilled with on-time deliveries of high-quality clothes at a great value.
-          `}/>
+          `}
+        />
         <AimSection
-          imageSrc='/assets/images/allVerticals/Packaging.jpg'
+          imageSrc='/assets/images/verticals/apparels/app_1.jpeg'
           aimItems={bmtfApparelsAim}
         />
-         <VerticalsListItems
-          imageSrc='/assets/images/verticals/cfl-list-image.png'
+        <VerticalsListItems
+          imageSrc='/assets/images/verticals/apparels/app_2.jpeg'
           listHeading='Our Promises Are'
-          textOrder="order-2 lg:order-1"
-          imageOrder="order-1 lg:order-2"
+          textOrder='order-2 lg:order-1'
+          imageOrder='order-1 lg:order-2'
           listItems={listItems}
         />
-        
+
         <ConnectBMTF
-          imageSrc='/assets/images/allVerticals/Packaging.jpg'
+          imageSrc='/assets/images/verticals/apparels/app_3.jpeg'
           contactFirst='Kholishajani, Fulbaria, Kaliakoir, Gazipur.'
           phone='+880 1769041206,+880 1769041207'
           email='bmtfpackagingfactory@gmail.com'
