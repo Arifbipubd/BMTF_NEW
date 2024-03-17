@@ -42,7 +42,7 @@ export const packagingPoints: Array<any> = [
 export const sectionCard: Array<any> = [
     {
         id: 1,
-        imageSrc: "/assets/images/verticals/packaging_section_card_1.png",
+        imageSrc: "/assets/images/verticals//Packaging/packaging_3.jpg",
         heading: "Resistant and economical",
         text: `Paper bags are characterized by being a very affordable element, even for a very 
         limited budget. They are also usually accessible and practical for companies, since they 
@@ -51,7 +51,7 @@ export const sectionCard: Array<any> = [
     },
     {
         id: 2,
-        imageSrc: "/assets/images/verticals/packaging_section_card_2.png",
+        imageSrc: "/assets/images/verticals//Packaging/packaging_4.jpg",
         heading: "Conserve natural resources",
         text: `The manufacturing process of biodegradable plastic bags consume less energy and decreases 
         harmful gas emissions and conserves our natural resources. Also the solid waste percentage is less. 

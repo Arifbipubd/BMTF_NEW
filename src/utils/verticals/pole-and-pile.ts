@@ -16,6 +16,7 @@ export const poleAim: Array<any> = [
 export const cardItems: Array<any> = [
   {
     id: 1,
+    image: '/assets/images/verticals/pole-and-pile/manufacturing_process/Cage-Making-and-Setting.png',
     heading: "Cage Making and Setting",
     text: `Reinforcement circumferential spiral wire coil is placed on the lower steel mold.
          All accessories and prestressed strand are inserted longitudinally through the tension plate, 
@@ -24,6 +25,7 @@ export const cardItems: Array<any> = [
   },
   {
     id: 2,
+    image: '/assets/images/verticals/pole-and-pile/manufacturing_process/concrete-mixing.png',
     heading: "Concrete Mixing and Pouring",
     text: `Poles made in steel molds are specially manufactured from high-quality concrete mix 
         designed to achieve the concrete strength of C55/67 and durability. The high-strength concrete 
@@ -33,6 +35,7 @@ export const cardItems: Array<any> = [
   {
     id: 3,
     heading: "Spinning",
+    image: '/assets/images/verticals/pole-and-pile/manufacturing_process/Spinning.png',
     text: `Once the mold is placed on the spinning machine, it is rotated for a specific designed time. 
         The pole derives its extra strength properties from the unique centrifugal manufacturing process, 
         which gives uniform densely compacted concrete along the whole length of the pole. The final stage 
@@ -40,18 +43,21 @@ export const cardItems: Array<any> = [
   },
   {
     id: 4,
+    image: '/assets/images/verticals/pole-and-pile/manufacturing_process/Steam-Curing.png',
     heading: "Steam Curing",
     text: `After the spinning process is completed, the concrete pole is placed in the curing chamber for steam curing. 
         Steam curing is carried out at controlled temperature and for a specific time period.`,
   },
   {
     id: 5,
+    image: '/assets/images/verticals/pole-and-pile/manufacturing_process/de-modeling.png',
     heading: "De-molding",
     text: `Then the concrete pole is shifted to the de-molding work station. The pole is carefully de-molded and shifted to the finishing 
         work station for further finishing, final inspection, and testing`,
   },
   {
     id: 6,
+    image: '/assets/images/verticals/pole-and-pile/manufacturing_process/Finishing-Inspection-and-Testing.png',
     heading: "Finishing, Inspection, and Testing",
     text: `Finishing of poles is carried out by cutting the exposed strand, applying concrete 
         capping at the bottom, and applying Nitocote. Physical and dimensional checks are conducted. 

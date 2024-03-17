@@ -74,7 +74,7 @@ export default function Page({}: Props) {
                 `}
         />
         <AimSection
-          imageSrc='/assets/images/verticals/machine-shop/machine-shop-aim.png'
+          imageSrc='/assets/images/verticals/army-pharma/army_2.jpg'
           aimItems={armyAim}
         />
 
@@ -91,7 +91,7 @@ export default function Page({}: Props) {
           textOrder='order-2'
         />
         <SingleColumnGridList
-          imageSrc='/assets/images/verticals/shared-list-image.png'
+          imageSrc='/assets/images/verticals/army-pharma/army_3.jpg'
           listHeading='Our Aim'
           backroundColor='bg-skyLight'
           listItems={listItems}
@@ -104,7 +104,7 @@ export default function Page({}: Props) {
           categories={categoryItems}
         />
         <Safety
-          imageSrc='/assets/images/verticals/army-pharma/safety-section.png'
+          imageSrc='/assets/images/verticals/army-pharma/army_4.png'
           heading='Animal Health'
           text={`In January 2023, BMTF Ltd. proudly introduced a line of animal healthcare products, underscoring our 
                 commitment to quality and promotion. Sourcing raw materials from validated channels, we adhere to the
@@ -119,7 +119,7 @@ export default function Page({}: Props) {
           textOrder='order-2'
         />
         <ConnectBMTF
-          imageSrc='/assets/images/allVerticals/Pharma.png'
+          imageSrc='/assets/images/verticals/army-pharma/army_5.png'
           contactFirst='Central Product Management Department'
           phone=' +880 1842 047148'
           email='cpmd.apl@gmail.com'

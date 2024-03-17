@@ -92,8 +92,4 @@ export const listItems: Array<any> = [
     id: 8,
     label: "Load body manufacturing for vehicles",
   },
-  {
-    id: 9,
-    label: "Crafting a wide range of tools and spare parts",
-  },
 ];

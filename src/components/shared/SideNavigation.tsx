@@ -21,39 +21,39 @@ export default function SideNavigation({}: Props) {
                         <ul>
                             <li>
                                 <Link href="/verticals/footwear-&-leather">
-                                    Footwear & Leather
+                                    Footwear & Leather Factory
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/verticals/furniture">Furniture</Link>
+                                <Link href="/verticals/furniture">Furniture Factory</Link>
                             </li>
                             <li>
-                                <Link href="/verticals/pole-&-pile">Pole & Pile</Link>
+                                <Link href="/verticals/pole-&-pile">Pole & Pile Factory</Link>
                             </li>
                             <li>
                                 <Link href="/verticals/vehicle-assembly">
-                                    Vehicle Assembly
+                                    Vehicle Assembly Shop
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/verticals/steel-structure-manufacturing">
-                                    Steel Structure Manufacturing
+                                    Steel Structure Manufacturing Shop
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/verticals/electronic-assembly">
-                                    Electronic Assembly
+                                    Electronic Assembly Shop
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/verticals/BMTF-crafties">BMTF Crafties</Link>
+                                <Link href="/verticals/BMTF-crafties">BMTF Crafties Factory</Link>
                             </li>
                             <li>
-                                <Link href="/verticals/CFL-&-LED-bulb">CFL & LED Bulb</Link>
+                                <Link href="/verticals/CFL-&-LED-bulb">CFL & LED Bulb Factory</Link>
                             </li>
                             <li>
                                 <Link href="/verticals/central-tooling-department">
-                                    Central Tooling Department
+                                    Central Tooling Department (CTD Shop)
                                 </Link>
                             </li>
                             <li>
@@ -69,7 +69,7 @@ export default function SideNavigation({}: Props) {
                             </li>
                             <li>
                                 <Link href="/verticals/heat-and-surface-treatment">
-                                    Heat and Surface Treatment
+                                    Heat and Surface Treatment Shop
                                 </Link>
                             </li>
                             <li>
@@ -80,11 +80,14 @@ export default function SideNavigation({}: Props) {
                             </li>
                             <li>
                                 <Link href="/verticals/packaging-unit">
-                                    Packaging Unit
+                                    Packaging Unit (BMTF-2)
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/verticals/pattern-shop">Pattern Shop</Link>
+                            </li>
+                            <li>
+                                <Link href="/verticals/bmtf-apparels">BMTF Apparels</Link>
                             </li>
                         </ul>
                     </div>

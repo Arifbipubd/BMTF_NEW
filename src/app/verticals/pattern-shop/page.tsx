@@ -80,7 +80,7 @@ export default function Page({}: Props) {
           aimItems={patternAim}
         />
         <ConnectBMTF
-          imageSrc='/assets/images/allVerticals/Pattern-shop.jpg'
+          imageSrc='/assets/images/verticals/Pattern_Shop/pattern_3.jpg'
           contactFirst='Pattern Shop'
           contactSecond='Bangladesh Machine Tools Factory Ltd, Gazipur'
           phone='+880 1769-041096'

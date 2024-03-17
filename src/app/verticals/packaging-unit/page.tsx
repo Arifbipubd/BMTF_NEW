@@ -81,14 +81,14 @@ export default function Page({}: Props) {
         />
 
         <CategoryOfServices
-          imageSrc='/assets/images/verticals/cfl-category-image.png'
+          imageSrc='/assets/images/verticals/Packaging/packaging_1.jpg'
           items={packagingPoints}
           imageOrder='order-1 lg:order-2'
           textOrder='order-2 lg:order-1'
         />
         <PackagingSectionCard items={sectionCard} />
         <SingleColumnGridList
-          imageSrc='/assets/images/verticals/cfl-list-image.png'
+          imageSrc='/assets/images/verticals/Packaging/packaging_2.jpg'
           listHeading='Environmental Benefits of Using Paper Bags'
           backroundColor='bg-white'
           listItems={listItems}

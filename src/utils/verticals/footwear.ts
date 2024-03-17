@@ -84,16 +84,19 @@ export const listItems: Array<any> = [
 export const cardItems: Array<any> = [
   {
     id: 1,
+    image: '/assets/images/verticals/footwear/manufacturing_process/Rubber-Outsole-Pressing.png',
     heading: "Rubber Outsole Pressing",
     text: `Our shoe molds consist of two parts — the insole and outsole. First, the outsole is prepped with color for a logo as well as a background color. The middle plate is closed with the colors added, and then raw rubber is placed into the mold.`,
   },
   {
     id: 2,
+    image: '/assets/images/verticals/footwear/manufacturing_process/Rubber-Insole-Pressing.png',
     heading: "Rubber Insole Pressing",
     text: `During the insole pressing process, we add raw rubber to shape the forefront and place the mold back into the heat to form the insole.`,
   },
   {
     id: 3,
+    image: '/assets/images/verticals/footwear/manufacturing_process/Fusing.png',
     heading: "Fusing",
     text: `The insole and outsole are later efficiently fused to form a finished rubber sole, prioritizing comfort for the feet.`,
   },

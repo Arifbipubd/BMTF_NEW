@@ -82,7 +82,7 @@ export default function Page({}: Props) {
         />
         <CflBannerSection />
         <VerticalsListItems
-          imageSrc='/assets/images/verticals/cfl-list-image.png'
+          imageSrc='/assets/images/verticals/LED/led_3.jpg'
           listHeading='Our Promises Are'
           listItems={listItems}
         />
