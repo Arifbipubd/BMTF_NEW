@@ -276,6 +276,11 @@ export const navItems: Array<NavItem> = [
             label: "Pattern Shop",
             link: "/verticals/pattern-shop",
           },
+          {
+            id: 18,
+            label: "BMTF Apparels",
+            link: "/verticals/bmtf-apparels",
+          },
         ],
       },
     ],
@@ -649,6 +654,12 @@ export const verticals = [
     title: "Pattern Shop",
     link: "/verticals/pattern-shop",
   },
+  {
+    id: 17,
+    imageSrc: "/assets/images/verticals/Pattern_shop.png",
+    title: "Pattern Shop",
+    link: "/verticals/pattern-shop",
+  },
 ];
 
 export const contactCard = [
@@ -769,5 +780,10 @@ export const allIndustries = [
     id: 17,
     label: "Pattern Shop",
     link: "/verticals/pattern-shop",
+  },
+  {
+    id: 18,
+    label: "BMTF Apparels",
+    link: "/verticals/bmtf-apparels",
   },
 ];

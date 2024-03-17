@@ -1,11 +1,34 @@
+'use client'
+
 import React from "react";
+import { useFormik } from "formik";
+import * as yup  from 'yup'
+
 
 type Props = {};
 
+const schema = yup.object({
+    name: yup.string().required('Name is Required.'),
+    email: yup.string().email('Email Must be a valid format.').required("Email is required."),
+    message: yup.string().required('Message is required.')
+})
+
 export default function Form({}: Props) {
-    const handleSubmit = (e: any) => {
-        e.preventDefault();
-    };
+    // const handleSubmit = (e: any) => {
+    //     e.preventDefault();
+    // };
+
+    const {values, handleBlur, handleChange, handleSubmit, errors} = useFormik({
+        initialValues: {
+            name: '',
+            email: '',
+            message: ''
+        }, 
+        onSubmit: (values) => {
+
+        },
+        validationSchema: schema
+    })
     return (
         <div>
             <form onSubmit={handleSubmit}>
@@ -20,7 +43,9 @@ export default function Form({}: Props) {
                         type="text"
                         name="name"
                         id="name"
+                        value={values.name}
                         placeholder="Type Here..."
+                        onChange={handleChange}
                         className={`bg-white border border-transparent outline-none  rounded-[10px] mt-4 md:mt-5 text-[#5A5A65]
                          placeholder:text-[#5A5A65] px-3 md:px-5 py-5 md:py-[25px] w-full 
                          focus:border-primary  
@@ -38,6 +63,8 @@ export default function Form({}: Props) {
                         type="email"
                         name="email"
                         id="email"
+                        value={values.email}
+                        onChange={handleChange}
                         placeholder="Type Here..."
                         className={`bg-white border border-transparent outline-none rounded-[10px] mt-4 md:mt-5 text-[#5A5A65]
                          placeholder:text-[#5A5A65] px-3 md:px-5 py-5 md:py-[25px] w-full
@@ -58,10 +85,13 @@ export default function Form({}: Props) {
                         placeholder="Type Here..."
                         cols={30}
                         rows={8}
+                        value={values.message}
+                        onChange={handleChange}
                         className={`bg-white border border-transparent outline-none rounded-[10px] mt-4 md:mt-5 resize-none text-[#5A5A65]
                          placeholder:text-[#5A5A65] px-3 md:px-5 py-5 md:py-[25px] w-full focus:border-primary 
                         `}
                     ></textarea>
+                    {errors.message && <span></span>}
                 </div>
                 <div>
                     <button

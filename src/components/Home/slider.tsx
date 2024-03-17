@@ -244,13 +244,13 @@ export default function Slider({}: Props) {
                   item.id === currentSlide
                     ? "border-4 border-secondary"
                     : "border-4 border-white"
-                } max-h-[141px] overflow-hidden`}
+                }  overflow-hidden`}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element*/}
                 <img
                   src={item.imageUrl}
                   alt={item.imageUrl}
-                  className='h-full object-cover'
+                  className='h-full object-cover max-h-[141px]'
                 />
               </div>
             </Fragment>

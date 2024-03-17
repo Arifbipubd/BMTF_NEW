@@ -18,6 +18,7 @@ interface SliderSection {
 interface NavItem {
   id: number;
   label: string;
+  link?: any;
   children?: Array<any>;
 }
 

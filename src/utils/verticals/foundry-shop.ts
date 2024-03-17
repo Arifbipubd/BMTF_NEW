@@ -13,18 +13,21 @@ export const foundryAim: Array<any> = [
 export const cardItems: Array<any> = [
     {
         id: 1,
+        image: '/assets/images/verticals/foundry_shop/Cupola-Blast-Furnace-Machine.png',
         heading: 'Cupola Blast Furnace Machine',
         text: `Capable of melting a wide range of materials, reducing production costs. It efficiently 
         removes slag from the iron and operates at high melting temperatures to produce liquid metal.`
     },
     {
         id: 2,
+        image: '/assets/images/verticals/foundry_shop/Sand-Mixer-Machine.png',
         heading: 'Sand Mixer Machine',
         text: `Our diversified molding machines can provide standard models and tailor-made foundry equipment 
         according to the client’s requirements.`
     },
     {
         id: 3,
+        image: '/assets/images/verticals/foundry_shop/Molding-Machine.png',
         heading: 'Molding Machine',
         text: `Our high-tech sand mixer machine is suitable for various high-quality foundry applications, 
         offering excellent followability, breathability, compatibility, and minimal water content.`

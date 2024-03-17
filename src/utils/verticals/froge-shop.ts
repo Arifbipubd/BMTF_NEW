@@ -17,16 +17,19 @@ export const forgeAim: Array<any> = [
 export const cardItems: Array<any> = [
   {
     id: 1,
+    image: '/assets/images/verticals/forge_shop/Hammer-Machine.png',
     heading: "Hammer Machine",
     text: `Our modern drop hammer machine provides a rapid high-energy transfer of force for forging works. We also possess two forging dies that expedite the process.`,
   },
   {
     id: 2,
+    image: '/assets/images/verticals/forge_shop/Press-Machine.png',
     heading: "Press Machine",
     text: `Our heavy press machine is capable of performing trimming, bending, punching, piercing, and forming with great precision to meet our customer’s demands.`,
   },
   {
     id: 3,
+    image: '/assets/images/verticals/forge_shop/Copy-Milling.png',
     heading: "Copy Milling",
     text: `Our high-tech copy-milling machine precisely replicates any job for forging work.`,
   },

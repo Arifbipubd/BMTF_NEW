@@ -38,11 +38,12 @@ export default function ProcessCard({ heading, cardItems }: Props) {
                             hover:border-primary transition-all duration-300 ease-in-out`}
                   >
                     <div className=' absolute left-1/2 -translate-x-1/2 -top-7 flex justify-center w-full'>
-                      <div className='bg-white p-5 md:p-[22px] rounded-full border-[1px] border-primary '>
+                      <div className='bg-white p-5 md:p-[22px] rounded-full border-[1px] border-primary min-h-[100px]'>
                         {/*eslint-disable-next-line @next/next/no-img-element*/}
                         <img
-                          src='/assets/images/shared/brainstrom.png'
+                          src={item.image}
                           alt=''
+                          className="max-w-[54px] max-h-[55px] object-cover w-full h-full"
                         />
                       </div>
                     </div>
