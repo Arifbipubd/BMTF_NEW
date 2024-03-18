@@ -189,7 +189,7 @@ export const navItems: Array<NavItem> = [
       },
       {
         id: 3,
-        label: "All Vericals",
+        label: "All Verticals",
         menuItems: [
           {
             id: 1,

@@ -53,7 +53,7 @@ export default function Page({}: Props) {
           imageSrc='/assets/images/shared/hero_image.png'
         />
         <DescriptionSection
-          youtubeUrl='https://www.youtube.com/embed/yrDpckexiHU?si=zlUm8E_b6DXKnsJn'
+          youtubeUrl='https://www.youtube.com/embed/Ten0RCpe2vw'
           descriptionOne={`BMTF Apparels is all about making top-notch clothes. They plan to achieve this 
           by using the newest equipment and following the best clothing-making methods from around the world. 
           Their goal is to offer skillfully made garments at fair prices, using materials they can be proud of. 
