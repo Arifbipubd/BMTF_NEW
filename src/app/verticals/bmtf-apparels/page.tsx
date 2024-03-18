@@ -75,9 +75,9 @@ export default function Page({}: Props) {
 
         <ConnectBMTF
           imageSrc='/assets/images/verticals/apparels/app_3.jpeg'
-          contactFirst='Kholishajani, Fulbaria, Kaliakoir, Gazipur.'
-          phone='+880 1769041206,+880 1769041207'
-          email='bmtfpackagingfactory@gmail.com'
+          contactFirst='Joydebpur,BIDC Road, Gazipur-1700, Bangladesh.'
+          phone='+880-2-996618076'
+          email='info.bmtfapparels@gmail.com'
         />
       </section>
     </Layout>
