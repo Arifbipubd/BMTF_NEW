@@ -124,7 +124,7 @@ export default function Slider({}: Props) {
                           className='h-full w-full object-cover'
                         />
                       </div>
-                      <div className='bg-[rgba(16,25,48,0.70)] absolute left-0 w-full h-full -z-10' />
+                      <div className='bg-[rgba(16,25,48,0.40)] absolute left-0 w-full h-full -z-10' />
                       <div className='flex justify-center h-full'>
                         <div className='container mx-auto z-20'>
                           <motion.div

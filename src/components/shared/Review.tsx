@@ -9,6 +9,7 @@ type Props = {
   heading: string;
   descriptionOne: string;
   descriptionTwo: string;
+  descriptionThree: string;
   link: string;
   imageUrl: string;
   divVisible: boolean;
@@ -19,6 +20,7 @@ export default function Review({
   heading,
   descriptionOne,
   descriptionTwo = "",
+  descriptionThree,
   link = "",
   imageUrl,
 }: Props) {
@@ -30,6 +32,7 @@ export default function Review({
     >
       <div className='lg:col-span-4 relative overflow-hidden'>
         <div className='h-full'>
+          <div className='bg-[rgba(16,25,48,0.60)] absolute left-0 w-full h-full' />
           {/* eslint-disable-next-line @next/next/no-img-element*/}
           <img src={imageUrl} alt={imageUrl} className='w-full h-full' />
         </div>
@@ -85,6 +88,13 @@ export default function Review({
               </div>
             )}
             {descriptionTwo && (
+              <div className='mb-3 md:mb-4 lg:mb-5'>
+                <p className='text-white text-sm 2xl:text-base text-justify'>
+                  {descriptionTwo}
+                </p>
+              </div>
+            )}
+            {descriptionThree && (
               <div className='mb-5 md:mb-8 lg:mb-10'>
                 <p className='text-white text-sm 2xl:text-base text-justify'>
                   {descriptionTwo}
