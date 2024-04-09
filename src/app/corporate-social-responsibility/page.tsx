@@ -45,7 +45,7 @@ export default function Page({}: Props) {
           imageSrc='/assets/images/history/history_hero_image.png'
         />
         <HeroSection />
-        <ConnectBMTF />
+        {/* <ConnectBMTF /> */}
       </section>
     </Layout>
   );

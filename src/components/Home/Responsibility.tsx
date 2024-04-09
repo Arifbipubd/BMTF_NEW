@@ -82,7 +82,7 @@ export default function Responsibility({}: Props) {
             <div className='relative -mb-4 md:-mb-24'>
               {/* eslint-disable-next-line @next/next/no-img-element*/}
               <motion.img
-                src='/assets/images/home/Packaging_03.png'
+                src='/assets/images/home/csrhome1.png'
                 alt=''
                 className='rounded-[10px]'
                 ref={ref}
@@ -107,7 +107,7 @@ export default function Responsibility({}: Props) {
             <div className='-mb-32 md:-mt-64'>
               {/* eslint-disable-next-line @next/next/no-img-element*/}
               <motion.img
-                src='/assets/images/home/Packaging_01.png'
+                src='/assets/images/home/csrhome2.png'
                 alt=''
                 className='rounded-[10px]'
                 ref={ref1}

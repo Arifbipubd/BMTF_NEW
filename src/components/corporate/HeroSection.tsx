@@ -13,7 +13,7 @@ export default function HeroSection({}: Props) {
         <div className='container mx-auto lg:-mr-[100px] xl:-mr-[160px] 2xl:-mr-56'>
           {/*eslint-disable-next-line @next/next/no-img-element*/}
           <img
-            src='/assets/images/about/corporate_social.png'
+            src='/assets/images/home/csrpage.png'
             alt=''
             className='rounded-[10px]'
           />
