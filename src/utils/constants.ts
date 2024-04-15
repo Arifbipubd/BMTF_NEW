@@ -533,27 +533,50 @@ export const timeline = [
 ];
 
 export const latestNews: Array<NewsCard> = [
+  // {
+  //   id: 1,
+  //   imgSrc: "/assets/images/home/BMTF_News_1.png",
+  //   title: "BMTF to provide 3 crore blank smart cards to EC",
+  //   date: "23 Sep 2023",
+  //   url: "/news-and-tenders/1",
+  // },
+  // {
+  //   id: 2,
+  //   imgSrc: "/assets/images/home/BMTF_News_2.jpeg",
+  //   title: "Chief of Army Staff inaugurates Army Pharma Limited in Gazipur",
+  //   date: "21 Dec 23",
+  //   url: "/news-and-tenders/2",
+  // },
+  // {
+  //   id: 3,
+  //   imgSrc: "/assets/images/home/BMTF_News_3.png",
+  //   title:
+  //     "Bangladesh Machine Tools Factory Limited wins global ISO certification",
+  //   date: "23 Sep 2023",
+  //   url: "/news-and-tenders/3",
+  // },
   {
     id: 1,
-    imgSrc: "/assets/images/home/BMTF_News_1.png",
-    title: "BMTF to provide 3 crore blank smart cards to EC",
-    date: "23 Sep 2023",
-    url: "/news-and-tenders/1",
+    imgSrc: "/assets/images/news-and-tender/Dealership.jpg",
+    title: "Solar Home System Supply & Installation",
+    date: "7th February 2024",
+    url: "/news-and-tenders/7",
   },
   {
     id: 2,
-    imgSrc: "/assets/images/home/BMTF_News_2.jpeg",
-    title: "Chief of Army Staff inaugurates Army Pharma Limited in Gazipur",
-    date: "21 Dec 23",
-    url: "/news-and-tenders/2",
+    imgSrc: "/assets/images/news-and-tender/TradeFair.jpg",
+    title:
+      "BMTF Limited Makes Debut Appearance at Dhaka International Trade Fair 2024",
+    date: "5th February 2024",
+    url: "/news-and-tenders/8",
   },
   {
     id: 3,
-    imgSrc: "/assets/images/home/BMTF_News_3.png",
+    imgSrc: "/assets/images/news-and-tender/SecondPrize.jpg",
     title:
-      "Bangladesh Machine Tools Factory Limited wins global ISO certification",
-    date: "23 Sep 2023",
-    url: "/news-and-tenders/3",
+      "BMTF Limited Secures Second Prize at Dhaka International Trade Fair 2024",
+    date: "20th February 2024",
+    url: "/news-and-tenders/9",
   },
 ];
 

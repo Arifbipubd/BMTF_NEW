@@ -83,7 +83,7 @@ export default function Projects({}: Props) {
             <div className='relative'>
               {/* eslint-disable-next-line @next/next/no-img-element*/}
               <img
-                src='/assets/images/home/jhilmil-card.png'
+                src='/assets/images/home/BMTF_News_1.png'
                 alt=''
                 className='w-full'
               />
@@ -91,12 +91,12 @@ export default function Projects({}: Props) {
             </div>
             <div className='px-[17px] py-[30px]'>
               <h1 className='text-headline 2xl:text-lg font-semibold mb-4 md:mb-5 leading-[20px]'>
-                Jhilmil Residential Park Project
+                BMTF To Provide 3 Crore Blank Smart Cards To EC
               </h1>
               <p className='text-headline text-xs 2xl:text-sm leading-[20px] text-justify'>
-                SVC Jhilmil Residential BD Limited and Bangladesh Machine Tools
-                Factory Limited (BMTF) have collaborated for the Jhilmil
-                Residential Park Project Technology Transfer.
+                Bangladesh Army-run Bangladesh Machine Tools Factory Limited
+                will supply 3 crore blank smart cards to Bangladesh Election
+                Commission.
               </p>
             </div>
           </div>

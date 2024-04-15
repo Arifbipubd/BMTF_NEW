@@ -58,7 +58,7 @@ export default function Herosection({ slides }: Props) {
       } else {
         setCurrentSlide(0);
       }
-    }, 7000);
+    }, 10000);
 
     return () => clearInterval(timeInterval);
     // eslint-disable-next-line react-hooks/exhaustive-deps

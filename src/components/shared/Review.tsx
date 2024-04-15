@@ -64,7 +64,7 @@ export default function Review({
           <div
             className={`${
               divVisible
-                ? "  lg:pl-4 lg:pr-[56px] xl:pl-2 xl:pr-[101px]"
+                ? "  lg:pl-4 lg:pr-[56px] xl:pl-2 xl:pr-[101px] py-10"
                 : "lg:ml-9 lg:mr-9 xl:mr-24  2xl:ml-[30px] 2xl:mr-[136px] xl:col-span-4"
             } 
                     flex flex-col justify-center h-full `}
