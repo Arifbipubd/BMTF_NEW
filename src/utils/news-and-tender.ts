@@ -137,7 +137,8 @@ export const singleNews: any = {
   },
   7: {
     imageSrc: "/assets/images/news-and-tender/Dealership.jpg",
-    title: "Solar Home System Supply & Installation",
+    title:
+      "BMTF Limited Introduces Dedicated Phone Numbers for Dealership and Bulk Purchases",
     description: [
       `In a move aimed at enhancing accessibility and facilitating smoother transactions, Bangladesh Machine Tools Factory Limited (BMTF Limited) has announced the introduction of dedicated phone numbers for dealership inquiries and bulk purchases.`,
       `Effective immediately, interested parties seeking dealership opportunities or wishing to make bulk purchases can contact BMTF Limited via the following dedicated phone numbers:`,

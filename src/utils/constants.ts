@@ -558,7 +558,8 @@ export const latestNews: Array<NewsCard> = [
   {
     id: 1,
     imgSrc: "/assets/images/news-and-tender/Dealership.jpg",
-    title: "Solar Home System Supply & Installation",
+    title:
+      "BMTF Limited Introduces Dedicated Phone Numbers for Dealership and Bulk Purchases",
     date: "7th February 2024",
     url: "/news-and-tenders/7",
   },
