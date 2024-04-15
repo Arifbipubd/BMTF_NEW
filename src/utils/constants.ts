@@ -11,7 +11,7 @@ export const sliderSection: Array<SliderSection> = [
   },
   {
     id: 2,
-    imageUrl: "/assets/images/verticals/Footwear_and_leather_02.png",
+    imageUrl: "/assets/images/verticals/Furniture.jpg",
     heading: "Furniture",
     description:
       "The BMTF Furniture Factory is renowned for its distinctive style and high-quality furniture.",
@@ -51,7 +51,7 @@ export const sliderSection: Array<SliderSection> = [
   },
   {
     id: 7,
-    imageUrl: "/assets/images/verticals/Crafties.png",
+    imageUrl: "/assets/images/verticals/Crafties.JPG",
     heading: "BMTF Crafties",
     description:
       "BMTF Crafties began in 2020 with a commitment to create special designs for military, paramilitary, and others.",
@@ -59,7 +59,7 @@ export const sliderSection: Array<SliderSection> = [
   },
   {
     id: 8,
-    imageUrl: "/assets/images/verticals/CFL.png",
+    imageUrl: "/assets/images/verticals/LED.jpg",
     heading: "CFL AND LED BULB",
     description:
       "The BMTF CFL & LED bulb factory is a leading manufacturer and exporter in the country.",
@@ -83,7 +83,7 @@ export const sliderSection: Array<SliderSection> = [
   },
   {
     id: 11,
-    imageUrl: "/assets/images/verticals/Foundry_shop.png",
+    imageUrl: "/assets/images/verticals/Foundry.png",
     heading: "Foundry Shop",
     description:
       "The Foundry Shop, established in 1967, has been providing clients with a diverse range of casting solutions ever since.",
@@ -103,7 +103,7 @@ export const sliderSection: Array<SliderSection> = [
     heading: "Heat and Surface Treatment",
     description:
       "BMTF Heat and Surface Treatment Plant has been offering a comprehensive range of thermal processing services.",
-    link: "/verticals/pattern-shop",
+    link: "/verticals/heat-and-surface-treatment",
   },
   {
     id: 14,
@@ -115,7 +115,7 @@ export const sliderSection: Array<SliderSection> = [
   },
   {
     id: 15,
-    imageUrl: "/assets/images/verticals/Army_shop.png",
+    imageUrl: "/assets/images/verticals/Army_pharma.jpg",
     heading: "Army Pharma",
     description:
       "Army Pharma Ltd., a state-owned pharmaceutical company, commenced operations in June 2019 under Bangladesh Machine Tools.",
@@ -131,7 +131,7 @@ export const sliderSection: Array<SliderSection> = [
   },
   {
     id: 17,
-    imageUrl: "/assets/images/verticals/Pattern_shop.png",
+    imageUrl: "/assets/images/verticals/pattern.jpg",
     heading: "Pattern Shop",
     description:
       "The BMTF Pattern Shop specializes in crafting a diverse range of patterns to accommodate various molding techniques.",
