@@ -40,6 +40,32 @@ export default function Accreditations({}: Props) {
                           className='abs_img'
                           style={{
                             backgroundImage:
+                              "url(/assets/images/Accreditation/ditf2024.jpg)",
+                          }}
+                        ></div>
+                      </div>
+                      <div className='title_holder'>
+                        <h3>
+                          <a>
+                            2nd Best General Pavilion at Dhaka International
+                            Trade Fair 2024
+                          </a>
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='item'>
+                      <div className='img_holder'>
+                        {/* eslint-disable-next-line @next/next/no-img-element*/}
+                        <img
+                          src='/assets/images/Accreditation/560-375.jpg'
+                          alt=''
+                        />
+                        <div
+                          className='abs_img'
+                          style={{
+                            backgroundImage:
                               "url(/assets/images/Accreditation/tax2021-22.jpg)",
                           }}
                         ></div>
@@ -125,32 +151,6 @@ export default function Accreditations({}: Props) {
                         <h3>
                           <a>
                             Highest Tax Payer in Engineering Sector in 2018-2019
-                          </a>
-                        </h3>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='item'>
-                      <div className='img_holder'>
-                        {/* eslint-disable-next-line @next/next/no-img-element*/}
-                        <img
-                          src='/assets/images/Accreditation/560-375.jpg'
-                          alt=''
-                        />
-                        <div
-                          className='abs_img'
-                          style={{
-                            backgroundImage:
-                              "url(/assets/images/Accreditation/ditf2024.jpg)",
-                          }}
-                        ></div>
-                      </div>
-                      <div className='title_holder'>
-                        <h3>
-                          <a>
-                            2nd Best General Pavilion at Dhaka International
-                            Trade Fair 2024
                           </a>
                         </h3>
                       </div>
