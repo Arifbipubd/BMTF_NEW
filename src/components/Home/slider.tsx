@@ -57,13 +57,22 @@ export default function Slider({}: Props) {
   };
 
   const handlePrev = () => {
-    if (currentSlide === 1) {
-      setCurrentSlide(sliderSection.length);
-      setVisibleImages(sliderSection.slice(sliderSection.length - 3));
-    } else {
-      setCurrentSlide(currentSlide - 1);
-      setVisibleImages(sliderSection.slice(currentSlide - 4, currentSlide - 1));
+    let newIndex = currentSlide - 1;
+
+    if (newIndex < 1) {
+      newIndex = sliderSection.length;
     }
+
+    let start = newIndex - 1;
+    let end = newIndex + 2;
+
+    if (end > sliderSection.length) {
+      end = sliderSection.length;
+      start = end - 3;
+    }
+
+    setCurrentSlide(newIndex);
+    setVisibleImages(sliderSection.slice(start, end));
     paginate(-1);
   };
   const handleNext = () => {
@@ -217,10 +226,9 @@ export default function Slider({}: Props) {
         <div className="absolute -bottom-4 sm:-bottom-10 md:-bottom-4 lg:-bottom-10 left-5 right-5 md:right-0 md:left-1/2 transform md:-translate-x-1/2 flex items-center justify-center space-x-4 z-10">
           <div>
             <button
-              className={`${currentSlide === 1 ? "bg-white/30" : "bg-yellow"}
-                                    flex items-center p-2 md:p-2.5 lg:p-[14px] rounded-[3px]
-                                    transition-all duration-150 ease-linear
-                                `}
+              className={`bg-yellow flex items-center p-2 md:p-2.5 lg:p-[14px] rounded-[3px] 
+              transition-all duration-150 ease-linear
+              `}
               onClick={handlePrev}
             >
               <i className="text-white text-lg font-medium">
@@ -242,21 +250,16 @@ export default function Slider({}: Props) {
                 <img
                   src={item.imageUrl}
                   alt={item.imageUrl}
-                  className="h-full object-cover max-h-[141px]"
+                  className="h-full object-cover lg:min-h-[9rem] max-h-[9rem] max-w-[11rem]"
                 />
               </div>
             </Fragment>
           ))}
           <div>
             <button
-              className={`${
-                currentSlide === sliderSection.length
-                  ? "bg-white/30"
-                  : "bg-yellow"
-              }
-                                    flex items-center p-2 md:p-2.5 lg:p-[14px] rounded-[3px]
-                                    transition-all duration-150 ease-linear
-                                `}
+              className={`bg-yellow flex items-center p-2 md:p-2.5 lg:p-[14px] rounded-[3px] 
+              transition-all duration-150 ease-linear
+              `}
               onClick={handleNext}
             >
               <i className="text-white text-lg font-medium">
