@@ -3,79 +3,83 @@
 export const sliderSection: Array<SliderSection> = [
   {
     id: 1,
-    imageUrl: "/assets/images/verticals/Footwear_and_leather.png",
-    heading: "Footwear Industry and Leather Industry",
+    imageUrl:
+      "/assets/images/verticals/vertical-slider-final/Footwear&Leather.jpg",
+    heading: "Footwear & Leather Factory",
     description:
       "The BMTF Footwear & Leather Factory stands as one of the largest military shoe manufacturing shops in Bangladesh.",
     link: "/verticals/footwear-&-leather",
   },
   {
     id: 2,
-    imageUrl: "/assets/images/verticals/Furniture.jpg",
-    heading: "Furniture",
+    imageUrl: "/assets/images/verticals/vertical-slider-final/Furniture.jpg",
+    heading: "Furniture Factory",
     description:
       "The BMTF Furniture Factory is renowned for its distinctive style and high-quality furniture.",
     link: "/verticals/furniture",
   },
   {
     id: 3,
-    imageUrl: "/assets/images/verticals/Pool_and_pile.png",
-    heading: "Pole & Pile",
+    imageUrl: "/assets/images/verticals/vertical-slider-final/Pole&pile.jpg",
+    heading: "Pole & Pile Factory",
     description:
       "The Pole and Pile Factory is a prominent division of the state-owned BMTF, one of the largest manufacturing entities.",
     link: "/verticals/pole-&-pile",
   },
   {
     id: 4,
-    imageUrl: "/assets/images/verticals/Vehicle_assembly.png",
-    heading: "Vehicle Assembly",
+    imageUrl:
+      "/assets/images/verticals/vertical-slider-final/Vehicle-Asembly.JPG",
+    heading: "Vehicle Assembly Shop",
     description:
       "Bangladesh Machine Tools Factory (BMTF) established a state-of-the-art Vehicle Assembly Shop.",
     link: "/verticals/vehicle-assembly",
   },
   {
     id: 5,
-    imageUrl: "/assets/images/verticals/Steel_structure.png",
-    heading: "Steel Structure Manufacturing",
+    imageUrl:
+      "/assets/images/verticals/vertical-slider-final/SteelStructureShop.jpg",
+    heading: "Steel Structure Manufacturing shop",
     description:
       "The Steel Structure Manufacturing Shop at BMTF has transformed from a vision in the year 2000.",
     link: "/verticals/steel-structure-manufacturing",
   },
   {
     id: 6,
-    imageUrl: "/assets/images/verticals/Electronic_Assembly_01.png",
-    heading: "Electronic Assembly",
+    imageUrl:
+      "/assets/images/verticals/vertical-slider-final/Electronic-Assembly.jpg",
+    heading: "Electronic Assembly Shop",
     description:
       "The BMTF Electronic Assembly Shop is a hub for high-tech electronics and projects aimed at advancing Bangladesh.",
     link: "/verticals/electronic-assembly",
   },
   {
     id: 7,
-    imageUrl: "/assets/images/verticals/Crafties.JPG",
-    heading: "BMTF Crafties",
+    imageUrl: "/assets/images/verticals/vertical-slider-final/Crafties.JPG",
+    heading: "BMTF Crafties Factory",
     description:
       "BMTF Crafties began in 2020 with a commitment to create special designs for military, paramilitary, and others.",
     link: "/verticals/BMTF-crafties",
   },
   {
     id: 8,
-    imageUrl: "/assets/images/verticals/LED.jpg",
-    heading: "CFL AND LED BULB",
+    imageUrl: "/assets/images/verticals/vertical-slider-final/LED.jpg",
+    heading: "CFL and LED Bulb Factory",
     description:
       "The BMTF CFL & LED bulb factory is a leading manufacturer and exporter in the country.",
     link: "/verticals/cFL-&-LED-bulb",
   },
   {
     id: 9,
-    imageUrl: "/assets/images/verticals/Central_toolling.png",
-    heading: "Central Tooling Department",
+    imageUrl: "/assets/images/verticals/vertical-slider-final/CTD-01.jpg",
+    heading: "Central Tooling Department ( CTD Shop )",
     description:
       "The Central Tooling Department (CTD) is a vital component of the Machine Shop at BMTF.",
     link: "/verticals/central-tooling-department",
   },
   {
     id: 10,
-    imageUrl: "/assets/images/verticals/Forge_shop.png",
+    imageUrl: "/assets/images/verticals/vertical-slider-final/ForgeShop.jpg",
     heading: "Forge Shop",
     description:
       "BMTF Forge Shop is a renowned brand in the country's forging industry.",
@@ -83,7 +87,7 @@ export const sliderSection: Array<SliderSection> = [
   },
   {
     id: 11,
-    imageUrl: "/assets/images/verticals/Foundry.png",
+    imageUrl: "/assets/images/verticals/vertical-slider-final/Foundry.png",
     heading: "Foundry Shop",
     description:
       "The Foundry Shop, established in 1967, has been providing clients with a diverse range of casting solutions ever since.",
@@ -91,7 +95,7 @@ export const sliderSection: Array<SliderSection> = [
   },
   {
     id: 12,
-    imageUrl: "/assets/images/verticals/Galvanizing.png",
+    imageUrl: "/assets/images/verticals/vertical-slider-final/Galvaniging.jpg",
     heading: "Galvanizing Plant",
     description:
       "The BMTF Galvanizing Shop is committed to strengthening and enhancing the durability of steel.",
@@ -99,15 +103,16 @@ export const sliderSection: Array<SliderSection> = [
   },
   {
     id: 13,
-    imageUrl: "/assets/images/verticals/Heat_and_surface.png",
-    heading: "Heat and Surface Treatment",
+    imageUrl:
+      "/assets/images/verticals/vertical-slider-final/Heat&SurfaceTreatement.JPG",
+    heading: "Heat and Surface Treatment Shop",
     description:
       "BMTF Heat and Surface Treatment Plant has been offering a comprehensive range of thermal processing services.",
     link: "/verticals/heat-and-surface-treatment",
   },
   {
     id: 14,
-    imageUrl: "/assets/images/verticals/Machine_shop.png",
+    imageUrl: "/assets/images/verticals/vertical-slider-final/MachineShop.jpg",
     heading: "Machine Shop",
     description:
       "The Machine Shop stands as the principal manufacturing unit within Bangladesh Machine Tools Factory (BMTF) Limited.",
@@ -115,7 +120,7 @@ export const sliderSection: Array<SliderSection> = [
   },
   {
     id: 15,
-    imageUrl: "/assets/images/verticals/Army_pharma.jpg",
+    imageUrl: "/assets/images/verticals/vertical-slider-final/Army_pharma.jpg",
     heading: "Army Pharma",
     description:
       "Army Pharma Ltd., a state-owned pharmaceutical company, commenced operations in June 2019 under Bangladesh Machine Tools.",
@@ -123,19 +128,28 @@ export const sliderSection: Array<SliderSection> = [
   },
   {
     id: 16,
-    imageUrl: "/assets/images/verticals/Packaging.png",
-    heading: "Packaging Unit",
+    imageUrl: "/assets/images/verticals/vertical-slider-final/Packaging.jpg",
+    heading: "Packaging Unit (BMTF – 2)",
     description:
       "BMTF Packaging Unit (BMTF-2) stands as a distinguished entity in the manufacturing and export of square bottom brown paper bags.",
     link: "/verticals/packaging-unit",
   },
   {
     id: 17,
-    imageUrl: "/assets/images/verticals/pattern.jpg",
+    imageUrl: "/assets/images/verticals/vertical-slider-final/pattern.jpg",
     heading: "Pattern Shop",
     description:
       "The BMTF Pattern Shop specializes in crafting a diverse range of patterns to accommodate various molding techniques.",
     link: "/verticals/pattern-shop",
+  },
+  {
+    id: 18,
+    imageUrl:
+      "/assets/images/verticals/vertical-slider-final/BMTF-Apparels.jpeg",
+    heading: "BMTF Apparels",
+    description:
+      "Elevating fashion standards with exquisite designs crafted for international markets, poised to redefine the future of export-based success.",
+    link: "/verticals/bmtf-apparels",
   },
 ];
 
