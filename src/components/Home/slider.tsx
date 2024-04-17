@@ -57,22 +57,15 @@ export default function Slider({}: Props) {
   };
 
   const handlePrev = () => {
-    if (currentSlide <= 3) {
-      setCurrentSlide(currentSlide - 1);
-      setVisibleImages(sliderSection.slice(0, 3));
-    } else if (currentSlide < sliderSection.length - 3) {
-      setCurrentSlide(currentSlide - 1);
-      setVisibleImages(sliderSection.slice(currentSlide - 2, currentSlide + 1));
-    } else if (currentSlide <= sliderSection.length) {
-      setCurrentSlide(currentSlide - 1);
-      setVisibleImages(sliderSection.slice(currentSlide - 3, currentSlide));
+    if (currentSlide === 1) {
+      setCurrentSlide(sliderSection.length);
+      setVisibleImages(sliderSection.slice(sliderSection.length - 3));
     } else {
-      setCurrentSlide(1);
-      setVisibleImages(sliderSection.slice(0, 3));
+      setCurrentSlide(currentSlide - 1);
+      setVisibleImages(sliderSection.slice(currentSlide - 4, currentSlide - 1));
     }
     paginate(-1);
   };
-
   const handleNext = () => {
     // Shift the array to show the next three images
     if (currentSlide < 2) {
@@ -93,9 +86,9 @@ export default function Slider({}: Props) {
 
   return (
     <Fragment>
-      <div className='relative grid'>
-        <div className='relative overflow-hidden bg-black/90'>
-          <div className='h-[60vh] lg:h-[80vh] overflow-hidden'>
+      <div className="relative grid">
+        <div className="relative overflow-hidden bg-black/90">
+          <div className="h-[60vh] lg:h-[80vh] overflow-hidden">
             {sliderSection.map((slide, index) => (
               <Fragment key={slide.id}>
                 <AnimatePresence custom={direction}>
@@ -104,9 +97,9 @@ export default function Slider({}: Props) {
                       className={`absolute top-0 left-0 w-full h-full`}
                       custom={direction}
                       variants={variants}
-                      initial='enter'
-                      animate='center'
-                      exit='exit'
+                      initial="enter"
+                      animate="center"
+                      exit="exit"
                       transition={{
                         x: {
                           type: "spring",
@@ -116,19 +109,19 @@ export default function Slider({}: Props) {
                         opacity: { duration: 0.2 },
                       }}
                     >
-                      <div className='absolute inset-0 w-full h-full -z-20'>
+                      <div className="absolute inset-0 w-full h-full -z-20">
                         {/*eslint-disable-next-line @next/next/no-img-element*/}
                         <img
                           src={slide.imageUrl}
-                          alt=''
-                          className='h-full w-full object-cover'
+                          alt=""
+                          className="h-full w-full object-cover"
                         />
                       </div>
-                      <div className='bg-[rgba(16,25,48,0.40)] absolute left-0 w-full h-full -z-10' />
-                      <div className='flex justify-center h-full'>
-                        <div className='container mx-auto z-20'>
+                      <div className="bg-[rgba(16,25,48,0.40)] absolute left-0 w-full h-full -z-10" />
+                      <div className="flex justify-center h-full">
+                        <div className="container mx-auto z-20">
                           <motion.div
-                            className='max-w-[500px] flex flex-col justify-center h-full'
+                            className="max-w-[500px] flex flex-col justify-center h-full"
                             initial={{
                               x: -100,
                               opacity: 0,
@@ -147,8 +140,8 @@ export default function Slider({}: Props) {
                             }}
                           >
                             <div>
-                              <div className='bg-black px-[11px] py-1.5 w-fit mb-4 lg:mb-5'>
-                                <p className='text-white font-medium capitalize'>
+                              <div className="bg-black px-[11px] py-1.5 w-fit mb-4 lg:mb-5">
+                                <p className="text-white font-medium capitalize">
                                   Industries
                                 </p>
                               </div>
@@ -172,7 +165,7 @@ export default function Slider({}: Props) {
                                 {slide.heading}
                               </motion.h1>
                               <motion.p
-                                className='text-white text-sm md:text-base text-justify 2xl:text-lg mb-5 md:mb-7 lg:mb-[34px]'
+                                className="text-white text-sm md:text-base text-justify 2xl:text-lg mb-5 md:mb-7 lg:mb-[34px]"
                                 initial={{
                                   x: -100,
                                   opacity: 0,
@@ -203,8 +196,8 @@ export default function Slider({}: Props) {
                                 }}
                               >
                                 <Link href={slide.link}>
-                                  <button className='p-[18px] rounded-[3px] bg-secondary'>
-                                    <p className='font-semibold text-black font-nunito'>
+                                  <button className="p-[18px] rounded-[3px] bg-secondary">
+                                    <p className="font-semibold text-black font-nunito">
                                       View Details
                                     </p>
                                   </button>
@@ -221,7 +214,7 @@ export default function Slider({}: Props) {
             ))}
           </div>
         </div>
-        <div className='absolute -bottom-4 sm:-bottom-10 md:-bottom-4 lg:-bottom-10 left-5 right-5 md:right-0 md:left-1/2 transform md:-translate-x-1/2 flex items-center justify-center space-x-4 z-10'>
+        <div className="absolute -bottom-4 sm:-bottom-10 md:-bottom-4 lg:-bottom-10 left-5 right-5 md:right-0 md:left-1/2 transform md:-translate-x-1/2 flex items-center justify-center space-x-4 z-10">
           <div>
             <button
               className={`${currentSlide === 1 ? "bg-white/30" : "bg-yellow"}
@@ -229,9 +222,8 @@ export default function Slider({}: Props) {
                                     transition-all duration-150 ease-linear
                                 `}
               onClick={handlePrev}
-              disabled={currentSlide === 1}
             >
-              <i className='text-white text-lg font-medium'>
+              <i className="text-white text-lg font-medium">
                 <FiChevronLeft />
               </i>
             </button>
@@ -250,7 +242,7 @@ export default function Slider({}: Props) {
                 <img
                   src={item.imageUrl}
                   alt={item.imageUrl}
-                  className='h-full object-cover max-h-[141px]'
+                  className="h-full object-cover max-h-[141px]"
                 />
               </div>
             </Fragment>
@@ -266,9 +258,8 @@ export default function Slider({}: Props) {
                                     transition-all duration-150 ease-linear
                                 `}
               onClick={handleNext}
-              disabled={currentSlide === sliderSection.length}
             >
-              <i className='text-white text-lg font-medium'>
+              <i className="text-white text-lg font-medium">
                 <FiChevronRight />
               </i>
             </button>

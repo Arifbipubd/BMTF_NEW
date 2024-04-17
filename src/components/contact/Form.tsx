@@ -16,9 +16,6 @@ const schema = yup.object({
 });
 
 export default function Form({}: Props) {
-  // const handleSubmit = (e: any) => {
-  //     e.preventDefault();
-  // };
 
   const { values, handleBlur, handleChange, handleSubmit, errors } = useFormik({
     initialValues: {
