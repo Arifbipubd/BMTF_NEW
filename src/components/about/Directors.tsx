@@ -44,7 +44,7 @@ export default function Directors({}: Props) {
             >
               <div className='-mt-20 sm:-mt-28 mb-3'>
                 {/* eslint-disable-next-line @next/next/no-img-element*/}
-                <img src='/assets/images/about/Ellipse_2.png' alt='' />
+                <img src='/assets/images/about/qmg.png' alt='' />
               </div>
               <div className=''>
                 <p className='text-white text-sm 2xl:text-base'>
