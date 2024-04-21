@@ -59,7 +59,7 @@ export default function Directors({}: Props) {
             <div className='py-[45px] px-[35px] bg-yellow flex flex-col items-center text-center h-fit'>
               <div className='-mt-20 sm:-mt-28 mb-3'>
                 {/* eslint-disable-next-line @next/next/no-img-element*/}
-                <img src='/assets/images/about/Ellipse_3.png' alt='' />
+                <img src='/assets/images/home/md.png' alt='' />
               </div>
               <div className=''>
                 <p className='text-white text-sm 2xl:text-base'>
