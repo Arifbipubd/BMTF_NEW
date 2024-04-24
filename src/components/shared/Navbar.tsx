@@ -435,7 +435,7 @@ export default function Navbar() {
               ))}
 
               <div className="h-full block w-fit ">
-                <Link href={"/"} className="">
+                <Link href={"https://bmtf-ecommerce.vercel.app/"} className="">
                   <button className="flex items-center bg-primary border-0 px-[22px] py-[16px] text-yellow">
                     <span>
                       <i className="text-yellow text-2xl">

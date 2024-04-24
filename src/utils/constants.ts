@@ -337,7 +337,7 @@ export const navItems: Array<NavItem> = [
           {
             id: 2,
             link: "/news-and-tenders",
-            label: "News and Tenders",
+            label: "News",
           },
         ],
       },
