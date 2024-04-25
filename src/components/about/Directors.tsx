@@ -26,9 +26,12 @@ export default function Directors({}: Props) {
                 </div>
                 <div className=''>
                   <p className='text-white text-sm 2xl:text-base'>
-                    Chief of Army Stuff
+                    General S M Shafiuddin Ahmed <br /> SBP(BAR), OSP, ndu, psc,
+                    PhD <br /> Chief of Army Stuff
                   </p>
-                  <p className='text-white text-sm 2xl:text-base'>Chairman</p>
+                  <p className='text-white text-sm 2xl:text-base font-bold'>
+                    Chairman
+                  </p>
                 </div>
               </div>
             </div>
@@ -48,9 +51,10 @@ export default function Directors({}: Props) {
               </div>
               <div className=''>
                 <p className='text-white text-sm 2xl:text-base'>
-                  Quater Master General
+                  Lt Gen Md Majibur Rahman <br /> SBP, OSP, PBGMS, PPMS, ndc,
+                  psc, M Phil QMG, Bangladesh Army <br /> Quater Master General
                 </p>
-                <p className='text-white text-sm 2xl:text-base'>
+                <p className='text-white text-sm 2xl:text-base font-bold'>
                   {" "}
                   Vice Chairman
                 </p>
@@ -63,9 +67,12 @@ export default function Directors({}: Props) {
               </div>
               <div className=''>
                 <p className='text-white text-sm 2xl:text-base'>
-                  Managing Director BMTF
+                  Major General Mohammad Asadullah Minhazul Alam <br /> ndu,
+                  psc, PhD <br /> Managing Director BMTF
                 </p>
-                <p className='text-white text-sm 2xl:text-base'>Member</p>
+                <p className='text-white text-sm 2xl:text-base font-bold'>
+                  Member
+                </p>
               </div>
             </div>
           </div>
