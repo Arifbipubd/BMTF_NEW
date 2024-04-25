@@ -105,10 +105,11 @@ function Footer({}: Props) {
                 </div>
                 <div className='mb-3 md:mb-5'>
                   <Link
-                    href={"/noc-and-notice"}
+                    href='https://www.bmtf.com.bd/'
+                    target='_blank'
                     className=' text-sm 2xl:text-base text-white capitalize leading-[150%]'
                   >
-                    NOC & Notices
+                    Old Website
                   </Link>
                 </div>
                 <div>
