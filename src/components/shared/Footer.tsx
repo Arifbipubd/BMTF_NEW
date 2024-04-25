@@ -112,14 +112,6 @@ function Footer({}: Props) {
                     Old Website
                   </Link>
                 </div>
-                <div>
-                  <Link
-                    href={"/"}
-                    className=' text-sm 2xl:text-base text-white capitalize leading-[150%]'
-                  >
-                    Our Previous Website
-                  </Link>
-                </div>
               </div>
             </div>
             <div className='md:col-span-2 xl:col-span-1'>
