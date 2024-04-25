@@ -16,10 +16,10 @@ export default function Directors({}: Props) {
           </div>
           <div>
             <div
-              className={`relative flex justify-center mb-24 sm:after:content-[''] sm:after:absolute sm:after:top-[100%]
-                            sm:after:left-[50%] sm:after:-translate-x-1/2 sm:after:w-1  sm:after:h-[245px] md:after:h-[215px] lg:after:h-[205px] xl:after:h-[195px] sm:after:bg-white`}
+              className={`relative sm:flex justify-center mb-24 sm:after:content-[''] sm:after:absolute sm:after:top-[100%]
+                           sm:after:left-[52%] md:after:left-[53%] lg:after:left-[50%] sm:after:-translate-x-1/2 sm:after:w-1  sm:after:h-[230px] md:after:h-[200px] lg:after:h-[200px] xl:after:h-[200px] 2xl:after:h-[210px] sm:after:bg-white`}
             >
-              <div className="py-[45px] px-[35px] bg-yellow flex flex-col items-center text-center w-fit">
+              <div className="py-[45px] px-[35px] bg-yellow flex flex-col items-center text-center sm:w-fit">
                 <div className="-mt-20 sm:-mt-28 mb-3">
                   {/* eslint-disable-next-line @next/next/no-img-element*/}
                   <img src="/assets/images/about/Ellipse_1.png" alt="" />
