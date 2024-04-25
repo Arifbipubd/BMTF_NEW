@@ -168,7 +168,8 @@ function Footer({}: Props) {
       </div>
       <div className='py-4 md:py-[25px] text-center bg-[#172A46]'>
         <p className='text-sm 2xl:text-base text-copyright leading-[150%]'>
-          © 2023-24 Bangladesh Machine Tools Factory Ltd. All rights reserved.
+          © 2023-24 Bangladesh Machine Tools Factory Ltd. All rights
+          reserved.Crafted by The Bridge Interactive Ltd.
         </p>
       </div>
     </footer>
