@@ -89,14 +89,6 @@ function Footer({}: Props) {
                 </div>
                 <div className='mb-3 md:mb-5'>
                   <Link
-                    href={"/accreditations-and-certificate"}
-                    className=' text-sm 2xl:text-base text-white capitalize leading-[150%]'
-                  >
-                    Accreditations
-                  </Link>
-                </div>
-                <div className='mb-3 md:mb-5'>
-                  <Link
                     href={"/our-history"}
                     className=' text-sm 2xl:text-base text-white capitalize leading-[150%]'
                   >
@@ -127,14 +119,6 @@ function Footer({}: Props) {
                     className=' text-sm 2xl:text-base text-white capitalize leading-[150%]'
                   >
                     Verticals
-                  </Link>
-                </div>
-                <div className='mb-3 md:mb-5'>
-                  <Link
-                    href={"/news-and-tenders"}
-                    className=' text-sm 2xl:text-base text-white capitalize leading-[150%]'
-                  >
-                    News & Tenders
                   </Link>
                 </div>
                 <div className='mb-3 md:mb-5'>
