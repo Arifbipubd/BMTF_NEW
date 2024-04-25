@@ -149,60 +149,60 @@ export default function Navbar() {
         className={` ${submenuShow ? "block" : "hidden"}
             border-b-[1px] border-solid border-b-white/10 `}
       >
-        <div className="container mx-auto">
-          <div className="flex flex-row  justify-between sm:items-center py-[11px]">
-            <div className="block md:flex items-center">
-              <div className="mr-[25px] mb-3 md:mb-0 flex items-center">
-                <div className="mr-[13px]">
-                  <i className="text-yellow text-lg 2xl:text-xl">
+        <div className='container mx-auto'>
+          <div className='flex flex-row  justify-between sm:items-center py-[11px]'>
+            <div className='block md:flex items-center'>
+              <div className='mr-[25px] mb-3 md:mb-0 flex items-center'>
+                <div className='mr-[13px]'>
+                  <i className='text-yellow text-lg 2xl:text-xl'>
                     <PiPhoneThin />
                   </i>
                 </div>
-                <div className="text-white text-sm 2xl:text-base">
-                  <span className="mr-[7px]">Call Us</span>
+                <div className='text-white text-sm 2xl:text-base'>
+                  <span className='mr-[7px]'>Call Us</span>
                 </div>
                 <a
                   href={`tel:+88028871150`}
-                  className="text-white text-sm 2xl:text-base"
+                  className='text-white text-sm 2xl:text-base'
                 >
                   <span>+880-2-8871150</span>
                 </a>
               </div>
-              <div className="flex items-center">
-                <div className="mr-[10px]">
-                  <i className="text-yellow text-lg 2xl:text-xl">
+              <div className='flex items-center'>
+                <div className='mr-[10px]'>
+                  <i className='text-yellow text-lg 2xl:text-xl'>
                     <HiOutlineInbox />
                   </i>
                 </div>
-                <div className="text-white text-sm 2xl:text-base">
-                  <span className="mr-2">Email Us</span>
+                <div className='text-white text-sm 2xl:text-base'>
+                  <span className='mr-2'>Email Us</span>
                 </div>
                 <a
                   href={`mailto:mkt@bmtf.com.bd`}
-                  className=" text-white text-sm 2xl:text-base"
+                  className=' text-white text-sm 2xl:text-base'
                 >
                   <span>mkt@bmtf.com.bd</span>
                 </a>
               </div>
             </div>
-            <div className="flex mb-3 sm:mb-0">
+            <div className='flex mb-3 sm:mb-0'>
               <div>
-                <a href="/">
-                  <i className="text-white text-[22px] 2xl:text-2xl hover:text-yellow">
+                <a href='/'>
+                  <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
                     <CiFacebook />
                   </i>
                 </a>
               </div>
-              <div className="mx-3 sm:mx-[26px]">
-                <a href="/">
-                  <i className="text-white text-[22px] 2xl:text-2xl hover:text-yellow">
+              <div className='mx-3 sm:mx-[26px]'>
+                <a href='/'>
+                  <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
                     <PiYoutubeLogo />
                   </i>
                 </a>
               </div>
               <div>
-                <a href="/">
-                  <i className="text-white text-[22px] 2xl:text-2xl hover:text-yellow">
+                <a href='/'>
+                  <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
                     <PiLinkedinLogo />
                   </i>
                 </a>
@@ -211,23 +211,23 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <nav className="container mx-auto relative">
-        <div className="block xl:flex justify-between py-1 relative">
-          <div className="flex items-center text-white">
-            <Link href={"/"} className="">
+      <nav className='container mx-auto relative'>
+        <div className='block xl:flex justify-between py-1 relative'>
+          <div className='flex items-center text-white'>
+            <Link href={"/"} className=''>
               {/* eslint-disable-next-line @next/next/no-img-element*/}
               <img
-                src="/assets/images/header/bmtf-logo.svg"
-                className="lg:w-full h-12 mr-2 relative"
-                alt="Logo"
+                src='/assets/images/header/bmtf-logo.svg'
+                className='lg:w-full h-12 mr-2 relative'
+                alt='Logo'
               />
             </Link>
           </div>
-          <div className="block xl:hidden">
-            <div className="absolute right-0 top-2">
+          <div className='block xl:hidden'>
+            <div className='absolute right-0 top-2'>
               <button
                 onClick={handleCloseIcon}
-                className="flex items-center py-2 rounded "
+                className='flex items-center py-2 rounded '
               >
                 <i className={`text-2xl text-white`}>
                   <CgMenuRight />
@@ -242,13 +242,13 @@ export default function Navbar() {
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: "100vh", opacity: 1 }}
                   transition={{ duration: 0.5 }}
-                  exit="exit"
+                  exit='exit'
                 >
-                  <div className="container mx-auto">
-                    <li className="flex justify-end py-7 mt-10 md:mt-6">
+                  <div className='container mx-auto'>
+                    <li className='flex justify-end py-7 mt-10 md:mt-6'>
                       <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="flex items-center rounded "
+                        className='flex items-center rounded '
                       >
                         <i
                           className={`text-2xl text-white ${
@@ -299,7 +299,7 @@ export default function Navbar() {
                                   : "text-white"
                               } text-lg font-medium capitalize flex items-center h-full`}
                             >
-                              <span className="mr-1.5 h-full">
+                              <span className='mr-1.5 h-full'>
                                 {item.label}
                               </span>
                               <div
@@ -310,11 +310,11 @@ export default function Navbar() {
                                 }`}
                               >
                                 {openSubmenuId === item.id ? (
-                                  <i className="text-xs">
+                                  <i className='text-xs'>
                                     <BsChevronUp />
                                   </i>
                                 ) : (
-                                  <i className="text-xs">
+                                  <i className='text-xs'>
                                     <BsChevronDown />
                                   </i>
                                 )}
@@ -326,23 +326,23 @@ export default function Navbar() {
                               openSubmenuId === item.id ? "block " : "hidden"
                             } flex justify-end w-fit mx-auto`}
                           >
-                            <ul className=" ">
+                            <ul className=' '>
                               {item.children?.map((children) => (
                                 <li
                                   key={children.id}
-                                  className="text-white text-center text-xl md:text-2xl mt-5 mb-3 md:mt-6 md:mb-4"
+                                  className='text-white text-center text-xl md:text-2xl mt-5 mb-3 md:mt-6 md:mb-4'
                                 >
                                   {children.label}
-                                  <hr className="w-3/4 h-0.5 border-t border-t-secondary my-2.5 mx-auto" />
-                                  <ul className=" mt-3">
+                                  <hr className='w-3/4 h-0.5 border-t border-t-secondary my-2.5 mx-auto' />
+                                  <ul className=' mt-3'>
                                     {children.menuItems.map((menu: any) => (
                                       <li
                                         key={menu.id}
-                                        className="text-base my-3 md:my-4"
+                                        className='text-base my-3 md:my-4'
                                       >
                                         <Link
                                           href={menu.link}
-                                          className="text-white"
+                                          className='text-white'
                                           onClick={handleCloseIcon}
                                         >
                                           {menu.label}
@@ -359,7 +359,7 @@ export default function Navbar() {
                     ))}
 
                     <motion.div
-                      className="flex items-center justify-center w-full my-4"
+                      className='flex items-center justify-center w-full my-4'
                       onMouseLeave={hoverMouseLeave}
                       initial={{ y: 80, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
@@ -371,10 +371,14 @@ export default function Navbar() {
                         },
                       }}
                     >
-                      <Link href={"/"} className="">
-                        <button className="flex items-center bg-primary border-0 py-3 md:py-4 px-4 md:px-[22px] text-yellow">
+                      <Link
+                        href='https://bmtf-ecommerce.vercel.app/'
+                        target='_blank'
+                        className=''
+                      >
+                        <button className='flex items-center bg-primary border-0 py-3 md:py-4 px-4 md:px-[22px] text-yellow'>
                           <span>
-                            <i className="text-yellow text-2xl">
+                            <i className='text-yellow text-2xl'>
                               <RiShoppingBag2Line />
                             </i>
                           </span>
@@ -387,7 +391,7 @@ export default function Navbar() {
               )}
             </AnimatePresence>
           </div>
-          <div className="hidden xl:block">
+          <div className='hidden xl:block'>
             <ul className={` flex items-center gap-[22px]`}>
               {navItems.map((item) => (
                 <Fragment key={item.id}>
@@ -410,7 +414,7 @@ export default function Navbar() {
                             : "text-white"
                         } text-lg font-medium capitalize flex items-center h-full`}
                       >
-                        <span className="mr-1.5 h-full">{item.label}</span>
+                        <span className='mr-1.5 h-full'>{item.label}</span>
                         <div
                           className={`${
                             item.children && item.children?.length > 0
@@ -419,11 +423,11 @@ export default function Navbar() {
                           }`}
                         >
                           {openSubmenuId === item.id ? (
-                            <i className="text-xs">
+                            <i className='text-xs'>
                               <BsChevronUp />
                             </i>
                           ) : (
-                            <i className="text-xs">
+                            <i className='text-xs'>
                               <BsChevronDown />
                             </i>
                           )}
@@ -434,11 +438,15 @@ export default function Navbar() {
                 </Fragment>
               ))}
 
-              <div className="h-full block w-fit ">
-                <Link href={"https://bmtf-ecommerce.vercel.app/"} className="">
-                  <button className="flex items-center bg-primary border-0 px-[22px] py-[16px] text-yellow">
+              <div className='h-full block w-fit '>
+                <Link
+                  href='https://bmtf-ecommerce.vercel.app/'
+                  target='_blank'
+                  className=''
+                >
+                  <button className='flex items-center bg-primary border-0 px-[22px] py-[16px] text-yellow'>
                     <span>
-                      <i className="text-yellow text-2xl">
+                      <i className='text-yellow text-2xl'>
                         <RiShoppingBag2Line />
                       </i>
                     </span>
@@ -467,12 +475,12 @@ export default function Navbar() {
                 opacity: 0,
               }}
             >
-              <div className="w-1/2 mx-auto h-full">
+              <div className='w-1/2 mx-auto h-full'>
                 {children &&
                   children.map((item, index) => (
                     <motion.div
                       key={item.id}
-                      className="mb-4"
+                      className='mb-4'
                       initial={{
                         y: 60,
                         opacity: 0,
@@ -493,16 +501,16 @@ export default function Navbar() {
                         },
                       }}
                     >
-                      <h3 className="text-white leading-[2.8rem] font-semibold text-3xl">
+                      <h3 className='text-white leading-[2.8rem] font-semibold text-3xl'>
                         {item.label}
                       </h3>
-                      <hr className="w-full h-0.5 border-t border-t-secondary my-2.5" />
-                      <div className="xl:grid xl:grid-cols-3 xl:gap-7">
+                      <hr className='w-full h-0.5 border-t border-t-secondary my-2.5' />
+                      <div className='xl:grid xl:grid-cols-3 xl:gap-7'>
                         {item.menuItems &&
                           item.menuItems.map((menu: any) => (
                             <Link
                               href={menu.link}
-                              className="text-white hover:text-secondary w-fit"
+                              className='text-white hover:text-secondary w-fit'
                               key={menu.id}
                               onClick={mouseLeaveHandler}
                             >

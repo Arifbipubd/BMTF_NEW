@@ -24,14 +24,14 @@ export default function Directors({}: Props) {
                   {/* eslint-disable-next-line @next/next/no-img-element*/}
                   <img src="/assets/images/about/Ellipse_1.png" alt="" />
                 </div>
-                <div className="">
-                  <p className="text-white text-sm 2xl:text-base mb-2">
-                    General S M Shafiuddin Ahmed, SBP(BAR), OSP, ndu, psc, PhD
+                <div className=''>
+                  <p className='text-white text-sm 2xl:text-base'>
+                    General S M Shafiuddin Ahmed <br /> SBP(BAR), OSP, ndu, psc,
+                    PhD <br /> Chief of Army Stuff
                   </p>
-                  <p className="text-white text-sm 2xl:text-base">
-                    Chief of Army Stuff
+                  <p className='text-white text-sm 2xl:text-base font-bold'>
+                    Chairman
                   </p>
-                  <p className="text-white text-sm 2xl:text-base">Chairman</p>
                 </div>
               </div>
             </div>
@@ -49,15 +49,12 @@ export default function Directors({}: Props) {
                 {/* eslint-disable-next-line @next/next/no-img-element*/}
                 <img src="/assets/images/about/qmg.png" alt="" />
               </div>
-              <div className="">
-                <p className="text-white  text-sm 2xl:text-base mb-2">
-                  Lt Gen Md Majibur Rahman, SBP, OSP, PBGMS, PPMS, ndc, psc, M
-                  Phil QMG, Bangladesh Army
+              <div className=''>
+                <p className='text-white text-sm 2xl:text-base'>
+                  Lt Gen Md Majibur Rahman <br /> SBP, OSP, PBGMS, PPMS, ndc,
+                  psc, M Phil QMG, Bangladesh Army <br /> Quater Master General
                 </p>
-                <p className="text-white text-sm 2xl:text-base">
-                  Quater Master General
-                </p>
-                <p className="text-white text-sm 2xl:text-base">
+                <p className='text-white text-sm 2xl:text-base font-bold'>
                   {" "}
                   Vice Chairman
                 </p>
@@ -68,15 +65,14 @@ export default function Directors({}: Props) {
                 {/* eslint-disable-next-line @next/next/no-img-element*/}
                 <img src="/assets/images/home/md.png" alt="" />
               </div>
-              <div className="">
-                <p className="text-white text-sm 2xl:text-base mb-2">
-                  Major General Mohammad Asadullah Minhazul Alam, ndu, psc, PhD
-                  Managing Director, BMTF Ltd
+              <div className=''>
+                <p className='text-white text-sm 2xl:text-base'>
+                  Major General Mohammad Asadullah Minhazul Alam <br /> ndu,
+                  psc, PhD <br /> Managing Director BMTF
                 </p>
-                <p className="text-white text-sm 2xl:text-base">
-                  Managing Director BMTF
+                <p className='text-white text-sm 2xl:text-base font-bold'>
+                  Member
                 </p>
-                <p className="text-white text-sm 2xl:text-base">Member</p>
               </div>
             </div>
           </div>
