@@ -30,7 +30,7 @@ export default function Directors({}: Props) {
                   </p>
                   <p className='text-white text-sm 2xl:text-base'>
                     General S M Shafiuddin Ahmed <br /> SBP(BAR), OSP, ndu, psc,
-                    PhD <br /> Chief of Army Stuff
+                    PhD <br /> Chief of Army Staff
                   </p>
                 </div>
               </div>
