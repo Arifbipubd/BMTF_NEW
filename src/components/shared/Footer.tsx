@@ -103,13 +103,21 @@ function Footer({}: Props) {
                     our history
                   </Link>
                 </div>
-                <div>
+                <div className='mb-3 md:mb-5'>
                   <Link
                     href='https://www.bmtf.com.bd/'
                     target='_blank'
                     className=' text-sm 2xl:text-base text-white capitalize leading-[150%]'
                   >
                     Old Website
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    href={"/"}
+                    className=' text-sm 2xl:text-base text-white capitalize leading-[150%]'
+                  >
+                    Our Previous Website
                   </Link>
                 </div>
               </div>
