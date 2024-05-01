@@ -11,6 +11,7 @@ import { CgClose, CgMenuRight } from "react-icons/cg";
 import { PiPhoneThin } from "react-icons/pi";
 import { HiOutlineInbox } from "react-icons/hi";
 import { CiFacebook } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
 import { PiYoutubeLogo } from "react-icons/pi";
 import { PiLinkedinLogo } from "react-icons/pi";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
@@ -185,23 +186,39 @@ export default function Navbar() {
                 </a>
               </div>
             </div>
-            <div className='flex mb-3 sm:mb-0'>
+            <div className='flex mb-3 sm:mb-0 gap-1 sm:gap-3'>
               <div>
-                <a href='/'>
+                <a
+                  href='https://www.facebook.com/BMTF.Bangladesh/'
+                  target='_blank'
+                >
                   <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
                     <CiFacebook />
                   </i>
                 </a>
               </div>
-              <div className='mx-3 sm:mx-[26px]'>
-                <a href='/'>
+              <div className=''>
+                <a
+                  href='https://www.instagram.com/bmtf.bangladesh/'
+                  target='_blank'
+                >
+                  <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
+                    <FaInstagram />
+                  </i>
+                </a>
+              </div>
+              <div className=''>
+                <a href='https://www.youtube.com/@BMTFofficial' target='_blank'>
                   <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
                     <PiYoutubeLogo />
                   </i>
                 </a>
               </div>
               <div>
-                <a href='/'>
+                <a
+                  href='https://www.linkedin.com/company/98842722/'
+                  target='_blank'
+                >
                   <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
                     <PiLinkedinLogo />
                   </i>
