@@ -30,7 +30,7 @@ export default function BMTF({}: Props) {
               management of the Bangladesh Army. Spanning 156.47 acres of land
               at Shimultoli, Gazipur, BMTF comprises 19 dynamic factories. Led
               by the Chief of Army Staff as the Board Chairman and with a
-              capable Managing Director, BMTF is incessantly diversifying its
+              Managing Director, BMTF is incessantly diversifying its
               enterprises to bolster the national economy and attain acclaim as
               a renowned conglomerate on a global scale.
             </p>

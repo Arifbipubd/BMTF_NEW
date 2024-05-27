@@ -60,7 +60,7 @@ export default function Page({}: Props) {
           descriptionOne={`The BMTF Electronic Assembly Shop is a hub for high-tech electronics and projects aimed at advancing Bangladesh's digital landscape. It plays a pivotal role in numerous government projects focused on automating both public and private organizations within the country. The team possesses expertise in assembling various electronic devices, including laptops, notebooks, and tablets. Furthermore, they are engaged in specialized projects such as the manufacturing of Electronic Voting Machines (EVMs), National ID Smart Cards, Vehicle Number Plates, and Digital Driver's Licenses vital initiatives for the nation. They are at the forefront of incorporating modern technology and innovating to further develop and expand their operations`}
         />
         <AimSection
-          imageSrc='/assets/images/verticals/electronic-assembly/aim.png'
+          imageSrc='/assets/images/NewUpdateVerticals/Electionics.jpg'
           aimItems={electronicAim}
         />
         <CategoryOfServices

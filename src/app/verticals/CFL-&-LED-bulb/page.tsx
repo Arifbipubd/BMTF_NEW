@@ -71,7 +71,7 @@ export default function Page({}: Props) {
                 `}
         />
         <AimSection
-          imageSrc='/assets/images/verticals/machine-shop/machine-shop-aim.png'
+          imageSrc='/assets/images/NewUpdateVerticals/cfl-bulb.jpg'
           aimItems={aim}
         />
         <CategoryOfServices

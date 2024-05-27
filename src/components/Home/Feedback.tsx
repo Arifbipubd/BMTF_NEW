@@ -18,7 +18,7 @@ export default function Feedback({}: Props) {
         </div>
         <div className='mb-10 md:mb-12 lg:mb-[54px] lg:max-w-[862px]'>
           <p className='text-white text-sm 2xl:text-base text-center'>
-            Under the banner of Bangladesh Machine Tools Factory Limited (BMTF),
+            {/* Under the banner of Bangladesh Machine Tools Factory Limited (BMTF),
             we stand at the forefront of innovation and industrial excellence.
             Spanning across 260 acres in Gazipur, BMTF is more than an
             industrial conglomerate; it&apos;s a testament to our commitment to
@@ -26,6 +26,20 @@ export default function Feedback({}: Props) {
             leadership of the Chief of Army Staff as the Board Chairman and
             supported by a skilled team, we&apos;ve earned global recognition
             through our relentless pursuit of excellence.
+             */}
+            I am humbled by the opportunity bestowed upon me by the grace of
+            Allah to serve an institution of this magnitude. I am also deeply
+            thankful to the Honorable Prime Minister of Bangladesh for
+            entrusting the management of BMTF to the Bangladesh Army. It&apos;s
+            our collective endeavor to realize Father of the Nation Bangabandhu
+            Sheikh Mujibur Rahman&apos;s vision of an economically prosperous
+            Bangladesh, free from poverty and unemployment, achieved through
+            dynamic industrialization. Guided by the visionary leadership of the
+            Chief of Army Staff as the Board Chairman we navigate the path
+            towards progress and expansion remaining resolute in our pursuit of
+            excellence. I seek guidance and blessings from Allah as we strive to
+            achieve our aim to be the largest contributor in the national
+            economy. <br /> Ameen.
           </p>
         </div>
         <div className='mb-3 md:mb-[18px]'>

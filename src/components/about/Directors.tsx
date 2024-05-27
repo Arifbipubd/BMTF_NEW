@@ -56,7 +56,7 @@ export default function Directors({}: Props) {
                 </p>
                 <p className='text-white text-sm 2xl:text-base'>
                   Lt Gen Md Majibur Rahman <br /> SBP, OSP, PBGMS, PPMS, ndc,
-                  psc, M Phil QMG, Bangladesh Army <br /> Quater Master General
+                  psc, M Phil QMG <br /> Quater Master General , Bangladesh Army
                 </p>
               </div>
             </div>

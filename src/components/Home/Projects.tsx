@@ -29,9 +29,7 @@ export default function Projects({}: Props) {
               <div className='px-9 py-[27px] bg-white'>
                 <div className='mb-4 md:mb-5 lg:mb-[22px]'>
                   <p className='text-sm 2xl:text-base text-tertiary text-justify'>
-                    In a bid to innovate and contribute to the welfare of its
-                    citizens, BMTF has introduced a groundbreaking housing
-                    solution named SPARC.
+                    Know about BMTF’s exciting & groundbreaking projects.
                   </p>
                 </div>
                 <div>

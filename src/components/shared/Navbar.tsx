@@ -399,7 +399,7 @@ export default function Navbar() {
                               <RiShoppingBag2Line />
                             </i>
                           </span>
-                          <span>BMTF Shop</span>
+                          <span>BMTF value shop</span>
                         </button>
                       </Link>
                     </motion.div>
@@ -467,7 +467,7 @@ export default function Navbar() {
                         <RiShoppingBag2Line />
                       </i>
                     </span>
-                    <span>BMTF Shop</span>
+                    <span>BMTF value shop</span>
                   </button>
                 </Link>
               </div>

@@ -93,7 +93,7 @@ export default function Page({}: Props) {
           aimItems={poleAim}
         />
         <CategoryOfServices
-          imageSrc='/assets/images/verticals/pole-and-pile/category_of_service.png'
+          imageSrc='/assets/images/NewUpdateVerticals/Pole.jpg'
           items={polePoints}
           textOrder='order-2 lg:order-1'
           imageOrder='order-1 lg:order-2'

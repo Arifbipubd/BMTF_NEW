@@ -391,7 +391,7 @@ export const experienceLists: Array<any> = [
   },
   {
     id: 112,
-    experience: "Successfully serving 50+ Clients.",
+    experience: "Successfully serving 500+local & global clients.",
   },
   {
     id: 113,

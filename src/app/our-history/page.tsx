@@ -46,7 +46,7 @@ export default function Page({}: Props) {
         />
         <Timeline />
         <Memory />
-        <ConnectBMTF />
+        {/* <ConnectBMTF /> */}
       </section>
     </Layout>
   );

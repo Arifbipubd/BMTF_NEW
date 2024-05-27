@@ -42,25 +42,25 @@ function Footer({}: Props) {
               <div className='flex lg:justify-between items-center w-full gap-6'>
                 <div>
                   <p className='text-white text-sm 2xl:text-base leading-[150%]'>
-                    Sunday-Thursday:
+                    Saturday- Thursday :
                   </p>
                   <p className='text-white text-sm 2xl:text-base my-3 md:my-5 leading-[150%]'>
-                    Friday:
+                    Friday :
                   </p>
-                  <p className='text-white text-sm 2xl:text-base leading-[150%]'>
+                  {/* <p className='text-white text-sm 2xl:text-base leading-[150%]'>
                     Saturday:
-                  </p>
+                  </p> */}
                 </div>
                 <div className='text-end'>
                   <p className='text-white text-sm 2xl:text-base leading-[150%]'>
-                    8 Am to 2 PM
+                    7:30-3:30 PM
                   </p>
                   <p className='text-white text-sm 2xl:text-base my-3 md:my-5 leading-[150%]'>
                     Closed
                   </p>
-                  <p className='text-white text-sm 2xl:text-base leading-[150%]'>
+                  {/* <p className='text-white text-sm 2xl:text-base leading-[150%]'>
                     Closed
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

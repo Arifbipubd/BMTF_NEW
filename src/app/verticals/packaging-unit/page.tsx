@@ -76,7 +76,7 @@ export default function Page({}: Props) {
                 working tirelessly to contribute to the creation of a greener future.`}
         />
         <AimSection
-          imageSrc='/assets/images/allVerticals/Packaging.jpg'
+          imageSrc='/assets/images/NewUpdateVerticals/Packaging1.jpg'
           aimItems={packagingAim}
         />
 
@@ -88,7 +88,7 @@ export default function Page({}: Props) {
         />
         <PackagingSectionCard items={sectionCard} />
         <SingleColumnGridList
-          imageSrc='/assets/images/verticals/Packaging/packaging_2.jpg'
+          imageSrc='/assets/images/NewUpdateVerticals/packaging2.jpg'
           listHeading='Environmental Benefits of Using Paper Bags'
           backroundColor='bg-white'
           listItems={listItems}
