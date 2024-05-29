@@ -118,10 +118,10 @@ function AboutBMTF({}: Props) {
               leading state-owned commercial entities operating under the
               management of the Bangladesh Army. Spanning 156.47 acres of land
               at Shimultoli, Gazipur, BMTF comprises 19 dynamic factories. Led
-              by the Chief of Army Staff as the Board Chairman and with a
-              Managing Director, BMTF is incessantly diversifying its
-              enterprises to bolster the national economy and attain acclaim as
-              a renowned conglomerate on a global scale.
+              by the Chief of Army Staff as the Board Chairman and a Major
+              General as the Managing Director, BMTF is incessantly diversifying
+              its enterprises to bolster the national economy and attain acclaim
+              as a renowned conglomerate on a global scale.
             </p>
             <p className='text-sm 2xl:text-base text-tertiary text-justify leading-[150%]'>
               With a blend of military and civilian officers and a dedicated

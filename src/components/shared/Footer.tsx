@@ -28,8 +28,8 @@ function Footer({}: Props) {
               <div>
                 <p className='text-white capitalize text-sm 2xl:text-base leading-[150%]'>
                   We are focused on user-driven outcomes, we strive to create
-                  meaningful connections for users through considered strategy
-                  and innovation.
+                  meaningful connections for users through Sustainable Business
+                  strategy and innovation.
                 </p>
               </div>
             </div>

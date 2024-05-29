@@ -76,10 +76,9 @@ export default function GoalCard({}: Props) {
             </div>
             <div>
               <p className='text-sm 2xl:text-base text-tertiary text-justify'>
-                Enhancing in-house production capacity through innovation,
-                diversification and excellence in transforming Bangladesh
-                Machine Tools Factory (BMTF) Limited as mother and defense
-                industry.
+                Make Bangladesh Machine Tools Factory (BMTF) Limited a lead
+                commercially viable organization to contribute in the national
+                economy.
               </p>
             </div>
           </div>
@@ -97,9 +96,10 @@ export default function GoalCard({}: Props) {
             </div>
             <div>
               <p className='text-sm 2xl:text-base text-tertiary text-justify'>
-                Make Bangladesh Machine Tools Factory (BMTF) Limited a lead
-                commercially viable organization to contribute in the national
-                economy.
+                Enhancing in-house production capacity through innovation,
+                diversification and excellence in transforming Bangladesh
+                Machine Tools Factory (BMTF) Limited as mother and defense
+                industry.
               </p>
             </div>
           </div>
