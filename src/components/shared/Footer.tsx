@@ -104,6 +104,15 @@ function Footer({}: Props) {
                     Old Website
                   </Link>
                 </div>
+                <div className='mb-3 md:mb-5'>
+                  <Link
+                    href='https://spc-pile.bmtf.com.bd/'
+                    target='_blank'
+                    className=' text-sm 2xl:text-base text-white capitalize leading-[150%]'
+                  >
+                    SPC Pile
+                  </Link>
+                </div>
               </div>
             </div>
             <div className='md:col-span-2 xl:col-span-1'>

@@ -1782,3 +1782,18 @@ footer {
 .text-justify {
   text-align: justify;
 }
+
+.social-icon {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon-right {
+  display: flex;
+}
+
+@media (max-width: 540px) {
+  .social-icon-right {
+    display: block;
+  }
+}

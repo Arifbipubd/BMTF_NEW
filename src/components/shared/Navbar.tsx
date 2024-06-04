@@ -186,43 +186,57 @@ export default function Navbar() {
                 </a>
               </div>
             </div>
-            <div className='flex mb-3 sm:mb-0 gap-1 sm:gap-3'>
-              <div>
-                <a
-                  href='https://www.facebook.com/BMTF.Bangladesh/'
+            <div className='flex mb-3 sm:mb-0 gap-1 sm:gap-3 social-icon-right'>
+              <div className='text-end'>
+                <Link
+                  href='https://spc-pile.bmtf.com.bd/'
                   target='_blank'
+                  className=' text-sm 2xl:text-base text-white capitalize leading-[150%] text-center'
                 >
-                  <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
-                    <CiFacebook />
-                  </i>
-                </a>
+                  SPC Pile
+                </Link>
               </div>
-              <div className=''>
-                <a
-                  href='https://www.instagram.com/bmtf.bangladesh/'
-                  target='_blank'
-                >
-                  <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
-                    <FaInstagram />
-                  </i>
-                </a>
-              </div>
-              <div className=''>
-                <a href='https://www.youtube.com/@BMTFofficial' target='_blank'>
-                  <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
-                    <PiYoutubeLogo />
-                  </i>
-                </a>
-              </div>
-              <div>
-                <a
-                  href='https://www.linkedin.com/company/98842722/'
-                  target='_blank'
-                >
-                  <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
-                    <PiLinkedinLogo />
-                  </i>
-                </a>
+              <div className=' flex '>
+                <div className='mx-1'>
+                  <a
+                    href='https://www.facebook.com/BMTF.Bangladesh/'
+                    target='_blank'
+                  >
+                    <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
+                      <CiFacebook />
+                    </i>
+                  </a>
+                </div>
+                <div className='mx-1'>
+                  <a
+                    href='https://www.instagram.com/bmtf.bangladesh/'
+                    target='_blank'
+                  >
+                    <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
+                      <FaInstagram />
+                    </i>
+                  </a>
+                </div>
+                <div className='mx-1'>
+                  <a
+                    href='https://www.youtube.com/@BMTFofficial'
+                    target='_blank'
+                  >
+                    <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
+                      <PiYoutubeLogo />
+                    </i>
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href='https://www.linkedin.com/company/98842722/'
+                    target='_blank'
+                  >
+                    <i className='text-white text-[22px] 2xl:text-2xl hover:text-yellow'>
+                      <PiLinkedinLogo />
+                    </i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
