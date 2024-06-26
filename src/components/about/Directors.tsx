@@ -22,15 +22,14 @@ export default function Directors({}: Props) {
               <div className='py-[45px] px-[35px] bg-yellow flex flex-col items-center text-center sm:w-fit'>
                 <div className='-mt-20 sm:-mt-28 mb-3'>
                   {/* eslint-disable-next-line @next/next/no-img-element*/}
-                  <img src='/assets/images/about/Ellipse_1.png' alt='' />
+                  <img src='/assets/images/about/chairman2024.png' alt='' />
                 </div>
                 <div className=''>
                   <p className='text-white text-sm 2xl:text-base font-bold'>
                     Chairman
                   </p>
                   <p className='text-white text-sm 2xl:text-base'>
-                    General S M Shafiuddin Ahmed <br /> SBP(BAR), OSP, ndu, psc,
-                    PhD <br /> Chief of Army Staff
+                  General Waker-Uz-Zaman <br /> OSP, SGP, psc <br /> Chief of Army Staff
                   </p>
                 </div>
               </div>
