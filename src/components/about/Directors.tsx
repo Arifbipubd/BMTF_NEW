@@ -54,8 +54,7 @@ export default function Directors({}: Props) {
                   Vice Chairman
                 </p>
                 <p className='text-white text-sm 2xl:text-base'>
-                  Lt Gen Md Majibur Rahman <br /> SBP, OSP, PBGMS, PPMS, ndc,
-                  psc, M Phil QMG <br /> Quater Master General , Bangladesh Army
+                Lieutenant General Ahmad Tabrez Shams Chowdhury <br /> SBP, BSP, ndc, psc<br /> Quater Master General , Bangladesh Army
                 </p>
               </div>
             </div>
