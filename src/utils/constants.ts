@@ -167,11 +167,11 @@ export const navItems: Array<NavItem> = [
             link: "/about",
             label: "About Us",
           },
-          {
-            id: 22,
-            link: "/our-history",
-            label: "Our History",
-          },
+          // {
+          //   id: 22,
+          //   link: "/our-history",
+          //   label: "Our History",
+          // },
           {
             id: 24,
             link: "/our-client",

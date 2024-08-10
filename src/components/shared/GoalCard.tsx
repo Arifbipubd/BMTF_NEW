@@ -130,7 +130,7 @@ export default function GoalCard({}: Props) {
           >
             {/* eslint-disable-next-line @next/next/no-img-element*/}
             <img
-              src='/assets/images/mission_vission/Machine_shop_04.png'
+              src='/assets/images/mission_vission/core_values.png'
               alt=''
               className='w-full rounded-[10px] h-full'
             />
