@@ -40,7 +40,7 @@ export default function Feedback({}: Props) {
         </div>
         <div className="mb-3 md:mb-[18px]">
           <p className="text-white text-sm 2xl:text-base text-center">
-            Major General Mohammad Asadullah Minhazul Alam, ndu, psc, PhD
+          Major General Hamidul Haque, OSP, nswc, PSC
           </p>
         </div>
         <div>

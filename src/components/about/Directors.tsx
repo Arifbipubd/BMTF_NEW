@@ -68,8 +68,7 @@ export default function Directors({}: Props) {
                   Member
                 </p>
                 <p className='text-white text-sm 2xl:text-base'>
-                  Major General Mohammad Asadullah Minhazul Alam <br /> ndu,
-                  psc, PhD <br /> Managing Director BMTF
+                Major General Hamidul Haque, OSP, nswc, PSC <br /> Managing Director BMTF
                 </p>
               </div>
             </div>
