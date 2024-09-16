@@ -17,7 +17,7 @@ export default function Directors({}: Props) {
           <div>
             <div
               className={`relative sm:flex justify-center mb-24 sm:after:content-[''] sm:after:absolute sm:after:top-[100%]
-                           sm:after:left-[52%] md:after:left-[53%] lg:after:left-[50%] sm:after:-translate-x-1/2 sm:after:w-1  sm:after:h-[230px] md:after:h-[200px] lg:after:h-[200px] xl:after:h-[200px] 2xl:after:h-[210px] sm:after:bg-white`}
+                           sm:after:left-[52%] md:after:left-[53%] lg:after:left-[50%] sm:after:-translate-x-1/2 sm:after:w-1  sm:after:h-[190px] md:after:h-[180px] lg:after:h-[180px] xl:after:h-[180px] 2xl:after:h-[190px] sm:after:bg-white`}
             >
               <div className='py-[45px] px-[35px] bg-yellow flex flex-col items-center text-center sm:w-fit'>
                 <div className='-mt-20 sm:-mt-28 mb-3'>
@@ -46,7 +46,7 @@ export default function Directors({}: Props) {
             >
               <div className='-mt-20 sm:-mt-28 mb-3'>
                 {/* eslint-disable-next-line @next/next/no-img-element*/}
-                <img src='/assets/images/about/qmg.png' alt='' />
+                <img src='/assets/images/home/md.png' alt='' />
               </div>
               <div className=''>
                 <p className='text-white text-sm 2xl:text-base font-bold'>
@@ -54,7 +54,8 @@ export default function Directors({}: Props) {
                   Vice Chairman
                 </p>
                 <p className='text-white text-sm 2xl:text-base'>
-                Lieutenant General Ahmad Tabrez Shams Chowdhury <br /> SBP, BSP, ndc, psc<br /> Quarter Master General , Bangladesh Army
+                  {/* Lieutenant General Ahmad Tabrez Shams Chowdhury <br /> SBP, BSP, ndc, psc<br /> */}
+                  Quarter Master General , <br /> Bangladesh Army
                 </p>
               </div>
             </div>
@@ -68,7 +69,8 @@ export default function Directors({}: Props) {
                   Member
                 </p>
                 <p className='text-white text-sm 2xl:text-base'>
-                Major General Hamidul Haque, OSP, nswc, PSC <br /> Managing Director BMTF
+                  {/* Major General Hamidul Haque, OSP, nswc, PSC <br /> */}
+                  Managing Director BMTF
                 </p>
               </div>
             </div>

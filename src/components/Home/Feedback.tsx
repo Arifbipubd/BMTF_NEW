@@ -38,7 +38,7 @@ export default function Feedback({}: Props) {
             largest contributor in the national economy. <br /> Ameen.
           </p>
         </div>
-        <div className="mb-3 md:mb-[18px]">
+        <div className="mb-3 md:mb-[18px] hidden">
           <p className="text-white text-sm 2xl:text-base text-center">
           Major General Hamidul Haque, OSP, nswc, PSC
           </p>
