@@ -179,10 +179,10 @@ export default function Navbar() {
                   <span className='mr-2'>Email Us</span>
                 </div>
                 <a
-                  href={`mailto:mkt@bmtf.com.bd`}
+                  href={`mailto:Marketing@bmtf.com.bd`}
                   className=' text-white text-sm 2xl:text-base'
                 >
-                  <span>mkt@bmtf.com.bd</span>
+                  <span>Marketing@bmtf.com.bd</span>
                 </a>
               </div>
             </div>

@@ -707,9 +707,9 @@ export const contactCard = [
     title: "Corporate Office",
     address: "House # 41, Road # 7 , Dhaka Cantonment, Bangladesh",
     tel: "+880-2-8871150",
-    email: "mkt@bmtf.com.bd",
+    email: "Marketing@bmtf.com.bd",
     iframeSrc:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.08594857317!2d90.37702227607197!3d23.744314289008656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b3f78ee00b%3A0xd9d2ff933cd37a9a!2s41%20Rd%207%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1705332482461!5m2!1sen!2sbd",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.4778095681686!2d90.39188007482878!3d23.801602578635446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7226ed7f097%3A0x9082763e2ff3deb4!2sBMTF%20Corporate%20Office!5e0!3m2!1sen!2sfi!4v1727612322742!5m2!1sen!2sfi" ,
   },
   {
     id: 2,
@@ -717,9 +717,9 @@ export const contactCard = [
     title: "Factory",
     address: "Joydebpur Gazipur – 1700, Bangladesh",
     tel: "+880-2-996618072-7",
-    email: "mkt@bmtf.com.bd",
+    email: "Marketing@bmtf.com.bd",
     iframeSrc:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14581.875762841328!2d90.37074636505966!3d23.97921226206099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755db6710a83b69%3A0x7fa80a594efb99e1!2sGazipur%201700!5e0!3m2!1sen!2sbd!4v1705332707097!5m2!1sen!2sbd",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d72066.70929787926!2d90.31339029271801!3d24.014801503534077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755da37c87e69cb%3A0xd9fb6d3b7e4b012f!2sBangladesh%20Machine%20Tools%20Factory!5e0!3m2!1sen!2sfi!4v1727612378797!5m2!1sen!2sfi",
   },
   {
     id: 3,
@@ -729,7 +729,7 @@ export const contactCard = [
     tel: "+880 1769041207",
     email: "bmtfpackagingfactory@gmail.com",
     iframeSrc:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.08594857317!2d90.37702227607197!3d23.744314289008656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b3f78ee00b%3A0xd9d2ff933cd37a9a!2s41%20Rd%207%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1705332482461!5m2!1sen!2sbd",
+      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d66830.90831396174!2d90.30454357166862!3d24.107276075405068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3756753a03c6500b%3A0x28aa972e95269d62!2sBangladesh%20Machine%20Tools%20Factory!5e0!3m2!1sen!2sfi!4v1727612484510!5m2!1sen!2sfi" ,
   },
 ];
 
