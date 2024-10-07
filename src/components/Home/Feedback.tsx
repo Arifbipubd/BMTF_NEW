@@ -11,7 +11,7 @@ export default function Feedback({}: Props) {
         <div className="flex justify-center mb-5 md:mb-[30px] w-[141px] h-[141px]">
           {/* eslint-disable-next-line @next/next/no-img-element*/}
           <img
-            src="/assets/images/home/md.png"
+            src="/assets/images/home/mdnew.png"
             alt=""
             className="rounded-full w-full"
           />
@@ -38,9 +38,9 @@ export default function Feedback({}: Props) {
             largest contributor in the national economy. <br /> Ameen.
           </p>
         </div>
-        <div className="mb-3 md:mb-[18px] hidden">
+        <div className="mb-3 md:mb-[18px]">
           <p className="text-white text-sm 2xl:text-base text-center">
-          Major General Hamidul Haque, OSP, nswc, PSC
+          Major General Md Naheed Asgar, BSP, ndc, afwc, psc
           </p>
         </div>
         <div>
