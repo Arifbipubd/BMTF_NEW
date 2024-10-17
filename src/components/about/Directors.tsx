@@ -40,7 +40,7 @@ export default function Directors({}: Props) {
               className={`mb-24 sm:my-0 py-[45px] px-[35px] bg-yellow flex 
                         flex-col items-center text-center relative  justify-center  
                         sm:after:content-[''] sm:after:absolute sm:after:left-[100%]
-                        after:top-[50%] sm:after:-translate-y-1/2 sm:after:w-16 lg:after:w-56 
+                        after:top-[40%] sm:after:-translate-y-1/2 sm:after:w-16 lg:after:w-56 
                          xl:after:w-[280px] sm:after:h-1 sm:after:bg-white 
                         `}
             >
@@ -54,7 +54,7 @@ export default function Directors({}: Props) {
                   Vice Chairman
                 </p>
                 <p className='text-white text-sm 2xl:text-base'>
-                  {/* Lieutenant General Ahmad Tabrez Shams Chowdhury <br /> SBP, BSP, ndc, psc<br /> */}
+                Lt Gen Mohammad Faizur Rahman <br /> SGP, BSP, ndc, afwc, psc<br />
                   Quarter Master General , <br /> Bangladesh Army
                 </p>
               </div>
@@ -69,7 +69,7 @@ export default function Directors({}: Props) {
                   Member
                 </p>
                 <p className='text-white text-sm 2xl:text-base'>
-                  {/* Major General Hamidul Haque, OSP, nswc, PSC <br /> */}
+                Major General Md Naheed Asgar <br />BSP, ndc, afwc, psc<br />
                   Managing Director BMTF
                 </p>
               </div>
