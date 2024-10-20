@@ -5,7 +5,6 @@ type Props = {
 };
 
 export default function Table({nocAndNotice}: Props) {
-    console.log(nocAndNotice)
     return (
         <div className="bg-white  md:py-12 lg:py-[58px]">
             <div className="container mx-auto">

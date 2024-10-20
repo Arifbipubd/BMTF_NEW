@@ -48,6 +48,7 @@ export default function Experience({}: Props) {
                 initial="hidden"
                 variants={boxVariant}
                 animate={control}
+                key={'ref'}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element*/}
                 <img src="/assets/images/home/Forge_shop_03.png" alt="" />
@@ -57,6 +58,7 @@ export default function Experience({}: Props) {
                 initial="hidden"
                 variants={boxVariant2}
                 animate={control}
+                key={'ref1'}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element*/}
                 <img src="/assets/images/home/Foundry_shop_01.png" alt="" />

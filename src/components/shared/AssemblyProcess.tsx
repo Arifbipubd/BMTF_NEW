@@ -8,7 +8,6 @@ type Props = {
 };
 
 export default function AssemblyProcess({ imageSrc, items }: Props) {
-    console.log(items.length);
     return (
         <div className="bg-skyLight py-10 md:py-20 lg:py-[125px]">
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-[30px] place-items-center">

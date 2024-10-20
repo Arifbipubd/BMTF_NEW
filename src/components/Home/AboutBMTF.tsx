@@ -14,21 +14,21 @@ const boxVariant = {
   },
   hidden: {
     opacity: 0,
-    x: -1000,
+    x: -400,
   },
 };
 const boxVariant2 = {
   visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
   hidden: {
     opacity: 0,
-    y: -200,
+    y: -100,
   },
 };
 const boxVariant3 = {
   visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
   hidden: {
     opacity: 0,
-    y: 200,
+    y: 100,
   },
 };
 
@@ -62,6 +62,7 @@ function AboutBMTF({}: Props) {
                 initial='hidden'
                 variants={boxVariant}
                 animate={control}
+                key={'ref0'}
               />
               <div
                 className={`absolute -right-28 top-[50%] -translate-y-1/2 -my-1/2 
@@ -87,6 +88,7 @@ function AboutBMTF({}: Props) {
                   initial='hidden'
                   variants={boxVariant2}
                   animate={control}
+                  key={'ref1'}
                 />
               </div>
               <div>
@@ -98,6 +100,7 @@ function AboutBMTF({}: Props) {
                   initial='hidden'
                   variants={boxVariant3}
                   animate={control}
+                  key={'ref2'}
                 />
               </div>
             </div>

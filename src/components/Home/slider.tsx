@@ -109,6 +109,7 @@ export default function Slider({}: Props) {
                       initial="enter"
                       animate="center"
                       exit="exit"
+                      key={index}
                       transition={{
                         x: {
                           type: "spring",
