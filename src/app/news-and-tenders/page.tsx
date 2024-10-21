@@ -50,8 +50,6 @@ export default function Page({}: Props) {
       });
   }, [setData]);
 
-  console.log(data);
-
   const News = useMemo(() => <AllNews newsAndTender={data} />, [data]);
 
   return (

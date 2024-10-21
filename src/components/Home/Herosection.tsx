@@ -63,14 +63,13 @@ export default function Herosection({ slides }: Props) {
     return () => clearInterval(timeInterval);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentSlide]);
-  console.log(slides);
   return (
     <Fragment>
       <div className='relative z-0 overflow-hidden bg-black/90'>
         <div className='container mx-auto grid grid-cols-2 gap-4'>
           <div className='min-h-[90vh] md:min-h-screen overflow-hidden'>
             {slides.map((slide, index) => (
-              <Fragment key={slide.id}>
+              <Fragment key={index}>
                 <AnimatePresence custom={direction} initial={false}>
                   {currentSlide === index && (
                     <motion.div
@@ -80,6 +79,7 @@ export default function Herosection({ slides }: Props) {
                       initial='enter'
                       animate='center'
                       exit='exit'
+                      key={index}
                       transition={{
                         x: {
                           type: "spring",
