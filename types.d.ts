@@ -29,3 +29,14 @@ interface NewsCard {
   date: string;
   url: string;
 }
+
+interface LatestNews {
+  id: number;
+  date: string;
+  description: string;
+  feature_image: string;
+  is_featured: number;
+  title: string;
+  short_intro: string;
+  status: number;
+}

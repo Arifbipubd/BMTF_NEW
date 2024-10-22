@@ -163,10 +163,10 @@ export default function Navbar() {
                   <span className='mr-[7px]'>Call Us</span>
                 </div>
                 <a
-                  href={`tel:+88028871150`}
+                  href={`tel:+8801769044261`}
                   className='text-white text-sm 2xl:text-base'
                 >
-                  <span>+880-2-8871150</span>
+                  <span>+8801769044261</span>
                 </a>
               </div>
               <div className='flex items-center'>
