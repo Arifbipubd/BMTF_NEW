@@ -2,15 +2,18 @@
 
 "use client";
 
-import React, { Fragment } from "react";
-import { latestNews } from "@src/utils/constants";
-
+import React, { Fragment, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import useNewsData from "@src/utils/useNewsData";
 
-type Props = {};
 
-export default function News({}: Props) {
+export default function News() {
+  const news = useNewsData()
+  const filteredNews = useMemo(() =>{
+    return news?.filter(item => item.is_featured === 1).slice(0, 3)
+  }, [news])
+
   return (
     <div className='bg-[#EEF3F6] py-10 md:py-24 lg:py-[110px] overflow-hidden'>
       <div className='container mx-auto'>
@@ -23,9 +26,9 @@ export default function News({}: Props) {
           </h2>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-[30px]'>
-          {latestNews.map((item, index) => (
+          {filteredNews && filteredNews.map((item, index) => (
             <Fragment key={item.id}>
-              <Link href={item.url}>
+              <Link href={`/news-and-tenders/${item.id}`}>
                 <AnimatePresence>
                   <motion.div
                     className='bg-white border-[1px] border-[#D9D9D9] rounded-[10px]'
@@ -39,7 +42,7 @@ export default function News({}: Props) {
                     <div>
                       {/* eslint-disable-next-line @next/next/no-img-element*/}
                       <img
-                        src={item.imgSrc}
+                        src={`${process.env.BASE_URL}${item.feature_image}`}
                         alt=''
                         className='w-full rounded-tl-[10px] rounded-tr-[10px]'
                       />
