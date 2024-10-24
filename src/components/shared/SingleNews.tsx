@@ -20,10 +20,9 @@ export default function SingleNews({ news, newsId }: Props) {
                 className="w-full"
               />
             </div>
-            <p className="text-whiteBg text-sm 2xl:text-base text-justify mb-3">
-              <span className="font-semibold text-lg 2xl:text-xl">Intro: </span>  
-              <span className="font-medium">{news.short_intro}</span>
-            </p>
+            <h5 className="text-whiteBg text-sm 2xl:text-base text-justify mb-3 font-medium">
+              {news.short_intro}
+            </h5>
             <div className="flex flex-col gap-5">
               {Array.isArray(news.description) ? (
                 news.description.map((item: any, index: any) => (
