@@ -27,6 +27,12 @@ export default function Home() {
   const [loading, setLoading] = useState<boolean>(false);
   const [slides, setSlides] = useState<Array<any>>([]);
   const [errorLog, setErrorLog] = useState<string | null>(null);
+  const [isModalVisible, setIsModalVisible] = useState(true); 
+
+  const handleCloseModal = () => {
+    setIsModalVisible(false); // Close the modal
+  };
+
 
   useEffect(() => {
     const unsubscribe = scrollYProgress.on("change", (x) =>
@@ -54,6 +60,25 @@ export default function Home() {
     <Layout pageTitle='BMTF | HOME'>
       <Scrollbar progress={scrollProgress} />
       <section>
+      {isModalVisible && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <div className="relative bg-white p-4 rounded-lg shadow-lg h-[90%] w-[90%] md:w-[70%]">
+            {/* Close button */}
+            <button
+              className="absolute top-2 right-2 text-black bg-gray-200 hover:bg-gray-300 rounded-full p-2"
+              onClick={handleCloseModal}
+            >
+              ✖
+            </button>
+            {/* Modal content */}
+            <img
+              src="/assets/images/Static.jpg"
+              alt="Welcome Modal"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      )}
         {loading ? (
           <div className='min-h-[100vh] flex items-center justify-center bg-primary'>
             <div>
