@@ -78,22 +78,6 @@ export default function Home() {
     <Layout pageTitle="BMTF | HOME">
       <Scrollbar progress={scrollProgress} />
       <section>
-        {isModalVisible && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-            <div
-              ref={modalRef} // Reference to the modal
-              className="relative bg-white p-4 rounded-lg shadow-lg h-[90%]"
-            >
-              {/* Close button */}
-              {/* Modal content */}
-              <img
-                src="/assets/images/Static.jpg"
-                alt="Welcome Modal"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        )}
         {loading ? (
           <div className="min-h-[100vh] flex items-center justify-center bg-primary">
             <div>
